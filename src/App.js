@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Landing from './components/Landing';
+
 function App() {
   return (
     <div className="App">
+      <Landing/>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
