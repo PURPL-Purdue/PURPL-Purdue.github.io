@@ -8,7 +8,7 @@ const Landing = () => {
                 {/* Add additional source tags for different video formats if needed */}
             </video>
             <div className="flex absolute inset-0">
-                <p className="text-9xl text-white m-auto">purpl</p>
+                <p className="text-9xl text-white m-auto">rockets</p>
             </div>
         </div>
     );
