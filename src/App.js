@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import Landing from './components/Landing';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Landing/>
-      
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
