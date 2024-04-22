@@ -1,3 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+      font-family: 'chakra-petch';
+      font-display: block;
+      src: url('/public/fonts/Chakra_Petch/ChakraPetch-Regular.ttf') format('truetype'),
+            url('/public/fonts/Chakra_Petch/ChakraPetch-Regular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'roboto-mono-bold';
+      font-weight: 400;
+      font-display: block;
+      src: url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype'),
+            url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff') format('woff');
+    }
+}
 
 body {
   margin: 0;

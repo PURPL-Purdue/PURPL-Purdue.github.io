@@ -8,8 +8,8 @@ const Landing = () => {
                 {/* Add additional source tags for different video formats if needed */}
             </video>
             <div className="flex flex-col absolute object-fill justify-start ms-10 mb-12">
-                <p className="text-9xl text-left text-white justify-start mb-2">rockets</p>
-                <p className="text-5xl text-left text-white">lorem ipsum dolor</p>
+                <p className="text-9xl text-left text-white font-display justify-start mb-2">rockets</p>
+                <p className="text-5xl text-left text-white font-display2">lorem ipsum dolor</p>
             </div>
         </div>
     );
