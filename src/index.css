@@ -10,6 +10,12 @@
             url('/public/fonts/Chakra_Petch/ChakraPetch-Regular.woff') format('woff');
     }
     @font-face {
+      font-family: 'chakra-petch-bold';
+      font-display: block;
+      src: url('/public/fonts/Chakra_Petch/ChakraPetch-Bold.ttf') format('truetype'),
+            url('/public/fonts/Chakra_Petch/ChakraPetch-Bold.woff') format('woff');
+    }
+    @font-face {
       font-family: 'roboto-mono-bold';
       font-weight: 400;
       font-display: block;

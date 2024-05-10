@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     fontFamily: {
       'display': ['chakra-petch', 'sans-serif'],
+      'display-bold': ['chakra-petch-bold', 'sans-serif'],
       'display2': ['roboto-mono-bold', 'sans-serif'],
-      'body': []
+      'body': [],
     },
     extend: {
       colors: {
@@ -17,7 +18,10 @@ module.exports = {
         'moon': '#34015b',
         'stardust': '#9100FF',
         'old-gold': '#DBC885',
-
+        'off-white': '#F5F5F5',
+      },
+      backgroundImage: {
+        'mountains-background': "url('../public/images/background_1.png')",
       },
     },
   },
