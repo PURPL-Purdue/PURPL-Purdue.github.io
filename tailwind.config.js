@@ -9,7 +9,10 @@ module.exports = {
     fontFamily: {
       'display': ['chakra-petch', 'sans-serif'],
       'display-bold': ['chakra-petch-bold', 'sans-serif'],
+      'display-medium': ['chakra-petch-medium', 'sans-serif'],
+      'display-light': ['chakra-petch-light', 'sans-serif'],
       'display2': ['roboto-mono-bold', 'sans-serif'],
+      'display2-light': ['roboto-mono-light', 'sans-serif'],
       'body': [],
     },
     extend: {
@@ -21,7 +24,7 @@ module.exports = {
         'off-white': '#F5F5F5',
       },
       backgroundImage: {
-        'mountains-background': "url('../public/images/background_1.png')",
+        'mountains-background': "url('../public/images/background_2.jpg')",
       },
     },
   },

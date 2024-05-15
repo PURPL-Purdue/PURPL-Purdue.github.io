@@ -16,8 +16,27 @@
             url('/public/fonts/Chakra_Petch/ChakraPetch-Bold.woff') format('woff');
     }
     @font-face {
+      font-family: 'chakra-petch-medium';
+      font-display: block;
+      src: url('/public/fonts/Chakra_Petch/ChakraPetch-Medium.ttf') format('truetype'),
+            url('/public/fonts/Chakra_Petch/ChakraPetch-Medium.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'chakra-petch-light';
+      font-display: block;
+      src: url('/public/fonts/Chakra_Petch/ChakraPetch-Light.ttf') format('truetype'),
+            url('/public/fonts/Chakra_Petch/ChakraPetch-Light.woff') format('woff');
+    }
+    @font-face {
       font-family: 'roboto-mono-bold';
       font-weight: 400;
+      font-display: block;
+      src: url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype'),
+            url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'roboto-mono-light';
+      font-weight: 200;
       font-display: block;
       src: url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype'),
             url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff') format('woff');
