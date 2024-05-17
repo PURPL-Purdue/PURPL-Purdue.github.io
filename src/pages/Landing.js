@@ -3,6 +3,7 @@ import ImageBox from '../components/ImageBox.js';
 import DisplayHeader from '../components/DisplayHeader.js';
 import DividerLine from '../components/DividerLine.js';
 import DisplayGrid from '../components/DisplayGrid.js';
+import Calendar from '../components/Calendar.js';
 
 const Landing = () => {
     const images = [
@@ -51,7 +52,7 @@ const Landing = () => {
         <div className="flex flex-col w-full bg-dusk">
             <div className="w-[1200px] mx-auto">
                 <div className="w-full h-full  py-16 mt-10">
-                    <DisplayHeader text="We Blow Things Up" buttonText="Learn More" buttonLink="/" imageSrc="/images/DSC01164.png" imageAlt="" isFlipped={false}/>
+                    <DisplayHeader text="We Blow Things Up" buttonText="Learn More" buttonLink="/404" imageSrc="/images/DSC01164.png" imageAlt="" isFlipped={false}/>
                 </div>
                 <DividerLine/>
                 <div className="py-16">
@@ -62,6 +63,24 @@ const Landing = () => {
                     <DisplayHeader text="Empowering Engineers" buttonText="Our Team" buttonLink="/team" imageSrc="/images/DSC01151.jpg" imageAlt="" isFlipped={true}/>
                 </div>
                 <DividerLine/>
+                <div className="py-16">
+                    <p className="font-display-bold text-6xl text-stardust mb-16 text-balance leading-normal">Upcoming Events</p>
+                    <Calendar/>
+                </div>
+                <DividerLine/>
+                <div className="py-16">
+                    <p className="font-display-bold text-6xl text-stardust mb-16 text-balance leading-normal">Work With Us</p>
+                    <div className="flex flex-col w-[600px] mx-auto border-stardust border-2 rounded-sm py-8 space-y-4 text-left px-8">
+                        <div>
+                            <p className="font-display2-bold text-lg text-white">Email</p>
+                            <a className="font-display2 text-xl text-stardust underline" href="mailto:purpl@outlook.com">purpl@outlook.com</a>
+                        </div>
+                        <div>
+                            <p className="font-display2-bold text-lg text-white">LinkedIn</p>
+                            <a className="font-display2 text-xl text-stardust underline" href="https://www.linkedin.com/company/purpl-purdue/">@purpl-purdue</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>   
         </div>     

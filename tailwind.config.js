@@ -11,8 +11,10 @@ module.exports = {
       'display-bold': ['chakra-petch-bold', 'sans-serif'],
       'display-medium': ['chakra-petch-medium', 'sans-serif'],
       'display-light': ['chakra-petch-light', 'sans-serif'],
-      'display2': ['roboto-mono-bold', 'sans-serif'],
+      'display2': ['roboto-mono', 'sans-serif'],
       'display2-light': ['roboto-mono-light', 'sans-serif'],
+      'display2-bold': ['roboto-mono-bold', 'sans-serif'],
+
       'body': [],
     },
     extend: {

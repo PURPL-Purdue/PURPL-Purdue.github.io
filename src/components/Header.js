@@ -6,10 +6,10 @@ const Header = () => {
             <img className="h-10 mr-auto mb-3" src="/PURPL_wordmark_white.png" alt="PURPL logo"></img>
 
             <div className="content-fill mb-5 mr-10 space-x-20">
-                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="tab_1">team</a>
-                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="tab_2">torch</a>
-                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="tab_3">teeny k</a>
-                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="tab_4">the mug</a>
+                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="team">team</a>
+                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="torch">torch</a>
+                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="teeny_k">teeny k</a>
+                <a className="text-white font-display2 underline hover:underline-offset-4 hover:text-stardust" href="mug">the mug</a>
             </div>
         </div>
     );

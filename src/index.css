@@ -28,8 +28,15 @@
             url('/public/fonts/Chakra_Petch/ChakraPetch-Light.woff') format('woff');
     }
     @font-face {
-      font-family: 'roboto-mono-bold';
+      font-family: 'roboto-mono';
       font-weight: 400;
+      font-display: block;
+      src: url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype'),
+            url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'roboto-mono-bold';
+      font-weight: 600;
       font-display: block;
       src: url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype'),
             url('/public/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff') format('woff');

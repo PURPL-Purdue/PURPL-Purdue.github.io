@@ -10,10 +10,13 @@ const ImageBox = (props) => {
                 <div className="flex flex-row h-[50%] items-center">
                     <img className={`${imageRelWidth} mx-auto`} src={imageUrl} alt={imageAlt} />
                 </div>
-                <div>
-                    <p className="font-display-bold text-6xl" >{header}</p>
-                    <p className="font-display-light text-xl mb-4" >{subheader}</p>
-                    <p className="font-display2-light">{caption}</p>
+                <div className="flex flex-row">
+                    <div>
+                        <p className="font-display-bold text-6xl" >{header}</p>
+                        <p className="font-display-light text-xl mb-4" >{subheader}</p>
+                        <p className="font-display2-light">{caption}</p>
+                    </div>
+                    <img src="/images/purple_arrow.png" alt="purple arrow icon" className="w-6 h-6 mt-auto"/>
                 </div>
             </div>
         </div>
