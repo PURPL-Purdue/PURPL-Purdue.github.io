@@ -1,13 +1,55 @@
 import React from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ErrorPage from './pages/ErrorPage';
+import Team from './pages/Team';
+import Landing from './pages/Landing';
 import reportWebVitals from './reportWebVitals';
+import TeenyK from './pages/projects/TeenyK';
+import Torch from './pages/projects/Torch';
+import Mug from './pages/projects/Mug';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Landing />,
+      },
+      {
+        path: "team",
+        element: <Team />,
+      },
+      {
+        path: "torch",
+        element: <Torch />,
+      },
+      {
+        path: "teeny_k",
+        element: <TeenyK />,
+      },
+      {
+        path: "mug",
+        element: <Mug />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />  
   </React.StrictMode>
 );
 

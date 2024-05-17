@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const ImageBox = (props) => {
-    const { imageUrl, imageAlt, header, subheader, caption, imageRelWidth } = props;
+    const { imageUrl, imageAlt, header, subheader, caption, imageRelWidth, link } = props;
     
     return (
         <div className="text-dusk">
@@ -16,7 +16,7 @@ const ImageBox = (props) => {
                         <p className="font-display-light text-xl mb-4" >{subheader}</p>
                         <p className="font-display2-light">{caption}</p>
                     </div>
-                    <img src="/images/purple_arrow.png" alt="purple arrow icon" className="w-6 h-6 mt-auto"/>
+                    <Link className="w-20 h-6 mt-auto" to={link}><img src="/images/purple_arrow.png" alt="purple arrow icon" className="mt-auto"/></Link>
                 </div>
             </div>
         </div>

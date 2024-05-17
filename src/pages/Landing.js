@@ -13,7 +13,8 @@ const Landing = () => {
             header: "RS1",
             subheader: "TORCH IGNITOR",
             caption: "Initiates the combustion process in a rocket engine by delivering a controlled spark to ignite the propellant mixture.",
-            imageRelWidth: "w-[80%]"
+            imageRelWidth: "w-[80%]",
+            link: "torch",
         },
         {
             imageUrl: "/images/stand_technical_drawing.jpg",
@@ -21,7 +22,8 @@ const Landing = () => {
             header: "TK7",
             subheader: "TEST STAND",
             caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh magna, luctus vitae euismod et, lacinia quis leo.",
-            imageRelWidth: "w-[100%]"
+            imageRelWidth: "w-[100%]",
+            link: "teeny_k",
         },
         {
             imageUrl: "/images/mug_technical_drawing.png",
@@ -29,7 +31,8 @@ const Landing = () => {
             header: "JB16",
             subheader: "ROCKET ENGINE",
             caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh magna, luctus vitae euismod et, lacinia quis leo.",
-            imageRelWidth: "w-[80%]"
+            imageRelWidth: "w-[80%]",
+            link: "mug",
         }
     ];
 
@@ -45,6 +48,7 @@ const Landing = () => {
                         subheader={image.subheader}
                         caption={image.caption}
                         imageRelWidth={image.imageRelWidth}
+                        link={image.link}
                     />
                 ))}
             </div>

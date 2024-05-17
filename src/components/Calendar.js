@@ -20,11 +20,11 @@ function Calendar() {
                     <p className="font-display2-bold text-3xl text-white my-8">{item.title}</p>
                     <DividerLine/>
                     <div className="flex flex-row items-center mt-4 space-x-2">
-                        <img src="/images/purple_pin.png" className="w-4 h-4"/>
+                        <img src="/images/purple_pin.png" alt="purple pin icon" className="w-4 h-4"/>
                         <p className="font-display2 text-lg text-white text-left">{item.loc}</p>
                     </div>
                     <div className="flex flex-row items-center mb-8 space-x-2">
-                        <img src="/images/purple_clock.png" className="w-4 h-4"/>
+                        <img src="/images/purple_clock.png" alt="purple clock icon" className="w-4 h-4"/>
                         <p className="font-display2 text-lg text-white text-left">{item.time}:00</p>
                     </div>
                     <SmallButton text="Learn More" link="/404"/>
