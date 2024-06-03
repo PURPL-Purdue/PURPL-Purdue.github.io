@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageBox from '../components/ImageBox.js';
-import DisplayHeader from '../components/DisplayHeader.js';
-import DividerLine from '../components/DividerLine.js';
+import DisplayHeader from '../components/shared/DisplayHeader.js';
+import DividerLine from '../components/shared/DividerLine.js';
 import DisplayGrid from '../components/DisplayGrid.js';
 import Calendar from '../components/Calendar.js';
 

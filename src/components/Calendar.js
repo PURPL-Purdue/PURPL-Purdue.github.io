@@ -1,6 +1,6 @@
 import React from 'react';
-import SmallButton from "./SmallButton.js";
-import DividerLine from './DividerLine.js';
+import SmallButton from "./shared/SmallButton.js";
+import DividerLine from './shared/DividerLine.js';
 
 function Calendar() {
     const values = [
