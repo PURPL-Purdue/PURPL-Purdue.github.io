@@ -1,9 +1,10 @@
 import React from 'react';
+import ComingSoon from '../ComingSoon';
 
 const TeenyK = () => {
     return (
         <div>
-            <h1>temp</h1>
+            <ComingSoon/>
         </div>
     );
 };

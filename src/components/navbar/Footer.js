@@ -3,8 +3,8 @@ import { FaInstagram, FaYoutube, FaLinkedinIn, FaRegEnvelope, FaFacebookSquare }
 
 const Footer = () => {
     return (
-        <div className="w-full h-44 bg-black flex items-end justify-start p-4 px-16">
-            <div className="mb-5">
+        <div className="w-full h-52 bg-dusk flex items-end justify-start p-4 px-16 shadow-md-top shadow-black">
+            <div className="mb-8">
                 <p className="text-stardust font-display text-left">Purdue<span className="text-white"> _ </span>Undergraduate<span className="text-white"> _ </span>Rocket<span className="text-white"> _ </span>Propulsion<span className="text-white"> _ </span>Laboratory</p>
                 <p className="text-stardust font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
                 <div className="flex flex-row text-stardust space-x-2 align-middle mt-3">
@@ -24,6 +24,9 @@ const Footer = () => {
                         <FaLinkedinIn className=" hover:text-white" size={24} />
                     </a>
                 </div>
+            </div>
+            <div className="ml-auto mb-10 mr-6">
+                <img src="images/PU-H-Full-Rev-RGB.svg" alt="Purdue University logo" className="h-16" />
             </div>
         </div>
     );

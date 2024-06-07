@@ -1,8 +1,9 @@
+import ComingSoon from './ComingSoon.js';
 
 function Team() {
   return (
-    <div className="Team">
-      <h1>about us</h1>
+    <div>
+      <ComingSoon/>
     </div>
   );
 }

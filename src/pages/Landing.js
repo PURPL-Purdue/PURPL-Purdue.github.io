@@ -38,7 +38,7 @@ const Landing = () => {
 
     return (
         <div>
-        <div className="relative w-fill h-[900px] object-none opacity-100 bg-mountains-background">
+        <div className="relative w-fill h-[900px] object-none opacity-100 bg-mountains-background ">
             <div className="absolute bottom-0 flex flex-col md:flex-row justify-center inset-x-1/2 space-x-10">
                 {images.map((image) => (
                     <ImageBox

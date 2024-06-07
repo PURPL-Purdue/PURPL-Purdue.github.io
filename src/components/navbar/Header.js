@@ -79,7 +79,7 @@ const Header = () => {
 
         return (
                 <div className={"fixed top-0 left-0 w-full h-28 z-10 flex items-end justify-end px-36 " + 
-                        (scrollPosition > 150 ? "bg-black " : "bg-transparent ")}
+                        (scrollPosition > 150 ? "bg-dusk shadow-md shadow-black " : "bg-transparent ")}
                 >
                         <Link className="h-10 mr-auto mb-6" to="/"><img className="h-10 mr-auto mb-3" src="/PURPL_wordmark_white.png" alt="PURPL logo"></img></Link>
 

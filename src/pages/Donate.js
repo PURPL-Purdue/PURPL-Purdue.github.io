@@ -1,7 +1,7 @@
 import React from 'react';
-import ComingSoon from '../ComingSoon';
+import ComingSoon from './ComingSoon';
 
-const Mug = () => {
+const Donate = () => {
     return (
         <div>
             <ComingSoon/>        
@@ -9,4 +9,4 @@ const Mug = () => {
     );
 };
 
-export default Mug;
+export default Donate;

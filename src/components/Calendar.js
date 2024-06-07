@@ -1,5 +1,5 @@
 import React from 'react';
-import SmallButton from "./shared/SmallButton.js";
+import SmallButton from "./shared/button/SmallButton.js";
 import DividerLine from './shared/DividerLine.js';
 
 function Calendar() {

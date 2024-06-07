@@ -1,12 +1,12 @@
 import React from 'react';
 import ComingSoon from '../ComingSoon';
 
-const Torch = () => {
+const Crate = () => {
     return (
         <div>
-            <ComingSoon/>
+            <ComingSoon/>        
         </div>
     );
 };
 
-export default Torch;
+export default Crate;

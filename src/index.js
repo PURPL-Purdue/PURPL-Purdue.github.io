@@ -13,6 +13,9 @@ import reportWebVitals from './reportWebVitals';
 import TeenyK from './pages/projects/TeenyK';
 import Torch from './pages/projects/Torch';
 import Mug from './pages/projects/Mug';
+import Crate from './pages/projects/Crate';
+import Donate from './pages/Donate';
+import Contact from './pages/Contact';
 
 
 const router = createBrowserRouter([
@@ -41,6 +44,22 @@ const router = createBrowserRouter([
         path: "mug",
         element: <Mug />,
       },
+      {
+        path: "crate",
+        element: <Crate />,
+      },
+      {
+        path: "donate",
+        element: <Donate />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "404",
+        element: <ErrorPage/>,
+      }
     ],
   },
 ]);
