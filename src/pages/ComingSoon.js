@@ -7,7 +7,7 @@ const ErrorPage = () => {
             <div className="w-[1200px] mx-auto">
                 <div className="flex flex-col w-full h-full py-96 items-center space-y-12">
                     <p className="text-stardust text-6xl font-display-bold">Coming Soon!</p>
-                    <Button text="Return Home" link="/" />
+                    <Button text="Return Home" link="/" isNavLink={true} />
                 </div>
             </div>
         </div>
