@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8dfc296.css",
-    "main.js": "/static/js/main.50c8ff8e.js",
+    "main.css": "/static/css/main.c66b5b5a.css",
+    "main.js": "/static/js/main.73dc4a2a.js",
     "static/js/453.30eda8f7.chunk.js": "/static/js/453.30eda8f7.chunk.js",
+    "static/media/DSC01166.jpg": "/static/media/DSC01166.1107552eace0477a291d.jpg",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
-    "static/media/background_2.jpg": "/static/media/background_2.378cd325556db57efb19.jpg",
     "static/media/ChakraPetch-Light.ttf": "/static/media/ChakraPetch-Light.8dabc1fc6d290dfe2e85.ttf",
     "static/media/ChakraPetch-Medium.ttf": "/static/media/ChakraPetch-Medium.8bc62e852b36ebc0b674.ttf",
     "static/media/ChakraPetch-Regular.ttf": "/static/media/ChakraPetch-Regular.f4019d33aae25f6d8eaf.ttf",
@@ -15,12 +15,12 @@
     "static/media/ChakraPetch-Bold.woff": "/static/media/ChakraPetch-Bold.a317cdd61e723abe5f8b.woff",
     "static/media/ChakraPetch-Regular.woff": "/static/media/ChakraPetch-Regular.f55d6089f9562aff9db1.woff",
     "index.html": "/index.html",
-    "main.d8dfc296.css.map": "/static/css/main.d8dfc296.css.map",
-    "main.50c8ff8e.js.map": "/static/js/main.50c8ff8e.js.map",
+    "main.c66b5b5a.css.map": "/static/css/main.c66b5b5a.css.map",
+    "main.73dc4a2a.js.map": "/static/js/main.73dc4a2a.js.map",
     "453.30eda8f7.chunk.js.map": "/static/js/453.30eda8f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8dfc296.css",
-    "static/js/main.50c8ff8e.js"
+    "static/css/main.c66b5b5a.css",
+    "static/js/main.73dc4a2a.js"
   ]
 }
