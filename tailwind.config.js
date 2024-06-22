@@ -24,10 +24,14 @@ module.exports = {
         'stardust': '#9100FF',
         'old-gold': '#DBC885',
         'off-white': '#F5F5F5',
+        'orion': '#34015B',
+        'oscuro': '#3E3941',
+        'jet-grey': '#D3D0CB',
         'boilermaker-gold': '#CFB991',
       },
       backgroundImage: {
         'mountains-background': "url('../public/images/background_2.jpg')",
+        'DSC01166-background': "url('../public/images/DSC01166.jpg')",
       },
       boxShadow: {
         'lg-top': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',
