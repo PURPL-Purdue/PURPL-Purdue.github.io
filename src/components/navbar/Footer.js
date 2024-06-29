@@ -3,9 +3,9 @@ import { FaInstagram, FaYoutube, FaLinkedinIn, FaRegEnvelope, FaFacebookSquare }
 
 const Footer = () => {
     return (
-        <div className="w-full h-52 bg-dusk flex items-end justify-start p-4 px-16 shadow-md-top shadow-black">
-            <div className="mb-8">
-                <p className="text-stardust font-display text-left">Purdue<span className="text-white"> _ </span>Undergraduate<span className="text-white"> _ </span>Rocket<span className="text-white"> _ </span>Propulsion<span className="text-white"> _ </span>Laboratory</p>
+        <div className="w-full bg-dusk flex flex-col md:flex-row items-end justify-start px-8 md:px-16 pt-8 md:pt-12 shadow-md-top shadow-black">
+            <div className="mb-8 mr-auto">
+                <p className="text-stardust font-display text-left">Purdue Undergraduate Rocket Propulsion Laboratory</p>
                 <p className="text-stardust font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
                 <div className="flex flex-row text-stardust space-x-2 align-middle mt-3">
                     {
@@ -31,8 +31,8 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="ml-auto mb-10 mr-6">
-                <img src="images/PU-H-Full-Rev-RGB.svg" alt="Purdue University logo" className="h-16" />
+            <div className="mb-10 mr-auto md:mt-4 md:mb-auto md:ml-auto lg:mr-6">
+                <img src="images/PU-H-Full-Rev-RGB.svg" alt="Purdue University logo" className="h-6 md:h-9 lg:h-12" />
             </div>
         </div>
     );
