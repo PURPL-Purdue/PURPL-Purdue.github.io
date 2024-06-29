@@ -6,7 +6,7 @@ function Calendar() {
     const values = [
         { month: "May", day: "15", title: "Team Cookout", loc: "Krach Lawn", time: 15},
         { month: "June", day: "06", title: "Summer Session", loc: "WALC 215", time: 19},
-        { month: "July", day: "18", title: "Summer Hotfire", loc: "Zucrow Labs", time: 13},
+        { month: "July", day: "18", title: "Summer Hotfire", loc: "TBD", time: 13},
         { month: "August", day: "14", title: "Fall Callout", loc: "WALC", time: 16},
         { month: "September", day: "8", title: "First Meeting", loc: "WALC 2121", time: 18},
     ];
@@ -27,7 +27,9 @@ function Calendar() {
                         <img src="/images/purple_clock.png" alt="purple clock icon" className="w-4 h-4"/>
                         <p className="font-display2 text-lg text-white text-left">{item.time}:00</p>
                     </div>
+                    {/* 
                     <SmallButton text="Learn More" link="/404"/>
+                    */}
                 </div>
             ))}
         </div>

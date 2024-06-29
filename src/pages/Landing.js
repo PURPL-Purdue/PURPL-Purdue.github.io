@@ -67,9 +67,9 @@ const Landing = () => {
                         <div className={`flex flex-col  justify-start text-left md:pr-36 my-auto`}>
                             <h1 className="font-display-bold text-4xl md:text-6xl text-stardust mb-4 md:mb-12 md:text-balance leading-normal">We Blow Things Up</h1>
                             <h2 className="font-display2 text-white text-md md:text-xl mb-6 md:mb-8">
-                                We build and test rockets to compete in.. filler text filler text filler text filler text. something about what purpl does. We partner with __ Labs ...
+                                We build rockets.
                             </h2>
-                            <Button text="Join Our Discord!" link="https://discord.gg/cC6FYAu93W" />
+                            <Button text="Meet the Team" link="/team" isNavLink={true}/>
                         </div>
                         <img className="" src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                     </div>
@@ -85,9 +85,9 @@ const Landing = () => {
                         <div className={`flex flex-col justify-start text-left md:pl-36 my-auto`}>
                             <h1 className="font-display-bold text-4xl md:text-6xl text-stardust mb-4 md:mb-12 md:text-balance leading-normal">Empowering Engineers</h1>
                             <h2 className="font-display2 text-white text-md md:text-xl mb-6 md:mb-8">
-                                Our mission is to empower students interested in rocketry, giving them the opportunity to gain valuable hands-on experience in a collaborative environment.
+                                Our mission is to empower students interested in rocketry by providing the opportunity to gain hands-on experience in a collaborative environment.
                             </h2>
-                            <Button text="Meet the Team" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
+                            <Button text="Join Our Discord!" link="https://discord.gg/cC6FYAu93W" />
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,6 @@ const Landing = () => {
                     <h1 className="font-display-bold text-4xl md:text-6xl text-stardust text-balance leading-normal mb-2">Sponsors</h1>
                     <h2 className="font-display2 text-white text-md md:text-xl mb-16"></h2>
                     <div className="flex flex-col mb-8 md:space-x-8 md:flex-row md:items-center md:justify-center bg-dusk ">
-                        {/*PESC, PEPC, BIDC (bechtel), and shreve hall club*/}
                         <a className="w-[200px]" href="https://www.purdueesc.org/">
                             <img className="w-[200px] mx-auto" src="/images/sponsors/PESC_logo-color.png"></img>
                         </a>
