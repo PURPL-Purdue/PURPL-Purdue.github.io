@@ -1,5 +1,7 @@
 # PURPL-Purdue.github.io
 
+Official website of the Purdue Undergraduate Rocket Propulsion Laboratory.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
