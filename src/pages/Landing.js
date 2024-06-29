@@ -39,68 +39,69 @@ const Landing = () => {
 
     return (
         <div>
-        <div className="relative h-screen md:min-h-[900px] bg-cover object-none bg-DSC01166-background">
-            <div className=" bg-gradient-to-r from-dusk/90 to-orion/30 h-screen md:min-h-[900px] ">
+        <div className="relative min-h-[700px] lg:min-h-[900px] bg-cover object-none bg-DSC01166-background">
+            <div className=" bg-gradient-to-r from-dusk/90 to-orion/30 min-h-[700px] lg:min-h-[900px] ">
             {/*<div className="bg-orion/40 h-screen">
                 <div className="bg-dusk/50 h-screen">*/}
-                    <div className="absolute left-12 bottom-12 pr-12 md:left-36 md:bottom-24">
+                    <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
-                            <h1 className="font-display-bold text-4xl md:text-6xl text-stardust">
-                                <span className="text-5xl md:text-7xl text-stardust mr-2">P</span>urdue<br></br>
-                                <span className="text-5xl md:text-7xl  text-stardust mr-2">U</span>ndergraduate<br></br>
-                                <span className="text-5xl md:text-7xl  text-stardust mr-2">R</span>ocket<br></br>
-                                <span className="text-5xl md:text-7xl  text-stardust mr-2">P</span>ropulsion<br></br>
-                                <span className="text-5xl md:text-7xl  text-stardust mr-2">L</span>aboratory
+                            <h1 className="font-display-bold text-4xl md:text-5xl lg:text-6xl text-stardust">
+                                <span className="text-5xl md:text-6xl lg:text-7xl text-stardust mr-2">P</span>urdue<br></br>
+                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">U</span>ndergraduate<br></br>
+                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">R</span>ocket<br></br>
+                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">P</span>ropulsion<br></br>
+                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">L</span>aboratory
                             </h1>
                             <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-xl">
                                 We are the premier group of rocket nerds at Purdue University.<br></br>
-                                Scroll down to learn more about our work.
+                                Scroll down to learn more about us.
                             </h2>
                         </div>
                     </div>
             </div>
         </div>
         <div className="flex flex-col w-full bg-dusk">
-            <div className="ml-8 mr-8 md:mx-36 md:min-width-[1200px]">
-                <div className="w-full h-full py-8 md:py-16 mt-8 md:mt-10">
-                    <div className="flex flex-col space-y-8 md:grid md:grid-cols-2 md:items-center w-full md:justify-items-end">  
-                        <div className={`flex flex-col  justify-start text-left md:pr-36 my-auto`}>
-                            <h1 className="font-display-bold text-4xl md:text-6xl text-stardust mb-4 md:mb-12 md:text-balance leading-normal">We Blow Things Up</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 md:mb-8">
+            <div className="mx-8 md:mx-12 lg:mx-36 lg:min-width-[1200px] pt-8 lg:pt-16">
+                <DividerLine/>
+                <div className="w-full h-full py-8 lg:py-16">
+                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
+                        <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
+                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 lg:text-balance leading-normal">We Blow Things Up</h1>
+                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8">
                                 We build rockets.
                             </h2>
                             <Button text="Meet the Team" link="/team" isNavLink={true}/>
                         </div>
-                        <img className="" src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
+                        <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                     </div>
                 </div>
                 <DividerLine/>
-                <div className="py-16">
+                <div className="py-8 lg:py-16">
+                    <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
                     <DisplayGrid/>
                 </div>
                 <DividerLine/>
-                <div className="w-full h-full py-8 md:py-16 mt-8 md:mt-10">
-                    <div className="flex flex-col space-y-8 md:grid md:grid-cols-2 md:items-center w-full md:justify-items-end">  
-                        <img className="" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
-                        <div className={`flex flex-col justify-start text-left md:pl-36 my-auto`}>
-                            <h1 className="font-display-bold text-4xl md:text-6xl text-stardust mb-4 md:mb-12 md:text-balance leading-normal">Empowering Engineers</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 md:mb-8">
-                                Our mission is to empower students interested in rocketry by providing the opportunity to gain hands-on experience in a collaborative environment.
+                <div className="w-full h-full py-8 lg:py-16 ">
+                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
+                        <img className="w-min" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
+                        <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
+                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Empowering Engineers</h1>
+                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8">
+                                We empower students interested in rocketry by providing the opportunity to gain hands-on experience in a collaborative environment.
                             </h2>
-                            <Button text="Join Our Discord!" link="https://discord.gg/cC6FYAu93W" />
+                            <Button text="Join Our Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
                         </div>
                     </div>
                 </div>
                 <DividerLine/>
-                <div className="py-16">
-                    <p className="font-display-bold text-6xl text-stardust mb-16 text-balance leading-normal">Upcoming Events</p>
+                <div className="py-8 lg:py-16">
+                    <p className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
                     <Calendar/>
                 </div>
                 <DividerLine/>
-                <div className="py-16">
-                    <h1 className="font-display-bold text-4xl md:text-6xl text-stardust text-balance leading-normal mb-2">Sponsors</h1>
-                    <h2 className="font-display2 text-white text-md md:text-xl mb-16"></h2>
-                    <div className="flex flex-col mb-8 md:space-x-8 md:flex-row md:items-center md:justify-center bg-dusk ">
+                <div className="py-8 lg:py-16">
+                    <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
+                    <div className="flex flex-row overflow-x-auto mb-4 lg:mb-8 space-x-2 lg:space-x-8 items-center justify-center bg-dusk ">
                         <a className="w-[200px]" href="https://www.purdueesc.org/">
                             <img className="w-[200px] mx-auto" src="/images/sponsors/PESC_logo-color.png"></img>
                         </a>
