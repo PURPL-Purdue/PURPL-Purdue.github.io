@@ -78,9 +78,11 @@ const Header = () => {
         const [activeDropdown, setActiveDropdown] = useState(null);
 
         return (
-                <div className={"fixed top-0 left-0 w-full h-28 z-10 flex items-end justify-end px-36 " + 
-                        (scrollPosition > 150 ? "bg-dusk shadow-md shadow-black " : "bg-transparent ")}
+                <div className={"fixed top-0 left-0 w-full h-28 z-10 flex items-end justify-end px-36 bg-dusk "}
                 >
+                        <div className="fixed top-28 left-0 w-full h-2 bg-gradient-to-b from-black to-transparent">
+
+                        </div>
                         <Link className="h-10 mr-auto mb-6" to="/"><img className="h-10 mr-auto mb-3" src="/PURPL_wordmark_white.png" alt="PURPL logo"></img></Link>
 
                         <div className="content-fill mb-6 mr-10 space-x-6">

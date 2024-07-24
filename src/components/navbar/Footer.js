@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="w-full bg-dusk flex flex-col md:flex-row items-end justify-start px-8 md:px-16 pt-8 md:pt-12 shadow-md-top shadow-black">
             <div className="mb-8 mr-auto">
-                <p className="text-stardust font-display text-left">Purdue Undergraduate Rocket Propulsion Laboratory</p>
+                <p className="text-stardust font-display text-left">Purdue Undergraduate Rocket Propulsion Lab</p>
                 <p className="text-stardust font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
                 <div className="flex flex-row text-stardust space-x-2 align-middle mt-3">
                     {
@@ -13,12 +13,12 @@ const Footer = () => {
                     <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                         <FaYoutube className="hover:text-white" size={24} />
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    */
+                    <a href="https://www.instagram.com/purpl_purdue" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="hover:text-white" size={24} />
                     </a>
-                    */
                     }
-                    <a href="mailto:purpl@outlook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:purpl.purdue@gmail.com" target="_blank" rel="noopener noreferrer">
                         <FaRegEnvelope className=" hover:text-white" size={24} />
                     </a>
                     {/*

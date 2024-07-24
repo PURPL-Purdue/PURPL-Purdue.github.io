@@ -50,10 +50,10 @@ const Landing = () => {
                                 <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">U</span>ndergraduate<br></br>
                                 <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">R</span>ocket<br></br>
                                 <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">P</span>ropulsion<br></br>
-                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">L</span>aboratory
+                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">L</span>ab
                             </h1>
                             <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-xl">
-                                We are the premier group of rocket nerds at Purdue University.<br></br>
+                                We are a group of rocket nerds at Purdue University.<br></br>
                                 Scroll down to learn more about us.
                             </h2>
                         </div>
@@ -66,9 +66,9 @@ const Landing = () => {
                 <div className="w-full h-full py-8 lg:py-16">
                     <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
                         <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
-                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 lg:text-balance leading-normal">We Blow Things Up</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8">
-                                We build rockets.
+                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">We Make Hardware</h1>
+                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
+                                We build rocket engines. Check out the projects tab to see what we're cooking up.
                             </h2>
                             <Button text="Meet the Team" link="/team" isNavLink={true}/>
                         </div>
@@ -85,9 +85,9 @@ const Landing = () => {
                     <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
                         <img className="w-min" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
                         <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
-                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Empowering Engineers</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8">
-                                We empower students interested in rocketry by providing the opportunity to gain hands-on experience in a collaborative environment.
+                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-loose">Empowering Engineers</h1>
+                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
+                                We empower students interested in propulsion by providing the opportunity to gain hands-on experience in a collaborative environment.
                             </h2>
                             <Button text="Join Our Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
                         </div>
@@ -101,22 +101,24 @@ const Landing = () => {
                 <DividerLine/>
                 <div className="py-8 lg:py-16">
                     <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
-                    <div className="flex flex-row overflow-x-auto mb-4 lg:mb-8 space-x-2 lg:space-x-8 items-center justify-center bg-dusk ">
-                        <a className="w-[200px]" href="https://www.purdueesc.org/">
-                            <img className="w-[200px] mx-auto" src="/images/sponsors/PESC_logo-color.png"></img>
-                        </a>
-                        <a className="w-[200px]" href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
-                            <img className="w-[120px] mx-auto" src="/images/sponsors/pepc_logo.jpg"></img>
-                        </a>
-                        <a className="w-[200px]" href="https://web.ics.purdue.edu/~shreve/">
-                            <img className="w-[150px] mx-auto" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
-                        </a>
-                        <a className="w-[200px]" href="https://www.purdue.edu/bidc/">
-                            <img className="w-[150px] mx-auto" src="/images/sponsors/bechtel-imag.jpg"></img>
-                        </a>
+                    <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
+                        <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-2 lg:space-x-8 items-center bg-white w-min mx-auto justify-center ">
+                            <a className="w-[100px] md:w-[200px] lg:w-[200px] py-2" href="https://www.purdueesc.org/">
+                                <img className="mx-auto" src="/images/sponsors/PESC_logo-color.png"></img>
+                            </a>
+                            <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
+                                <img className="mx-auto" src="/images/sponsors/pepc_logo.jpg"></img>
+                            </a>
+                            <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
+                                <img className="mx-4" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
+                            </a>
+                            <a className="w-[100px] md:w-[200px] lg:w-[200px] py-2" href="https://www.purdue.edu/bidc/">
+                                <img className="w-[150px] mx-auto" src="/images/sponsors/bechtel-imag.jpg"></img>
+                            </a>
+                        </div>
                     </div>
                     <h2 className="font-display2 text-white text-md md:text-xl">
-                    Want to sponsor us? Email us at <a className="underline" href="mailto:purpl@outlook.com">purpl@outlook.com</a>.<br></br>
+                    Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>
                     We would love your support!</h2>
                 </div>
             </div>

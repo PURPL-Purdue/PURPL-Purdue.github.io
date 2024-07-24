@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
@@ -18,7 +18,7 @@ import Donate from './pages/Donate';
 import Contact from './pages/Contact';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
