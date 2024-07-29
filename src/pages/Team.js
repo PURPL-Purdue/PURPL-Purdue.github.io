@@ -4,7 +4,7 @@ import Profile from '../components/team/Profile';
 
 function Team() {
 
-  const tempProfilePic = "images/pattern_1.jpg";
+  const tempProfilePic = "images/team/pattern_1.jpg";
   const data = {
       major_exec: [
           {

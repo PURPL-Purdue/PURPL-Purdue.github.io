@@ -5,17 +5,28 @@ import {
 } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import reportWebVitals from './reportWebVitals';
+
+// General pages
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import Team from './pages/Team';
 import Landing from './pages/Landing';
-import reportWebVitals from './reportWebVitals';
-import TeenyK from './pages/projects/TeenyK';
-import Torch from './pages/projects/Torch';
-import Mug from './pages/projects/Mug';
-import Crate from './pages/projects/Crate';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
+
+// Facilities pages components
+import Crate from './pages/facilities/Crate';
+import TeenyK from './pages/facilities/TeenyK';
+
+// Project pages
+import ElectricPropulsion from './pages/projects/ElectricPropulsion';
+import Mug from './pages/projects/Mug';
+import NitromethaneEngine from './pages/projects/NitromethaneEngine';
+import Swirlers from './pages/projects/Swirlers';
+import Torch from './pages/projects/Torch';
+import Turbojet from './pages/projects/Turbojet';
+import Turbopump from './pages/projects/Turbopump';
 
 
 const router = createHashRouter([
@@ -32,21 +43,42 @@ const router = createHashRouter([
         path: "team",
         element: <Team />,
       },
+      // project pages
       {
-        path: "torch",
-        element: <Torch />,
-      },
-      {
-        path: "teeny_k",
-        element: <TeenyK />,
+        path: "electric-propulsion",
+        element: <ElectricPropulsion />
       },
       {
         path: "mug",
-        element: <Mug />,
+        element: <Mug />
+      },
+      {
+        path: "nitromethane-engine",
+        element: <NitromethaneEngine />
+      },
+      {
+        path: "swirlers",
+        element: <Swirlers />
+      },
+      {
+        path: "torch",
+        element: <Torch />
+      },
+      {
+        path: "turbojet",
+        element: <Turbojet />
+      },
+      {
+        path: "turbopump",
+        element: <Turbopump />,
       },
       {
         path: "crate",
         element: <Crate />,
+      },
+      {
+        path: "teeny-k",
+        element: <TeenyK />,
       },
       {
         path: "donate",

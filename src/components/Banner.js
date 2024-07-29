@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Create a boilerplate react component. Create a banner with an image and centered heading text
 const Banner = ({title, blurb}) => {
 
     return (
