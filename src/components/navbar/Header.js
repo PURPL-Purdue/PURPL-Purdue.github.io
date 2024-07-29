@@ -12,49 +12,84 @@ const Header = () => {
                 {
                         name: "home",
                         link: "",
+                        id: 0,
                         children: [],
                 },
                 {
                         name: "projects",
                         link: "#", // don't link anywhere
+                        id: 1,
                         children: [
                                 {
-                                        name: "the mug",
-                                        link: "mug",
+                                        name: "turbopump",
+                                        link: "turbopump",
+                                        id: 0,
+                                },
+                                {
+                                        name: "electric propulsion",
+                                        link: "electric-propulsion",
+                                        id: 1,
+                                },
+                                {
+                                        name: "turbojet",
+                                        link: "turbojet",
+                                        id: 2,
+                                },
+                                {
+                                        name: "nitromethane engine",
+                                        link: "nitromethane-engine",
+                                        id: 3,
                                 },
                                 {
                                         name: "torch",
                                         link: "torch",
+                                        id: 4,
                                 },
-                        ]
+                                {
+                                        name: "the mug",
+                                        link: "mug",
+                                        id: 5,
+                                },
+                                {
+                                        name: "swirlers",
+                                        link: "swirlers",
+                                        id: 6,
+                                },
+                        ],
                 },
                 {
                         name: "facilities",
                         link: "#",
+                        id: 2,
                         children: [
                                 {
                                         name: "teeny k",
-                                        link: "teeny_k",
+                                        link: "teeny-k",
+                                        id: 0,
                                 },
                                 {
                                         name: "the crate",
                                         link: "crate",
+                                        id: 1,
                                 }
                         ],
                 },
                 {
                         name: "team",
                         link: "team",
+                        id: 3,
                         children: [],
                 },
                 {
                         name: "donate",
                         link: "donate",
+                        id: 4,
                         children: [],
                 },
                 {
                         name: "contact",
                         link: "contact",
+                        id: 5,
                         children: [],
                 },
         ];
@@ -89,6 +124,7 @@ const Header = () => {
                                 {navLinks.map((navLink) => {
                                         return (
                                                 <div className="inline-block"
+                                                        key={navLink.id} 
                                                         onHover={() => setActiveDropdown(navLink.name)}
                                                         onMouseEnter={() => setActiveDropdown(navLink.name)}
                                                         onMouseLeave={() => setActiveDropdown(null)}
@@ -98,7 +134,8 @@ const Header = () => {
                                                                         + (activeDropdown === navLink.name ? "text-stardust border-b-2 border-stardust" : "text-white")
                                                                 }>{navLink.name}</div>
                                                                 :
-                                                                <NavLink to={navLink.link}
+                                                                <NavLink
+                                                                        to={navLink.link}
                                                                         className={({ isActive, isPending }) =>
                                                                                 ("font-display2 text-lg hover:text-stardust w-32 inline-block " +
                                                                                         ((isActive || (activeDropdown === navLink.name))

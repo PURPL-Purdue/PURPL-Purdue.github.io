@@ -12,12 +12,13 @@ const Dropdown = ( {isActiveProp, menuItems} ) => {
         <div className="absolute">
             {isActive && (
                 // Use the menuItems prop to render the dropdown items
-                <div className={"flex flex-col space-y-1 text-left bg-white opacity-80 text-stardust pt-3 w-32 font-display2 text-lg text-dusk p-2 pl-3"}>
+                <div className={"flex flex-col space-y-1 text-left  bg-white opacity-80 text-stardust pt-3 min-w-32 font-display2 text-lg  p-2 pl-3 pr-6"}>
                     {menuItems.map((menuItem) => {
                         return (
                             <NavLink
+                                key={menuItem.id}
                                 to={menuItem.link}
-                                className={"font-display2 text-lg hover:text-stardust w-32 inline-block"}
+                                className={"font-display2 text-lg hover:text-stardust min-w-32 inline-block"}
                                 style={{ transition: "transform 0.3s" }}
                                 onMouseEnter={(e) => {
                                     e.target.style.transform = "translateX(5px)";

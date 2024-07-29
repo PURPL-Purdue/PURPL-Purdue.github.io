@@ -1,12 +1,12 @@
 import React from 'react';
 import ComingSoon from '../ComingSoon';
 
-const TeenyK = () => {
+const NitromethaneEngine = () => {
     return (
         <div>
-            <ComingSoon/>
+            <ComingSoon/>        
         </div>
     );
 };
 
-export default TeenyK;
+export default NitromethaneEngine;
