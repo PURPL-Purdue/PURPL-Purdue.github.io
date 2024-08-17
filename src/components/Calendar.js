@@ -11,13 +11,13 @@ function Calendar() {
     ];
 
     return (
-        <div className="flex flex-row md:grid md:grid-cols-2 max-w-[450px] lg:max-w-[600px] mx-auto w-full rounded-sm overflow-x-auto">
+        <div className="flex flex-row max-w-[450px] lg:max-w-[680px] mx-auto w-full rounded-sm overflow-x-auto">
             {values.map((item, index) => (
                 <div className="mx-auto">
-                    <div className="w-48 md:w-52 lg:w-64 shrink-0 flex flex-col justify-center px-6 lg:py-6 py-4 border-2 border-stardust" key={index}>
+                    <div className="w-48 md:w-52 lg:w-80 shrink-0 flex flex-col justify-center px-6 lg:py-6 py-4 border-2 border-stardust" key={index}>
                         <p className="font-display2 text-lg md:text-xl lg:text-2xl text-white lg:mb-2">{item.month}</p>
                         <p className="font-display-bold text-2xl md:text-4xl lg:text-5xl text-stardust mb-4 lg:mb-6">{item.day}</p>
-                        <p className="font-display2-bold h-[2lh] text-lg lg:text-3xl text-white mb-4 lg:mb-8">{item.title}</p>
+                        <p className="font-display h-[15h] text-xl lg:text-4xl text-white mb-4 lg:mb-8">{item.title}</p>
                         <DividerLine/>
                         <div className="flex flex-row items-center mt-4 space-x-2">
                             <img src="/images/purple_pin.png" alt="purple pin icon" className="w-4 h-4"/>
