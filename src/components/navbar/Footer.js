@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         <div className="w-full bg-dusk flex flex-col md:flex-row items-end justify-start px-8 md:px-16 pt-8 md:pt-12 shadow-md-top shadow-black">
             <div className="mb-8 mr-auto">
-                <p className="text-white font-display text-left">Purdue Undergraduate Rocket Propulsion Lab</p>
-                <p className="text-white font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
-                <div className="flex flex-row text-boilermaker-gold space-x-2 align-middle mt-3">
+                <p className="text-stardust font-display text-left">Purdue Undergraduate Rocket Propulsion Lab</p>
+                <p className="text-stardust font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
+                <div className="flex flex-row text-stardust space-x-2 align-middle mt-3">
                     {
                         /*
                     <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">

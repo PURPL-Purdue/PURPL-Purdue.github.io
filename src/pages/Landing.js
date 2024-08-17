@@ -65,10 +65,17 @@ const Landing = () => {
                 <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
                     <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
                         <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">We Make Hardware</h1>
-                        <h2 className="font-display2 text-white text-md md:text-xl mb-4 lg:mb-6 text-balance">
-                            We build rocket engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br><span className="font-display-bold text-xl md:text-3xl">Want to get involved?</span>
+                        <h2 className="font-display2 text-white text-md md:text-xl text-balance">
+                            We build rocket engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
                         </h2>
-                        <Button text="Join Our Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
+                        <div className="min-w-64 bg-gradient-to-br from-old-gold to-stardust from-30%">
+                            <div className="flex flex-col m-1 items-center h-fit">
+                                <div className="w-full bg-dusk p-6 pr-0">
+                                    <h2 className="font-display-bold text-white text-xl md:text-3xl">Want to get involved?</h2>
+                                    <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Attend our callout on August 26th in PHYS 114 at 6pm!</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                 </div>
@@ -95,7 +102,6 @@ const Landing = () => {
             <div className="py-8 lg:py-16">
                 <p className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Featured Events</p>
                 <Calendar/>
-                <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Join <a href="https://discord.gg/cC6FYAu93W" className="text-jet-gray hover:text-stardust underline decoration-solid ">our discord</a> to get the latest updates!</h2>
             </div>
             <DividerLine/>
             <div className="py-8 lg:py-16">
