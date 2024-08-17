@@ -61,21 +61,24 @@ const Landing = () => {
             </div>
         </div>
         <ContentWrapper>  
-            <div className="w-full h-full pt-8 pb-8 lg:pb-16">
+            <div className="w-full h-full">
+                <div className="h-full flex flex-row pb-8 lg:pb-16">
+                    <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
+                        <div className="flex flex-col m-1 items-center h-fit">
+                            <div className="w-full bg-dusk py-6 px-auto">
+                                <h2 className="font-display-bold text-white text-xl md:text-3xl">Want to get involved?</h2>
+                                <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Attend our callout on August 26th in PHYS 114 at 6pm!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
-                    <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
-                        <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">We Make Hardware</h1>
+                
+                    <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
+                        <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust text-balance leading-normal pb-3">We Make Hardware</h1>
                         <h2 className="font-display2 text-white text-md md:text-xl text-balance">
                             We build rocket engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
                         </h2>
-                        <div className="min-w-64 bg-gradient-to-br from-old-gold to-stardust from-30%">
-                            <div className="flex flex-col m-1 items-center h-fit">
-                                <div className="w-full bg-dusk p-6 pr-0">
-                                    <h2 className="font-display-bold text-white text-xl md:text-3xl">Want to get involved?</h2>
-                                    <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Attend our callout on August 26th in PHYS 114 at 6pm!</h2>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                 </div>

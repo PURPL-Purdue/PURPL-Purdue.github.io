@@ -47,7 +47,6 @@ const TeenyK = () => {
                         </p>
                     </div>
                     <div>
-                        <h2 className="font-display-bold text-3xl md:text-4xl  text-stardust text-left mb-8">Wireframe</h2>
                         <img src={image} alt={imageAlt} className="w-[150px] md:w-[200px]"></img>
                     </div>
                     
