@@ -1,7 +1,7 @@
 import React from 'react';
 import ComingSoon from '../ComingSoon';
 
-const NitromethaneEngine = () => {
+const TestBed = () => {
     return (
         <div>
             <ComingSoon/>        
@@ -9,4 +9,4 @@ const NitromethaneEngine = () => {
     );
 };
 
-export default NitromethaneEngine;
+export default TestBed;

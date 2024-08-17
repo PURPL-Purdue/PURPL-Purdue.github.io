@@ -30,6 +30,7 @@ module.exports = {
         'boilermaker-gold': '#CFB991',
       },
       backgroundImage: {
+        'gradient-background': "url('../public/images/background_1.jpg')",
         'mountains-background': "url('../public/images/background_2.jpg')",
         'DSC01166-background': "url('../public/images/DSC01166.jpg')",
       },

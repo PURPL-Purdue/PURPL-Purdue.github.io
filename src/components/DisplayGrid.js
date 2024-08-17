@@ -2,7 +2,7 @@ import React from 'react';
 
 function DisplayGrid() {
     const values = [
-        { number: "9", text: "projects" },
+        { number: "7", text: "projects" },
         { number: "50+", text: "members" },
         { number: "7+", text: "majors" },
         { number: "2024", text: "founded" },

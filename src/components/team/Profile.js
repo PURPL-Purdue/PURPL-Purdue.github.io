@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
 const Profile = (props) => {
     const { imagePath, name, title, email, linkedin } = props;
     return (
-        <div className="min-w-64 bg-gradient-to-b from-stardust to-blue-500">
+        <div className="min-w-64 bg-gradient-to-b from-stardust to-old-gold">
         <div className="flex flex-col m-1 items-center h-fit">
             <div className="w-full py-4 mb-1 bg-dusk">
                 <img className={`rounded-full drop-shadow-2xl mx-auto w-36`} src={imagePath} alt="Profile Image" />

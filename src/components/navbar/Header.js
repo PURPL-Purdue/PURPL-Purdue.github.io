@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 
-
-function classNames(...classes) {
-        return classes.join(' ')
-    }
-
 const Header = () => {
         const navLinks = [
                 {
@@ -36,23 +31,23 @@ const Header = () => {
                                         id: 2,
                                 },
                                 {
-                                        name: "nitromethane engine",
-                                        link: "nitromethane-engine",
-                                        id: 3,
-                                },
-                                {
                                         name: "torch",
                                         link: "torch",
-                                        id: 4,
+                                        id: 3,
                                 },
                                 {
                                         name: "the mug",
                                         link: "mug",
-                                        id: 5,
-                                },
+                                        id: 4,
+                                },/*
                                 {
                                         name: "swirlers",
                                         link: "swirlers",
+                                        id: 5,
+                                },*/
+                                {
+                                        name: "testbed",
+                                        link: "testbed",
                                         id: 6,
                                 },
                         ],
@@ -66,12 +61,12 @@ const Header = () => {
                                         name: "teeny k",
                                         link: "teeny-k",
                                         id: 0,
-                                },
+                                },/*
                                 {
                                         name: "the crate",
                                         link: "crate",
                                         id: 1,
-                                }
+                                }*/
                         ],
                 },
                 {
@@ -94,33 +89,85 @@ const Header = () => {
                 },
         ];
 
-
-        // Use scroll position to set transparency of the navbar
-        const [scrollPosition, setScrollPosition] = React.useState(0);
-
-        useEffect(() => {
-                const handleScroll = () => {
-                        setScrollPosition(window.scrollY);
-                };
-
-                window.addEventListener("scroll", handleScroll);
-
-                return () => {
-                        window.removeEventListener("scroll", handleScroll);
-                };
-        }, []);
-
         const [activeDropdown, setActiveDropdown] = useState(null);
 
+        const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+        const [mobileActiveDropdowns, setMobileActiveDropdowns] = useState(Array(navLinks.length).fill(false));
+
+        const toggleMobileActiveDropdown = (id) => { 
+                console.log(mobileActiveDropdowns);  
+                console.log(mobileActiveDropdowns[id]); 
+                const updatedDropdowns = [...mobileActiveDropdowns];
+                updatedDropdowns[id] = !updatedDropdowns[id];
+                setMobileActiveDropdowns(updatedDropdowns);
+        };
+
         return (
-                <div className={"fixed top-0 left-0 w-full h-28 z-10 flex items-end justify-end px-36 bg-dusk "}
+        <div className="">
+                <div id="hamburger-menu" className="lg:invisible bg-dusk flex flex-row">
+                        <NavLink to="" className="mr-auto ml-8 mt-5"><img src="/images/logo/PURPL_white_logo.png" className="h-8 ">
+                        </img></NavLink>
+                        <button class="navbar-burger flex items-center text-white hover:text-stardust p-6" onClick={(e) => {
+                                setMobileMenuOpen(true);
+                        }}>
+                                <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20">
+                                        <title>Mobile menu</title>
+                                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                                </svg>
+                        </button>                
+                </div>
+                <div class={`navbar-menu relative z-50 lg:hidden ${mobileMenuOpen ? "visible" : "hidden"}`}>
+		<div class="navbar-backdrop fixed inset-0 bg-dusk opacity-25"></div>
+                        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-2/3 max-w-sm py-6 px-6 bg-dusk border-r border-white overflow-y-auto">
+                                <div class="flex items-center mb-8">
+                                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                                                <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
+                                        </svg>
+                                        </a>
+                                        <button id="navbar-close" onClick={(e) => {
+                                                setMobileMenuOpen(false);
+                                        }}>
+                                                <svg class="h-6 w-6 text-white cursor-pointer hover:text-stardust" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                        </button>
+                                </div>
+                                <div>
+                                        <ul>{
+                                        navLinks.map((navLink) => {
+                                                return (<li key={navLink.id} class="mb-1 text-left">
+                                                        {
+                                                                (navLink.children.length > 0) ?
+                                                                <p class="font-display block p-3 text-sm text-white hover:text-stardust rounded hover:cursor-pointer" onClick={(e) => { toggleMobileActiveDropdown(navLink.id)}}>{navLink.name} <span className="text-white">{(mobileActiveDropdowns[navLink.id] ? " v" : " >")}</span></p> :
+                                                                <NavLink to={navLink.link} className="font-display block p-3 text-sm text-white hover:text-stardust" >{navLink.name}</NavLink>
+
+                                                        }
+                                                        <ul className={`lg:hidden ${mobileActiveDropdowns[navLink.id] ? "visible" : "hidden"}`}>
+                                                              {
+                                                                (navLink.children).map((navChild) => {
+                                                                        return (<NavLink                        
+                                                                                to={navChild.link}
+                                                                                className="font-display block p-2 ml-4 text-sm text-white hover:text-stardust"
+                                                                        >{navChild.name}</NavLink>)
+                                                                })}
+                                                        </ul>
+
+                                                        </li>
+                                                )})
+                                        }</ul>
+                                </div>
+                        </nav>
+                </div>
+                <div id="standard-navbar" className={"invisible lg:visible fixed top-0 w-full h-28 z-10  px-16 bg-dusk "}
                 >
+                        <div className="mx-auto inset-x-0 w-full flex items-end justify-end fixed top-0 h-28 px-8 max-w-[1300px]">
                         <div className="fixed top-28 left-0 w-full h-2 bg-gradient-to-b from-black to-transparent">
 
                         </div>
-                        <Link className="h-10 mr-auto mb-6" to="/"><img className="h-10 mr-auto mb-3" src="/PURPL_wordmark_white.png" alt="PURPL logo"></img></Link>
+                        <NavLink className="h-12 mr-auto mb-6" to=""><img className="h-12 mr-auto mb-3" src="/images/logo/PURPL_white_logo.png" alt="PURPL logo"></img></NavLink>
 
-                        <div className="content-fill mb-6 mr-10 space-x-6">
+                        <div className="content-fill mb-6 space-x-4">
                                 {navLinks.map((navLink) => {
                                         return (
                                                 <div className="inline-block"
@@ -130,14 +177,14 @@ const Header = () => {
                                                         onMouseLeave={() => setActiveDropdown(null)}
                                                 >
                                                         {(navLink.link === "#") ?
-                                                                <div className={"font-display2 text-lg hover:text-stardust hover:border-b-2 hover:border-stardust w-32 inline-block "
+                                                                <div className={"font-display text-xl hover:text-stardust hover:border-b-2 hover:border-stardust w-32 inline-block "
                                                                         + (activeDropdown === navLink.name ? "text-stardust border-b-2 border-stardust" : "text-white")
                                                                 }>{navLink.name}</div>
                                                                 :
                                                                 <NavLink
                                                                         to={navLink.link}
                                                                         className={({ isActive, isPending }) =>
-                                                                                ("font-display2 text-lg hover:text-stardust w-32 inline-block " +
+                                                                                ("font-display text-xl hover:text-stardust w-32 inline-block " +
                                                                                         ((isActive || (activeDropdown === navLink.name))
                                                                                                 ? "text-stardust border-b-2 border-stardust"
                                                                                                 : isPending
@@ -152,7 +199,9 @@ const Header = () => {
                                         );
                                 })}
                         </div>
+                        </div>
                 </div>
+        </div>
         );
 };
 
