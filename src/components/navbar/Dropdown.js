@@ -18,7 +18,7 @@ const Dropdown = ( {isActiveProp, menuItems} ) => {
                             <NavLink
                                 key={menuItem.id}
                                 to={menuItem.link}
-                                className={"font-display2 text-lg hover:text-stardust min-w-32 inline-block"}
+                                className={"font-display text-xl hover:text-stardust min-w-32 inline-block"}
                                 style={{ transition: "transform 0.3s" }}
                                 onMouseEnter={(e) => {
                                     e.target.style.transform = "translateX(5px)";

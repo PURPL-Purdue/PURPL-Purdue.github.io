@@ -21,7 +21,7 @@ const Button = (props) => {
  
     if (isNavLink) {
         return(
-            <NavLink to={link} className={`font-display2 text-sm md:text-xl ${isHovered ? "text-white" : "text-white"}`}>
+            <NavLink to={link} className={`font-display text-sm md:text-xl ${isHovered ? "text-white" : "text-white"}`}>
             <button className={buttonClassName}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -34,7 +34,7 @@ const Button = (props) => {
     }
     else {
 return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className={`font-display2 text-sm md:text-xl ${isHovered ? "text-white" : "text-white"}`}>
+    <a href={link} target="_blank" rel="noopener noreferrer" className={`font-display text-sm md:text-xl ${isHovered ? "text-white" : "text-white"}`}>
         <button
         className={buttonClassName}
         onMouseEnter={handleMouseEnter}

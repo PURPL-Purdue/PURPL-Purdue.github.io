@@ -5,6 +5,9 @@ import DividerLine from '../components/shared/DividerLine.js';
 import DisplayGrid from '../components/DisplayGrid.js';
 import Calendar from '../components/Calendar.js';
 import Button from '../components/shared/button/Button.js';
+import ContentWrapper from '../components/shared/ContentWrapper.js';
+import PageWrapper from '../components/shared/PageWrapper.js';
+import {H1,H4} from '../components/shared/styles/H.js';
 
 const Landing = () => {
     const images = [
@@ -38,92 +41,87 @@ const Landing = () => {
     ];
 
     return (
-        <div>
-        <div className="relative min-h-[700px] lg:min-h-[900px] bg-cover object-none bg-DSC01166-background">
-            <div className=" bg-gradient-to-r from-dusk/90 to-orion/30 min-h-[700px] lg:min-h-[900px] ">
+        <PageWrapper>
+        <div className="relative h-[450px] md:min-h-[700px] lg:min-h-[800px] bg-cover object-none bg-gradient-background">
+        <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
+            <div className="h-[450px] md:min-h-[700px] lg:min-h-[800px] ">
             {/*<div className="bg-orion/40 h-screen">
                 <div className="bg-dusk/50 h-screen">*/}
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
-                            <h1 className="font-display-bold text-4xl md:text-5xl lg:text-6xl text-stardust">
-                                <span className="text-5xl md:text-6xl lg:text-7xl text-stardust mr-2">P</span>urdue<br></br>
-                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">U</span>ndergraduate<br></br>
-                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">R</span>ocket<br></br>
-                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">P</span>ropulsion<br></br>
-                                <span className="text-5xl md:text-6xl lg:text-7xl  text-stardust mr-2">L</span>ab
-                            </h1>
-                            <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-xl">
-                                We are a group of rocket nerds at Purdue University.<br></br>
+                            <img className="h-[120px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
+                            <h2 className="font-display-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
+                                Rocket science engineered by students.
+                            </h2>
+                            <h2 className="font-display text-white mt-4 text-md md:text-3xl">
                                 Scroll down to learn more about us.
                             </h2>
                         </div>
                     </div>
             </div>
         </div>
-        <div className="flex flex-col w-full bg-dusk">
-            <div className="mx-8 md:mx-12 lg:mx-36 lg:min-width-[1200px] pt-8 lg:pt-16">
-                <DividerLine/>
-                <div className="w-full h-full py-8 lg:py-16">
-                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
-                        <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
-                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">We Make Hardware</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
-                                We build rocket engines. Check out the projects tab to see what we're cooking up.
-                            </h2>
-                            <Button text="Meet the Team" link="/team" isNavLink={true}/>
-                        </div>
-                        <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
+        <ContentWrapper>  
+            <div className="w-full h-full pt-8 pb-8 lg:pb-16">
+                <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
+                    <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto`}>
+                        <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">We Make Hardware</h1>
+                        <h2 className="font-display2 text-white text-md md:text-xl mb-4 lg:mb-6 text-balance">
+                            We build rocket engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br><span className="font-display-bold text-xl md:text-3xl">Want to get involved?</span>
+                        </h2>
+                        <Button text="Join Our Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
                     </div>
-                </div>
-                <DividerLine/>
-                <div className="py-8 lg:py-16">
-                    <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
-                    <DisplayGrid/>
-                </div>
-                <DividerLine/>
-                <div className="w-full h-full py-8 lg:py-16 ">
-                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
-                        <img className="w-min" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
-                        <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
-                            <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-loose">Empowering Engineers</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
-                                We empower students interested in propulsion by providing the opportunity to gain hands-on experience in a collaborative environment.
-                            </h2>
-                            <Button text="Join Our Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false}/>
-                        </div>
-                    </div>
-                </div>
-                <DividerLine/>
-                <div className="py-8 lg:py-16">
-                    <p className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
-                    <Calendar/>
-                </div>
-                <DividerLine/>
-                <div className="py-8 lg:py-16">
-                    <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
-                    <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
-                        <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-2 lg:space-x-8 items-center bg-white w-min mx-auto justify-center ">
-                            <a className="w-[100px] md:w-[200px] lg:w-[200px] py-2" href="https://www.purdueesc.org/">
-                                <img className="mx-auto" src="/images/sponsors/PESC_logo-color.png"></img>
-                            </a>
-                            <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
-                                <img className="mx-auto" src="/images/sponsors/pepc_logo.jpg"></img>
-                            </a>
-                            <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
-                                <img className="mx-4" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
-                            </a>
-                            <a className="w-[100px] md:w-[200px] lg:w-[200px] py-2" href="https://www.purdue.edu/bidc/">
-                                <img className="w-[150px] mx-auto" src="/images/sponsors/bechtel-imag.jpg"></img>
-                            </a>
-                        </div>
-                    </div>
-                    <h2 className="font-display2 text-white text-md md:text-xl">
-                    Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>
-                    We would love your support!</h2>
+                    <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                 </div>
             </div>
-        </div>   
-        </div>     
+            <DividerLine/>
+            <div className="py-8 lg:py-16">
+                <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
+                <DisplayGrid/>
+            </div>
+            <DividerLine/>
+            <div className="w-full h-full py-8 lg:py-16 ">
+                <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
+                    <img className="w-min" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
+                    <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
+                        <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
+                        <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
+                            We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
+                        </h2>
+                        <Button text="Meet the Team" link="/team" isNavLink={true}/>
+                    </div>
+                </div>
+            </div>
+            <DividerLine/>
+            <div className="py-8 lg:py-16">
+                <p className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Featured Events</p>
+                <Calendar/>
+                <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Join <a href="https://discord.gg/cC6FYAu93W" className="text-jet-gray hover:text-stardust underline decoration-solid ">our discord</a> to get the latest updates!</h2>
+            </div>
+            <DividerLine/>
+            <div className="py-8 lg:py-16">
+                <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
+                <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
+                    <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-4 px-2 lg:space-x-8 lg:px-8 items-center bg-jet-grey w-min h-min mx-auto justify-center ">
+                        <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://www.purdueesc.org/">
+                            <img className="mx-auto" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
+                        </a>
+                        <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
+                            <img className="mx-auto" src="/images/sponsors/pepc_logo_transparent.png"></img>
+                        </a>
+                        <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
+                            <img className="mx-3" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
+                        </a>
+                        <a className="w-[120px] md:w-[150px] lg:w-[150px] py-2" href="https://www.purdue.edu/bidc/">
+                            <img className="mr-4 my-auto" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
+                        </a>
+                    </div>
+                </div>
+                <h2 className="font-display text-white text-lg md:text-2xl">
+                Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>
+                We would love your support!</h2>
+            </div>
+        </ContentWrapper>
+        </PageWrapper>
     );
 };
 

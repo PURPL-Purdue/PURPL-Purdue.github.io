@@ -1,36 +1,55 @@
+
 import React from 'react';
-import ProjectBanner from '../../components/projects/ProjectBanner';
 import ProjectTable from '../../components/projects/ProjectTable';
+import ContentWrapper from '../../components/shared/ContentWrapper';
+import PageWrapper from '../../components/shared/PageWrapper';
+import Banner from '../../components/shared/banner/Banner';
 
 const TeenyK = () => {
-    
     const details = {
-        // "Description: This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. It is low cost and simple, and accommodates for PURPL’s early project needs.
         "Thrust rating": "100lbf",
         "Propellants": "GOX, hydrocarbons",
         "Manufacturing method": "Machined/bolted from aluminum extrusions",
         "Dimensions (L x W x H)": "24in x 14in x 12in"
-    };
+    };    
+
+    const blurb="This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. It is low-cost and simple, and accommodates for PURPL's early project needs. The torch allows for the test subject to be ignited multiple times in one session without having to replace a cartridge or external ignition source as is required with pyrotechnic ignition systems.";
+    const image="/images/projects/stand_technical_drawing.png" ;
+    const imageAlt="Teeny-k technical drawing";
 
     return (
-        <div className="bg-dusk pb-16">
-            <ProjectBanner 
-                title={"Teeny-K"} 
-                image="/images/projects/stand_technical_drawing.jpg" 
-                imageAlt="Stylized technical drawing of the test stand teeny-k" 
-                backgroundImage="/images/DSC01166.jpg" 
-                blurb={"This test stand was designed to accommodate small engine and torch igniter projects up to 100lbf."}/>
-
-            <div className="px-4 w-full md:px-16 lg:px-32 mt-12 md:mt-16">
-                <h2 className="font-display-bold text-3xl md:text-4xl lg:text-5xl text-stardust text-left">Description</h2>
-                <p className="text-white font-display2 text-left text-md md:text-lg mt-6 text-balance">
-                    This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. It is low-cost and simple, and accommodates for PURPL's early project needs.
-                </p>
+        
+        <PageWrapper>
+            <Banner>
+            <div className="bg-gradient-background bg-cover bg-center  h-full ">
+            <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
+                <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-36">
+                    <div className="flex flex-col text-center">
+                    <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
+                        Teeny-K
+                    </h1>
+                    </div>                
+                </div>
             </div>
-            <div className="flex flex-row flex-wrap mt-12 md:mt-16 px-4 w-full md:px-16 lg:px-32 ">
-                <ProjectTable table={details} title="Overview" />
-            </div>
-        </div>
+        </Banner>
+            <ContentWrapper>
+                <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
+                    <div>
+                        <h2 className="font-display-bold text-3xl md:text-4xl text-stardust text-left mb-8">Description</h2>
+                        <p className="font-display2 text-white text-lg text-left text-balance">
+                            {blurb}
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl md:text-4xl  text-stardust text-left mb-8">Wireframe</h2>
+                        <img src={image} alt={imageAlt} className="w-[150px] md:w-[200px]"></img>
+                    </div>
+                    
+                    <ProjectTable table={details} title="Overview" />
+                </div>
+            </ContentWrapper>
+        </PageWrapper>
+        
     );
 };
 
