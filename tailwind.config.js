@@ -30,9 +30,9 @@ module.exports = {
         'boilermaker-gold': '#CFB991',
       },
       backgroundImage: {
-        'gradient-background': "url('../public/images/background_1.jpg')",
-        'mountains-background': "url('../public/images/background_2.jpg')",
-        'DSC01166-background': "url('../public/images/DSC01166.jpg')",
+        'gradient-background': "url('../public/images/backgrounds/background_1.jpg')",
+        'mountains-background': "url('../public/images/backgrounds/background_2.jpg')",
+        'DSC01166-background': "url('../public/images/DSC/DSC01166.jpg')",
       },
       boxShadow: {
         'lg-top': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',

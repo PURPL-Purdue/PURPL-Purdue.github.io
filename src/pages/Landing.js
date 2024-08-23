@@ -51,10 +51,7 @@ const Landing = () => {
                         <div className="flex flex-col text-left pt-auto">
                             <img className="h-[120px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
                             <h2 className="font-display-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
-                                Rocket science engineered by students.
-                            </h2>
-                            <h2 className="font-display text-white mt-4 text-md md:text-3xl">
-                                Scroll down to learn more about us.
+                                Rocket science propelled by students.
                             </h2>
                         </div>
                     </div>
@@ -80,7 +77,7 @@ const Landing = () => {
                             We build rocket engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
                         </h2>
                     </div>
-                    <img src="/images/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
+                    <img src="/images/DSC/DSC01123.jpg" alt="Student points at a sketch on whiteboard"/>
                 </div>
             </div>
             <DividerLine/>
@@ -91,7 +88,7 @@ const Landing = () => {
             <DividerLine/>
             <div className="w-full h-full py-8 lg:py-16 ">
                 <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">  
-                    <img className="w-min" src="/images/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
+                    <img className="w-min" src="/images/DSC/DSC01151.jpg" alt="Two students in discussion look at a laptop screen"/>
                     <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
                         <h1 className="font-display-bold text-4xl lg:text-6xl text-stardust mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
                         <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">

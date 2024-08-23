@@ -19,7 +19,7 @@ const TestBed = () => {
         "Diameter": "4in"
     };
 
-    const image = "/images/projects/mug_technical_drawing.png";
+    const image = "/images/projects/wireframes/mug_technical_drawing.png"; // no wireframe yet
     const imageAlt = "Mug technical drawing";
 
     return (

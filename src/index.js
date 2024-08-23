@@ -22,7 +22,6 @@ import TeenyK from './pages/facilities/TeenyK';
 // Project pages
 import ElectricPropulsion from './pages/projects/ElectricPropulsion';
 import Mug from './pages/projects/Mug';
-import Swirlers from './pages/projects/Swirlers';
 import Torch from './pages/projects/Torch';
 import Turbojet from './pages/projects/Turbojet';
 import Turbopump from './pages/projects/Turbopump';
@@ -51,10 +50,6 @@ const router = createHashRouter([
       {
         path: "mug",
         element: <Mug />
-      },
-      {
-        path: "swirlers",
-        element: <Swirlers />
       },
       {
         path: "testbed",

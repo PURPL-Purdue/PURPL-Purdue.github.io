@@ -39,12 +39,7 @@ const Header = () => {
                                         name: "the mug",
                                         link: "mug",
                                         id: 4,
-                                },/*
-                                {
-                                        name: "swirlers",
-                                        link: "swirlers",
-                                        id: 5,
-                                },*/
+                                },
                                 {
                                         name: "testbed",
                                         link: "testbed",

@@ -4,7 +4,7 @@ const ImageBanner = ({children}) => {
 
     return (
         <div className={`relative h-[500px] md:h-[650px] bg-cover object-none `} >
-            <div className="bg-[url('../public/images/background_1.jpg')]  
+            <div className="bg-gradient-background  
             z-10
                bg-cover
             bg-no-repeat

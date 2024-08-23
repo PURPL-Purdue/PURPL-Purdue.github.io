@@ -131,7 +131,7 @@ function Team() {
                 </div>
             </div>
         </Banner>
-      <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Major Executive Board</p>
+      <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Executive Board</p>
       <div className="flex flex-col px-4 md:px-16 lg:px-32 bg-dusk mt-8">
         <div className="flex flex-row mx-auto overflow-x-auto w-full md:flex-wrap gap-x-4 md:gap-x-12 md:gap-y-8 md:justify-center">
           {data.major_exec.map((profile, index) => (
@@ -145,7 +145,7 @@ function Team() {
             />
           ))}
         </div>
-        <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Executive Board</p>
+        <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Administrative Board</p>
         <div className="flex flex-row mx-auto overflow-x-auto w-full md:flex-wrap gap-x-4 md:gap-x-12 md:gap-y-8 md:justify-center">
           {data.admin_exec.map((profile, index) => (
             <Profile

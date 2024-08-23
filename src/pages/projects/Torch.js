@@ -18,7 +18,7 @@ const Torch = () => {
         "Length": "2.2in",
     };
     
-    const image="/images/projects/torch_hero.png";
+    const image="/images/projects/wireframes/torch_ignitor_8_17_24.png";
     const imageAlt="Torch technical drawing";
 
     return (
