@@ -7,7 +7,7 @@ import Banner from '../../components/shared/banner/Banner';
 import Button from '../../components/shared/button/Button';
 
 const TestBed = () => {
-    const title = "Test Bed";
+    const title = "Testbed";
     const subtitle = "250lbf bipropellant engine designed to be a reliable platform to test different subsystems.";
 
     const details = {
@@ -19,7 +19,7 @@ const TestBed = () => {
         "Diameter": "4in"
     };
 
-    const image = "/images/projects/mug_technical_drawing.png";
+    const image = "/images/projects/wireframes/mug_technical_drawing.png"; // no wireframe yet
     const imageAlt = "Mug technical drawing";
 
     return (

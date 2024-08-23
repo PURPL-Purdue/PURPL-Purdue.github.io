@@ -17,7 +17,7 @@ const TeenyK = () => {
     };    
 
     const blurb="This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. It is low-cost and simple, and accommodates for PURPL's early project needs. The torch allows for the test subject to be ignited multiple times in one session without having to replace a cartridge or external ignition source as is required with pyrotechnic ignition systems.";
-    const image="/images/projects/stand_technical_drawing.png" ;
+    const image="/images/projects/wireframes/test_stand_8_17_24.png" ;
     const imageAlt="Teeny-k technical drawing";
 
     return (
@@ -47,7 +47,7 @@ const TeenyK = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={image} alt={imageAlt} className="w-[150px] md:w-[200px]"></img>
+                        <img src={image} alt={imageAlt} className="w-[250px] md:w-[360px]"></img>
                     </div>
                     
                     <ProjectTable table={details} title="Overview" />

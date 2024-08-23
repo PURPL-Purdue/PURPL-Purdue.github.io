@@ -18,8 +18,8 @@ const Turbojet = () => {
         "Diameter": "4in"
     };
 
-    const image = "/images/projects/mug_technical_drawing.png";
-    const imageAlt = "Mug technical drawing";
+    const image = "/images/projects/wireframes/turbojet_8_17_24.png";
+    const imageAlt = "Turbojet technical drawing";
 
     return (
         <PageWrapper>
@@ -38,10 +38,17 @@ const Turbojet = () => {
                     </div>
                 </div>
             </Banner>
-            <div className="flex flex-col w-full h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
-                <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
-                <Button text="Return Home" link="/" isNavLink={true} />
-            </div>
+            <ContentWrapper>
+                <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
+                    <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
+                        <img src={image} alt={imageAlt} className="mx-auto w-[200px] md:w-[350px]"></img>
+                        <div className="flex flex-col lg:mr-auto h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
+                            <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
+                            <Button text="Return Home" link="/" isNavLink={true} />
+                        </div>
+                    </div>
+                </div>
+            </ContentWrapper>
         </PageWrapper>
     );
 };
