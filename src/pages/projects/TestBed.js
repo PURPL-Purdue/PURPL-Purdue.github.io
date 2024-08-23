@@ -7,7 +7,7 @@ import Banner from '../../components/shared/banner/Banner';
 import Button from '../../components/shared/button/Button';
 
 const TestBed = () => {
-    const title = "Test Bed";
+    const title = "Testbed";
     const subtitle = "250lbf bipropellant engine designed to be a reliable platform to test different subsystems.";
 
     const details = {

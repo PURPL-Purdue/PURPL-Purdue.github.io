@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaYoutube, FaLinkedinIn, FaRegEnvelope, FaFacebookSquare } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaLinkedinIn, FaRegEnvelope, FaFacebookSquare, FaDiscord } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -14,10 +14,13 @@ const Footer = () => {
                         <FaYoutube className="hover:text-white" size={24} />
                     </a>
                     */
+                    }
+                    <a href="https://discord.gg/cC6FYAu93W" target="_blank" rel="noopener noreferrer">
+                    <FaDiscord className=" hover:text-white" size={24} />
+                    </a>
                     <a href="https://www.instagram.com/purpl_purdue" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="hover:text-white" size={24} />
                     </a>
-                    }
                     <a href="mailto:purpl.purdue@gmail.com" target="_blank" rel="noopener noreferrer">
                         <FaRegEnvelope className=" hover:text-white" size={24} />
                     </a>
