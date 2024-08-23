@@ -72,7 +72,7 @@ const Landing = () => {
                     </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-16 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
-                            <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust text-balance leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
+                            <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
                             <h2 className="font-display2 text-white text-md md:text-xl text-balance">
                                 We design, build, and test engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
                             </h2>
