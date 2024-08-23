@@ -65,6 +65,7 @@ const Landing = () => {
                                 <div className="w-full bg-dusk py-6 px-auto">
                                     <h2 className="font-display-bold text-white text-xl md:text-3xl">Want to get involved?</h2>
                                     <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Attend our callout on August 26th in PHYS 114 at 6pm!</h2>
+                                    <h2 className="font-display text-white text-lg md:text-2xl mt-1 lg:mt-1 text-balance">Join our <a className="underline hover:text-stardust" href="https://discord.gg/cC6FYAu93W">Discord</a> to stay up-to-date.</h2>
                                 </div>
                             </div>
                         </div>
