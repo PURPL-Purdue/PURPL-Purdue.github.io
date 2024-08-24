@@ -2,7 +2,7 @@ import React from 'react';
 
 const DividerLine = () => {
     return (
-        <div className="border-solid border-2 border-stardust w-full">
+        <div className="h-1 w-full bg-gradient-to-r from-boilermaker-gold to-stardust">
         </div>
     );
 };

@@ -42,14 +42,14 @@ const Landing = () => {
 
     return (
         <PageWrapper>
-            <div className="relative h-[450px] md:min-h-[700px] lg:min-h-[800px] bg-cover object-none bg-gradient-background">
+            <div className="relative h-[380px] md:min-h-[700px] lg:min-h-[800px] bg-cover object-none bg-gradient-background">
                 <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                 <div className="h-[450px] md:min-h-[700px] lg:min-h-[800px] ">
                     {/*<div className="bg-orion/40 h-screen">
                 <div className="bg-dusk/50 h-screen">*/}
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
-                            <img className="h-[120px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
+                            <img className="h-[100px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
                             <h2 className="font-display-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
                                 Rocket science propelled by students.
                             </h2>
