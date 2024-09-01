@@ -102,7 +102,7 @@ const Landing = () => {
                 <div className="py-8 lg:py-16">
                     <p className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Featured Events</p>
                     <Calendar />
-                    <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[300px] lg:w-[800px] lg:h-[400px] mx-auto mt-4 lg:mt-8" frameborder="0" scrolling="no">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[300px] lg:w-[800px] lg:h-[400px] mx-auto mt-4 lg:mt-8" >
                     </iframe>
 
                 </div>
