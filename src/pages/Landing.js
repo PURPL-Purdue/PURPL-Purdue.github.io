@@ -62,10 +62,9 @@ const Landing = () => {
                     <div className="h-full flex flex-row">
                         <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
                             <div className="flex flex-col m-1 items-center h-fit">
-                                <div className="w-full bg-dusk py-6 px-auto">
-                                    <h2 className="font-display-bold text-white text-xl md:text-3xl">Want to get involved?</h2>
-                                    <h2 className="font-display text-white text-lg md:text-2xl mt-6 lg:mt-8 text-balance">Attend our callout on August 26th in PHYS 114 at 6pm!</h2>
-                                    <h2 className="font-display text-white text-lg md:text-2xl mt-1 lg:mt-1 text-balance">Join our <a className="underline hover:text-stardust" href="https://discord.gg/cC6FYAu93W">Discord</a> to stay up-to-date.</h2>
+                                <div className="w-full bg-dusk py-4 px-auto space-y-1">
+                                    <h2 className="font-display text-white text-lg md:text-2xl text-balance">Thanks to everyone who attended our callout!</h2>
+                                    <h2 className="font-display text-white text-lg md:text-2xl text-balance">Join our <a className="underline hover:text-stardust" href="https://discord.gg/cC6FYAu93W">Discord</a> to stay up-to-date on club activities.</h2>
                                 </div>
                             </div>
                         </div>
@@ -111,17 +110,20 @@ const Landing = () => {
                     <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
                         <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-4 px-2 lg:space-x-8 lg:px-8 items-center bg-jet-grey w-min h-min mx-auto justify-center ">
+                            <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://cfturbo.com/">
+                                <img className="mx-auto" alt="CFturbo sponsor logo" src="/images/sponsors/CFturbo-Logo-RGB-transparent.png"></img>
+                            </a>
                             <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://www.purdueesc.org/">
-                                <img className="mx-auto" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
+                                <img className="mx-auto" alt="PESC sponsor logo" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
                             </a>
                             <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
-                                <img className="mx-auto" src="/images/sponsors/pepc_logo_transparent.png"></img>
+                                <img className="mx-auto" alt="PEPC sponsor logo" src="/images/sponsors/pepc_logo_transparent.png"></img>
                             </a>
                             <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
-                                <img className="mx-3" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
+                                <img className="mx-3" alt="Shrevel Hall Club sponsor mascot" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
                             </a>
                             <a className="w-[120px] md:w-[150px] lg:w-[150px] py-2" href="https://www.purdue.edu/bidc/">
-                                <img className="mr-4 my-auto" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
+                                <img className="mr-4 my-auto" alt="Bechtel Innovation Design Center sponsor logo" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
                             </a>
                         </div>
                     </div>
