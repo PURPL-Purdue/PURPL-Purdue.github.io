@@ -4,9 +4,9 @@ import DividerLine from './shared/DividerLine.js';
 
 function Calendar() {
     const values = [
-        { month: "September", day: "03", title: "General Meeting", loc: "ME 1130", time: "6pm-9pm"},
-        { month: "September", day: "10", title: "General Meeting", loc: "WTHR 172", time: "6pm-9pm"},
-        { month: "September", day: "17", title: "General Meeting", loc: "WTHR 172", time: "6pm-9pm"},
+        { month: "September", day: "03", title: "General Meeting", loc: "ME 1130", time: "6:30pm-9pm"},
+        { month: "September", day: "10", title: "General Meeting", loc: "WTHR 172", time: "6:30pm-9pm"},
+        { month: "September", day: "17", title: "General Meeting", loc: "WTHR 172", time: "6:30pm-9pm"},
     ];
 
     return (
