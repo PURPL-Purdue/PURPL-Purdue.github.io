@@ -69,7 +69,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col space-y-8 py-8 lg:py-16 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
+                    <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
                             <h2 className="font-display2 text-white text-md md:text-xl text-balance">
@@ -80,12 +80,12 @@ const Landing = () => {
                     </div>
                 </div>
                 <DividerLine />
-                <div className="py-8 lg:py-16">
+                <div className="py-8 lg:py-12">
                     <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
                     <DisplayGrid />
                 </div>
                 <DividerLine />
-                <div className="w-full h-full py-8 lg:py-16 ">
+                <div className="w-full h-full py-8 lg:py-12 ">
                     <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <img className="w-min" src="/images/DSC/DSC01120-2_color_graded.jpg" alt="Students stand in front of whiteboard" />
                         <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
@@ -98,15 +98,16 @@ const Landing = () => {
                     </div>
                 </div>
                 <DividerLine />
-                <div className="py-8 lg:py-16">
+                <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Featured Events</p>
                     <Calendar />
-                    <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[300px] lg:w-[800px] lg:h-[400px] mx-auto mt-4 lg:mt-8" >
+                    <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" >
                     </iframe>
+                    <p className="text-white font-display mt-6 text-lg">Can't see the calendar? <a className="hover:text-stardust underline" href="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis">Try this link.</a></p>
 
                 </div>
                 <DividerLine />
-                <div className="py-8 lg:py-16">
+                <div className="py-8 lg:py-12">
                     <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
                         <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-4 px-2 lg:space-x-8 lg:px-8 items-center bg-jet-grey w-min h-min mx-auto justify-center ">
