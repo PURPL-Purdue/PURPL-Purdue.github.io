@@ -10,7 +10,7 @@ function Calendar() {
     ];
 
     return (
-        <div className="flex flex-row max-w-[450px] md:max-w-[600px] lg:max-w-[900px] mx-auto w-full rounded-sm overflow-x-auto">
+        <div className="flex flex-row w-full md:max-w-[800px] lg:max-w-[900px] mx-auto w-full rounded-sm overflow-x-auto">
             {values.map((item, index) => (
                 <div className="mx-auto">
                     <div className="w-48 md:w-52 lg:w-64 shrink-0 flex flex-col justify-center px-6 lg:py-6 py-4 border-2 border-stardust" key={index}>
