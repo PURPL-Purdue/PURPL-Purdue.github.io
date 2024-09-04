@@ -12,16 +12,16 @@ const Torch = () => {
 
     const details = {
         //"Description": "This torch was designed to serve as a repeatable source of ignition for early PURPL projects such as The Mug. The torch allows for the test subject to be ignited multiple times in one session without having to replace a cartridge or external ignition source as is required with pyrotechnic ignition systems.",
-        "Manufacturing method": "3D-printed metal (outsourced)",
-        "Injector type": "Impinging injector",
-        "Propellants": "Ethanol, GOX",
+        "Manufacturing method": "3D-printed 316L Stainless Steel",
+        "Injector type": "Impinging Jet",
+        "Propellants": "Ethanol, GOx",
         "Length": "2.2in",
     };
 
     const image = "/images/projects/wireframes/torch_ignitor_8_17_24.png";
     const imageAlt = "Torch technical drawing";
     const physicalImage = "/images/DSC/DSC01631_color_graded.jpg";
-    const physicalImageAlt = "Image of torch";
+    const physicalImageAlt = "Image of Torch";
 
     return (
 
@@ -35,7 +35,7 @@ const Torch = () => {
                                 Spark Torch Ignitor
                             </h1>
                             <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                Tiny bipropellant rocket engine ignited by a sparkplug.
+                                Tiny gas-liquid rocket engine ignited by a sparkplug.
                             </h2>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const Torch = () => {
                     <div>
                         <h2 className="font-display-bold text-3xl md:text-4xl text-stardust text-left mb-8">Description</h2>
                         <p className="font-display2 text-white text-lg text-left text-balance">
-                            The torch allows for the test subject to be ignited multiple times in one session without having to replace a cartridge or external ignition source as is required with pyrotechnic ignition systems.
+                            Torch igniters allow for repeatable, reliable ignition of larger propulsion systems like The Mug without having to replace a cartridge or external ignition source as is required with pyrotechnic ignition systems. This torch, 3-D printed in metal, will serve as a testbed for developing gas-liquid ignition sysems that can use engine propellants without the need for secondary fluids.
                         </p>
                     </div>
                     <div>
