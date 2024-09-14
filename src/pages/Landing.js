@@ -7,7 +7,7 @@ import Calendar from '../components/Calendar.js';
 import Button from '../components/shared/button/Button.js';
 import ContentWrapper from '../components/shared/ContentWrapper.js';
 import PageWrapper from '../components/shared/PageWrapper.js';
-import { H1, H4 } from '../components/shared/styles/H.js';
+import Sponsors from '../components/Sponsors.js';
 
 const Landing = () => {
     const images = [
@@ -45,8 +45,6 @@ const Landing = () => {
             <div className="relative h-[380px] md:min-h-[700px] lg:min-h-[800px] bg-cover object-none bg-gradient-background">
                 <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                 <div className="h-[450px] md:min-h-[700px] lg:min-h-[800px] ">
-                    {/*<div className="bg-orion/40 h-screen">
-                <div className="bg-dusk/50 h-screen">*/}
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
                             <img className="h-[100px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
@@ -110,23 +108,7 @@ const Landing = () => {
                 <div className="py-8 lg:py-12">
                     <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
-                        <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-4 px-2 lg:space-x-8 lg:px-8 items-center bg-jet-grey w-min h-min mx-auto justify-center ">
-                            <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://cfturbo.com/">
-                                <img className="mx-auto" alt="CFturbo sponsor logo" src="/images/sponsors/CFturbo-Logo-RGB-transparent.png"></img>
-                            </a>
-                            <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://www.purdueesc.org/">
-                                <img className="mx-auto" alt="PESC sponsor logo" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
-                            </a>
-                            <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
-                                <img className="mx-auto" alt="PEPC sponsor logo" src="/images/sponsors/pepc_logo_transparent.png"></img>
-                            </a>
-                            <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
-                                <img className="mx-3" alt="Shrevel Hall Club sponsor mascot" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
-                            </a>
-                            <a className="w-[120px] md:w-[150px] lg:w-[150px] py-2" href="https://www.purdue.edu/bidc/">
-                                <img className="mr-4 my-auto" alt="Bechtel Innovation Design Center sponsor logo" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
-                            </a>
-                        </div>
+                        <Sponsors />
                     </div>
                     <h2 className="font-display text-white text-lg md:text-2xl">
                         Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>

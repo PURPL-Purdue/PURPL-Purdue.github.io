@@ -1,9 +1,6 @@
 import Banner from '../components/shared/banner/Banner';
-import DividerLine from '../components/shared/DividerLine';
 import PageWrapper from '../components/shared/PageWrapper';
 import Profile from '../components/team/Profile';
-import GradientBanner from '../components/shared/banner/GradientBanner';
-import { H1, H4 } from '../components/shared/styles/H';
 
 function Team() {
 
