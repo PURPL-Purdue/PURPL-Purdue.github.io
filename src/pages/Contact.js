@@ -2,7 +2,7 @@ import React from 'react';
 import PageWrapper from '../components/shared/PageWrapper';
 import Banner from '../components/shared/banner/Banner';
 import ContentWrapper from '../components/shared/ContentWrapper';
-import Button from '../components/shared/button/Button';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     const image = "/images/DSC/DSC01647_color_graded.jpg";
