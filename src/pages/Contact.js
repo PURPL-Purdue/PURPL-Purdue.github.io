@@ -22,7 +22,6 @@ const Contact = () => {
                 </div>
             </Banner>
             <ContentWrapper>
-                <ContactForm />
                 <div className="lg:w-[950px] flex flex-col w-full space-y-8 md:space-y-10">
                     <div className="flex flex-col mr-auto space-y-2 lg:space-y-4">
                         <div className="flex flex-col h-full text-stardust font-display text-lg md:text-2xl text-left my-4 lg:my-8 space-y-2 md:space-y-6">
