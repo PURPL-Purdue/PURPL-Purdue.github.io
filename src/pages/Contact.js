@@ -2,7 +2,7 @@ import React from 'react';
 import PageWrapper from '../components/shared/PageWrapper';
 import Banner from '../components/shared/banner/Banner';
 import ContentWrapper from '../components/shared/ContentWrapper';
-import Button from '../components/shared/button/Button';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     const image = "/images/DSC/DSC01647_color_graded.jpg";
@@ -23,15 +23,27 @@ const Contact = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[950px] flex flex-col w-full space-y-8 md:space-y-10">
-                    <div className="flex flex-col mr-auto space-y-2 lg:space-y-4">
-                        <div className="flex flex-col h-full text-stardust font-display text-lg md:text-2xl text-left my-4 lg:my-8 space-y-2 md:space-y-6">
-                            <p className=""><span className="text-stardust">Email: </span>purpl.purdue@gmail.com</p>
-                            <p className=""><span className="text-stardust">Linkedin: </span>@purpl-purdue</p>
-                            <p className=""><span className="text-stardust">Instagram: </span>@purpl_purdue</p>
-                            <p className=""><span className="text-stardust">Location: </span>Bechtel Innovation Design Center</p>
-                            <p className="">Stay in the loop by joining our <a className="text-white hover:white underline italic" href="https://discord.gg/cC6FYAu93W">Discord</a>.</p>
+                    <div className="flex flex-col items-center space-y-8 md:space-y-14 my-4 lg:my-8 ">
+                        <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
+                            <p className="text-balance">
+                                <span className="">Email: </span>
+                                <a href="mailto:purpl.purdue@gmail.com" className="hover:text-boilermaker-gold underline text-stardust">purpl.purdue@gmail.com</a>
+                                <span>. Linkedin: </span>
+                                <a href="https://www.linkedin.com/company/purpl-purdue/mycompany"
+                                    className="hover:text-boilermaker-gold underline text-stardust">@purpl-purdue
+                                </a>.
+                            </p>
+                            <p className="text-balance">
+                                <span className="">Instagram: </span>
+                                <a href="https://instagram.com/purpl_purdue" className="hover:text-boilermaker-gold underline text-stardust">
+                                    @purpl_purdue
+                                </a>
+                                <span className="">. Location: </span>
+                                <span className="text-stardust">Bechtel Innovation Design Center</span>.
+                            </p>
                         </div>
-                        <img src={image} alt={imageAlt} className="mr-auto w-full max-w-[600px]"></img>
+                        <ContactForm />
+                        <img src={image} alt={imageAlt} className="pt-8 w-full max-w-[600px]"></img>
                     </div>
                 </div>
             </ContentWrapper>
