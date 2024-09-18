@@ -23,7 +23,7 @@ const Contact = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[950px] flex flex-col w-full space-y-8 md:space-y-10">
-                    <div className="flex flex-col items-center space-y-8 md:space-y-14">
+                    <div className="flex flex-col items-center space-y-8 md:space-y-14 my-4 lg:my-8 ">
                         <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
                             <p className="text-balance">
                                 <span className="">Email: </span>
