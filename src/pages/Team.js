@@ -98,10 +98,10 @@ function Team() {
             },
             {
                 imagePath: tempProfilePic,
-                name: "Madeline Taylor",
+                name: "Indrajeet Nair",
                 title: "Electric Propulsion Lead",
-                image1: "DSC03317.jpg",
-                image2: "DSC03319.jpg",
+                image1: "DSC03331.jpg",
+                image2: "DSC03329.jpg",
                 //email: "johndoe@example.com"
             },
             {
