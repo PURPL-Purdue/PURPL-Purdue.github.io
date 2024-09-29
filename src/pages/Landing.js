@@ -97,8 +97,7 @@ const Landing = () => {
                 </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
-                    <p className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Featured Events</p>
-                    <Calendar />
+                    <p className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
                     <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" >
                     </iframe>
                     <p className="text-white font-display mt-6 text-lg">Can't see the calendar? <a className="hover:text-stardust underline" href="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis">Try this link.</a></p>
