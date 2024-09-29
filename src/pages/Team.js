@@ -1,143 +1,13 @@
 import Banner from '../components/shared/banner/Banner';
 import PageWrapper from '../components/shared/PageWrapper';
 import Profile from '../components/team/Profile';
+import SmallerProfile from '../components/team/SmallerProfile.js';
+
+import teamData from '../static/TeamData.js';
 
 function Team() {
-
+    const data = teamData;
     const tempProfilePic = "/images/team/pattern_1.jpg";
-    const imagePath = "/images/team/headshots/original/";
-    const data = {
-        major_exec: [
-            {
-                imagePath: tempProfilePic,
-                name: "Kamon Blong",
-                title: "Co-President",
-                image1: "DSC03351.jpg", // serious
-                image2: "DSC03352.jpg", // smiling
-                //email: "johndoe@example.com",
-                //linkedin: "https://linkedin.com/johndoe"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Madeline Taylor",
-                title: "Co-President",
-                image1: "DSC03317.jpg",
-                image2: "DSC03319.jpg",
-                // email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Parth Karande",
-                title: "Treasurer",
-                image1: "DSC03341.jpg",
-                image2: "DSC03337.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Alejandro Diaz Contreras",
-                title: "Project Director",
-                image1: "DSC03294.jpg",
-                image2: "DSC03293.jpg",
-                // email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Jonah Nobel",
-                title: "Test Stand Director",
-                image1: "DSC03301.jpg",
-                image2: "DSC03297.jpg",
-                //email: "johndoe@example.com"
-            }
-        ],
-        admin_exec: [
-            {
-                imagePath: tempProfilePic,
-                name: "Jack Bolster",
-                title: "Marketing Chair",
-                // email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Alina Li",
-                title: "Webmaster",
-                image1: "DSC03309.jpg",
-                image2: "DSC03308.jpg",
-                // email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "James Nida",
-                title: "IT Chair",
-                image1: "DSC03289.jpg",
-                image2: "DSC03287.jpg",
-                //email: "johndoe@example.com"
-            },
-        ],
-        project_leads: [
-            {
-                imagePath: tempProfilePic,
-                name: "Kamon Blong",
-                title: "Turbopump Co-Lead",
-                image1: "DSC03351.jpg",
-                image2: "DSC03352.jpg",
-                //email: "johndoe@example.com"
-            }, {
-                imagePath: tempProfilePic,
-                name: "Forrest Lim",
-                title: "Turbopump Co-Lead",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Josh Hyatt",
-                title: "Turbojet Lead",
-                image1: "DSC03305.jpg",
-                image2: "DSC03304.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Indrajeet Nair",
-                title: "Electric Propulsion Lead",
-                image1: "DSC03331.jpg",
-                image2: "DSC03329.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Dominik Sloup",
-                title: "Testbed Co-Lead",
-                image1: "DSC03285.jpg",
-                image2: "DSC03283.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "James Nida",
-                title: "Testbed Co-Lead",
-                image1: "DSC03289.jpg",
-                image2: "DSC03287.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Vincent Fazio",
-                title: "Teeny-K Lead",
-                image1: "DSC03335.jpg",
-                image2: "DSC03334.jpg",
-                //email: "johndoe@example.com"
-            },
-            {
-                imagePath: tempProfilePic,
-                name: "Alejandro Diaz Contreras",
-                title: "HMB Lead",
-                image1: "DSC03294.jpg",
-                image2: "DSC03293.jpg",
-                //email: "johndoe@example.com"
-            },
-        ]
-    }
 
     return (
         <PageWrapper>
@@ -162,7 +32,7 @@ function Team() {
                     {data.major_exec.map((profile, index) => (
                         <Profile
                             key={index}
-                            imagePath={profile.image2 ? (imagePath + profile.image2) : tempProfilePic}
+                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -173,9 +43,9 @@ function Team() {
                 <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Project Leads</p>
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
                     {data.project_leads.map((profile, index) => (
-                        <Profile
+                        <SmallerProfile
                             key={index}
-                            imagePath={profile.image2 ? (imagePath + profile.image2) : tempProfilePic}
+                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -186,9 +56,9 @@ function Team() {
                 <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Administrative Board</p>
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
                     {data.admin_exec.map((profile, index) => (
-                        <Profile
+                        <SmallerProfile
                             key={index}
-                            imagePath={profile.image2 ? (imagePath + profile.image2) : tempProfilePic}
+                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
