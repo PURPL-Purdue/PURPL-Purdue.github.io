@@ -10,7 +10,7 @@ const teamData = {
             image1: "DSC03351.jpg", // serious
             image2: "DSC03352.jpg", // smiling
             //email: "johndoe@example.com",
-            linkedin: "https://www.linkedin.com/in/kamon-blong"
+            linkedin: "https://www.linkedin.com/in/kamon-blong",
         },
         {
             name: "Madeline Taylor",
@@ -18,7 +18,7 @@ const teamData = {
             image1: "DSC03317.jpg",
             image2: "DSC03319.jpg",
             // email: "johndoe@example.com"
-            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
+            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1",
         },
         {
             name: "Parth Karande",
@@ -26,7 +26,7 @@ const teamData = {
             image1: "DSC03341.jpg",
             image2: "DSC03337.jpg",
             //email: "johndoe@example.com"
-            linkedin: "https://linkedin.com/in/parth-karande/"
+            linkedin: "https://linkedin.com/in/parth-karande/",
         },
         {
             name: "Alejandro Diaz Contreras",
@@ -34,7 +34,6 @@ const teamData = {
             image1: "DSC03294.jpg",
             image2: "DSC03293.jpg",
             // email: "johndoe@example.com"
-            linkedin: "https://www.linkedin.com/in/alejandrodico/"
         },
         {
             name: "Jonah Nobel",
@@ -48,11 +47,13 @@ const teamData = {
         {
             name: "Jack Bolster",
             title: "Marketing Chair",
+            linkedin: "https://www.linkedin.com/in/jack-bolster-9a9a38155/",
             // email: "johndoe@example.com"
         },
         {
             name: "Hannah Shapiro",
             title: "Social Media Chair",
+            linkedin: "www.linkedin.com/in/hannahshapiro03",
             // email: "johndoe@example.com"
         },
         {
@@ -70,6 +71,7 @@ const teamData = {
         {
             name: "Josue Rodas",
             title: "Event Coordinator",
+            linkedin: "https://linkedin.com/in/josue-rodas-7b004524a/",
             // email: "johndoe@example.com"
         },
         {
@@ -82,13 +84,15 @@ const teamData = {
         {
             name: "James Nida",
             title: "IT Chair",
-            image1: "DSC03289.jpg",
             image2: "DSC03287.jpg",
+            image1: "DSC03289.jpg",
+            linkedin: "https://www.linkedin.com/in/james-nida-/",
             //email: "johndoe@example.com"
         },
         {
             name: "Sean O'Rourke",
             title: "Merchandise Chair",
+            linkedin: "https://www.linkedin.com/in/sean-orourke-158888325/",
             //email: "johndoe@example.com"
         },
         {
@@ -97,6 +101,7 @@ const teamData = {
             title: "Education Chair",
             image1: "DSC03351.jpg",
             image2: "DSC03352.jpg",
+            linkedin: "https://www.linkedin.com/in/kamon-blong/",
             //email: "johndoe@example.com"
         },
         {
@@ -105,12 +110,14 @@ const teamData = {
             title: "Physical Activity Coordinator",
             image1: "DSC03325.jpg",
             image2: "DSC03321.jpg",
+            linkedin: "www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
             //email: "johndoe@example.com"
         },
         {
 
             name: "Jack Woods",
             title: "Safety Officer",
+            linkedin: "https://www.linkedin.com/in/jack--woods",
             //email: "johndoe@example.com"
         },
     ],
@@ -121,6 +128,7 @@ const teamData = {
             title: "Turbopump Co-Lead",
             image1: "DSC03351.jpg",
             image2: "DSC03352.jpg",
+            linkedin: "https://www.linkedin.com/in/kamon-blong/",
             //email: "johndoe@example.com"
         }, {
 
@@ -150,6 +158,7 @@ const teamData = {
             title: "Testbed Co-Lead",
             image1: "DSC03285.jpg",
             image2: "DSC03283.jpg",
+            linkedin: "https://www.linkedin.com/in/dominik-sloup-2ba20a2a7/",
             //email: "johndoe@example.com"
         },
         {
@@ -158,6 +167,7 @@ const teamData = {
             title: "Testbed Co-Lead",
             image1: "DSC03289.jpg",
             image2: "DSC03287.jpg",
+            linkedin: "https://www.linkedin.com/in/james-nida-/",
             //email: "johndoe@example.com"
         },
         {
