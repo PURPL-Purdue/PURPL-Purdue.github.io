@@ -10,7 +10,7 @@ const teamData = {
             image1: "DSC03351.jpg", // serious
             image2: "DSC03352.jpg", // smiling
             //email: "johndoe@example.com",
-            //linkedin: "https://linkedin.com/johndoe"
+            linkedin: "https://www.linkedin.com/in/kamon-blong"
         },
         {
             name: "Madeline Taylor",
@@ -18,6 +18,7 @@ const teamData = {
             image1: "DSC03317.jpg",
             image2: "DSC03319.jpg",
             // email: "johndoe@example.com"
+            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
         },
         {
             name: "Parth Karande",
@@ -25,6 +26,7 @@ const teamData = {
             image1: "DSC03341.jpg",
             image2: "DSC03337.jpg",
             //email: "johndoe@example.com"
+            linkedin: "https://linkedin.com/in/parth-karande/"
         },
         {
             name: "Alejandro Diaz Contreras",
@@ -32,6 +34,7 @@ const teamData = {
             image1: "DSC03294.jpg",
             image2: "DSC03293.jpg",
             // email: "johndoe@example.com"
+            linkedin: "https://www.linkedin.com/in/alejandrodico/"
         },
         {
             name: "Jonah Nobel",
@@ -39,6 +42,7 @@ const teamData = {
             image1: "DSC03301.jpg",
             image2: "DSC03297.jpg",
             //email: "johndoe@example.com"
+    
         }
     ],
     admin_exec: [
