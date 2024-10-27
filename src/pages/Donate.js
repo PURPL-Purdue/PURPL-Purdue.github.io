@@ -28,7 +28,7 @@ const Donate = () => {
                         <div className="flex flex-col w-full h-full text-white font-display text-lg md:text-xl text-left my-4 lg:my-8 space-y-8 md:space-y-14">
                             <div className="flex flex-col space-y-1 md:space-y-2 pb-2 md:pb-4 text-center">
                                 <p className="">Want to support our club? We'd love to hear from you!</p>
-                                <p className="">Email us at <a href="mailto:purpl.purdue@gmail.com" className="text-stardust">purpl.purdue@gmail.com</a> or use the form below.</p>
+                                <p className="">Email us at <a href="mailto:purplspc@purdue.edu" className="text-stardust">purplspc@purdue.edu</a> or use the form below.</p>
                             </div>
                             <ContactForm />
                             <div className="flex flex-col space-y-2 md:space-y-4 w-full text-center">

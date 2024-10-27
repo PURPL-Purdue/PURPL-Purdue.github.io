@@ -27,7 +27,7 @@ const Contact = () => {
                         <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
                             <p className="text-balance">
                                 <span className="">Email: </span>
-                                <a href="mailto:purpl.purdue@gmail.com" className="hover:text-boilermaker-gold underline text-stardust">purpl.purdue@gmail.com</a>
+                                <a href="mailto:purplspc@purdue.edu" className="hover:text-boilermaker-gold underline text-stardust">purplspc@purdue.edu</a>
                                 <span>. Linkedin: </span>
                                 <a href="https://www.linkedin.com/company/purpl-purdue/mycompany"
                                     className="hover:text-boilermaker-gold underline text-stardust">@purpl-purdue
