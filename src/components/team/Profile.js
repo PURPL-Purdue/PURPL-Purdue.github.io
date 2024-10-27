@@ -21,8 +21,8 @@ const Profile = (props) => {
                     </a> :
                     <span></span>}
                     {linkedin ? 
-                        <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
-                            <FaLinkedinIn className="email-icon fill-white hover:fill-stardust" />
+                        <a href= {`${linkedin}`} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedinIn className="text-white hover:text-stardust" size={24} />
                         </a> :
                         <span></span>}
                 </div>

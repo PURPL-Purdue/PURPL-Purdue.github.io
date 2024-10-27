@@ -21,7 +21,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/purpl_purdue" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="hover:text-white" size={24} />
                     </a>
-                    <a href="mailto:purpl.purdue@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:purplspc@purdue.edu" target="_blank" rel="noopener noreferrer">
                         <FaRegEnvelope className=" hover:text-white" size={24} />
                     </a>
                     {/*
