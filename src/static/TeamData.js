@@ -42,7 +42,6 @@ const teamData = {
             image1: "DSC03301.jpg",
             image2: "DSC03297.jpg",
             //email: "johndoe@example.com"
-    
         }
     ],
     admin_exec: [
