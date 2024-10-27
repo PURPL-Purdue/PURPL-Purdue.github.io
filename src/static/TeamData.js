@@ -1,7 +1,7 @@
 import React from 'react';
 
 const tempProfilePic = "/images/team/pattern_1.jpg";
-const imagePath = "/images/team/headshots/original/";
+const imagePath = "/images/team/headshots/resized-500x500/";
 const teamData = {
     major_exec: [
         {
