@@ -2,22 +2,32 @@ import React from 'react';
 
 const Sponsors = () => {
     return (
-        <div className="flex flex-row overflow-x-auto lg:mb-8 space-x-4 px-2 lg:space-x-8 lg:px-8 items-center bg-jet-grey w-min h-min mx-auto justify-center ">
-            <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://cfturbo.com/">
-                <img className="mx-auto" alt="CFturbo sponsor logo" src="/images/sponsors/CFturbo-Logo-RGB-transparent.png"></img>
-            </a>
-            <a className="w-[80px] md:w-[120px] lg:w-[120px] py-2" href="https://www.purdueesc.org/">
-                <img className="mx-auto" alt="PESC sponsor logo" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
-            </a>
-            <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
-                <img className="mx-auto" alt="PEPC sponsor logo" src="/images/sponsors/pepc_logo_transparent.png"></img>
-            </a>
-            <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
-                <img className="mx-3" alt="Shrevel Hall Club sponsor mascot" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
-            </a>
-            <a className="w-[120px] md:w-[150px] lg:w-[150px] py-2" href="https://www.purdue.edu/bidc/">
-                <img className="mr-4 my-auto" alt="Bechtel Innovation Design Center sponsor logo" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
-            </a>
+        <div className="flex flex-col lg:mb-8 space-x-4 lg:space-x-8 lg:px-8 pb-4 pt-6 items-center bg-jet-grey w-min h-min mx-auto justify-center">
+            <div className="flex flex-row items-center justify-center space-x-6">
+                <a className="w-[150px] lg:w-[200px]" href="https://polymaker.com/">
+                    <img className="mx-auto" alt="Polymaker sponsor logo" src="/images/sponsors/Polymaker_Logo_TEAL.png"></img>
+                </a>
+                <a className="w-[120px] lg:w-[150px]" href="https://cfturbo.com/">
+                    <img className="mx-auto" alt="CFturbo sponsor logo" src="/images/sponsors/CFturbo-Logo-RGB-transparent.png"></img>
+                </a>
+                <a className="w-[80px] lg:w-[100px]" href="https://www.purdueesc.org/">
+                    <img className="mx-auto" alt="PESC sponsor logo" src="/images/sponsors/PESC_logo-color-transparent.png"></img>
+                </a>
+            </div>
+            <div className="flex flex-row items-center justify-center space-x-6">
+                <a className="w-[80px] md:w-[110px] lg:w-[120px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
+                    <img className="mx-auto" alt="PEPC sponsor logo" src="/images/sponsors/pepc_logo_transparent.png"></img>
+                </a>
+                <a className="w-[100px] md:w-[140px] lg:w-[150px] py-2" href="https://web.ics.purdue.edu/~shreve/">
+                    <img className="mx-auto" alt="Shreve Hall Club sponsor mascot" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
+                </a>
+                <a className="w-[120px] md:w-[150px] lg:w-[150px] py-2" href="https://www.purdue.edu/bidc/">
+                    <img className="mx-auto my-auto" alt="Bechtel Innovation Design Center sponsor logo" src="/images/sponsors/BIDC_V-Full-RGB.png"></img>
+                </a>
+                <a className="w-[70px] md:w-[80px] lg:w-[90px] pr-4" href="https://www.revolution-bbq.com/">
+                    <img className="mx-auto" alt="Revolution Barbeque sponsor logo" src="/images/sponsors/Revolution-Barbeque-Icon-transparent.png"></img>
+                </a>
+            </div>
         </div>
     );
 };
