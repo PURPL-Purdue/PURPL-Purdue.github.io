@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
 const Profile = (props) => {
     const { imagePath, name, title, email, linkedin } = props;
     return (
-        <div className="w-36 lg:w-48 ">
+        <div className="w-36 lg:w-48 mb-4">
             <div className="flex flex-col items-center h-fit">
                 <div className="bg-gradient-to-b from-stardust to-old-gold w-full h-full">
                     <div className="m-1 bg-dusk">
@@ -23,7 +23,7 @@ const Profile = (props) => {
                         }
                         {linkedin ?
                             <a href={`${linkedin}`} target="_blank" rel="noopener noreferrer">
-                                <FaLinkedinIn className="text-white hover:text-stardust" size={24} />
+                                <FaLinkedinIn className="text-white hover:text-stardust" />
                             </a> :
                             <span></span>
                         }

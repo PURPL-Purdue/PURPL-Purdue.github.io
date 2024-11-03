@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
 const SmallerProfile = (props) => {
     const { imagePath, name, title, email, linkedin } = props;
     return (
-        <div className="w-24 lg:w-36 ">
+        <div className="w-24 lg:w-36 mb-2">
         <div className="flex flex-col items-center h-fit">
             <div className="bg-gradient-to-b from-stardust to-old-gold w-full h-full">
                 <div className="m-1 bg-dusk">
