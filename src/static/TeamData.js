@@ -92,7 +92,7 @@ const teamData = {
         {
             name: "Sean O'Rourke",
             title: "Merchandise Chair",
-            linkedin: "https://www.linkedin.com/in/sean-orourke-158888325/",
+            linkedin: `https://www.linkedin.com/in/sean-o’rourke-158888325/`,
             //email: "johndoe@example.com"
         },
         {
@@ -110,7 +110,7 @@ const teamData = {
             title: "Physical Activity Coordinator",
             image1: "DSC03325.jpg",
             image2: "DSC03321.jpg",
-            linkedin: "www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
+            linkedin: "https://www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
             //email: "johndoe@example.com"
         },
         {
