@@ -9,24 +9,24 @@ const teamData = {
             title: "Co-President",
             image1: "DSC03351.jpg", // serious
             image2: "DSC03352.jpg", // smiling
-            //email: "johndoe@example.com",
-            linkedin: "https://www.linkedin.com/in/kamon-blong",
+            email: "kblong@purdue.edu",
+            linkedin: "https://www.linkedin.com/in/kamon-blong"
         },
         {
             name: "Madeline Taylor",
             title: "Co-President",
             image1: "DSC03317.jpg",
             image2: "DSC03319.jpg",
-            // email: "johndoe@example.com"
-            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1",
+            email: "tayl1138@purdue.edu",
+            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
         },
         {
             name: "Parth Karande",
             title: "Treasurer",
             image1: "DSC03341.jpg",
             image2: "DSC03337.jpg",
-            //email: "johndoe@example.com"
-            linkedin: "https://linkedin.com/in/parth-karande/",
+            email: "pkarande@purdue.edu",
+            linkedin: "https://linkedin.com/in/parth-karande/"
         },
         {
             name: "Alejandro Diaz Contreras",
@@ -92,7 +92,7 @@ const teamData = {
         {
             name: "Sean O'Rourke",
             title: "Merchandise Chair",
-            linkedin: "https://www.linkedin.com/in/sean-orourke-158888325/",
+            linkedin: `https://www.linkedin.com/in/sean-o’rourke-158888325/`,
             //email: "johndoe@example.com"
         },
         {
@@ -110,7 +110,7 @@ const teamData = {
             title: "Physical Activity Coordinator",
             image1: "DSC03325.jpg",
             image2: "DSC03321.jpg",
-            linkedin: "www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
+            linkedin: "https://www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
             //email: "johndoe@example.com"
         },
         {
