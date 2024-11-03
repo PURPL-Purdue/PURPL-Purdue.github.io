@@ -21,7 +21,7 @@ const SmallerProfile = (props) => {
                     </a> :
                     <span></span>}
                     {linkedin ? 
-                        <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+                        <a href= {`${linkedin}`} target="_blank" rel="noopener noreferrer">
                             <FaLinkedinIn className="email-icon fill-white hover:fill-stardust" />
                         </a> :
                         <span></span>}
