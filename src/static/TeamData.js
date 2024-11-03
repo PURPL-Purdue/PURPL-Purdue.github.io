@@ -9,7 +9,7 @@ const teamData = {
             title: "Co-President",
             image1: "DSC03351.jpg", // serious
             image2: "DSC03352.jpg", // smiling
-            //email: "johndoe@example.com",
+            email: "kblong@purdue.edu",
             linkedin: "https://www.linkedin.com/in/kamon-blong"
         },
         {
@@ -17,7 +17,7 @@ const teamData = {
             title: "Co-President",
             image1: "DSC03317.jpg",
             image2: "DSC03319.jpg",
-            // email: "johndoe@example.com"
+            email: "tayl1138@purdue.edu",
             linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
         },
         {
@@ -25,7 +25,7 @@ const teamData = {
             title: "Treasurer",
             image1: "DSC03341.jpg",
             image2: "DSC03337.jpg",
-            //email: "johndoe@example.com"
+            email: "pkarande@purdue.edu",
             linkedin: "https://linkedin.com/in/parth-karande/"
         },
         {
