@@ -68,10 +68,10 @@ const Landing = () => {
                         </div>
                     </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
-                        <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
+                        <div className={`flex flex-col justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
                             <h2 className="font-display text-lg md:text-2xl text-white text-balance">
-                                We design, build, and test engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
+                                We design, build, and test engines. Check out the projects tab to see what we're cooking up.
                             </h2>
                         </div>
                         <img src="/images/DSC/DSC01674_color_graded.jpg" alt="Student works on project" />
@@ -83,10 +83,9 @@ const Landing = () => {
                     <DisplayGrid />
                 </div>
                 <DividerLine />
-                <div className="w-full h-full py-8 lg:py-12 ">
-                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
+                    <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full py-8 lg:py-12 lg:justify-items-end">
                         <img className="w-min" src="/images/DSC/DSC01120-2_color_graded.jpg" alt="Students stand in front of whiteboard" />
-                        <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
+                        <div className={`flex flex-col justify-start text-left lg:pl-24 my-auto`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
                             <h2 className="font-display text-lg md:text-2xl text-white mb-6 lg:mb-8 text-balance">
                                 We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
@@ -94,7 +93,6 @@ const Landing = () => {
                             <Button text="Join the Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false} />
                         </div>
                     </div>
-                </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
