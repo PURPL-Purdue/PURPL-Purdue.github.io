@@ -31,7 +31,7 @@ function Team() {
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
                     {data.major_exec.map((profile, index) => (
                         <Profile
-                            key={index}
+                            key={profile.name}
                             imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}
@@ -44,7 +44,7 @@ function Team() {
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
                     {data.project_leads.map((profile, index) => (
                         <SmallerProfile
-                            key={index}
+                            key={profile.name}
                             imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}
@@ -57,7 +57,7 @@ function Team() {
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
                     {data.admin_exec.map((profile, index) => (
                         <SmallerProfile
-                            key={index}
+                            key={profile.name}
                             imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
                             name={profile.name}
                             title={profile.title}

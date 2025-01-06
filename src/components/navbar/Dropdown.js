@@ -16,7 +16,7 @@ const Dropdown = ( {isActiveProp, menuItems} ) => {
                     {menuItems.map((menuItem) => {
                         return (
                             <NavLink
-                                key={menuItem.id}
+                                key={menuItem.name}
                                 to={menuItem.link}
                                 className={"font-display text-xl hover:text-stardust min-w-32 inline-block"}
                                 style={{ transition: "transform 0.3s" }}
