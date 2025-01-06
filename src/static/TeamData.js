@@ -48,13 +48,13 @@ const teamData = {
             name: "Jack Bolster",
             title: "Marketing Chair",
             linkedin: "https://www.linkedin.com/in/jack-bolster-9a9a38155/",
-            // email: "johndoe@example.com"
+            email: "jbolster@purdue.edu"
         },
         {
             name: "Hannah Shapiro",
             title: "Social Media Chair",
             linkedin: "www.linkedin.com/in/hannahshapiro03",
-            // email: "johndoe@example.com"
+            email: "hannahshapiro03@gmail.com"
         },
         {
             name: "Carter Moody",
@@ -72,7 +72,7 @@ const teamData = {
             name: "Josue Rodas",
             title: "Event Coordinator",
             linkedin: "https://linkedin.com/in/josue-rodas-7b004524a/",
-            // email: "johndoe@example.com"
+            email: "jrodas@purdue.edu"
         },
         {
             name: "Alina Li",
@@ -87,13 +87,13 @@ const teamData = {
             image2: "DSC03287.jpg",
             image1: "DSC03289.jpg",
             linkedin: "https://www.linkedin.com/in/james-nida-/",
-            //email: "johndoe@example.com"
+            email: "nidaj@purdue.edu"
         },
         {
             name: "Sean O'Rourke",
             title: "Merchandise Chair",
             linkedin: `https://www.linkedin.com/in/sean-o’rourke-158888325/`,
-            //email: "johndoe@example.com"
+            email: "orourke6@purdue.edu"
         },
         {
 
@@ -102,7 +102,7 @@ const teamData = {
             image1: "DSC03351.jpg",
             image2: "DSC03352.jpg",
             linkedin: "https://www.linkedin.com/in/kamon-blong/",
-            //email: "johndoe@example.com"
+            email: "kblong@purdue.edu",
         },
         {
 
@@ -111,14 +111,14 @@ const teamData = {
             image1: "DSC03325.jpg",
             image2: "DSC03321.jpg",
             linkedin: "https://www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
-            //email: "johndoe@example.com"
+            email: "jarona@purdue.edu"
         },
         {
 
             name: "Jack Woods",
             title: "Safety Officer",
             linkedin: "https://www.linkedin.com/in/jack--woods",
-            //email: "johndoe@example.com"
+            email: "woods236@purdue.edu"
         },
     ],
     project_leads: [
@@ -129,7 +129,7 @@ const teamData = {
             image1: "DSC03351.jpg",
             image2: "DSC03352.jpg",
             linkedin: "https://www.linkedin.com/in/kamon-blong/",
-            //email: "johndoe@example.com"
+            email: "kblong@purdue.edu"
         }, {
 
             name: "Forrest Lim",
@@ -159,7 +159,7 @@ const teamData = {
             image1: "DSC03285.jpg",
             image2: "DSC03283.jpg",
             linkedin: "https://www.linkedin.com/in/dominik-sloup-2ba20a2a7/",
-            //email: "johndoe@example.com"
+            email: "dsloup@purdue.edu"
         },
         {
 
@@ -168,7 +168,7 @@ const teamData = {
             image1: "DSC03289.jpg",
             image2: "DSC03287.jpg",
             linkedin: "https://www.linkedin.com/in/james-nida-/",
-            //email: "johndoe@example.com"
+            email: "nidaj@purdue.edu"
         },
         {
 

@@ -61,7 +61,7 @@ const Landing = () => {
                         <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
                             <div className="flex flex-col m-1 items-center h-fit">
                                 <div className="w-full bg-dusk py-4 px-auto space-y-1">
-                                    <h2 className="font-display text-white text-lg md:text-2xl text-balance">Thanks to everyone who attended our callout!</h2>
+                                    <h2 className="font-display text-lg md:text-2xl text-white text-balance">Thanks to everyone who attended our callout!</h2>
                                     <h2 className="font-display text-white text-lg md:text-2xl text-balance">Join our <a className="underline hover:text-stardust" href="https://discord.gg/cC6FYAu93W">Discord</a> to stay up-to-date on club activities.</h2>
                                 </div>
                             </div>
@@ -69,8 +69,8 @@ const Landing = () => {
                     </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col  justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
-                            <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl text-balance">
+                            <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
+                            <h2 className="font-display text-lg md:text-2xl text-white text-balance">
                                 We design, build, and test engines. Check out the projects tab to see what we're cooking up.<br></br><br></br><br></br>
                             </h2>
                         </div>
@@ -79,7 +79,7 @@ const Landing = () => {
                 </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
-                    <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
+                    <h1 className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
                     <DisplayGrid />
                 </div>
                 <DividerLine />
@@ -87,8 +87,8 @@ const Landing = () => {
                     <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <img className="w-min" src="/images/DSC/DSC01120-2_color_graded.jpg" alt="Students stand in front of whiteboard" />
                         <div className={`flex flex-col justify-start text-left lg:pl-24  my-auto`}>
-                            <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
-                            <h2 className="font-display2 text-white text-md md:text-xl mb-6 lg:mb-8 text-balance">
+                            <h1 className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
+                            <h2 className="font-display text-lg md:text-2xl text-white mb-6 lg:mb-8 text-balance">
                                 We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
                             </h2>
                             <Button text="Join the Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false} />
@@ -97,20 +97,20 @@ const Landing = () => {
                 </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
-                    <p className="font-display-bold text-3xl lg:text-5xl text-stardust mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
+                    <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
                     <iframe src="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis" className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" >
                     </iframe>
-                    <p className="text-white font-display mt-6 text-lg">Can't see the calendar? <a className="hover:text-stardust underline" href="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis">Try this link.</a></p>
+                    <p className="text-white font-display mt-6 text-lg md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href="https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FIndiana%2FIndianapolis">Try this link.</a></p>
 
                 </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
-                    <h1 className="font-display-bold text-3xl lg:text-5xl text-stardust text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
+                    <h1 className="font-display-bold text-3xl lg:text-5xl text-white text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
                         <Sponsors />
                     </div>
-                    <h2 className="font-display text-white text-lg md:text-2xl">
-                        Want to sponsor us? Email us at <a className="underline" href="mailto:purplspc@purdue.edu">purplspc@purdue.edu</a>.<br></br>
+                    <h2 className="font-display text-lg md:text-2xl text-white">
+                        Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>
                         We would love your support!</h2>
                 </div>
             </ContentWrapper>
