@@ -57,12 +57,7 @@ const Header = () => {
                     name: "teeny k",
                     link: "teeny-k",
                     id: 0,
-                },/*
-                                {
-                                        name: "the crate",
-                                        link: "crate",
-                                        id: 1,
-                                }*/
+                },
             ],
         },
         {
@@ -72,15 +67,9 @@ const Header = () => {
             children: [],
         },
         {
-            name: "donate",
-            link: "donate",
-            id: 4,
-            children: [],
-        },
-        {
             name: "contact",
             link: "contact",
-            id: 5,
+            id: 4,
             children: [],
         },
     ];
