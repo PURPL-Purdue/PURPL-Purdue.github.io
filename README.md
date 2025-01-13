@@ -58,7 +58,7 @@ To get started with this project, you'll need to set up your development environ
     │       ├── facilities/    # Pages about club facilities
     │       ├── projects/      # Pages about club projects
     │       ├── Landing.js     # Other pages (only some listed for brevity)
-    │       ├── Donate.js    
+    │       ├── Contact.js    
     │       ├── Team.js     
     │   ├── App.js             # Main React component
     │   └── index.js           # Entry point for the React application, defines routes
@@ -79,7 +79,7 @@ Do you want to make a modification to the website? Please follow the steps below
 Git CLI (Command-Line):
 ```
 git checkout master
-git checkout -b mybranch    # eg. fix-donate-page, ui-changes, add-email-feature 
+git checkout -b mybranch    # eg. fix-team-page, ui-changes, add-email-feature 
 ```
 
 Git GUI: Should be pretty straightforward, instructions are not included.

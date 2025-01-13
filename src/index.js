@@ -12,7 +12,6 @@ import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import Team from './pages/Team';
 import Landing from './pages/Landing';
-import Donate from './pages/Donate';
 import Contact from './pages/Contact';
 
 // Facilities pages components
@@ -74,10 +73,6 @@ const router = createHashRouter([
       {
         path: "teeny-k",
         element: <TeenyK />,
-      },
-      {
-        path: "donate",
-        element: <Donate />,
       },
       {
         path: "contact",
