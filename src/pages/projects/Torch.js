@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectTable from '../../components/projects/ProjectTable';
+import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
@@ -53,7 +53,7 @@ const Torch = () => {
                     <div>
                         <img src={image} alt={imageAlt} className="w-[150px] md:w-[200px]"></img>
                     </div>
-                    <ProjectTable table={details} title="Overview" />
+                    <SpecsTable table={details} title="Overview" />
                 </div>
             </ContentWrapper>
         </PageWrapper>
