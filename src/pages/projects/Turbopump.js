@@ -1,26 +1,13 @@
 import React from 'react';
-import ComingSoon from '../ComingSoon';
-import ProjectTable from '../../components/projects/ProjectTable';
+import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
 import Button from '../../components/shared/button/Button';
 
+import { turbopumpData } from '../../static/projects';
+
 const Turbopump = () => {
-    const title = "Turbopump";
-    const subtitle = "LOX-Kerosene turbopump to feed a ~4000 lbf regeneratively cooled engine. ";
-
-    const details = {
-        "Manufacturing method": "Machined in-house",
-        "Engine cooling": "Heatsink",
-        "Injector type": "Coaxial shear injector",
-        "Thrust": "50lbf",
-        "Propellants": "Ethanol, GOX",
-        "Diameter": "4in"
-    };
-
-    const image = "/images/projects/wireframes/turbopump_8_17_24.png";
-    const imageAlt = "Turbopump technical drawing";
 
     return (
         <PageWrapper>
@@ -30,22 +17,33 @@ const Turbopump = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
-                                {title}
+                                {turbopumpData.title}
                             </h1>
                             <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {subtitle}
+                                {turbopumpData.subtitle}
                             </h2>
                         </div>
                     </div>
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
-                    <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
-                        <img src={image} alt={imageAlt} className="mx-auto w-[200px] md:w-[300px]"></img>
-                        <div className="flex flex-col h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
-                            <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
-                            <Button text="Return Home" link="/" isNavLink={true} />
+                <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
+                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbopumpData.blurb}</p>
+                    <SpecsTable table={turbopumpData.specs_table} title="Engine Parameters" />
+                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
+                        <img className="max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                                {turbopumpData.desc_1}
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
+                        <img className="max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                                {turbopumpData.desc_2}
+                            </h2>
                         </div>
                     </div>
                 </div>

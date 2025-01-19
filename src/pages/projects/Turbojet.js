@@ -1,26 +1,12 @@
 import React from 'react';
-import ProjectTable from '../../components/projects/ProjectTable';
+import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
-import Button from '../../components/shared/button/Button';
+
+import { turbojetData } from '../../static/projects';
 
 const Turbojet = () => {
-    const title = "Turbojet";
-    const subtitle = "Designing a 50 lbf turbojet engine to develop skills relevant to turbo-machinery and air breathing propulsion.";
-
-    const details = {
-        "Manufacturing method": "Machined in-house",
-        "Engine cooling": "Heatsink",
-        "Injector type": "Coaxial shear injector",
-        "Thrust": "50lbf",
-        "Propellants": "Ethanol, GOX",
-        "Diameter": "4in"
-    };
-
-    const image = "/images/projects/wireframes/turbojet_8_17_24.png";
-    const imageAlt = "Turbojet technical drawing";
-
     return (
         <PageWrapper>
             <Banner>
@@ -29,23 +15,27 @@ const Turbojet = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
-                                {title}
+                                {turbojetData.title}
                             </h1>
                             <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {subtitle}
+                                {turbojetData.subtitle}
                             </h2>
                         </div>
                     </div>
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
-                    <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
-                        <img src={image} alt={imageAlt} className="mx-auto w-[200px] md:w-[350px]"></img>
-                        <div className="flex flex-col lg:mr-auto h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
-                            <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
-                            <Button text="Return Home" link="/" isNavLink={true} />
-                        </div>
+                <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
+                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbojetData.blurb}</p>
+                    <SpecsTable table={turbojetData.specs_table} title="Engine Parameters" />
+                    <p className="text-white text-lg md:text-xl font-display text-left">
+                        {turbojetData.desc_1}
+                    </p>
+
+                    <div className="flex flex-row flex-wrap w-full">
+                        {turbojetData.photo_reel.map((photo, index) => (
+                            <img key={index} className="w-1/2 mx-auto p-2" src={photo.src} alt={photo.alt} />
+                        ))}
                     </div>
                 </div>
             </ContentWrapper>

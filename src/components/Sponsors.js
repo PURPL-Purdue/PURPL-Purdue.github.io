@@ -28,6 +28,14 @@ const Sponsors = () => {
                     <img className="mx-auto" alt="Revolution Barbeque sponsor logo" src="/images/sponsors/Revolution-Barbeque-Icon-transparent.png"></img>
                 </a>
             </div>
+            <div className="flex flex-row items-center justify-center space-x-6">
+                <a className="w-[60px] md:w-[80px] lg:w-[90px] py-2 " href="https://chipotle.com">
+                    <img className="mx-auto" alt="Chipotle sponsor logo" src="/images/sponsors/chipotle.png"></img>
+                </a>
+                <a className="w-[150px] md:w-[180px] lg:w-[200px] py-2" href="https://dyrobes.com/">
+                    <img className="mx-auto" alt="Dyrobes sponsor logo" src="/images/sponsors/dyrobes.png"></img>
+                </a>
+            </div>
         </div>
     );
 };

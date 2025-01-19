@@ -1,6 +1,6 @@
 import React from 'react';
 import ComingSoon from '../ComingSoon';
-import ProjectTable from '../../components/projects/ProjectTable';
+import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
