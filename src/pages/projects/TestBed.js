@@ -1,28 +1,15 @@
 import React from 'react';
-import ComingSoon from '../ComingSoon';
 import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
-import Button from '../../components/shared/button/Button';
+import DividerLine from '../../components/shared/DividerLine';
+
+import { testbedData } from '../../static/projects';
 
 const TestBed = () => {
-    const title = "Testbed";
-    const subtitle = "250lbf bipropellant engine designed to be a reliable platform to test different subsystems.";
-
-    const details = {
-        "Manufacturing method": "Machined in-house",
-        "Engine cooling": "Heatsink",
-        "Injector type": "Coaxial shear injector",
-        "Thrust": "50lbf",
-        "Propellants": "Ethanol, GOX",
-        "Diameter": "4in"
-    };
-
-    const image = "/images/projects/wireframes/mug_technical_drawing.png"; // no wireframe yet
-    const imageAlt = "Mug technical drawing";
-
     return (
+
         <PageWrapper>
             <Banner>
                 <div className="bg-gradient-background bg-cover bg-center h-full ">
@@ -30,19 +17,55 @@ const TestBed = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
-                                {title}
+                                {testbedData.title}
                             </h1>
                             <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {subtitle}
+                                {testbedData.subtitle}
                             </h2>
                         </div>
                     </div>
                 </div>
             </Banner>
-            <div className="flex flex-col w-full h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
-                <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
-                <Button text="Return Home" link="/" isNavLink={true} />
-            </div>
+            <ContentWrapper>
+                <div className="lg:w-[800px] flex flex-col space-y-10 md:space-y-18">
+                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{testbedData.blurb}</p>
+                    <SpecsTable table={testbedData.specs_table} title="Engine Parameters" />
+                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_1}</h2>
+                    <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-start w-full">
+                        <div className="flex flex-col space-y-2 lg:space-y-4 max-w-[200px]">
+                            {testbedData.images_1.map((photo, index) => (
+                                <img key={index} className="w-max" src={photo.src} alt={photo.alt} />
+                            ))}
+                            <p className="text-white font-display2 text-sm md:text-md">{testbedData.caption_1}</p>
+                        </div>
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-8 my-auto">
+                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                                {testbedData.desc_1}
+                            </h2>
+                        </div>
+                    </div>
+                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_2}</h2>
+                    <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-start w-full">
+                        <div className="flex flex-col space-y-2 lg:space-y-4 max-w-[240px]">
+                            {testbedData.images_2.map((photo, index) => (
+                                <img key={index} className="w-max" src={photo.src} alt={photo.alt} />
+                            ))}
+                            <p className="text-white font-display2 text-sm md:text-md">{testbedData.caption_2}</p>
+                        </div>
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-8 my-auto">
+                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                                {testbedData.desc_2}
+                            </h2>
+                        </div>
+                    </div>
+                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">More Photos</h2>
+                    <div className="flex flex-row flex-wrap w-full">
+                        {testbedData.photo_reel.map((photo, index) => (
+                            <img key={index} className="max-w-[250px] m-2" src={photo.src} alt={photo.alt} />
+                        ))}
+                    </div>
+                </div>
+            </ContentWrapper>
         </PageWrapper>
     );
 };
