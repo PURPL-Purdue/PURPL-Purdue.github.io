@@ -32,16 +32,6 @@ const Header = () => {
                     id: 2,
                 },
                 {
-                    name: "torch",
-                    link: "torch",
-                    id: 3,
-                },
-                {
-                    name: "the mug",
-                    link: "mug",
-                    id: 4,
-                },
-                {
                     name: "testbed",
                     link: "testbed",
                     id: 5,
@@ -57,6 +47,11 @@ const Header = () => {
                     name: "teeny k",
                     link: "teeny-k",
                     id: 0,
+                },
+                {
+                    name: "tachyon",
+                    link: "tachyon",
+                    id: 1,
                 },
             ],
         },

@@ -1,13 +1,14 @@
 import React from 'react';
-import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
+import Button from '../../components/shared/button/Button';
 
-import { turbojetData } from '../../static/projects';
+import { tachyonData } from '../../static/facilities';
 
-const Turbojet = () => {
+const Tachyon = () => {
     return (
+
         <PageWrapper>
             <Banner>
                 <div className="bg-gradient-background bg-cover bg-center h-full ">
@@ -15,24 +16,19 @@ const Turbojet = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
-                                {turbojetData.title}
+                                {tachyonData.title}
                             </h1>
                         </div>
                     </div>
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbojetData.blurb}</p>
-                    <SpecsTable table={turbojetData.specs_table} title="Engine Stats" />
-                    <p className="text-white text-lg md:text-xl font-display text-left">
-                        {turbojetData.desc_1}
-                    </p>
-
-                    <div className="flex flex-row flex-wrap w-full justify-items-start">
-                        {turbojetData.photo_reel.map((photo, index) => (
-                            <img key={index} className="w-1/2 md:w-1/3 pr-2 pt-2" src={photo.src} alt={photo.alt} />
-                        ))}
+                <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
+                    <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
+                        <div className="flex flex-col h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
+                            <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
+                            <Button text="Return Home" link="/" isNavLink={true} />
+                        </div>
                     </div>
                 </div>
             </ContentWrapper>
@@ -40,4 +36,4 @@ const Turbojet = () => {
     );
 };
 
-export default Turbojet;
+export default Tachyon;

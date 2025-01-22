@@ -108,7 +108,7 @@ const Landing = () => {
                         <Sponsors />
                     </div>
                     <h2 className="font-display text-lg md:text-2xl text-white">
-                        Want to sponsor us? Email us at <a className="underline" href="mailto:purpl.purdue@gmail.com">purpl.purdue@gmail.com</a>.<br></br>
+                        Want to sponsor us? Email us at <a className="underline" href="mailto:purpl24@purdue.edu">purpl24@purdue.edu</a>.<br></br>
                         We would love your support!</h2>
                 </div>
             </ContentWrapper>

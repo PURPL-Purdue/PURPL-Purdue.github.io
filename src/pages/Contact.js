@@ -14,7 +14,7 @@ const Contact = () => {
                     <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
-                            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
+                            <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                                 Contact Us
                             </h1>
                         </div>
@@ -28,7 +28,7 @@ const Contact = () => {
                             <p>
                                 Interested in joining or supporting our club? We'd love to hear from you!</p>
                             <p>
-                                Contact us via the form below or by email at <a href="mailto:purpl.purdue@gmail.com" className="hover:text-boilermaker-gold underline text-stardust">purpl.purdue@gmail.com</a>.
+                                Contact us via the form below or by email at <a href="mailto:purpl24@purdue.edu" className="hover:text-boilermaker-gold underline text-stardust">purpl24@purdue.edu</a>.
                             </p>
                         </div>
                         <ContactForm />
@@ -37,7 +37,7 @@ const Contact = () => {
                             <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
                                 <p className="text-balance">
                                     <span className="">Email: </span>
-                                    <a href="mailto:purpl.purdue@gmail.com" className="hover:text-boilermaker-gold underline text-stardust">purpl.purdue@gmail.com</a>
+                                    <a href="mailto:purpl24@purdue.edu" className="hover:text-boilermaker-gold underline text-stardust">purpl24@purdue.edu</a>
                                 </p>
                                 <p className="text-balance">
                                     <span>Linkedin: </span>

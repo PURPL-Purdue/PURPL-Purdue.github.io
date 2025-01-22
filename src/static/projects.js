@@ -47,6 +47,22 @@ export const turbojetData = {
         "turbines make it very difficult to create computer models. However, thanks to our sponsor CFTurbo, the " +
         "design process was streamlined and the team presented a preliminary design review before the end of the semester!",
     photo_reel: [
+        {
+            src: "/images/projects/turbojet/turbojet_1.png",
+            alt: "Turbojet CAD model",
+        },
+        {
+            src: "/images/projects/turbojet/turbojet_2.png",
+            alt: "Turbojet CAD model",
+        },
+        {
+            src: "/images/projects/turbojet/turbojet_3.png",
+            alt: "Turbojet CAD model",
+        },
+        {
+            src: "/images/projects/turbojet/turbojet_4.png",
+            alt: "Turbojet CAD model",
+        },
     ]
 };
 
