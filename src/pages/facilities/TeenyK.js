@@ -28,7 +28,7 @@ const TeenyK = () => {
             <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
             <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                     <div className="flex flex-col text-center">
-                    <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
+                    <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                         {title}
                     </h1>
                     <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">

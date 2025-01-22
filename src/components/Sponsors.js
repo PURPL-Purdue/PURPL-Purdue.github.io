@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sponsors = () => {
     return (
-        <div className="flex flex-col lg:mb-8 space-x-4 lg:space-x-8 lg:px-8 pb-4 pt-6 items-center bg-jet-grey w-min h-min mx-auto justify-center">
+        <div className="flex flex-col lg:mb-8 space-x-4 lg:space-x-8 lg:px-8 pb-4 pt-6 items-center bg-[#938a98] w-min h-min mx-auto justify-center">
             <div className="flex flex-row items-center justify-center space-x-6">
                 <a className="w-[150px] lg:w-[200px]" href="https://polymaker.com/">
                     <img className="mx-auto" alt="Polymaker sponsor logo" src="/images/sponsors/Polymaker_Logo_TEAL.png"></img>

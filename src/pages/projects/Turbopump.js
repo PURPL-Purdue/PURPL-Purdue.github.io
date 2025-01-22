@@ -16,12 +16,9 @@ const Turbopump = () => {
                     <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
-                            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
+                            <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                                 {turbopumpData.title}
                             </h1>
-                            <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {turbopumpData.subtitle}
-                            </h2>
                         </div>
                     </div>
                 </div>
@@ -29,7 +26,7 @@ const Turbopump = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
                     <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbopumpData.blurb}</p>
-                    <SpecsTable table={turbopumpData.specs_table} title="Engine Parameters" />
+                    <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />
                     <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
                         <img className="max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
                         <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">

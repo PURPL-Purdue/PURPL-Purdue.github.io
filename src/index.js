@@ -15,13 +15,11 @@ import Landing from './pages/Landing';
 import Contact from './pages/Contact';
 
 // Facilities pages components
-import Crate from './pages/facilities/Crate';
+import Tachyon from './pages/facilities/Tachyon';
 import TeenyK from './pages/facilities/TeenyK';
 
 // Project pages
 import ElectricPropulsion from './pages/projects/ElectricPropulsion';
-import Mug from './pages/projects/Mug';
-import Torch from './pages/projects/Torch';
 import Turbojet from './pages/projects/Turbojet';
 import Turbopump from './pages/projects/Turbopump';
 import TestBed from './pages/projects/TestBed';
@@ -47,16 +45,8 @@ const router = createHashRouter([
         element: <ElectricPropulsion />
       },
       {
-        path: "mug",
-        element: <Mug />
-      },
-      {
         path: "testbed",
         element: <TestBed />
-      },
-      {
-        path: "torch",
-        element: <Torch />
       },
       {
         path: "turbojet",
@@ -67,12 +57,12 @@ const router = createHashRouter([
         element: <Turbopump />,
       },
       {
-        path: "crate",
-        element: <Crate />,
-      },
-      {
         path: "teeny-k",
         element: <TeenyK />,
+      },
+      {
+        path: "tachyon",
+        element: <Tachyon />,
       },
       {
         path: "contact",

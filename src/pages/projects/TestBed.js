@@ -3,7 +3,6 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
-import DividerLine from '../../components/shared/DividerLine';
 
 import { testbedData } from '../../static/projects';
 
@@ -16,12 +15,9 @@ const TestBed = () => {
                     <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
-                            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl italic text-white text-balance">
+                            <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                                 {testbedData.title}
                             </h1>
-                            <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {testbedData.subtitle}
-                            </h2>
                         </div>
                     </div>
                 </div>
@@ -29,7 +25,7 @@ const TestBed = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-10 md:space-y-18">
                     <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{testbedData.blurb}</p>
-                    <SpecsTable table={testbedData.specs_table} title="Engine Parameters" />
+                    <SpecsTable table={testbedData.specs_table} title="Engine Stats" />
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_1}</h2>
                     <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-start w-full">
                         <div className="flex flex-col space-y-2 lg:space-y-4 max-w-[200px]">
@@ -59,9 +55,9 @@ const TestBed = () => {
                         </div>
                     </div>
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">More Photos</h2>
-                    <div className="flex flex-row flex-wrap w-full">
+                    <div className="flex flex-row flex-wrap w-full justify-items-start">
                         {testbedData.photo_reel.map((photo, index) => (
-                            <img key={index} className="max-w-[250px] m-2" src={photo.src} alt={photo.alt} />
+                            <img key={index} className="w-1/2 md:w-1/3 pr-2 pt-2" src={photo.src} alt={photo.alt} />
                         ))}
                     </div>
                 </div>
