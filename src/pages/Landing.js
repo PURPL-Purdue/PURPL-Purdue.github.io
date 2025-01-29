@@ -1,45 +1,12 @@
 import React from 'react';
-import ImageBox from '../components/ImageBox.js';
-import DisplayHeader from '../components/shared/DisplayHeader.js';
 import DividerLine from '../components/shared/DividerLine.js';
 import DisplayGrid from '../components/DisplayGrid.js';
-import Calendar from '../components/Calendar.js';
 import Button from '../components/shared/button/Button.js';
 import ContentWrapper from '../components/shared/ContentWrapper.js';
 import PageWrapper from '../components/shared/PageWrapper.js';
 import Sponsors from '../components/Sponsors.js';
 
 const Landing = () => {
-    const images = [
-        {
-            imageUrl: "/images/torch_hero.png",
-            imageAlt: "Technical drawing of torch hero",
-            header: "RS1",
-            subheader: "TORCH IGNITOR",
-            caption: "Initiates the combustion process in a rocket engine by delivering a controlled spark to ignite the propellant mixture.",
-            imageRelWidth: "w-[80%]",
-            link: "torch",
-        },
-        {
-            imageUrl: "/images/stand_technical_drawing.jpg",
-            imageAlt: "Technical drawing of stand",
-            header: "TK7",
-            subheader: "TEST STAND",
-            caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh magna, luctus vitae euismod et, lacinia quis leo.",
-            imageRelWidth: "w-[100%]",
-            link: "teeny_k",
-        },
-        {
-            imageUrl: "/images/mug_technical_drawing.png",
-            imageAlt: "Technical drawing of mug",
-            header: "JB16",
-            subheader: "ROCKET ENGINE",
-            caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh magna, luctus vitae euismod et, lacinia quis leo.",
-            imageRelWidth: "w-[80%]",
-            link: "mug",
-        }
-    ];
-
     return (
         <PageWrapper>
             <div className="relative h-[380px] md:min-h-[700px] lg:min-h-[800px] bg-cover object-none bg-gradient-background">
@@ -47,7 +14,7 @@ const Landing = () => {
                 <div className="h-[450px] md:min-h-[700px] lg:min-h-[800px] ">
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
-                            <img className="h-[100px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png"></img>
+                            <img className="h-[100px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png" alt="White PURPL wordmark"></img>
                             <h2 className="font-display-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
                                 Rocket science propelled by students.
                             </h2>

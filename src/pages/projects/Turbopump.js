@@ -3,7 +3,6 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
-import Button from '../../components/shared/button/Button';
 
 import { turbopumpData } from '../../static/projects';
 

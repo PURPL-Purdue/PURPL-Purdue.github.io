@@ -4,9 +4,9 @@ import PageWrapper from '../../components/shared/PageWrapper';
 import Banner from '../../components/shared/banner/Banner';
 import Button from '../../components/shared/button/Button';
 
-import { epropData } from '../../static/projects';
+import { rdeData } from '../../static/projects';
 
-const ElectricPropulsion = () => {
+const RDE = () => {
     return (
         <PageWrapper>
             <Banner>
@@ -15,10 +15,10 @@ const ElectricPropulsion = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
-                                {epropData.title}
+                                {rdeData.title}
                             </h1>
                             <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
-                                {epropData.subtitle}
+                                {rdeData.subtitle}
                             </h2>
                         </div>
                     </div>
@@ -27,7 +27,6 @@ const ElectricPropulsion = () => {
             <ContentWrapper>
                 <div className="lg:w-[950px] flex flex-col space-y-8 md:space-y-10">
                     <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
-                        <img src={epropData.wireframe} alt={epropData.wireframe_alt} className="mx-auto w-[300px] md:w-[400px]"></img>
                         <div className="flex flex-col h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
                             <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
                             <Button text="Return Home" link="/" isNavLink={true} />
@@ -39,4 +38,4 @@ const ElectricPropulsion = () => {
     );
 };
 
-export default ElectricPropulsion;
+export default RDE;

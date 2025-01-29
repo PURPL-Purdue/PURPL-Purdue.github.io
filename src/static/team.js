@@ -1,6 +1,8 @@
-import React from 'react';
+/**
+ * Stores information about PURPL's executive team, administrative board, and project leads. 
+ */
 
-const tempProfilePic = "/images/team/pattern_1.jpg";
+const defaultProfilePic = "/images/team/pattern_1.jpg"; // full path
 const imagePath = "/images/team/headshots/resized-500x500/";
 const teamData = {
     major_exec: [
@@ -59,14 +61,12 @@ const teamData = {
         {
             name: "Carter Moody",
             title: "Secretary",
-            // email: "johndoe@example.com"
         },
         {
             name: "Indrajeet Nair",
             title: "Funding Acquisition Chair",
             image1: "DSC03331.jpg",
             image2: "DSC03329.jpg",
-            // email: "johndoe@example.com"
         },
         {
             name: "Josue Rodas",
@@ -79,7 +79,6 @@ const teamData = {
             title: "Webmaster",
             image1: "DSC03309.jpg",
             image2: "DSC03308.jpg",
-            // email: "johndoe@example.com"
         },
         {
             name: "James Nida",
@@ -123,7 +122,6 @@ const teamData = {
     ],
     project_leads: [
         {
-
             name: "Kamon Blong",
             title: "Turbopump Co-Lead",
             image1: "DSC03351.jpg",
@@ -134,7 +132,6 @@ const teamData = {
 
             name: "Forrest Lim",
             title: "Turbopump Co-Lead",
-            //email: "johndoe@example.com"
         },
         {
 
@@ -142,7 +139,6 @@ const teamData = {
             title: "Turbojet Lead",
             image1: "DSC03305.jpg",
             image2: "DSC03304.jpg",
-            //email: "johndoe@example.com"
         },
         {
 
@@ -150,7 +146,6 @@ const teamData = {
             title: "Electric Propulsion Lead",
             image1: "DSC03331.jpg",
             image2: "DSC03329.jpg",
-            //email: "johndoe@example.com"
         },
         {
 
@@ -176,7 +171,6 @@ const teamData = {
             title: "Teeny-K Lead",
             image1: "DSC03335.jpg",
             image2: "DSC03334.jpg",
-            //email: "johndoe@example.com"
         },
         {
 
@@ -184,7 +178,6 @@ const teamData = {
             title: "HMB Lead",
             image1: "DSC03294.jpg",
             image2: "DSC03293.jpg",
-            //email: "johndoe@example.com"
         },
     ]
 };
@@ -194,8 +187,15 @@ Object.keys(teamData).forEach(category => {
         if (member.image1) {
             member.image1 = imagePath + member.image1;
         }
+        else {
+            member.image1 = defaultProfilePic;
+        }
+
         if (member.image2) {
             member.image2 = imagePath + member.image2;
+        }
+        else {
+            member.image2 = defaultProfilePic;
         }
         return member;
     });

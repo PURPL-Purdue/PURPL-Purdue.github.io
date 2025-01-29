@@ -3,12 +3,9 @@ import PageWrapper from '../components/shared/PageWrapper';
 import Profile from '../components/team/Profile';
 import SmallerProfile from '../components/team/SmallerProfile.js';
 
-import teamData from '../static/TeamData.js';
+import teamData from '../static/team.js';
 
 function Team() {
-    const data = teamData;
-    const tempProfilePic = "/images/team/pattern_1.jpg";
-
     return (
         <PageWrapper>
             <Banner>
@@ -29,10 +26,10 @@ function Team() {
             <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Executive Board</p>
             <div className="flex flex-col px-4 md:px-16 lg:px-32 bg-dusk mt-8">
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
-                    {data.major_exec.map((profile, index) => (
+                    {teamData.major_exec.map((profile, index) => (
                         <Profile
                             key={profile.name}
-                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
+                            imagePath={profile.image2}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -42,10 +39,10 @@ function Team() {
                 </div>
                 <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Project Leads</p>
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
-                    {data.project_leads.map((profile, index) => (
+                    {teamData.project_leads.map((profile, index) => (
                         <SmallerProfile
                             key={profile.name}
-                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
+                            imagePath={profile.image2}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -55,10 +52,10 @@ function Team() {
                 </div>
                 <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Administrative Board</p>
                 <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
-                    {data.admin_exec.map((profile, index) => (
+                    {teamData.admin_exec.map((profile, index) => (
                         <SmallerProfile
                             key={profile.name}
-                            imagePath={profile.image2 ? (profile.image2) : tempProfilePic}
+                            imagePath={profile.image2}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}

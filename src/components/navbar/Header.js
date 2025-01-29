@@ -8,63 +8,56 @@ const Header = () => {
         {
             name: "home",
             link: "",
-            id: 0,
             children: [],
         },
         {
             name: "projects",
             link: "#", // don't link anywhere
-            id: 1,
             children: [
                 {
                     name: "turbopump",
                     link: "turbopump",
-                    id: 0,
                 },
                 {
                     name: "electric propulsion",
                     link: "electric-propulsion",
-                    id: 1,
                 },
                 {
                     name: "turbojet",
                     link: "turbojet",
-                    id: 2,
                 },
                 {
                     name: "testbed",
                     link: "testbed",
-                    id: 5,
                 },
+                {
+                    name: "rde",
+                    link: "rde",
+                }
             ],
         },
         {
             name: "facilities",
             link: "#",
-            id: 2,
             children: [
                 {
                     name: "teeny k",
                     link: "teeny-k",
-                    id: 0,
                 },
                 {
                     name: "tachyon",
                     link: "tachyon",
-                    id: 1,
                 },
             ],
         },
         {
             name: "team",
             link: "team",
-            id: 3,
             children: [],
         },
         {
             name: "contact",
             link: "contact",
-            id: 4,
             children: [],
         },
     ];
@@ -87,7 +80,7 @@ const Header = () => {
         <div className="">
             {/* Mobile navbar icon */}
             <div id="hamburger-menu" className="lg:invisible bg-dusk flex flex-row">
-                <NavLink to="" className="mr-auto ml-8 mt-5"><img src="/images/logo/PURPL_white_logo.png" className="h-8 ">
+                <NavLink to="" className="mr-auto ml-8 mt-5"><img src="/images/logo/PURPL_white_logo.png" alt="White PURPL logo" className="h-8 ">
                 </img></NavLink>
                 <button className="flex items-center text-white hover:text-stardust p-6" onClick={(e) => {
                     setMobileMenuOpen(true);
@@ -116,12 +109,12 @@ const Header = () => {
                                 {
                                     /* Render the caret to the left of the header item if it has children */
                                     (navLink.children.length > 0) ?
-                                        <p className="font-display block p-3 text-sm text-white hover:text-stardust rounded hover:cursor-pointer" onClick={(e) => { toggleMobileActiveDropdown(navLink.id) }}>{navLink.name} <span className="text-white">{(mobileActiveDropdowns[navLink.id] ? " v" : " >")}</span></p> :
+                                        <p className="font-display block p-3 text-sm text-white hover:text-stardust rounded hover:cursor-pointer" onClick={(e) => { toggleMobileActiveDropdown(navLink.name) }}>{navLink.name} <span className="text-white">{(mobileActiveDropdowns[navLink.name] ? " v" : " >")}</span></p> :
                                         <NavLink to={navLink.link} className="font-display block p-3 text-sm text-white hover:text-stardust" >{navLink.name}</NavLink>
 
                                 }
                                 {/* Render the dropdown if the header item has children and the header item is active */}
-                                <ul className={`lg:hidden ${mobileActiveDropdowns[navLink.id] ? "visible" : "hidden"}`}>
+                                <ul className={`lg:hidden ${mobileActiveDropdowns[navLink.name] ? "visible" : "hidden"}`}>
                                     {
                                         (navLink.children).map((navChild) => {
                                             return (<NavLink

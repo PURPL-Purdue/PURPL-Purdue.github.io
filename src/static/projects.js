@@ -27,6 +27,13 @@ export const turbopumpData = {
     image_2_alt: "Turbopump shaft assembly",
 };
 
+export const epropData = {    
+    title: "Electric Propulsion",
+    subtitle: "Hall thruster commonly used on in-space propulsion systems for satellites.",
+    wireframe: "/images/projects/wireframes/electric_propulsion_8_17_24.png",
+    wireframe_alt: "Electric propulsion project technical drawing",
+}
+
 export const turbojetData = {
     title: "Turbojet",
     subtitle: "Designing a 50 lbf turbojet engine to develop skills relevant to turbo-machinery and air breathing propulsion.",
@@ -126,4 +133,9 @@ export const testbedData = {
             alt: "View of testbed CAD model",
         },
     ],
+}
+
+export const rdeData = {
+    title: "RDE",
+    subtitle: "",
 }
