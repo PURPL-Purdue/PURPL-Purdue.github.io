@@ -5,8 +5,6 @@ import ContentWrapper from '../components/shared/ContentWrapper';
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
-    const image = "/images/DSC/DSC01647_color_graded.jpg";
-    const imageAlt = "Miscellaneous metal parts pictured on a wooden table."
     return (
         <PageWrapper>
             <Banner>
@@ -33,7 +31,6 @@ const Contact = () => {
                         </div>
                         <ContactForm />
                         <div className="flex flex-row w-full justify-center items-center space-x-4">
-                            {/*<img src={image} alt={imageAlt} className="pt-8 w-1/2"></img>*/}
                             <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
                                 <p className="text-balance">
                                     <span className="">Email: </span>

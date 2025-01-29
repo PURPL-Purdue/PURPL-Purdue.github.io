@@ -23,6 +23,7 @@ import ElectricPropulsion from './pages/projects/ElectricPropulsion';
 import Turbojet from './pages/projects/Turbojet';
 import Turbopump from './pages/projects/Turbopump';
 import TestBed from './pages/projects/TestBed';
+import RDE from './pages/projects/RDE';
 
 
 const router = createHashRouter([
@@ -55,6 +56,10 @@ const router = createHashRouter([
       {
         path: "turbopump",
         element: <Turbopump />,
+      },
+      {
+        path: "rde",
+        element: <RDE />,
       },
       {
         path: "teeny-k",
