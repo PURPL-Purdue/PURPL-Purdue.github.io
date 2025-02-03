@@ -44,7 +44,7 @@ export const turbojetData = {
         "At 50-lbf of thrust, this engine is sized to eventually be usable as a medium sized UAV power plant. This " +
         "engine will also serve as a testbed for a study on sustainable aviation fuels.",
     specs_table: {
-        "fuel": "kerosene, sustainable aviation fuels",
+        "fuel": "propane, hydrogen, methane",
         "thrust": "50-lbf",
         "shaft speed": "80,000 RPM",
         "diameter": "6in",
