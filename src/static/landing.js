@@ -6,4 +6,7 @@ export const landingData = {
         { number: "9+", text: "majors" },
         { number: "2024", text: "founded" },
     ],
+    calendar: {
+        embed_link: "https://calendar.google.com/calendar/embed?src=purpl24%40purdue.edu&ctz=America%2FIndiana%2FIndianapolis",
+    },
 };
