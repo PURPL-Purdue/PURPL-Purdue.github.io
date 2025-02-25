@@ -35,7 +35,8 @@ const teamData = {
             title: "Project Director",
             image1: "DSC03294.jpg",
             image2: "DSC03293.jpg",
-            // email: "johndoe@example.com"
+            linkedin: "https://www.linkedin.com/in/alejandrodico/",
+            email: "adiazcon@purdue.edu",
         },
         {
             name: "Jonah Nobel",
@@ -47,32 +48,35 @@ const teamData = {
     ],
     admin_exec: [
         {
-            name: "Jack Bolster",
+            name: "Keertan Palayam",
             title: "Marketing Chair",
-            linkedin: "https://www.linkedin.com/in/jack-bolster-9a9a38155/",
-            email: "jbolster@purdue.edu"
         },
         {
             name: "Hannah Shapiro",
             title: "Social Media Chair",
             linkedin: "www.linkedin.com/in/hannahshapiro03",
-            email: "hannahshapiro03@gmail.com"
+            email: "hannahshapiro03@gmail.com",
         },
         {
-            name: "Carter Moody",
+            name: "Andrew Fontanetta",
             title: "Secretary",
+            linkedin: "https://linkedin.com/in/andrew-fontanetta/",
+            email: "afontanetta7@gmail.com",
+
         },
         {
-            name: "Indrajeet Nair",
+            name: "Tobey Uhm",
             title: "Funding Acquisition Chair",
-            image1: "DSC03331.jpg",
-            image2: "DSC03329.jpg",
+            linkedin: "https://www.linkedin.com/in/tobeyuhm",
+            email: "uhmt@purdue.edu",
         },
         {
-            name: "Josue Rodas",
+            name: "Jeramiah Arona",
             title: "Event Coordinator",
-            linkedin: "https://linkedin.com/in/josue-rodas-7b004524a/",
-            email: "jrodas@purdue.edu"
+            image1: "DSC03325.jpg",
+            image2: "DSC03321.jpg",
+            linkedin: "https://www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
+            email: "jarona@purdue.edu"
         },
         {
             name: "Alina Li",
@@ -81,43 +85,41 @@ const teamData = {
             image2: "DSC03308.jpg",
         },
         {
-            name: "James Nida",
+            name: "Daniel Bennett",
             title: "IT Chair",
-            image2: "DSC03287.jpg",
-            image1: "DSC03289.jpg",
-            linkedin: "https://www.linkedin.com/in/james-nida-/",
-            email: "nidaj@purdue.edu"
         },
         {
-            name: "Sean O'Rourke",
+            name: "Krish Mehta",
             title: "Merchandise Chair",
-            linkedin: `https://www.linkedin.com/in/sean-o’rourke-158888325/`,
-            email: "orourke6@purdue.edu"
         },
         {
 
-            name: "Kamon Blong",
+            name: "Shishir Tumma",
             title: "Education Chair",
-            image1: "DSC03351.jpg",
-            image2: "DSC03352.jpg",
-            linkedin: "https://www.linkedin.com/in/kamon-blong/",
-            email: "kblong@purdue.edu",
-        },
-        {
-
-            name: "Jeremiah Arona",
-            title: "Physical Activity Coordinator",
-            image1: "DSC03325.jpg",
-            image2: "DSC03321.jpg",
-            linkedin: "https://www.linkedin.com/in/jeramiah-arona-5b1ab92a2",
-            email: "jarona@purdue.edu"
         },
         {
 
             name: "Jack Woods",
             title: "Safety Officer",
             linkedin: "https://www.linkedin.com/in/jack--woods",
-            email: "woods236@purdue.edu"
+            email: "woods236@purdue.edu",
+        },
+        {
+
+            name: "Sabrina Phan",
+            title: "Photographer",
+        },
+        {
+
+            name: "Elijah Ponds",
+            title: "Photographer",
+        },
+        {
+
+            name: "TJ Mareachen",
+            title: "Industrial Relations",
+            linkedin: "https://www.linkedin.com/in/timothy-mareachen/",
+            email: "tmareach@purdue.edu",
         },
     ],
     project_leads: [
@@ -154,7 +156,7 @@ const teamData = {
             image1: "DSC03285.jpg",
             image2: "DSC03283.jpg",
             linkedin: "https://www.linkedin.com/in/dominik-sloup-2ba20a2a7/",
-            email: "dsloup@purdue.edu"
+            email: "dsloup@purdue.edu",
         },
         {
 
@@ -163,10 +165,9 @@ const teamData = {
             image1: "DSC03289.jpg",
             image2: "DSC03287.jpg",
             linkedin: "https://www.linkedin.com/in/james-nida-/",
-            email: "nidaj@purdue.edu"
+            email: "nidaj@purdue.edu",
         },
         {
-
             name: "Vincent Fazio",
             title: "Teeny-K Lead",
             image1: "DSC03335.jpg",
@@ -178,6 +179,8 @@ const teamData = {
             title: "HMB Lead",
             image1: "DSC03294.jpg",
             image2: "DSC03293.jpg",
+            linkedin: "https://www.linkedin.com/in/alejandrodico/",
+            email: "adiazcon@purdue.edu",
         },
     ]
 };
