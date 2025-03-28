@@ -35,6 +35,9 @@ const Sponsors = () => {
                 <a className="w-[150px] md:w-[180px] lg:w-[200px] py-2" href="https://dyrobes.com/">
                     <img className="mx-auto" alt="Dyrobes sponsor logo" src="/images/sponsors/dyrobes.png"></img>
                 </a>
+                <a className="w-[150px] md:w-[180px] lg:w-[200px] py-2" href="https://marotta.com/">
+                    <img className="mx-auto" alt="marotta controls sponsor logo" src="/images/sponsors/marotta_controls_logo.png"></img>
+                </a>
             </div>
         </div>
     );
