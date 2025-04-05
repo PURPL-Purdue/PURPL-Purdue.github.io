@@ -1,0 +1,24 @@
+name: CI-CD
+
+on:
+  push: 				# Trigger the workflow on push events (this includes completed pull requests)		
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:    
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'        
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
