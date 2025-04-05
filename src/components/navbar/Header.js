@@ -2,65 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import { FaBars, FaXmark } from 'react-icons/fa6';
+import { navLinks } from '../../static/routing';
 
 const Header = () => {
-    const navLinks = [
-        {
-            name: "home",
-            link: "",
-            children: [],
-        },
-        {
-            name: "projects",
-            link: "#", // don't link anywhere
-            children: [
-                {
-                    name: "turbopump",
-                    link: "turbopump",
-                },
-                {
-                    name: "electric propulsion",
-                    link: "electric-propulsion",
-                },
-                {
-                    name: "turbojet",
-                    link: "turbojet",
-                },
-                {
-                    name: "testbed",
-                    link: "testbed",
-                },
-                {
-                    name: "rde",
-                    link: "rde",
-                }
-            ],
-        },
-        {
-            name: "facilities",
-            link: "#",
-            children: [
-                {
-                    name: "teeny k",
-                    link: "teeny-k",
-                },
-                {
-                    name: "tachyon",
-                    link: "tachyon",
-                },
-            ],
-        },
-        {
-            name: "team",
-            link: "team",
-            children: [],
-        },
-        {
-            name: "contact",
-            link: "contact",
-            children: [],
-        },
-    ];
 
     const [activeDropdown, setActiveDropdown] = useState(null);
 
