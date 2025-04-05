@@ -2,65 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import { FaBars, FaXmark } from 'react-icons/fa6';
+import { navLinks } from '../../static/routing';
 
 const Header = () => {
-    const navLinks = [
-        {
-            name: "home",
-            link: "",
-            children: [],
-        },
-        {
-            name: "projects",
-            link: "#", // don't link anywhere
-            children: [
-                {
-                    name: "turbopump",
-                    link: "turbopump",
-                },
-                {
-                    name: "electric propulsion",
-                    link: "electric-propulsion",
-                },
-                {
-                    name: "turbojet",
-                    link: "turbojet",
-                },
-                {
-                    name: "testbed",
-                    link: "testbed",
-                },
-                {
-                    name: "rde",
-                    link: "rde",
-                }
-            ],
-        },
-        {
-            name: "facilities",
-            link: "#",
-            children: [
-                {
-                    name: "teeny k",
-                    link: "teeny-k",
-                },
-                {
-                    name: "tachyon",
-                    link: "tachyon",
-                },
-            ],
-        },
-        {
-            name: "team",
-            link: "team",
-            children: [],
-        },
-        {
-            name: "contact",
-            link: "contact",
-            children: [],
-        },
-    ];
 
     const [activeDropdown, setActiveDropdown] = useState(null);
 
@@ -92,11 +36,7 @@ const Header = () => {
             <div className={`relative z-50 lg:hidden ${mobileMenuOpen ? "visible" : "hidden"}`}>
                 <div className="fixed inset-0 bg-dusk opacity-25"></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-2/3 max-w-sm py-6 px-6 bg-dusk border-r border-white overflow-y-auto">
-                    <div className="flex items-center mb-8">
-                        <a className="mr-auto text-3xl font-bold leading-none" href="#">
-                            <svg className="h-12" alt="logo" viewBox="0 0 10240 10240">
-                            </svg>
-                        </a>
+                    <div className="flex items-center mb-8 justify-end">
                         <button id="navbar-close" onClick={(e) => {
                             setMobileMenuOpen(false);
                         }}>

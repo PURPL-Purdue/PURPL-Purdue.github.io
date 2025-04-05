@@ -1,4 +1,4 @@
-import React from 'react';
+
 import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/shared/ContentWrapper';
 import PageWrapper from '../../components/shared/PageWrapper';
