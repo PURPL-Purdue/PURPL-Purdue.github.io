@@ -1,5 +1,6 @@
-import React from 'react';
+
 import { FaInstagram, FaLinkedinIn, FaRegEnvelope, FaDiscord, /*FaFacebookSquare, FaYoutube */  } from 'react-icons/fa';
+import { contactInfo } from '../../static/shared';
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/purpl_purdue" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="hover:text-white" size={24} />
                     </a>
-                    <a href="mailto:purpl24@purdue.edu" target="_blank" rel="noopener noreferrer">
+                    <a href={`mailto:${contactInfo.email}`} target="_blank" rel="noopener noreferrer">
                         <FaRegEnvelope className=" hover:text-white" size={24} />
                     </a>
                     {/*

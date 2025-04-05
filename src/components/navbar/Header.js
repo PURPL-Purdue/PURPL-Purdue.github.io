@@ -36,11 +36,7 @@ const Header = () => {
             <div className={`relative z-50 lg:hidden ${mobileMenuOpen ? "visible" : "hidden"}`}>
                 <div className="fixed inset-0 bg-dusk opacity-25"></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-2/3 max-w-sm py-6 px-6 bg-dusk border-r border-white overflow-y-auto">
-                    <div className="flex items-center mb-8">
-                        <a className="mr-auto text-3xl font-bold leading-none" href="#">
-                            <svg className="h-12" alt="logo" viewBox="0 0 10240 10240">
-                            </svg>
-                        </a>
+                    <div className="flex items-center mb-8 justify-end">
                         <button id="navbar-close" onClick={(e) => {
                             setMobileMenuOpen(false);
                         }}>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Button from '../components/shared/button/Button.js';
 import PageWrapper from '../components/shared/PageWrapper.js';
 import ContentWrapper from '../components/shared/ContentWrapper.js';

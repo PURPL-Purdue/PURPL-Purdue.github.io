@@ -1,4 +1,4 @@
-import React from 'react';
+
 import DividerLine from '../components/shared/DividerLine.js';
 import DisplayGrid from '../components/DisplayGrid.js';
 import Button from '../components/shared/button/Button.js';
@@ -6,6 +6,7 @@ import ContentWrapper from '../components/shared/ContentWrapper.js';
 import PageWrapper from '../components/shared/PageWrapper.js';
 import Sponsors from '../components/Sponsors.js';
 import { landingData } from '../static/landing.js';
+import { contactInfo } from '../static/shared.js';
 
 const Landing = () => {
     return (
@@ -64,7 +65,8 @@ const Landing = () => {
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
-                    <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" >
+                    <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" 
+                        title="PURPL Google Calendar">
                     </iframe>
                     <p className="text-white font-display mt-6 text-lg md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
@@ -76,8 +78,9 @@ const Landing = () => {
                         <Sponsors />
                     </div>
                     <h2 className="font-display text-lg md:text-2xl text-white">
-                        Want to sponsor us? Email us at <a className="underline" href="mailto:purpl24@purdue.edu">purpl24@purdue.edu</a>.<br></br>
-                        We would love your support!</h2>
+                        Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
+                        We would love your support!
+                    </h2>
                 </div>
             </ContentWrapper>
         </PageWrapper>

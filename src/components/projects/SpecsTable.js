@@ -6,7 +6,7 @@ const SpecsTable = ({table, title}) => {
         <div className="flex flex-col w-full">
             {Object.entries(table).map(([key, value], index) => (
                 <div key={index} className={`flex flex-row items-end w-full md:max-w-[800px] pb-2 pt-4 border-b-2 
-                    border-b-white space-x-auto ` + (index==0 ? "border-t-2 border-t-white" : "")}>
+                    border-b-white space-x-auto ` + (index === 0 ? "border-t-2 border-t-white" : "")}>
                     <p className="font-display2 max-w-[150px] md:max-w-full text-left text-white uppercase text-sm md:text-lg">{key}</p>
                     <p className="font-display2 ml-auto max-w-[200px] md:max-w-full text-right text-white text-sm md:text-lg">{value}</p>
                 </div>
