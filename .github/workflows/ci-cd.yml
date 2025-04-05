@@ -21,7 +21,9 @@ jobs:
         run: npm install
       
       - name: Config GitHub user
-        run: git config --global user.email "github-actions[bot]@users.noreply.github.com" && git config --global user.name "github-actions"
+        run: git config --global user.email "support+actions@github.com" && git config --global user.name "github-actions-bot"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
