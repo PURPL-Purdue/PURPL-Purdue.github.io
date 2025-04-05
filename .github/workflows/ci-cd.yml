@@ -1,9 +1,10 @@
 name: CI-CD
 
 on:
-  push: 				# Trigger the workflow on push events (this includes completed pull requests)		
+  push: 				      # Trigger the workflow on push events (this includes merged pull requests)		
     branches:
       - master
+  workflow_dispatch   # Allows manual triggering of the workflow
 
 jobs:
   build-and-deploy:    
