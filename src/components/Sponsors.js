@@ -39,6 +39,11 @@ const Sponsors = () => {
                     <img className="mx-auto" alt="marotta controls sponsor logo" src="/images/sponsors/marotta_controls_logo.png"></img>
                 </a>
             </div>
+            <div className="flex flex-row items-center justify-center space-x-6">
+                <a className="w-[100px] md:w-[120px] lg:w-[140px] py-2 " href="https://ansys.com">
+                    <img className="mx-auto" alt="Ansys sponsor logo" src="/images/sponsors/Ansys_logo_black.png"></img>
+                </a>
+            </div>
         </div>
     );
 };
