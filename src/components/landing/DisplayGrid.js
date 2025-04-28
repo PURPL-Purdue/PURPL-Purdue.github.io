@@ -1,6 +1,4 @@
-
-
-import { landingData } from '../static/landing';
+import { landingData } from '../../json/landing';
 
 function DisplayGrid() {
 

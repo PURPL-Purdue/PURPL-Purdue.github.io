@@ -1,8 +1,8 @@
 
-import ContentWrapper from '../../components/shared/ContentWrapper';
-import PageWrapper from '../../components/shared/PageWrapper';
-import Banner from '../../components/shared/banner/Banner';
-import Button from '../../components/shared/button/Button';
+import ContentWrapper from '../../components/layout/ContentWrapper';
+import PageWrapper from '../../components/layout/PageWrapper';
+import Banner from '../../components/banner/Banner';
+import Button from '../../components/button/Button';
 
 import { tachyonData } from '../../static/facilities';
 
