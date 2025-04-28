@@ -1,3 +1,21 @@
+export const teenykData = {
+    title: "Teeny-K",
+    subtitle: "Rocket engine stand made to fire torch ignitors and small rocket engines.",
+    specs_table: {
+        "Thrust rating": "100lbf",
+        "Propellants": "GOX, hydrocarbons",
+        "Manufacturing method": "machined/bolted from aluminum extrusions",
+        "Dimensions (L x W x H)": "24in x 14in x 12in"
+    },   
+    blurb: 
+        "This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. " + 
+        "It is low-cost and simple, and accommodates for PURPL's early project needs. The torch allows for" + 
+        " the test subject to be ignited multiple times in one session without having to replace a cartridge " + 
+        "or external ignition source as is required with pyrotechnic ignition systems.",
+    wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
+    wireframe_alt: "Teeny-k technical drawing"
+};
+
 export const turbopumpData = {
     title: "Turbopump",
     subtitle: "LOX-Kerosene turbopump to feed a ~5000 lbf regeneratively cooled engine.",
