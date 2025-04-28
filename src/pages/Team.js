@@ -1,5 +1,5 @@
-import Banner from '../components/shared/banner/Banner';
-import PageWrapper from '../components/shared/PageWrapper';
+import Banner from '../components/banner/Banner';
+import PageWrapper from '../components/layout/PageWrapper';
 import Profile from '../components/team/Profile';
 import SmallerProfile from '../components/team/SmallerProfile.js';
 

@@ -1,5 +1,5 @@
 
-import Button from '../components/shared/button/Button.js';
+import Button from '../components/button/Button.js';
 
 const ErrorPage = () => {
     return (

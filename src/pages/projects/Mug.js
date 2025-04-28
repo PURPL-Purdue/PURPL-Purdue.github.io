@@ -1,8 +1,8 @@
 
 import SpecsTable from '../../components/projects/SpecsTable';
-import ContentWrapper from '../../components/shared/ContentWrapper';
-import PageWrapper from '../../components/shared/PageWrapper';
-import Banner from '../../components/shared/banner/Banner';
+import ContentWrapper from '../../components/layout/ContentWrapper';
+import PageWrapper from '../../components/layout/PageWrapper';
+import Banner from '../../components/banner/Banner';
 
 const Mug = () => {
 

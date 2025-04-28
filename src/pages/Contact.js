@@ -1,7 +1,7 @@
 
-import PageWrapper from '../components/shared/PageWrapper';
-import Banner from '../components/shared/banner/Banner';
-import ContentWrapper from '../components/shared/ContentWrapper';
+import PageWrapper from '../components/layout/PageWrapper';
+import Banner from '../components/banner/Banner';
+import ContentWrapper from '../components/layout/ContentWrapper';
 import ContactForm from '../components/ContactForm';
 import { contactInfo } from '../static/shared';
 

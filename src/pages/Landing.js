@@ -1,12 +1,12 @@
 
-import DividerLine from '../components/shared/DividerLine.js';
-import DisplayGrid from '../components/DisplayGrid.js';
-import Button from '../components/shared/button/Button.js';
-import ContentWrapper from '../components/shared/ContentWrapper.js';
-import PageWrapper from '../components/shared/PageWrapper.js';
+import DividerLine from '../components/layout/DividerLine.js';
+import DisplayGrid from '../components/landing/DisplayGrid.js';
+import Button from '../components/button/Button.js';
+import ContentWrapper from '../components/layout/ContentWrapper.js';
+import PageWrapper from '../components/layout/PageWrapper.js';
 import Sponsors from '../components/Sponsors.js';
-import { landingData } from '../static/landing.js';
-import { contactInfo } from '../static/shared.js';
+import { landingData } from '../json/landing.js';
+import { contactInfo } from '../json/shared.js';
 
 const Landing = () => {
     return (
@@ -26,16 +26,6 @@ const Landing = () => {
             </div>
             <ContentWrapper>
                 <div className="w-full h-full">
-                    <div className="h-full flex flex-row">
-                        <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
-                            <div className="flex flex-col m-1 items-center h-fit">
-                                <div className="w-full bg-dusk py-4 px-auto space-y-1">
-                                    <h2 className="font-display text-lg md:text-2xl text-white text-balance">Our spring callout will be Wednesday, January 22nd @ 7pm in PHYS 114.</h2>
-                                    <h2 className="font-display text-white text-lg md:text-2xl text-balance">Join our <a className="underline hover:text-stardust" href="https://discord.gg/cC6FYAu93W">Discord</a> to stay up-to-date on club activities.</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
