@@ -4,7 +4,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import Button from '../../components/button/Button';
 
-import { rdeData } from '../../static/projects';
+import { rdeData } from '../../json/projects';
 
 const RDE = () => {
     return (

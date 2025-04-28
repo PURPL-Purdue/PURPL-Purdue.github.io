@@ -4,7 +4,7 @@ import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 
-import { turbopumpData } from '../../static/projects';
+import { turbopumpData } from '../../json/projects';
 
 const Turbopump = () => {
 

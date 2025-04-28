@@ -4,7 +4,7 @@ import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 
-import { turbojetData } from '../../static/projects';
+import { turbojetData } from '../../json/projects';
 
 const Turbojet = () => {
     return (

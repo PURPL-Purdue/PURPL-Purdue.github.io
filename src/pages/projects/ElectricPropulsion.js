@@ -4,7 +4,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import Button from '../../components/button/Button';
 
-import { epropData } from '../../static/projects';
+import { epropData } from '../../json/projects';
 
 const ElectricPropulsion = () => {
     return (
