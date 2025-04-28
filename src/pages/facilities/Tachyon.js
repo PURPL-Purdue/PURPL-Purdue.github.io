@@ -4,7 +4,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import Button from '../../components/button/Button';
 
-import { tachyonData } from '../../static/facilities';
+import { tachyonData } from '../../json/facilities';
 
 const Tachyon = () => {
     return (

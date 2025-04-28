@@ -3,7 +3,7 @@ import PageWrapper from '../components/layout/PageWrapper';
 import Profile from '../components/team/Profile';
 import SmallerProfile from '../components/team/SmallerProfile.js';
 
-import teamData from '../static/team.js';
+import teamData from '../json/team.js';
 
 function Team() {
     return (

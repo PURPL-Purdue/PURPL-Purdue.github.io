@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import { FaBars, FaXmark } from 'react-icons/fa6';
-import { navLinks } from '../../static/routing';
+import { navLinks } from '../../json/routing';
 
 const Header = () => {
 

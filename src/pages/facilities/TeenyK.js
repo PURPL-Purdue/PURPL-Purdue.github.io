@@ -5,7 +5,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import SpecsTable from '../../components/projects/SpecsTable';
 
-import { teenykData } from '../../static/projects';
+import { teenykData } from '../../json/projects';
 
 const TeenyK = () => {
     return (

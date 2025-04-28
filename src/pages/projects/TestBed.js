@@ -4,7 +4,7 @@ import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 
-import { testbedData } from '../../static/projects';
+import { testbedData } from '../../json/projects';
 
 const TestBed = () => {
     return (

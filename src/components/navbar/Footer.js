@@ -1,6 +1,6 @@
 
 import { FaInstagram, FaLinkedinIn, FaRegEnvelope, FaDiscord, /*FaFacebookSquare, FaYoutube */  } from 'react-icons/fa';
-import { contactInfo } from '../../static/shared';
+import { contactInfo } from '../../json/shared';
 
 const Footer = () => {
     return (
