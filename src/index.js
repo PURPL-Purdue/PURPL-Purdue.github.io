@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './components/navbar/Router';
+import './contained-bootstrap.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
