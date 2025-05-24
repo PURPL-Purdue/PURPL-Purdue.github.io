@@ -3,12 +3,11 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
-
+import Carousel from 'react-bootstrap/Carousel';
 import { testbedData } from '../../json/projects';
 
 const TestBed = () => {
     return (
-
         <PageWrapper>
             <Banner>
                 <div className="bg-gradient-background bg-cover bg-center h-full ">
@@ -24,41 +23,47 @@ const TestBed = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-10 md:space-y-18">
-                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{testbedData.blurb}</p>
+                    <div className="w-full z-0 mb-[190px] md:mb-0 lg:mb-0">
+                        <div className="w-full relative min-h-min">
+                            <div className="w-[90%] md:w-[70%] lg:w-[70%] relative top-0 left-0">
+                                <img src={testbedData.photo_reel_20250428[0].src} alt={testbedData.photo_reel_20250428[0].alt} />
+                            </div>
+                            <div className="bg-moon/70 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[310px] lg:w-[40%] absolute top-[92%] md:top-[8%] lg:top-[6%] right-2 md:right-0 z-10">
+                                <p className="text-white font-display text-md md:text-lg text-left">{testbedData.blurb}</p>
+                            </div>
+                        </div>
+                    </div>
                     <SpecsTable table={testbedData.specs_table} title="Engine Stats" />
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_1}</h2>
-                    <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-start w-full">
-                        <div className="flex flex-col space-y-2 lg:space-y-4 max-w-[200px]">
-                            {testbedData.images_1.map((photo, index) => (
-                                <img key={index} className="w-max" src={photo.src} alt={photo.alt} />
-                            ))}
-                            <p className="text-white font-display2 text-sm md:text-md">{testbedData.caption_1}</p>
-                        </div>
-                        <div className="flex flex-col w-auto justify-start text-left lg:pl-8 my-auto">
-                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
-                                {testbedData.desc_1}
-                            </h2>
-                        </div>
+                    <div className="flex flex-col w-auto justify-start text-left my-auto">
+                        <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                            {testbedData.desc_1}
+                        </h2>
                     </div>
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_2}</h2>
-                    <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-start w-full">
-                        <div className="flex flex-col space-y-2 lg:space-y-4 max-w-[240px]">
-                            {testbedData.images_2.map((photo, index) => (
-                                <img key={index} className="w-max" src={photo.src} alt={photo.alt} />
-                            ))}
-                            <p className="text-white font-display2 text-sm md:text-md">{testbedData.caption_2}</p>
-                        </div>
-                        <div className="flex flex-col w-auto justify-start text-left lg:pl-8 my-auto">
-                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
-                                {testbedData.desc_2}
-                            </h2>
-                        </div>
+                    <div className="flex flex-col w-auto justify-start text-left my-auto">
+                        <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                            {testbedData.desc_2}
+                        </h2>
                     </div>
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">More Photos</h2>
-                    <div className="flex flex-row flex-wrap w-full justify-items-start">
-                        {testbedData.photo_reel.map((photo, index) => (
-                            <img key={index} className="w-1/2 md:w-1/3 pr-2 pt-2" src={photo.src} alt={photo.alt} />
-                        ))}
+                    <div className="contained-bootstrap w-[75%] mx-auto">
+                        {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
+                        <Carousel className="text-white" data-bs-theme="light"
+                            controls={true}
+                            slide={true}
+                            indicators={true}
+                            touch={true}
+                        >
+                            {testbedData.photo_reel_20250428.map((photo, index) => {
+                                return (<Carousel.Item key={index} className="" interval={2000}>
+                                            <img src={photo.src} alt={photo.alt} className="">
+                                            </img>
+                                        </Carousel.Item>
+                                )
+                            })
+                            }
+                        </Carousel>
                     </div>
                 </div>
             </ContentWrapper>

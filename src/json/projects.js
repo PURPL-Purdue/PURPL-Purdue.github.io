@@ -137,7 +137,7 @@ export const testbedData = {
         },
     ],
     caption_2: "Heatsink chamber (top) and regenerative chamber (bottom)",
-    photo_reel: [
+    photo_reel_20250328: [
         {
             src: "/images/projects/testbed/testbed_1.png",
             alt: "View of testbed CAD model",
@@ -149,6 +149,60 @@ export const testbedData = {
         {
             src: "/images/projects/testbed/testbed_3.png",
             alt: "View of testbed CAD model",
+        },
+    ],
+    photo_reel_20250428: [
+        {
+            src: "/images/projects/testbed/20250428/_DSC0025.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC0031.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC0034.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9960.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9965.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9975.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9977.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9978.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9981.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9983.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9986.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9987.JPG",
+            alt: "Testbed",
+        },
+        {
+            src: "/images/projects/testbed/20250428/_DSC9988.JPG",
+            alt: "Testbed",
         },
     ],
 }
