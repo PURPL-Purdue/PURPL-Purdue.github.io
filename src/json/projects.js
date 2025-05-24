@@ -111,14 +111,7 @@ export const testbedData = {
         "combustion in the chamber. One of the most efficient designs in the propulsion field is the coaxial " +
         "swirl injector. In this design, each propellant is spun in separate chambers, producing streams that" +
         " take the shape of cones. By placing one chamber inside the other, the injector forms two cones with " +
-        "different angles that collide shortly after leaving the injector face, leading to the mixing of the two propellants.",
-    images_1: [
-        {
-            src: "/images/projects/testbed/testbed_2.png",
-            alt: "Cross section of swirl injector",
-        }
-    ],
-    caption_1: "Cross-section of coaxial swirler",
+        "different angles that collide shortly after leaving the injector face, leading to the mixing of the two propellants.", 
     header_2: "Cooling",
     desc_2: 
         "Maelstrom will initially be run as a heatsink chamber to verify injector performance. A heatsink chamber does " +
@@ -126,82 +119,57 @@ export const testbedData = {
         "in order to keep the engine from melting. Once the injector has been tuned, a regeneratively cooled chamber " +
         "will replace the development heatsink chamber. This active cooling method takes advantage of the high flow rates " +
         "of fuel and uses it to remove heat from the chamber walls through tiny channels that run along the length of the engine.",
-    images_2: [
-        {
-            src: "/images/projects/testbed/testbed_5.png",
-            alt: "Testbed heatsink chamber",
-        },
-        {
-            src: "/images/projects/testbed/testbed_4.png",
-            alt: "Testbed regenerative chamber",
-        },
-    ],
-    caption_2: "Heatsink chamber (top) and regenerative chamber (bottom)",
-    photo_reel_20250328: [
-        {
-            src: "/images/projects/testbed/testbed_1.png",
-            alt: "View of testbed CAD model",
-        },
-        {
-            src: "/images/projects/testbed/testbed_2.png",
-            alt: "View of testbed CAD model",
-        },
-        {
-            src: "/images/projects/testbed/testbed_3.png",
-            alt: "View of testbed CAD model",
-        },
-    ],
     photo_reel_20250428: [
         {
-            src: "/images/projects/testbed/20250428/_DSC0025.JPG",
+            src: "/images/projects/testbed/20250428/DSC0025.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC0031.JPG",
+            src: "/images/projects/testbed/20250428/DSC0031.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC0034.JPG",
+            src: "/images/projects/testbed/20250428/DSC0034.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9960.JPG",
+            src: "/images/projects/testbed/20250428/DSC9960.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9965.JPG",
+            src: "/images/projects/testbed/20250428/DSC9965.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9975.JPG",
+            src: "/images/projects/testbed/20250428/DSC9975.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9977.JPG",
+            src: "/images/projects/testbed/20250428/DSC9977.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9978.JPG",
+            src: "/images/projects/testbed/20250428/DSC9978.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9981.JPG",
+            src: "/images/projects/testbed/20250428/DSC9981.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9983.JPG",
+            src: "/images/projects/testbed/20250428/DSC9983.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9986.JPG",
+            src: "/images/projects/testbed/20250428/DSC9986.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9987.JPG",
+            src: "/images/projects/testbed/20250428/DSC9987.JPG",
             alt: "Testbed",
         },
         {
-            src: "/images/projects/testbed/20250428/_DSC9988.JPG",
+            src: "/images/projects/testbed/20250428/DSC9988.JPG",
             alt: "Testbed",
         },
     ],
