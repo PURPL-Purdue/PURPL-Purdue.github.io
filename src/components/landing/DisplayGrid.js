@@ -7,7 +7,7 @@ function DisplayGrid() {
             {landingData.quick_stats.map((item, index) => (
                 <div className="flex flex-col justify-center px-10 w-full h-[90px] md:h-[110px] lg:h-[150px] py-4" key={index}>
                     <p className="font-display-bold text-2xl md:text-4xl lg:text-5xl text-white">{item.number}</p>
-                    <p className="font-display text-md md:text-xl text-white">{item.text}</p>
+                    <p className="font-display2 text-md md:text-xl text-white">{item.text}</p>
                 </div>
             ))}
         </div>
