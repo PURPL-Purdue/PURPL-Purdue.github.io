@@ -22,7 +22,7 @@ const TestBed = () => {
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="lg:w-[800px] flex flex-col space-y-10 md:space-y-18">
+                <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div className="w-full z-0 mb-[190px] md:mb-0 lg:mb-0">
                         <div className="w-full relative min-h-min">
                             <div className="w-[90%] md:w-[70%] lg:w-[70%] relative top-0 left-0">
@@ -34,36 +34,38 @@ const TestBed = () => {
                         </div>
                     </div>
                     <SpecsTable table={testbedData.specs_table} title="Engine Stats" />
-                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_1}</h2>
-                    <div className="flex flex-col w-auto justify-start text-left my-auto">
-                        <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{testbedData.header_1}</h2>
+                        <h2 className="font-display text-lg md:text-xl text-white text-balance text-left">
                             {testbedData.desc_1}
                         </h2>
                     </div>
-                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">{testbedData.header_2}</h2>
-                    <div className="flex flex-col w-auto justify-start text-left my-auto">
-                        <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{testbedData.header_2}</h2>
+                        <h2 className="font-display text-lg md:text-xl text-white text-balance text-left">
                             {testbedData.desc_2}
                         </h2>
                     </div>
-                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left">More Photos</h2>
-                    <div className="contained-bootstrap w-[75%] mx-auto">
-                        {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
-                        <Carousel className="text-white" data-bs-theme="light"
-                            controls={true}
-                            slide={true}
-                            indicators={true}
-                            touch={true}
-                        >
-                            {testbedData.photo_reel_20250428.map((photo, index) => {
-                                return (<Carousel.Item key={index} className="" interval={2000}>
-                                            <img src={photo.src} alt={photo.alt} className="">
-                                            </img>
-                                        </Carousel.Item>
-                                )
-                            })
-                            }
-                        </Carousel>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-5">More Photos</h2>
+                        <div className="contained-bootstrap w-[100%] md:w-[75%] mx-auto">
+                            {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
+                            <Carousel className="text-white" data-bs-theme="light"
+                                controls={true}
+                                slide={true}
+                                indicators={true}
+                                touch={true}
+                            >
+                                {testbedData.photo_reel_20250428.map((photo, index) => {
+                                    return (<Carousel.Item key={index} className="" interval={2000}>
+                                        <img src={photo.src} alt={photo.alt} className="">
+                                        </img>
+                                    </Carousel.Item>
+                                    )
+                                })
+                                }
+                            </Carousel>
+                        </div>
                     </div>
                 </div>
             </ContentWrapper>
