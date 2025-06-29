@@ -50,6 +50,36 @@ export const epropData = {
     subtitle: "Hall thruster commonly used on in-space propulsion systems for satellites.",
     wireframe: "/images/projects/wireframes/electric_propulsion_8_17_24.png",
     wireframe_alt: "Electric propulsion project technical drawing",
+    photo_featured: {
+        src: "/images/projects/eprop/eprop_07.png",
+        alt: "Electric propulsion physical object",
+    },
+    photo_reel_20250629: [
+        {
+            src: "/images/projects/eprop/eprop_01.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+        {
+            src: "/images/projects/eprop/eprop_02.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+        {
+            src: "/images/projects/eprop/eprop_03.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+        {
+            src: "/images/projects/eprop/eprop_04.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+        {
+            src: "/images/projects/eprop/eprop_05.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+        {
+            src: "/images/projects/eprop/eprop_06.jpg",
+            alt: "Electric propulsion hot-fire",
+        },
+    ]
 }
 
 export const turbojetData = {

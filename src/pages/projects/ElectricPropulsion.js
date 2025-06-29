@@ -3,6 +3,7 @@ import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import Button from '../../components/button/Button';
+import Carousel from 'react-bootstrap/Carousel';
 
 import { epropData } from '../../json/projects';
 
@@ -31,6 +32,27 @@ const ElectricPropulsion = () => {
                         <div className="flex flex-col h-full pt-12 lg:pt-16 items-center space-y-6 md:space-y-12">
                             <p className="text-stardust text-lg md:text-4xl font-display">More info on the way.</p>
                             <Button text="Return Home" link="/" isNavLink={true} />
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-5">More Photos</h2>
+                        <div className="contained-bootstrap w-[100%] md:w-[75%] mx-auto">
+                            {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
+                            <Carousel className="text-white" data-bs-theme="light"
+                                controls={true}
+                                slide={true}
+                                indicators={true}
+                                touch={true}
+                            >
+                                {epropData.photo_reel_20250629.map((photo, index) => {
+                                    return (<Carousel.Item key={index} className="" interval={2000}>
+                                        <img src={photo.src} alt={photo.alt} className="">
+                                        </img>
+                                    </Carousel.Item>
+                                    )
+                                })
+                                }
+                            </Carousel>
                         </div>
                     </div>
                 </div>
