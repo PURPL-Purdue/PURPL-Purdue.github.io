@@ -43,6 +43,9 @@ const Sponsors = () => {
                 <a className="w-[100px] md:w-[120px] lg:w-[140px] py-2 " href="https://ansys.com">
                     <img className="mx-auto" alt="Ansys sponsor logo" src="/images/sponsors/Ansys_logo_black.png"></img>
                 </a>
+                <a className="w-[140px] md:w-[170px] lg:w-[200px] py-2 " href="https://protolabs.com">
+                    <img className="mx-auto" alt="Protolabs sponsor logo" src="/images/sponsors/Protolabs_logo.png"></img>
+                </a>
             </div>
         </div>
     );
