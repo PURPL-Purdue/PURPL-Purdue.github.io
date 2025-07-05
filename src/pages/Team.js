@@ -16,7 +16,7 @@ function Team() {
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance leading-normal">
                                 Our Team
                             </h1>
-                            <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
+                            <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-lg lg:text-xl">
                                 Made by students, for students.<br></br>We are comprised of an executive team and project leads.
                             </h2>
                         </div>

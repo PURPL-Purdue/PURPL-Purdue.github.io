@@ -18,7 +18,7 @@ const TeenyK = () => {
                         <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                             {teenykData.title}
                         </h1>
-                        <h2 className="font-display text-white mt-4 md:mt-12 text-md md:text-xl lg:text-2xl">
+                        <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-lg lg:text-xl">
                             {teenykData.subtitle}
                         </h2>
                     </div>
@@ -27,7 +27,7 @@ const TeenyK = () => {
         </Banner>
         <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{teenykData.blurb}</p>
+                    <p className="text-white text-md md:text-lg font-display2 text-left lg:mt-16">{teenykData.blurb}</p>
                     <SpecsTable table={teenykData.specs_table} title="Stats" />
                 </div>
             </ContentWrapper>

@@ -23,9 +23,9 @@ const Turbojet = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbojetData.blurb}</p>
+                    <p className="text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbojetData.blurb}</p>
                     <SpecsTable table={turbojetData.specs_table} title="Engine Stats" />
-                    <p className="text-white text-lg md:text-xl font-display text-left">
+                    <p className="text-white text-md md:text-lg font-display2 text-left">
                         {turbojetData.desc_1}
                     </p>
 
