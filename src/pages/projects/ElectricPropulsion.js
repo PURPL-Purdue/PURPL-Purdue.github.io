@@ -2,7 +2,6 @@
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
-import Button from '../../components/button/Button';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { epropData } from '../../json/projects';
