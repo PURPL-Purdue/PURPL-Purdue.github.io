@@ -17,7 +17,7 @@ const Landing = () => {
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
                         <div className="flex flex-col text-left pt-auto">
                             <img className="h-[100px] md:h-[200px] lg:h-[270px]" src="/images/logo/PURPL_wordmark_white.png" alt="White PURPL wordmark"></img>
-                            <h2 className="font-display-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
+                            <h2 className="font-display2-bold text-white mt-4 md:mt-12 text-md md:text-3xl">
                                 Rocket science propelled by students.
                             </h2>
                         </div>
@@ -29,7 +29,7 @@ const Landing = () => {
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
-                            <h2 className="font-display text-lg md:text-2xl text-white text-balance">
+                            <h2 className="font-display2 text-md md:text-xl text-white text-balance">
                                 We design, build, and test engines. Check out the projects tab to see what we're cooking up.
                             </h2>
                         </div>
@@ -46,7 +46,7 @@ const Landing = () => {
                     <img className="w-min" src="/images/DSC/DSC01120-2_color_graded.jpg" alt="Students stand in front of whiteboard" />
                     <div className={`flex flex-col justify-start text-left lg:pl-24 my-auto`}>
                         <h1 className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance">Empowering Engineers</h1>
-                        <h2 className="font-display text-lg md:text-2xl text-white mb-6 lg:mb-8 text-balance">
+                        <h2 className="font-display2 text-md md:text-xl text-white mb-6 lg:mb-8 text-balance">
                             We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
                         </h2>
                         <Button text="Join the Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false} />
@@ -58,7 +58,7 @@ const Landing = () => {
                     <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" 
                         title="PURPL Google Calendar">
                     </iframe>
-                    <p className="text-white font-display mt-6 text-lg md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
+                    <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
                 </div>
                 <DividerLine />
@@ -67,7 +67,7 @@ const Landing = () => {
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
                         <Sponsors />
                     </div>
-                    <h2 className="font-display text-lg md:text-2xl text-white">
+                    <h2 className="font-display2 text-md md:text-xl text-white">
                         Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
                         We would love your support!
                     </h2>

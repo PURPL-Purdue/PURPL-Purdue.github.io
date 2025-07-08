@@ -24,12 +24,12 @@ const Turbopump = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-lg md:text-xl font-display text-left lg:mt-16">{turbopumpData.blurb}</p>
+                    <p className="text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbopumpData.blurb}</p>
                     <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />
                     <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
                         <img className="max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
                         <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
                                 {turbopumpData.desc_1}
                             </h2>
                         </div>
@@ -37,7 +37,7 @@ const Turbopump = () => {
                     <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
                         <img className="max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
                         <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                            <h2 className="font-display text-lg md:text-xl text-white text-balance">
+                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
                                 {turbopumpData.desc_2}
                             </h2>
                         </div>

@@ -23,16 +23,13 @@ const Contact = () => {
             <ContentWrapper>
                 <div className="lg:w-[950px] flex flex-col w-full space-y-8 md:space-y-10">
                     <div className="flex flex-col items-center space-y-8 md:space-y-14 my-4 lg:my-8 ">
-                        <div className="flex flex-col space-y-2 text-white font-display text-lg md:text-xl text-center">
-                            <p>
-                                Interested in joining or supporting our club? We'd love to hear from you!</p>
-                            <p>
-                                Contact us via the form below or by email at <a href={`mailto:${contactInfo.email}`} className="hover:text-boilermaker-gold underline text-stardust">{contactInfo.email}</a>.
-                            </p>
+                        <div className="flex flex-col space-y-2 text-white font-display2 text-md md:text-xl text-center">
+                            <p>Interested in joining or supporting our club? We'd love to hear from you!</p>
+                            <p>Contact us via the form below or by email at <a href={`mailto:${contactInfo.email}`} className="hover:text-boilermaker-gold underline text-stardust">{contactInfo.email}</a>.</p>
                         </div>
                         <ContactForm />
                         <div className="flex flex-row w-full justify-center items-center space-x-4">
-                            <div className="flex flex-col h-full text-white font-display text-lg md:text-xl text-center space-y-2">
+                            <div className="flex flex-col h-full text-white font-display2 text-md md:text-xl text-center space-y-2">
                                 <p className="text-balance">
                                     <span className="">Email: </span>
                                     <a href={`mailto:${contactInfo.email}`} className="hover:text-boilermaker-gold underline text-stardust">{contactInfo.email}</a>

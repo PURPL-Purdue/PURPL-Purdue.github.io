@@ -34,7 +34,7 @@ const Button = (props) => {
     }
     else {
 return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className={buttonClassName + ` w-min text-nowrap font-display text-sm md:text-xl ${isHovered ? "text-white" : "text-white"}`}
+    <a href={link} target="_blank" rel="noopener noreferrer" className={buttonClassName + ` w-min text-nowrap font-display2 text-sm md:text-lg ${isHovered ? "text-white" : "text-white"}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={buttonStyle}>
