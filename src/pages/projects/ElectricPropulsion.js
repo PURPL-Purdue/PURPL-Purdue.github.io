@@ -4,7 +4,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import Carousel from 'react-bootstrap/Carousel';
 
-import { epropData } from '../../json/projects';
+import { epropData as data } from '../../json/projects';
 
 const ElectricPropulsion = () => {
     return (
@@ -15,10 +15,10 @@ const ElectricPropulsion = () => {
                     <div className="absolute left-0 right-0 mx-auto px-4 bottom-24 md:bottom-20">
                         <div className="flex flex-col text-center">
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
-                                {epropData.title}
+                                {data.title}
                             </h1>
                             <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-lg lg:text-xl">
-                                {epropData.subtitle}
+                                {data.subtitle}
                             </h2>
                         </div>
                     </div>
@@ -30,18 +30,18 @@ const ElectricPropulsion = () => {
                         <div className="w-full z-0 mb-[190px] md:mb-0 lg:mb-0">
                             <div className="w-full relative min-h-min">
                                 <div className="w-[90%] md:w-[70%] lg:w-[70%] relative top-0 left-0">
-                                    <img src={epropData.featured.photo.src} alt={epropData.featured.photo.alt} />
+                                    <img src={data.featured.photo.src} alt={data.featured.photo.alt} />
                                 </div>
-                                <div className="bg-moon/70 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[310px] lg:w-[45%] absolute top-[92%] md:top-[8%] lg:top-[6%] right-2 md:right-0 z-10">
-                                    <p className="text-white font-display2 text-sm md:text-lg text-left">{epropData.featured.blurb}</p>
+                                <div className="bg-moon/80 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[310px] lg:w-[45%] absolute top-[92%] md:top-[8%] lg:top-[6%] right-2 md:right-0 z-10">
+                                    <p className="text-white font-display2 text-sm md:text-lg text-left">{data.featured.blurb}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{epropData.photo_reel.title}</h2>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.photo_reel.title}</h2>
                         <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {epropData.photo_reel.blurb}
+                            {data.photo_reel.blurb}
                         </h2>
                         <div className="contained-bootstrap w-[100%] md:w-[75%] mx-auto mt-8">
                             {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
@@ -51,7 +51,7 @@ const ElectricPropulsion = () => {
                                 indicators={true}
                                 touch={true}
                             >
-                                {epropData.photo_reel.photos.map((photo, index) => {
+                                {data.photo_reel.photos.map((photo, index) => {
                                     return (<Carousel.Item key={index} className="" interval={2000}>
                                         <img src={photo.src} alt={photo.alt} className="">
                                         </img>
