@@ -230,4 +230,63 @@ export const testbedData = {
 export const rdeData = {
     title: "RDE",
     subtitle: "",
+    featured: {
+        photo: {
+            src: "/images/projects/rde/RDE Cross Section.png",
+            alt: "RDE combustor",
+        },
+        blurb: "The Rotating Detonation Engine team is creating a hydrogen-air rotating detonation combustor" +
+            " (RDC) to be integrated with turbines for energy generation applications. " +
+            "We are in the design phase and intend to begin development and testing soon.",
+    },
+    section_1: {
+        title: "About the Project",
+        desc: "RDE pushes the boundaries of air-breathing detonation technology while providing students " +
+            "with direct and industry-applicable experience in cutting-edge propulsion research. Our team is comprised of four " +
+            "undergraduate students who are all heavily involved in the project. Our team has made steady progress with the help" + 
+            " of experienced mentors like Professor Li Qiao. By the end of our project, we hope to advance current understandings of RDC technology, " + 
+            "pressure gain combustion, and sustainable power generation.",
+    },
+    timeline: {
+        title: "Our Timeline",
+        data: [
+        {
+            title: 'Jan 2025',
+            description:
+                'RDE project begins.'
+        },
+        {
+            title: 'Apr 2025',
+            description:
+                "Preliminary design review",
+        },
+        {
+            title: 'Sep 2025',
+            description:
+                "Critical Design review"
+        },
+        {
+            title: 'Dec 2025',
+            description:
+                "Hotfire campaign for RDC"
+        },
+        {
+            title: 'Jan 2026',
+            description:
+                "Start turbine integration"
+        },
+    ]},
+    photo_reel: {
+        title: "Our Design",
+        photos: [
+            {
+                src: "/images/projects/rde/RDE Test Stand Isometric.png",
+                alt: "RDE combustor",
+            },
+            {
+                src: "/images/projects/rde/RDE w Pre Det.png",
+                alt: "RDE combustor 2",
+            },
+        ]
+    }
 }

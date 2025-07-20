@@ -49,13 +49,18 @@ const Landing = () => {
                         <h2 className="font-display2 text-md md:text-xl text-white mb-6 lg:mb-8 text-balance">
                             We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
                         </h2>
-                        <Button text="Join the Discord" link="https://discord.gg/cC6FYAu93W" isNavLink={false} />
+                        <Button 
+                            text="Join the Discord" 
+                            link="https://discord.gg/cC6FYAu93W" 
+                            isNavLink={false}
+                            className="w-min" 
+                        />
                     </div>
                 </div>
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
-                    <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8" 
+                    <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8"
                         title="PURPL Google Calendar">
                     </iframe>
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
@@ -71,6 +76,12 @@ const Landing = () => {
                         Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
                         We would love your support!
                     </h2>
+                    <Button
+                        text="View our corporate newsletter"
+                        link="/PURPL-Corporate-Newsletter-25-26.pdf"
+                        isNavLink={false}
+                        className="mx-auto mt-6"
+                    />
                 </div>
             </ContentWrapper>
         </PageWrapper>
