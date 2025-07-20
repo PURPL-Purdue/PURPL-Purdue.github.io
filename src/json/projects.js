@@ -251,22 +251,30 @@ export const rdeData = {
         title: "Our Timeline",
         data: [
         {
-            title: 'Past Work',
+            title: 'Jan 2025',
             description:
-                'We sized and interfaced the fuel/oxidizer injectors and chamber with feasible manufacturing techniques in mind.'
+                'RDE project begins.'
         },
         {
-            title: 'Current Work',
+            title: 'Apr 2025',
             description:
-                "We are designing the 2D Tesla Valve geometries to improve the " + 
-                "performance of the fuel injector, hoping to finalize design and instrumentation by " + 
-                "the end of August and begin manufacturing in September.",
+                "Preliminary design review",
         },
         {
-            title: 'Future Goals',
+            title: 'Sep 2025',
             description:
-                "We hope to test no later than mid-December and start turbine integration in January."
-        }
+                "Critical Design review"
+        },
+        {
+            title: 'Dec 2025',
+            description:
+                "Hotfire campaign for RDC"
+        },
+        {
+            title: 'Jan 2026',
+            description:
+                "Start turbine integration"
+        },
     ]},
     photo_reel: {
         title: "Our Design",

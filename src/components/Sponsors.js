@@ -2,7 +2,7 @@ const Sponsors = () => {
     return (
         <div className="flex flex-col space-y-4 lg:mb-8 px-8 md:px-16 lg:px-20 pb-4 pt-6 items-center bg-[#938a98] w-min h-min mx-auto justify-center">
             <div className="flex flex-col space-y-0">
-                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-stardust">Platnium</h2>
+                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-stardust">Platinum</h2>
                 <div className="flex flex-row items-center justify-center space-x-6">
                     <a className="w-[140px] md:w-[170px] lg:w-[200px] py-2 " href="https://protolabs.com">
                         <img className="mx-auto" alt="Protolabs sponsor logo" src="/images/sponsors/Protolabs_logo.png"></img>
