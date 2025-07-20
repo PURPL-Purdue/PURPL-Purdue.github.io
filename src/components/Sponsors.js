@@ -1,8 +1,8 @@
 const Sponsors = () => {
     return (
-        <div className="flex flex-col space-y-4 lg:mb-8 px-8 md:px-16 lg:px-20 pb-4 pt-6 items-center bg-[#938a98] w-min h-min mx-auto justify-center">
+        <div className="flex flex-col space-y-4 lg:space-y-8 lg:mb-8 px-8 md:px-16 lg:px-20 pb-4 pt-6 items-center bg-[#938a98] w-min h-min mx-auto justify-center">
             <div className="flex flex-col space-y-0">
-                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-stardust">Platinum</h2>
+                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-dusk">Platinum Tier</h2>
                 <div className="flex flex-row items-center justify-center space-x-6">
                     <a className="w-[140px] md:w-[170px] lg:w-[200px] py-2 " href="https://protolabs.com">
                         <img className="mx-auto" alt="Protolabs sponsor logo" src="/images/sponsors/Protolabs_logo.png"></img>
@@ -13,7 +13,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div className="flex flex-col space-y-0">
-                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-stardust">Gold</h2>
+                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-dusk">Gold Tier</h2>
                 <div className="flex flex-row items-center justify-center space-x-6">
                     <a className="w-[70px] md:w-[80px] lg:w-[100px] py-2 " href="https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC">
                         <img className="mx-auto" alt="PEPC sponsor logo" src="/images/sponsors/pepc_logo_transparent.png"></img>
@@ -21,7 +21,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div className="flex flex-col space-y-0">
-                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-stardust">Silver</h2>
+                <h2 className="font-display-bold text-xl lg:text-2xl uppercase text-dusk">Silver Tier</h2>
                 <div className="flex flex-row items-center justify-center space-x-6">
                     <a className="w-[70px] md:w-[100px] lg:w-[115px] py-2" href="https://web.ics.purdue.edu/~shreve/">
                         <img className="mx-auto" alt="Shreve Hall Club sponsor mascot" src="/images/sponsors/shreve_hall_club_mascot.jpg"></img>
