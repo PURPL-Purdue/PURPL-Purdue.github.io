@@ -29,7 +29,7 @@ function Team() {
                     {teamData.major_exec.map((profile, index) => (
                         <Profile
                             key={profile.name}
-                            imagePath={profile.image2}
+                            imagePath={profile.image}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -42,7 +42,7 @@ function Team() {
                     {teamData.project_leads.map((profile, index) => (
                         <SmallerProfile
                             key={profile.name}
-                            imagePath={profile.image2}
+                            imagePath={profile.image}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -55,7 +55,7 @@ function Team() {
                     {teamData.admin_exec.map((profile, index) => (
                         <SmallerProfile
                             key={profile.name}
-                            imagePath={profile.image2}
+                            imagePath={profile.image}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}

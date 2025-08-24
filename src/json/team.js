@@ -3,21 +3,20 @@
  */
 
 const defaultProfilePic = "/images/team/pattern_1.jpg"; // full path
-const imagePath = "/images/team/headshots/resized-500x500/";
+const imagePath = "/images/team/headshots/";
 const teamData = {
     major_exec: [
         {
             name: "Madeline Taylor",
             title: "Co-President",
-            image1: "DSC03317.jpg",
-            image2: "DSC03319.jpg",
+            image: "resized-500x500/DSC05754-Enhanced-NR.jpg",
             email: "tayl1138@purdue.edu",
             linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
         },
         {
             name: "Parth Karande",
             title: "Co-President",
-            image2: "IMG_2275.jpg",
+            image: "2024/resized-500x500/IMG_2275.jpg",
             email: "pkarande@purdue.edu",
             linkedin: "https://linkedin.com/in/parth-karande/"
         },
@@ -29,27 +28,27 @@ const teamData = {
         },
         {
             name: "Max Neitzke",
-            title: "Project Director"
+            title: "Project Director",
+            image: "resized-500x500/DSC05747-Enhanced-NR.jpg",
         },
         {
             name: "Jonah Nobel",
             title: "Test Stand Director",
-            image1: "DSC03301.jpg",
-            image2: "DSC03297.jpg"
+            image: "2024/resized-500x500/DSC03297.jpg"
         }
     ],
     project_leads: [
         {
             name: "Alejandro Diaz Contreras",
             title: "Turbopump Co-Lead",
-            image1: "DSC03294.jpg",
-            image2: "DSC03293.jpg",
+            image: "2024/resized-500x500/DSC03293.jpg",
             linkedin: "https://www.linkedin.com/in/alejandrodico/",
             email: "adiazcon@purdue.edu",
         },
         {
             name: "Andrew Fontanetta",
             title: "Turbopump Co-Lead",
+            image: "resized-500x500/DSC05738-Enhanced-NR.jpg",
             linkedin: "https://linkedin.com/in/andrew-fontanetta/",
             email: "afontanetta7@gmail.com",
         },
@@ -59,28 +58,27 @@ const teamData = {
         },
         {
             name: "Max Neitzke",
-            title: "Electric Propulsion Lead"
+            title: "Electric Propulsion Lead",
+            image: "resized-500x500/DSC05747-Enhanced-NR.jpg",
         },
         {
             name: "Dominik Sloup",
             title: "Testbed Co-Lead",
-            image1: "DSC03285.jpg",
-            image2: "DSC03283.jpg",
+            image: "2024/resized-500x500/DSC03283.jpg",
             linkedin: "https://www.linkedin.com/in/dominik-sloup-2ba20a2a7/",
             email: "dsloup@purdue.edu",
         },
         {
             name: "James Nida",
             title: "Testbed Co-Lead",
-            image1: "DSC03289.jpg",
-            image2: "DSC03287.jpg",
+            image: "2024/resized-500x500/DSC03287.jpg",
             linkedin: "https://www.linkedin.com/in/james-nida-/",
             email: "nidaj@purdue.edu",
         },
         {
             name: "Deepesh Balwani",
             title: "RDE Lead",
-            image2: "DSC05730.jpg",
+            image: "resized-500x500/DSC05730-Enhanced-NR.jpg",
         }
     ],
     admin_exec: [
@@ -96,12 +94,14 @@ const teamData = {
         {
             name: "Andrew Fontanetta",
             title: "Secretary",
+            image: "resized-500x500/DSC05738-Enhanced-NR.jpg",
             linkedin: "https://linkedin.com/in/andrew-fontanetta/",
             email: "afontanetta7@gmail.com",
         },
         {
             name: "Keertan Palayam",
-            title: "Funding Acquisition Chair"
+            title: "Funding Acquisition Chair",
+            image: "resized-500x500/DSC05674-Enhanced-NR.jpg",
         },
         {
             title: "Event Coordinator"
@@ -109,8 +109,7 @@ const teamData = {
         {
             name: "Alina Li",
             title: "Webmaster",
-            image1: "DSC03309.jpg",
-            image2: "DSC03308.jpg"
+            image: "2024/resized-500x500/DSC03308.jpg"
         },
         {
             name: "Daniel Bennett",
@@ -122,6 +121,7 @@ const teamData = {
         {
             name: "Jack Woods",
             title: "Safety Officer",
+            image: "resized-500x500/DSC05653-Enhanced-NR.jpg",
             linkedin: "https://www.linkedin.com/in/jack--woods",
             email: "woods236@purdue.edu",
         },
@@ -132,6 +132,7 @@ const teamData = {
         {
             name: "TJ Mareachen",
             title: "Industrial Relations",
+            image: "resized-500x500/DSC05731-Enhanced-NR.jpg",
             linkedin: "https://www.linkedin.com/in/timothy-mareachen/",
             email: "tmareach@purdue.edu",
         }
@@ -140,18 +141,11 @@ const teamData = {
 
 Object.keys(teamData).forEach(category => {
     teamData[category] = teamData[category].map(member => {
-        if (member.image1) {
-            member.image1 = imagePath + member.image1;
+        if (member.image) {
+            member.image = imagePath + member.image;
         }
         else {
-            member.image1 = defaultProfilePic;
-        }
-
-        if (member.image2) {
-            member.image2 = imagePath + member.image2;
-        }
-        else {
-            member.image2 = defaultProfilePic;
+            member.image = defaultProfilePic;
         }
         return member;
     });
