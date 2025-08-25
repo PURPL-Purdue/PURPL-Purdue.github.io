@@ -154,6 +154,22 @@ export const testbedData = {
         "Cooling": "heatsink, regenerative",
         "Injector type": "coaxial swirl",
     },
+    augmented_spark_igniter: {
+        header: "Augmented Spark Igniter",
+        desc: "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source." + 
+            " To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. " + 
+            "Among other components, the igniter features orifice fittings which ensure precise control over" + 
+            " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",        
+    },
+    test_2025: {
+        header: "Testing - June '25",
+        desc: "After months of hard work, the team successfully tested their first piece of hardware." + 
+            " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" + 
+            " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" + 
+            " chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
+        image: "/images/projects/testbed/1750551261201.jpg",
+        image_alt: "Torch ignitor",
+    },
     header_1: "Swirl Injectors",
     desc_1:
         "The injector in a rocket engine is responsible for mixing the fuel and oxidizer efficiently to enable " +

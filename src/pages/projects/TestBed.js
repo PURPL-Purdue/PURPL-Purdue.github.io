@@ -33,6 +33,17 @@ const TestBed = () => {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.test_2025.header}</h2>
+                        <div className="flex flex-col space-y-6 lg:flex-row lg:items-center w-full">
+                            <img className="max-w-[350px]" src={data.test_2025.image} alt={data.test_2025.image_alt} />
+                            <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                                <h2 className="font-display2 text-md md:text-md text-white text-balance text-left">
+                                    {data.test_2025.desc}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
                     <SpecsTable table={data.specs_table} title="Engine Stats" />
                     <div>
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.header_1}</h2>
@@ -44,6 +55,12 @@ const TestBed = () => {
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.header_2}</h2>
                         <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
                             {data.desc_2}
+                        </h2>
+                    </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.augmented_spark_igniter.header}</h2>
+                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                            {data.augmented_spark_igniter.desc}
                         </h2>
                     </div>
                     <div>
