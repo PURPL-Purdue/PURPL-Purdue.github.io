@@ -101,7 +101,6 @@ const teamData = {
         {
             name: "Keertan Palayam",
             title: "Funding Acquisition Chair",
-            image: "resized-500x500/DSC05674-Enhanced-NR.jpg",
         },
         {
             title: "Event Coordinator"
