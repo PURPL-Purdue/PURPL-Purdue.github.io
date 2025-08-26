@@ -79,6 +79,8 @@ const teamData = {
             name: "Deepesh Balwani",
             title: "RDE Lead",
             image: "resized-500x500/DSC05730-Enhanced-NR.jpg",
+            linkedin: "https://www.linkedin.com/in/deepesh-balwani/",
+            email: "ddbalwani@gmail.com",
         }
     ],
     admin_exec: [
@@ -86,10 +88,8 @@ const teamData = {
             title: "Marketing Chair"
         },
         {
-            name: "Hannah Shapiro",
+            name: "Anjali Patel",
             title: "Social Media Chair",
-            linkedin: "www.linkedin.com/in/hannahshapiro03",
-            email: "hannahshapiro03@gmail.com",
         },
         {
             name: "Andrew Fontanetta",
@@ -103,19 +103,24 @@ const teamData = {
             title: "Funding Acquisition Chair",
         },
         {
-            title: "Event Coordinator"
+            name: "Jeramiah Arona",
+            title: "Event Coordinator",
+            image: "2024/resized-500x500/DSC03321.jpg",
+
         },
         {
             name: "Alina Li",
             title: "Webmaster",
-            image: "2024/resized-500x500/DSC03308.jpg"
+            image: "2024/resized-500x500/DSC03308.jpg",
         },
         {
             name: "Daniel Bennett",
-            title: "IT Chair"
+            title: "IT Chair",
+            image: "resized-500x500/DSC05734-Enhanced-NR.jpg",
         },
         {
-            title: "Merchandise Chair"
+            name: "Cole Halupnik",
+            title: "Merchandise Chair",
         },
         {
             name: "Jack Woods",
