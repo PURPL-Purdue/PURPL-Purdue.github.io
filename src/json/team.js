@@ -54,7 +54,8 @@ const teamData = {
         },
         {
             name: "Marvel Zheng",
-            title: "Turbojet Lead"
+            title: "Turbojet Lead",
+            image: "resized-500x500/MarvelZ.jpg",
         },
         {
             name: "Max Neitzke",
@@ -121,6 +122,7 @@ const teamData = {
         {
             name: "Cole Halupnik",
             title: "Merchandise Chair",
+            image: "resized-500x500/ColeH.png",
         },
         {
             name: "Jack Woods",
@@ -131,7 +133,8 @@ const teamData = {
         },
         {
             name: "Sabrina Phan",
-            title: "Photographer"
+            title: "Photographer",
+            image: "resized-500x500/DSC05750.jpg",
         },
         {
             name: "TJ Mareachen",
