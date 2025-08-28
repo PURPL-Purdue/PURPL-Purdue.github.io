@@ -30,7 +30,11 @@ export const navLinks = [
             {
                 name: "rde",
                 link: "rde",
-            }
+            },
+            {
+                name: "torch training program",
+                link: "ttp",
+            },
         ],
     },
     {
