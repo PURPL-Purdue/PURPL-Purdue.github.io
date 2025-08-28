@@ -306,3 +306,7 @@ export const rdeData = {
         ]
     }
 }
+
+export const ttpData = {
+    title: "Torch Training Program",
+}

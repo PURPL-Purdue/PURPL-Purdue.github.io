@@ -22,6 +22,7 @@ import Turbojet from '../../pages/projects/Turbojet';
 import Turbopump from '../../pages/projects/Turbopump';
 import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
+import TTP from '../../pages/projects/TTP';
 
 const router = createHashRouter([
   {
@@ -65,6 +66,10 @@ const router = createHashRouter([
       {
         path: "tachyon",
         element: <Tachyon />,
+      },
+      {
+        path: "ttp",
+        element: <TTP />,
       },
       {
         path: "contact",
