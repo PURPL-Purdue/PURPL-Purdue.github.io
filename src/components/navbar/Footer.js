@@ -1,5 +1,5 @@
 
-import { FaInstagram, FaLinkedinIn, FaRegEnvelope, FaDiscord, /*FaFacebookSquare, FaYoutube */  } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaRegEnvelope, FaDiscord, /*FaFacebookSquare, */ FaYoutube  } from 'react-icons/fa';
 import { contactInfo } from '../../json/shared';
 
 const Footer = () => {
@@ -9,13 +9,9 @@ const Footer = () => {
                 <p className="text-stardust font-display text-left">Purdue Undergraduate Rocket Propulsion Lab</p>
                 <p className="text-stardust font-display text-left pl-0 ml-0 indent-0">Copyright &copy; 2024. All rights reserved.</p>
                 <div className="flex flex-row text-stardust space-x-2 align-middle mt-3">
-                    {
-                        /*
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/@PURPL_purdue" target="_blank" rel="noopener noreferrer">
                         <FaYoutube className="hover:text-white" size={24} />
                     </a>
-                    */
-                    }
                     <a href="https://discord.gg/cC6FYAu93W" target="_blank" rel="noopener noreferrer">
                     <FaDiscord className=" hover:text-white" size={24} />
                     </a>

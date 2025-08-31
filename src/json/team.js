@@ -77,6 +77,17 @@ const teamData = {
             email: "nidaj@purdue.edu",
         },
         {
+            name: "Declan Koch",
+            title: "Biggy-K Lead",
+        },
+        {
+            name: "Jack Woods",
+            title: "Tachyon Lead",
+            image: "resized-500x500/DSC05653-Enhanced-NR.jpg",
+            linkedin: "https://www.linkedin.com/in/jack--woods",
+            email: "woods236@purdue.edu",
+        },
+        {
             name: "Deepesh Balwani",
             title: "RDE Lead",
             image: "resized-500x500/DSC05730-Enhanced-NR.jpg",
