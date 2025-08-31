@@ -30,7 +30,7 @@ const Landing = () => {
                         <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
                             <div className="flex flex-col m-1 items-center h-fit">
                                 <div className="w-full bg-dusk py-4 px-auto space-y-1">
-                                    <h2 className="font-display2 text-md md:text-xl text-white text-balance">Want to see things blow up? Check out our latest video:</h2>
+                                    <h2 className="font-display2 text-md md:text-xl text-white text-balance">Want to see some fire? Check out our latest video:</h2>
                                 </div>
                             </div>
                         </div>
