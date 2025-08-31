@@ -26,6 +26,17 @@ const Landing = () => {
             </div>
             <ContentWrapper>
                 <div className="w-full h-full">
+                    <div className="h-full flex flex-col space-y-6">
+                        <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
+                            <div className="flex flex-col m-1 items-center h-fit">
+                                <div className="w-full bg-dusk py-4 px-auto space-y-1">
+                                    <h2 className="font-display2 text-md md:text-xl text-white text-balance">Want to see things blow up? Check out our latest video:</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe className="mx-auto lg:w-[560px] lg:h-[315px]" src="https://www.youtube.com/embed/-OZBZcnQC2E?si=eU20ZBd7vMnvsXiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
                         <div className={`flex flex-col justify-start text-left lg:pr-24 my-auto space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
@@ -49,11 +60,11 @@ const Landing = () => {
                         <h2 className="font-display2 text-md md:text-xl text-white mb-6 lg:mb-8 text-balance">
                             We enable students interested in propulsion to gain hands-on experience in a collaborative environment.
                         </h2>
-                        <Button 
-                            text="Join the Discord" 
-                            link="https://discord.gg/cC6FYAu93W" 
+                        <Button
+                            text="Join the Discord"
+                            link="https://discord.gg/cC6FYAu93W"
                             isNavLink={false}
-                            className="w-min" 
+                            className="w-min"
                         />
                     </div>
                 </div>
