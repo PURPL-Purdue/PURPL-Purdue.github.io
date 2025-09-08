@@ -1,4 +1,4 @@
-const Sponsors = () => {
+const SponsorsMiniView = () => {
     return (
         <div className="flex flex-col space-y-4 lg:space-y-8 lg:mb-8 px-8 md:px-16 lg:px-20 pb-4 pt-6 items-center bg-[#938a98] w-min h-min mx-auto justify-center">
             <div className="flex flex-col space-y-0">
@@ -60,4 +60,4 @@ const Sponsors = () => {
     );
 };
 
-export default Sponsors;
+export default SponsorsMiniView;
