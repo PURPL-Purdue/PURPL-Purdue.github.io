@@ -4,7 +4,7 @@ import DisplayGrid from '../components/landing/DisplayGrid.js';
 import Button from '../components/button/Button.js';
 import ContentWrapper from '../components/layout/ContentWrapper.js';
 import PageWrapper from '../components/layout/PageWrapper.js';
-import Sponsors from '../components/Sponsors.js';
+import SponsorsMiniView from '../components/sponsors/SponsorsMiniView.js';
 import { landingData } from '../json/landing.js';
 import { contactInfo } from '../json/shared.js';
 
@@ -34,7 +34,7 @@ const Landing = () => {
                                 </div>
                             </div>
                         </div>
-                        <iframe className="mx-auto lg:w-[560px] lg:h-[315px]" src="https://www.youtube.com/embed/-OZBZcnQC2E?si=eU20ZBd7vMnvsXiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="mx-auto w-full h-[250px] md:w-[600px] md:h-[350px] lg:w-[750px] lg:h-[400px]" src="https://www.youtube.com/embed/-OZBZcnQC2E?si=eU20ZBd7vMnvsXiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
                     </div>
                     <div className="flex flex-col space-y-8 py-8 lg:py-12 lg:grid lg:grid-cols-2 lg:items-center w-full lg:justify-items-end">
@@ -81,7 +81,7 @@ const Landing = () => {
                 <div className="py-8 lg:py-12">
                     <h1 className="font-display-bold text-3xl lg:text-5xl text-white text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
                     <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
-                        <Sponsors />
+                        <SponsorsMiniView />
                     </div>
                     <h2 className="font-display2 text-md md:text-xl text-white">
                         Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>

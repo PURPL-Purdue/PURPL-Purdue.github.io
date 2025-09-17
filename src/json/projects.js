@@ -269,7 +269,7 @@ export const rdeData = {
         {
             title: 'Jan 2025',
             description:
-                'RDE project begins.'
+                'RDE project begins'
         },
         {
             title: 'Apr 2025',
@@ -277,17 +277,17 @@ export const rdeData = {
                 "Preliminary design review",
         },
         {
-            title: 'Sep 2025',
+            title: 'Oct 2025',
             description:
-                "Critical Design review"
+                "Critical design review"
         },
         {
-            title: 'Dec 2025',
+            title: 'Jan 2026',
             description:
                 "Hotfire campaign for RDC"
         },
         {
-            title: 'Jan 2026',
+            title: 'Feb 2026',
             description:
                 "Start turbine integration"
         },

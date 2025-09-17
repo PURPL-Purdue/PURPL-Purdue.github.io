@@ -23,6 +23,7 @@ import Turbopump from '../../pages/projects/Turbopump';
 import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
 import TTP from '../../pages/projects/TTP';
+import Sponsors from "../../pages/Sponsors";
 
 const router = createHashRouter([
   {
@@ -37,6 +38,10 @@ const router = createHashRouter([
       {
         path: "team",
         element: <Team />,
+      },
+      {
+        path: "sponsors",
+        element: <Sponsors />
       },
       // project pages
       {
