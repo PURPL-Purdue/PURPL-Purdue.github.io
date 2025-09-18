@@ -59,8 +59,15 @@ const teamData = {
         },
         {
             name: "Max Neitzke",
-            title: "Electric Propulsion Lead",
+            title: "Electric Propulsion Co-Lead",
             image: "resized-500x500/DSC05747-Enhanced-NR.jpg",
+        },
+        {
+            name: "Madeline Taylor",
+            title: "Electric Propulsion Co-Lead",
+            image: "resized-500x500/DSC05754-Enhanced-NR.jpg",
+            email: "tayl1138@purdue.edu",
+            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1",
         },
         {
             name: "Dominik Sloup",
