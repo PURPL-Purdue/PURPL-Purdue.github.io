@@ -38,11 +38,6 @@ export const navLinks = [
         ],
     },
     {
-        name: "sponsors",
-        link: "sponsors",
-        children: [],
-    },
-    {
         name: "facilities",
         link: "#",
         children: [
@@ -55,6 +50,11 @@ export const navLinks = [
                 link: "tachyon",
             },
         ],
+    },
+    {
+        name: "sponsors",
+        link: "sponsors",
+        children: [],
     },
     {
         name: "team",
