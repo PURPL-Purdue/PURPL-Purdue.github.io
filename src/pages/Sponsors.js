@@ -3,7 +3,6 @@ import PageWrapper from '../components/layout/PageWrapper';
 import Button from '../components/button/Button.js';
 
 import { contactInfo, sponsors } from '../json/shared.js';
-import SponsorsMiniView from '../components/sponsors/SponsorsMiniView.js';
 import ContentWrapper from '../components/layout/ContentWrapper.js';
 
 function Sponsors() {
@@ -22,7 +21,7 @@ function Sponsors() {
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full mb-16">
+                <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full lg:w-[600px] mx-auto mb-16">
                     <div className="flex flex-col m-1 items-center h-fit">
                         <div className="w-full bg-dusk py-4 px-auto space-y-4 flex flex-col items-center">
                             <h2 className="font-display2 text-md md:text-xl text-white text-balance">
@@ -32,8 +31,52 @@ function Sponsors() {
                     </div>
                 </div>
                 <div className="flex flex-col space-y-8">
-                    <div className="w-full bg-dusk overflow-x-auto h-min">
-                        <SponsorsMiniView />
+                    <div className="w-full bg-dusk h-min flex flex-col space-y-5">
+                        <div>
+                            <h2 className="font-display-bold text-3xl lg:text-4xl text-white text-center mb-3">
+                                Platinum Tier
+                            </h2>
+                            <div className="h-1 max-w-lg mx-auto bg-gradient-to-r from-old-gold to-stardust mb-6" />
+                            <div className="flex justify-center items-center space-x-8 mb-8">
+                                <a className="h-24" href={sponsors.protolabs.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.protolabs.image} alt={sponsors.protolabs.img_alt} className="h-24 object-contain" />
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="font-display-bold text-3xl lg:text-4xl text-white text-center mb-3">
+                                Gold Tier
+                            </h2>
+                            <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
+                            <div className="flex justify-center items-center space-x-8 mb-8">
+                                <a className="h-24" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.pepc.image} alt={sponsors.pepc.img_alt} className="h-24 object-contain" />
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="font-display-bold text-3xl lg:text-4xl text-white text-center mb-3">
+                                Silver Tier
+                            </h2>
+                            <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
+                            <div className="flex justify-center items-center space-x-8 mb-8 flex-wrap space-y-8">
+                                <a className="h-16" href={sponsors.polymaker.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.polymaker.image} alt={sponsors.polymaker.img_alt} className="h-16 object-contain" />
+                                </a>
+                                <a className="h-16" href={sponsors.ansys.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.ansys.image} alt={sponsors.ansys.img_alt} className="h-16 object-contain" />
+                                </a>
+                                <a className="h-16" href={sponsors.pesc.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.pesc.image} alt={sponsors.pesc.img_alt} className="h-16 object-contain" />
+                                </a>
+                                <a className="h-8" href={sponsors.bidc.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.bidc.image} alt={sponsors.bidc.img_alt} className="h-8 object-contain" />
+                                </a>
+                                <a className="h-8" href={sponsors.cfturbo.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.cfturbo.image} alt={sponsors.cfturbo.img_alt} className="h-8 object-contain" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <h2 className="font-display2 text-md md:text-xl text-white">
                         Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
