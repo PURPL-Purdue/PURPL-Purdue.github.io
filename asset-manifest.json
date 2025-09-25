@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c98bcf7d.css",
-    "main.js": "/static/js/main.9d981d85.js",
+    "main.css": "/static/css/main.b8640f2a.css",
+    "main.js": "/static/js/main.6e1a990c.js",
     "static/js/453.30eda8f7.chunk.js": "/static/js/453.30eda8f7.chunk.js",
     "static/media/plume3.PNG": "/static/media/plume3.e9bebf8e39bf78e6a7fb.PNG",
     "static/media/background_1.jpg": "/static/media/background_1.c3ba5cfbeec65f7377f7.jpg",
@@ -16,12 +16,12 @@
     "static/media/ChakraPetch-Bold.woff": "/static/media/ChakraPetch-Bold.a317cdd61e723abe5f8b.woff",
     "static/media/ChakraPetch-Regular.woff": "/static/media/ChakraPetch-Regular.f55d6089f9562aff9db1.woff",
     "index.html": "/index.html",
-    "main.c98bcf7d.css.map": "/static/css/main.c98bcf7d.css.map",
-    "main.9d981d85.js.map": "/static/js/main.9d981d85.js.map",
+    "main.b8640f2a.css.map": "/static/css/main.b8640f2a.css.map",
+    "main.6e1a990c.js.map": "/static/js/main.6e1a990c.js.map",
     "453.30eda8f7.chunk.js.map": "/static/js/453.30eda8f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c98bcf7d.css",
-    "static/js/main.9d981d85.js"
+    "static/css/main.b8640f2a.css",
+    "static/js/main.6e1a990c.js"
   ]
 }
