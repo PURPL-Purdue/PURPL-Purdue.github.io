@@ -31,7 +31,7 @@ function Sponsors() {
                     </div>
                 </div>
                 <div className="flex flex-col space-y-8">
-                    <div className="w-full bg-dusk h-min flex flex-col space-y-5">
+                    <div className="w-full max-w-[800px] bg-dusk h-min flex flex-col space-y-5">
                         <div>
                             <h2 className="font-display-bold text-3xl lg:text-4xl text-white text-center mb-3">
                                 Platinum Tier
