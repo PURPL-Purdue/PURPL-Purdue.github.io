@@ -4,9 +4,7 @@ import DisplayGrid from '../components/landing/DisplayGrid.js';
 import Button from '../components/button/Button.js';
 import ContentWrapper from '../components/layout/ContentWrapper.js';
 import PageWrapper from '../components/layout/PageWrapper.js';
-import SponsorsMiniView from '../components/sponsors/SponsorsMiniView.js';
 import { landingData } from '../json/landing.js';
-import { contactInfo } from '../json/shared.js';
 
 const Landing = () => {
     return (
@@ -76,23 +74,6 @@ const Landing = () => {
                     </iframe>
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
-                </div>
-                <DividerLine />
-                <div className="py-8 lg:py-12">
-                    <h1 className="font-display-bold text-3xl lg:text-5xl text-white text-balance leading-normal mb-4 lg:mb-12">Sponsors</h1>
-                    <div className="w-full bg-dusk overflow-x-auto h-min mb-4 ">
-                        <SponsorsMiniView />
-                    </div>
-                    <h2 className="font-display2 text-md md:text-xl text-white">
-                        Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
-                        We would love your support!
-                    </h2>
-                    <Button
-                        text="View our corporate newsletter"
-                        link="/PURPL-Corporate-Newsletter-25-26.pdf"
-                        isNavLink={false}
-                        className="mx-auto mt-6"
-                    />
                 </div>
             </ContentWrapper>
         </PageWrapper>

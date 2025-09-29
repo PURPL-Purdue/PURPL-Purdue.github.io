@@ -75,6 +75,9 @@ function Sponsors() {
                                 <a className="h-8" href={sponsors.cfturbo.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.cfturbo.image} alt={sponsors.cfturbo.img_alt} className="h-8 object-contain" />
                                 </a>
+                                <a className="h-8" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.honeywell.image} alt={sponsors.honeywell.img_alt} className="h-8 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                     </div>
