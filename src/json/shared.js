@@ -66,8 +66,13 @@ export const sponsors = {
     },
     pesc: {
         image: "/images/sponsors/PESC_logo-gold.png",
-        image_dark: "/images/sponsors/PESC_logo-color-transparent.png",
         img_alt: "PESC sponsor logo",
         link: "https://www.purdueesc.org/"
+    },
+    honeywell: {
+        image: "/images/sponsors/Honeywell_logo.png",
+        img_alt: "Honeywell sponsor logo",
+        link: "https://www.honeywell.com/us/en"
+
     }
 };
