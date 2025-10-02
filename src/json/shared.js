@@ -73,6 +73,15 @@ export const sponsors = {
         image: "/images/sponsors/Honeywell_logo.png",
         img_alt: "Honeywell sponsor logo",
         link: "https://www.honeywell.com/us/en"
-
+    },
+    purdue_mechanical_eng: {
+        image: "/images/sponsors/MechEng_H-Full-Reverse-RGB.png",
+        img_alt: "Purdue University Mechanical Engineering sponsor logo",
+        link: "https://engineering.purdue.edu/ME"
+    },
+    three_d_connexion: {
+        image: "/images/sponsors/3dconnexion_logo.png",
+        img_alt: "3D Connexion sponsor logo",
+        link: "https://3dconnexion.com/us/"    
     }
 };
