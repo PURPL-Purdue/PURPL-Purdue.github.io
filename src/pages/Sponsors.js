@@ -78,6 +78,12 @@ function Sponsors() {
                                 <a className="h-8" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.honeywell.image} alt={sponsors.honeywell.img_alt} className="h-8 mt-1 object-contain" />
                                 </a>
+                                <a className="h-8" href={sponsors.three_d_connexion.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.three_d_connexion.image} alt={sponsors.three_d_connexion.img_alt} className="h-8 mt-1 object-contain" />
+                                </a>
+                                <a className="h-8" href={sponsors.purdue_mechanical_eng.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.purdue_mechanical_eng.image} alt={sponsors.purdue_mechanical_eng.img_alt} className="h-8 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                     </div>
