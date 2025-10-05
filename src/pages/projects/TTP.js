@@ -1,7 +1,7 @@
 import PageWrapper from "../../components/layout/PageWrapper";
 import Banner from "../../components/banner/Banner";
-import ComingSoon from "../ComingSoon";
 import { ttpData } from "../../json/projects";
+import ContentWrapper from "../../components/layout/ContentWrapper";
 
 const TTP = () => {
     return (
@@ -18,7 +18,22 @@ const TTP = () => {
                     </div>
                 </div>
             </Banner>
-            <ComingSoon />
+            <ContentWrapper>
+                <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{ttpData.section_1.title}</h2>
+                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                            {ttpData.section_1.desc}
+                        </h2>
+                    </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{ttpData.section_2.title}</h2>
+                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                            {ttpData.section_2.desc}
+                        </h2>
+                    </div>
+                </div>
+            </ContentWrapper>
         </PageWrapper>
     );
 };
