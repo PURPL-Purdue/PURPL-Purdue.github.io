@@ -80,8 +80,13 @@ export const sponsors = {
         link: "https://engineering.purdue.edu/ME"
     },
     three_d_connexion: {
-        image: "/images/sponsors/3dconnexion_logo.png",
+        image: "/images/sponsors/3dconnexion_logo_white.png",
         img_alt: "3D Connexion sponsor logo",
         link: "https://3dconnexion.com/us/"    
-    }
+    },
+    notion: {
+        image: "/images/sponsors/notion-logo-white.png",
+        img_alt: "Notion sponsor logo",
+        link: "https://www.notion.com"
+    },
 };
