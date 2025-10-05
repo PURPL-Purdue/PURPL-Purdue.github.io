@@ -42,8 +42,8 @@ export const navLinks = [
         link: "#",
         children: [
             {
-                name: "teeny k",
-                link: "teeny-k",
+                name: "biggie k",
+                link: "biggie-k",
             },
             {
                 name: "tachyon",

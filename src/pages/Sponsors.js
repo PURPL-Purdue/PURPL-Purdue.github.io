@@ -41,6 +41,9 @@ function Sponsors() {
                                 <a className="h-24" href={sponsors.protolabs.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.protolabs.image} alt={sponsors.protolabs.img_alt} className="h-24 object-contain" />
                                 </a>
+                                <a className="h-12" href={sponsors.marotta.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.marotta.image} alt={sponsors.marotta.img_alt} className="h-12 object-contain" />
+                                </a>
                             </div>
                         </div>
                         <div>

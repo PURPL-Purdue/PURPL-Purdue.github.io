@@ -14,7 +14,7 @@ import Contact from '../../pages/Contact';
 
 // Facilities pages components
 import Tachyon from '../../pages/facilities/Tachyon';
-import TeenyK from '../../pages/facilities/TeenyK';
+import BiggieK from '../../pages/facilities/BiggieK';
 
 // Project pages
 import ElectricPropulsion from '../../pages/projects/ElectricPropulsion';
@@ -65,8 +65,8 @@ const router = createHashRouter([
         element: <RDE />,
       },
       {
-        path: "teeny-k",
-        element: <TeenyK />,
+        path: "biggie-k",
+        element: <BiggieK />,
       },
       {
         path: "tachyon",
