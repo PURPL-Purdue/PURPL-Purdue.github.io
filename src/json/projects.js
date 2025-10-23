@@ -318,3 +318,17 @@ export const ttpData = {
         desc: "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization."
     }
 }
+
+export const pulsejetData = {
+    title: "Pulsejet",
+    section_1: {
+        title: "Project Description",
+        desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture, and hotfire! The team aims to finish static testing of both valved and valveless engines within its inceptive semester. Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane!"
+    },
+    featured: {
+        photo: {
+            src: "/images/projects/pulsejet/wireframe.png",
+            alt: "Pulsejet wireframe",
+        }
+    }
+}

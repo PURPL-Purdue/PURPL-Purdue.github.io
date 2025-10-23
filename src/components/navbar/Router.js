@@ -24,6 +24,7 @@ import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
 import TTP from '../../pages/projects/TTP';
 import Sponsors from "../../pages/Sponsors";
+import Pulsejet from "../../pages/projects/Pulsejet";
 
 const router = createHashRouter([
   {
@@ -75,6 +76,10 @@ const router = createHashRouter([
       {
         path: "ttp",
         element: <TTP />,
+      },
+      {
+        path: "pulsejet",
+        element: <Pulsejet />,
       },
       {
         path: "contact",
