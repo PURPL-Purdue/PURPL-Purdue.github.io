@@ -35,6 +35,10 @@ export const navLinks = [
                 name: "torch training program",
                 link: "ttp",
             },
+            {
+                name: "pulsejet",
+                link: "pulsejet",
+            }
         ],
     },
     {
