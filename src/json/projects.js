@@ -332,3 +332,11 @@ export const pulsejetData = {
         }
     }
 }
+
+export const airbreathingData = {
+    title: "Air Breathing",
+    section_1: {
+        title: "Project Description",
+        desc: "The Air Breathing Stand is a 150lbf rated stand for all of our projects that run on normal air/compressed air. It is designed to be modular and is flexible for low thrust engines. We combine the trust structure and fluid panel all into one structure. The plan is for this project to be more portable compared to Biggie-K and Tachyon."
+    },
+}

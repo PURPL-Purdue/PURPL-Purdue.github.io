@@ -1,6 +1,6 @@
 export const landingData = {
     quick_stats: [
-        { number: "6", text: "propulsion projects" },
+        { number: "7", text: "propulsion projects" },
         { number: "3", text: "test stand projects" },
         { number: "350+", text: "active members" },
         { number: "9+", text: "majors" },
