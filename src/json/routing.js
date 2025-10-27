@@ -38,7 +38,7 @@ export const navLinks = [
             {
                 name: "pulsejet",
                 link: "pulsejet",
-            }
+            },
         ],
     },
     {
@@ -52,6 +52,10 @@ export const navLinks = [
             {
                 name: "tachyon",
                 link: "tachyon",
+            },
+            {
+                name: "air breathing",
+                link: "air-breathing",
             },
         ],
     },
