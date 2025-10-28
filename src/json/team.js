@@ -7,15 +7,8 @@ const imagePath = "/images/team/headshots/";
 const teamData = {
     major_exec: [
         {
-            name: "Madeline Taylor",
-            title: "Co-President",
-            image: "resized-500x500/DSC05754-Enhanced-NR.jpg",
-            email: "tayl1138@purdue.edu",
-            linkedin: "https://www.linkedin.com/in/madeline-taylor-2103b12b1"
-        },
-        {
             name: "Parth Karande",
-            title: "Co-President",
+            title: "President",
             image: "2024/resized-500x500/IMG_2275.jpg",
             email: "pkarande@purdue.edu",
             linkedin: "https://linkedin.com/in/parth-karande/"
