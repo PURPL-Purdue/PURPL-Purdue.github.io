@@ -89,4 +89,13 @@ export const sponsors = {
         img_alt: "Notion sponsor logo",
         link: "https://www.notion.com"
     },
+    snyder: {
+        name: "Snyder & Lehnen Sheet Metal",
+        link: "https://www.snyderandlehnen.com/",
+    },
+    aea: {
+        image: "/images/sponsors/aea-logo.png",
+        img_alt: "AEA sponsor logo",
+        link: "https://americanearthanchors.com/",
+    }
 };
