@@ -67,7 +67,15 @@ export const epropData = {
             "operation.",
         photos: [
             {
-                src: "/images/projects/eprop/eprop_01.jpg",
+                src: "/images/projects/eprop/IMG_1567_1.jpg",
+                alt: "Electric propulsion hot-fire",
+            },
+            {
+                src: "/images/projects/eprop/IMG_1477_1.jpg",
+                alt: "Electric propulsion hot-fire",
+            },
+            {
+                src: "/images/projects/eprop/IMG_2904.jpeg",
                 alt: "Electric propulsion hot-fire",
             },
             {
