@@ -27,7 +27,7 @@ const teamData = {
         {
             name: "Jonah Nobel",
             title: "Test Stand Director",
-            image: "2024/resized-500x500/DSC03297.jpg"
+            image: "2025/IMG_8550.jpg",
         }
     ],
     project_leads: [
@@ -79,6 +79,7 @@ const teamData = {
         {
             name: "Declan Koch",
             title: "Biggy-K Lead",
+            image: "2025/IMG_8352 - Declan Koch.jpg",
         },
         {
             name: "Jack Woods",
@@ -97,7 +98,9 @@ const teamData = {
     ],
     admin_exec: [
         {
-            title: "Marketing Chair"
+            name: "Kavina Rajan",
+            title: "Marketing Chair",
+            image: "2025/IMG_8948 - Kavina Rajan.jpeg",
         },
         {
             name: "Anjali Patel",
