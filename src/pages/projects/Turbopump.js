@@ -25,29 +25,9 @@ const Turbopump = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbopumpData.blurb}</p>
-                    <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />
-                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
-                        <img className="max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
-                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
-                                {turbopumpData.desc_1}
-                            </h2>
-</div>
-                        </div>
-                        <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
-                            <img className="max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
-                            <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                                <h2 className="font-display2 text-md md:text-lg text-white text-balance">
-                                    {turbopumpData.desc_2}
-                                </h2>
-                            </div>
-                        
-                        
-                    </div>
-                </div>
-                
-                <div className="contained-bootstrap w-[600px] mx-auto mt-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                        <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbopumpData.blurb}</p>
+                        <div className="col-span-1 contained-bootstrap w-full mx-auto mt-8">
                             {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
                             <Carousel className="text-white" data-bs-theme="light"
                                 controls={true}
@@ -65,6 +45,28 @@ const Turbopump = () => {
                                 }
                             </Carousel>
                         </div>
+                    </div>
+                    <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />
+                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
+                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
+                                {turbopumpData.desc_1}
+                            </h2>
+                        </div>
+
+
+                    </div>
+                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
+                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
+                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
+                                {turbopumpData.desc_2}
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
             </ContentWrapper>
         </PageWrapper>
     );
