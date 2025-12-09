@@ -14,13 +14,12 @@ export const sponsors = {
     }
     ,
     protolabs: {
-        image: "/images/sponsors/Protolabs_logo.png",
+        image: "/images/sponsors/Protolabs_logo_white.png",
         img_alt: "Protolabs sponsor logo",
         link: "https://protolabs.com"
     },
     pepc: {
-        image: "/images/sponsors/pepc_logo.png",
-        img_alt: "PEPC sponsor logo",
+        name: "Purdue Engineering Presidents' Council",
         link: "https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC"
     },
     shreve: {
@@ -50,7 +49,7 @@ export const sponsors = {
         link: "https://dyrobes.com/"
     },
     cfturbo: {
-        image: "/images/sponsors/CFturbo-Logo-RGB-transparent.png",
+        image: "/images/sponsors/CFturbo-Logo-white-transparent.png",
         img_alt: "CFturbo sponsor logo",
         link: "https://cfturbo.com/"
     },
@@ -97,5 +96,21 @@ export const sponsors = {
         image: "/images/sponsors/aea-logo.png",
         img_alt: "AEA sponsor logo",
         link: "https://americanearthanchors.com/",
+    },
+    proportion_air: {
+        image: "/images/sponsors/Proportion-Air-40th-Ani-Logo.webp",
+        img_alt: "Proportion Air sponsor logo",
+        link: "https://www.proportionair.com/",
+    },
+    seco_seals: {
+        image: "/images/sponsors/seco-seals-placeholder_1-4132690478.png",
+        img_alt: "SECO Seals sponsor logo",
+        link: "https://secoseals.com/",
+    },
+    msm: {
+        image: "/images/sponsors/msmlogo-1764661165.jpg",
+        img_alt: "MSM sponsor logo",
+        link: "https://https://www.metalsupermarkets.com",
     }
+
 };

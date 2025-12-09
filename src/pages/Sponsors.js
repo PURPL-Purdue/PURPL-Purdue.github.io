@@ -52,11 +52,11 @@ function Sponsors() {
                             </h2>
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
                             <div className="flex justify-center items-center space-x-8 mb-8">
-                                <a className="h-24" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.pepc.image} alt={sponsors.pepc.img_alt} className="h-24 object-contain" />
-                                </a>
-                                <a className="h-8" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
+                                <a className="h-12" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.honeywell.image} alt={sponsors.honeywell.img_alt} className="h-8 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12 text-white font-display2-bold pt-1 md:text-lg text-sm" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
+                                    {sponsors.pepc.name}
                                 </a>
                             </div>
                         </div>
@@ -92,6 +92,15 @@ function Sponsors() {
                                 </a>
                                 <a className="h-12" href={sponsors.aea.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.aea.image} alt={sponsors.aea.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.proportion_air.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.proportion_air.image} alt={sponsors.proportion_air.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.seco_seals.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.seco_seals.image} alt={sponsors.seco_seals.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>
