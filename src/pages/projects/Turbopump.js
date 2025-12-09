@@ -3,6 +3,7 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
+import Carousel from 'react-bootstrap/Carousel';
 
 import { turbopumpData } from '../../json/projects';
 
@@ -32,17 +33,38 @@ const Turbopump = () => {
                             <h2 className="font-display2 text-md md:text-lg text-white text-balance">
                                 {turbopumpData.desc_1}
                             </h2>
+</div>
                         </div>
-                    </div>
-                    <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
-                        <img className="max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
-                        <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                            <h2 className="font-display2 text-md md:text-lg text-white text-balance">
-                                {turbopumpData.desc_2}
-                            </h2>
-                        </div>
+                        <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
+                            <img className="max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
+                            <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
+                                <h2 className="font-display2 text-md md:text-lg text-white text-balance">
+                                    {turbopumpData.desc_2}
+                                </h2>
+                            </div>
+                        
+                        
                     </div>
                 </div>
+                
+                <div className="contained-bootstrap w-[600px] mx-auto mt-8">
+                            {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
+                            <Carousel className="text-white" data-bs-theme="light"
+                                controls={true}
+                                slide={true}
+                                indicators={true}
+                                touch={true}
+                            >
+                                {turbopumpData.photo_reel.photos.map((photo, index) => {
+                                    return (<Carousel.Item key={index} className="" interval={2000}>
+                                        <img src={photo.src} alt={photo.alt} className="w-[100%] mx-auto">
+                                        </img>
+                                    </Carousel.Item>
+                                    )
+                                })
+                                }
+                            </Carousel>
+                        </div>
             </ContentWrapper>
         </PageWrapper>
     );
