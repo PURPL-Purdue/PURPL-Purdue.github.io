@@ -38,10 +38,11 @@ const ElectricPropulsion = () => {
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.photo_reel.title}</h2>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.photo_reel2.title}</h2>
                         <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {data.photo_reel.blurb}
+                            {data.photo_reel2.blurb}
                         </h2>
                         <div className="contained-bootstrap w-[100%] md:w-[75%] mx-auto mt-8">
                             {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
@@ -51,7 +52,7 @@ const ElectricPropulsion = () => {
                                 indicators={true}
                                 touch={true}
                             >
-                                {data.photo_reel.photos.map((photo, index) => {
+                                {data.photo_reel2.photos.map((photo, index) => {
                                     return (<Carousel.Item key={index} className="" interval={2000}>
                                         <img src={photo.src} alt={photo.alt} className="">
                                         </img>
@@ -60,6 +61,35 @@ const ElectricPropulsion = () => {
                                 })
                                 }
                             </Carousel>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
+                            {data.photo_reel1.title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                            <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
+                                {data.photo_reel1.blurb}
+                            </h2>
+                            <div className="col-span-1 contained-bootstrap w-[100%] mx-auto mt-2">
+                                {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
+                                <Carousel className="text-white" data-bs-theme="light"
+                                    controls={true}
+                                    slide={true}
+                                    indicators={true}
+                                    touch={true}
+                                >
+                                    {data.photo_reel1.photos.map((photo, index) => {
+                                        return (<Carousel.Item key={index} className="" interval={2000}>
+                                            <img src={photo.src} alt={photo.alt} className="">
+                                            </img>
+                                        </Carousel.Item>
+                                        )
+                                    })
+                                    }
+                                </Carousel>
+                            </div>
+
                         </div>
                     </div>
                 </div>

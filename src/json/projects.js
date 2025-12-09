@@ -55,6 +55,10 @@ export const turbopumpData = {
                 src: teamPhotos.turbopump.fun_photo,
                 alt: "Turbopump team",
             },
+            {
+                src: teamPhotos.turbopump.serious_photo,
+                alt: "Turbopump team",
+            },
         ]
     }
 };
@@ -70,10 +74,30 @@ export const epropData = {
             alt: "Electric propulsion physical object",
         },
         blurb: "The Electric Propulsion team combines the minimum-viable project approach with rapid prototyping to bring" +
-            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. Our team intends to fully design, manufacture," +
+            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. The team intends to fully design, manufacture," +
             " and operate our thruster in steady state operation and publish our findings."
     },
-    photo_reel: {
+    photo_reel1: {
+        title: "About the team",
+        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. The team" +
+        " recently won third place the __ category at IMECE 2025, where the judges were particularly impressed by the fact that "+ 
+        "all team members were junior year or below. This was a huge win for Eprop!",
+        photos: [
+            {
+                src: teamPhotos.eprop.smiling_photo,
+                alt: "Electric propulsion team members smiling",
+            },
+            {
+                src: teamPhotos.eprop.fun_photo,
+                alt: "Electric propulsion team having fun",
+            },
+            {
+                src: teamPhotos.eprop.serious_photo,
+                alt: "Electric propulsion team members serious",
+            },
+        ]
+    },
+    photo_reel2: {
         title: "Testing and hotfire - May '25",
         blurb: "May 2025 marked the first full-scale, wholistic test of PURPL's Hall Thruster, marking the end of the initial " +
             "design process and the beginning of the tuning and researching process. The hotfire attempt saw successful plasma " +
