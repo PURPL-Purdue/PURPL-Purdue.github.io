@@ -89,7 +89,6 @@ const ElectricPropulsion = () => {
                                     }
                                 </Carousel>
                             </div>
-
                         </div>
                     </div>
                 </div>

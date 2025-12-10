@@ -79,9 +79,9 @@ export const epropData = {
     },
     photo_reel1: {
         title: "About the team",
-        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. The team" +
-        " recently won third place the __ category at IMECE 2025, where the judges were particularly impressed by the fact that "+ 
-        "all team members were junior year or below. This was a huge win for Eprop!",
+        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. \
+                The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges \
+                with a junior-and-below roster. This was a huge win for Eprop!",
         photos: [
             {
                 src: teamPhotos.eprop.smiling_photo,
