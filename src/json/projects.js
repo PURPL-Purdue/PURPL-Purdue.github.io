@@ -1,3 +1,5 @@
+import {teamPhotos} from './gallery.js';
+
 export const biggiekData = {
     title: "Biggie-K",
     subtitle: "Rocket engine stand made to fire torch ignitors and small rocket engines.",
@@ -43,6 +45,22 @@ export const turbopumpData = {
         "pressure of the propellants before entering the combustion chamber.",
     image_2: "/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png",
     image_2_alt: "Turbopump shaft assembly",
+    photo_reel: {
+        photos: [
+            {
+                src: teamPhotos.turbopump.smiling_photo,
+                alt: "Turbopump team",
+            },
+            {
+                src: teamPhotos.turbopump.fun_photo,
+                alt: "Turbopump team",
+            },
+            {
+                src: teamPhotos.turbopump.serious_photo,
+                alt: "Turbopump team",
+            },
+        ]
+    }
 };
 
 export const epropData = {
@@ -56,10 +74,30 @@ export const epropData = {
             alt: "Electric propulsion physical object",
         },
         blurb: "The Electric Propulsion team combines the minimum-viable project approach with rapid prototyping to bring" +
-            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. Our team intends to fully design, manufacture," +
+            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. The team intends to fully design, manufacture," +
             " and operate our thruster in steady state operation and publish our findings."
     },
-    photo_reel: {
+    photo_reel1: {
+        title: "About the team",
+        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. \
+                The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges \
+                with a junior-and-below roster. This was a huge win for Eprop!",
+        photos: [
+            {
+                src: teamPhotos.eprop.smiling_photo,
+                alt: "Electric propulsion team members smiling",
+            },
+            {
+                src: teamPhotos.eprop.fun_photo,
+                alt: "Electric propulsion team having fun",
+            },
+            {
+                src: teamPhotos.eprop.serious_photo,
+                alt: "Electric propulsion team members serious",
+            },
+        ]
+    },
+    photo_reel2: {
         title: "Testing and hotfire - May '25",
         blurb: "May 2025 marked the first full-scale, wholistic test of PURPL's Hall Thruster, marking the end of the initial " +
             "design process and the beginning of the tuning and researching process. The hotfire attempt saw successful plasma " +
@@ -164,16 +202,16 @@ export const testbedData = {
     },
     augmented_spark_igniter: {
         header: "Augmented Spark Igniter",
-        desc: "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source." + 
-            " To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. " + 
-            "Among other components, the igniter features orifice fittings which ensure precise control over" + 
-            " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",        
+        desc: "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source." +
+            " To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. " +
+            "Among other components, the igniter features orifice fittings which ensure precise control over" +
+            " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",
     },
     test_2025: {
         header: "Testing - June '25",
-        desc: "After months of hard work, the team successfully tested their first piece of hardware." + 
-            " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" + 
-            " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" + 
+        desc: "After months of hard work, the team successfully tested their first piece of hardware." +
+            " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" +
+            " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" +
             " chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
         image: "/images/projects/testbed/1750551261201.jpg",
         image_alt: "Torch ignitor",
@@ -267,39 +305,40 @@ export const rdeData = {
         title: "About the Project",
         desc: "RDE pushes the boundaries of air-breathing detonation technology while providing students " +
             "with direct and industry-applicable experience in cutting-edge propulsion research. Our team is comprised of four " +
-            "undergraduate students who are all heavily involved in the project. Our team has made steady progress with the help" + 
-            " of experienced mentors like Professor Li Qiao. By the end of our project, we hope to advance current understandings of RDC technology, " + 
+            "undergraduate students who are all heavily involved in the project. Our team has made steady progress with the help" +
+            " of experienced mentors like Professor Li Qiao. By the end of our project, we hope to advance current understandings of RDC technology, " +
             "pressure gain combustion, and sustainable power generation.",
     },
     timeline: {
         title: "Our Timeline",
         data: [
-        {
-            title: 'Jan 2025',
-            description:
-                'RDE project begins'
-        },
-        {
-            title: 'Apr 2025',
-            description:
-                "Preliminary design review",
-        },
-        {
-            title: 'Oct 2025',
-            description:
-                "Critical design review"
-        },
-        {
-            title: 'Jan 2026',
-            description:
-                "Hotfire campaign for RDC"
-        },
-        {
-            title: 'Feb 2026',
-            description:
-                "Start turbine integration"
-        },
-    ]},
+            {
+                title: 'Jan 2025',
+                description:
+                    'RDE project begins'
+            },
+            {
+                title: 'Apr 2025',
+                description:
+                    "Preliminary design review",
+            },
+            {
+                title: 'Oct 2025',
+                description:
+                    "Critical design review"
+            },
+            {
+                title: 'Jan 2026',
+                description:
+                    "Hotfire campaign for RDC"
+            },
+            {
+                title: 'Feb 2026',
+                description:
+                    "Start turbine integration"
+            },
+        ]
+    },
     photo_reel: {
         title: "Our Design",
         photos: [
