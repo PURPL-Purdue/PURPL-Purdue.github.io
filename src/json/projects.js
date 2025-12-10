@@ -79,9 +79,9 @@ export const epropData = {
     },
     photo_reel1: {
         title: "About the team",
-        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. \
-                The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges \
-                with a junior-and-below roster. This was a huge win for Eprop!",
+        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. " +
+                "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
+                "with a junior-and-below roster. This was a huge win for Eprop!",
         photos: [
             {
                 src: teamPhotos.eprop.smiling_photo,
@@ -299,18 +299,18 @@ export const rdeData = {
         },
         blurb: "The Rotating Detonation Engine team is creating a hydrogen-air rotating detonation combustor" +
             " (RDC) to be integrated with turbines for energy generation applications. " +
-            "We are in the design phase and intend to begin development and testing soon.",
+            "The team is in the design phase and intend to begin development and testing soon.",
     },
     section_1: {
         title: "About the Project",
         desc: "RDE pushes the boundaries of air-breathing detonation technology while providing students " +
-            "with direct and industry-applicable experience in cutting-edge propulsion research. Our team is comprised of four " +
-            "undergraduate students who are all heavily involved in the project. Our team has made steady progress with the help" +
-            " of experienced mentors like Professor Li Qiao. By the end of our project, we hope to advance current understandings of RDC technology, " +
-            "pressure gain combustion, and sustainable power generation.",
+            "with direct and industry-applicable experience in cutting-edge propulsion research. The team is comprised of four " +
+            "undergraduate students who have made steady progress with the help" +
+            " of experienced mentors like Professor Li Qiao. This project will advance current understandings of RDC technology, " +
+            "pressure gain combustion and sustainable power generation.",
     },
     timeline: {
-        title: "Our Timeline",
+        title: "Timeline",
         data: [
             {
                 title: 'Jan 2025',
@@ -340,7 +340,7 @@ export const rdeData = {
         ]
     },
     photo_reel: {
-        title: "Our Design",
+        title: "Design",
         photos: [
             {
                 src: "/images/projects/rde/RDE Test Stand Isometric.png",
@@ -370,7 +370,9 @@ export const pulsejetData = {
     title: "Pulsejet",
     section_1: {
         title: "Project Description",
-        desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture, and hotfire! The team aims to finish static testing of both valved and valveless engines within its inceptive semester. Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane!"
+        desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
+                "The team aims to finish static testing of both valved and valveless engines within its inceptive semester. " + 
+                "Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane."
     },
     featured: {
         photo: {
