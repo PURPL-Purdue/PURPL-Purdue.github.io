@@ -118,7 +118,6 @@ const teamData = {
         {
             name: "Keertan Palayam",
             title: "Funding Acquisition Chair",
-            image: "2025_fall/resized-8.jpg",
         },
         {
             name: "Jeramiah Arona",

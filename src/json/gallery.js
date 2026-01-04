@@ -15,9 +15,8 @@ export const teamPhotos = {
         fun_photo: "/images/team/group_photos/IMG_8448.jpg",
     },
     rde: {
-        smiling_photo: "/images/team/group_photos/IMG_8454.jpg",
-        serious_photo: "/images/team/group_photos/IMG_8459.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8462.jpg",
+        smiling_photo: "/images/team/group_photos/IMG_8454_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8462_cropped.jpg",
     },
     air_breathing: {
         smiling_photo: "/images/team/group_photos/IMG_8468.jpg",
