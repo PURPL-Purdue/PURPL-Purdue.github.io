@@ -18,9 +18,6 @@ const RDE = () => {
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white text-balance">
                                 {data.title}
                             </h1>
-                            <h2 className="font-display2 text-white mt-4 md:mt-12 text-md md:text-lg lg:text-xl">
-                                {data.subtitle}
-                            </h2>
                         </div>
                     </div>
                 </div>

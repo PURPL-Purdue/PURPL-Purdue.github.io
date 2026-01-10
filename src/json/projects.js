@@ -326,7 +326,7 @@ export const rdeData = {
         blurb: "RDE pushes the boundaries of air-breathing detonation technology while " + 
             "providing students with industry-applicable experience in cutting-edge " + 
             "propulsion research. The team is comprised of 25+ undergraduate students who have " + 
-            "made rapid progress in the design and development of the engine.",
+            "made rapid progress in the design and development of the combustor.",
         photos: [
             {
                 src: teamPhotos.rde.smiling_photo,
