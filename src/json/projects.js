@@ -291,23 +291,52 @@ export const testbedData = {
 
 export const rdeData = {
     title: "RDE",
-    subtitle: "",
+    subtitle: "Rotating detonation combustor for clean power generation.",
     featured: {
-        photo: {
-            src: "/images/projects/rde/RDE Cross Section.png",
-            alt: "RDE combustor",
-        },
-        blurb: "The Rotating Detonation Engine team is creating a hydrogen-air rotating detonation combustor" +
-            " (RDC) to be integrated with turbines for energy generation applications. " +
-            "The team is in the design phase and intend to begin development and testing soon.",
+        photos: [
+            {
+                src: "/images/projects/rde/rde featured.png",
+                alt: "Isometric view of the combustor",
+            },
+            {
+                src: "/images/projects/rde/rde gallery 1.png",
+                alt: "Isometric view of the RDE combustor",
+            },
+            {
+                src: "/images/projects/rde/rde gallery 2.png",
+                alt: "Cross-sectional view of the RDE combustor",
+            },
+        ],
+        blurb: "The Rotating Detonation Engine (RDE) team is creating a hydrogen-air rotating " +
+            "detonation combustor (RDC) to be integrated with turbines for clean power " +
+            "generation applications.",
     },
-    section_1: {
-        title: "About the Project",
-        desc: "RDE pushes the boundaries of air-breathing detonation technology while providing students " +
-            "with direct and industry-applicable experience in cutting-edge propulsion research. The team is comprised of four " +
-            "undergraduate students who have made steady progress with the help" +
-            " of experienced mentors like Professor Li Qiao. This project will advance current understandings of RDC technology, " +
-            "pressure gain combustion and sustainable power generation.",
+    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " + 
+        "currently working on its Critical Design Review, with the goal of hotfiring in Spring 2026.",
+    specs_table: {
+        "propellants": "gaseous hydrogen, air",
+        "total mass flow rate": "2.052 lbm/s",
+        "operating equivalence ratio range": "0.8 - 1.2",
+        "material": "316/304 stainless steel",
+        "ignition": "H2/O2 pre-detonator",
+        "cooling": "heatsink",
+    },
+    photo_reel1: {
+        title: "About the team",
+        blurb: "RDE pushes the boundaries of air-breathing detonation technology while " + 
+            "providing students with industry-applicable experience in cutting-edge " + 
+            "propulsion research. The team is comprised of 25+ undergraduate students who have " + 
+            "made rapid progress in the design and development of the combustor.",
+        photos: [
+            {
+                src: teamPhotos.rde.smiling_photo,
+                alt: "RDE team members smiling",
+            },
+            {
+                src: teamPhotos.rde.fun_photo,
+                alt: "RDE team having fun",
+            },
+        ]
     },
     timeline: {
         title: "Timeline",
@@ -315,40 +344,49 @@ export const rdeData = {
             {
                 title: 'Jan 2025',
                 description:
-                    'RDE project begins'
+                    'RDE Project begins as LOKI'
             },
             {
                 title: 'Apr 2025',
                 description:
-                    "Preliminary design review",
+                    "LOKI Conceptual Design Review Passed",
             },
             {
                 title: 'Oct 2025',
                 description:
-                    "Critical design review"
+                    "RDC renamed to HADES",
+            },
+            {
+                title: 'Dec 2025',
+                description: "HADES Preliminary Design Review Presented to 14 Reviewers"
             },
             {
                 title: 'Jan 2026',
                 description:
-                    "Hotfire campaign for RDC"
+                    "HADES Critical Design Review (Planned)"
             },
             {
-                title: 'Feb 2026',
+                title: 'Apr 2026',
                 description:
-                    "Start turbine integration"
+                    "Hotfire Campaign for HADES"
             },
+            {
+                title: "Aug 2026",
+                description:
+                    "Begin Turbine Integration for HADES"
+            }
         ]
     },
     photo_reel: {
-        title: "Design",
+        title: "Gallery",
         photos: [
             {
-                src: "/images/projects/rde/RDE Test Stand Isometric.png",
-                alt: "RDE combustor",
+                src: "/images/projects/rde/rde gallery 1.png",
+                alt: "Isometric view of the RDE combustor",
             },
             {
-                src: "/images/projects/rde/RDE w Pre Det.png",
-                alt: "RDE combustor 2",
+                src: "/images/projects/rde/rde gallery 2.png",
+                alt: "Cross-sectional view of the RDE combustor",
             },
         ]
     }

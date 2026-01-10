@@ -5,12 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import Router from './components/navbar/Router';
 import './contained-bootstrap.css';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Router />
+    <Router />x
   </React.StrictMode>
 );
 
