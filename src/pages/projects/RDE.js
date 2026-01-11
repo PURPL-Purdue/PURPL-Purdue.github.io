@@ -27,7 +27,7 @@ const RDE = () => {
                     <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
                         <div className="w-full z-0 mb-[140px] md:mb-0 lg:mb-0">
                             <div className="w-full relative min-h-min">
-                                <div className="w-[65%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
+                                <div className="w-[50%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
                                     <div className="col-span-1 contained-bootstrap w-[100%] mx-auto mt-2">
                                         {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
                                         <Carousel className="text-white" data-bs-theme="light"
@@ -47,7 +47,7 @@ const RDE = () => {
                                         </Carousel>
                                     </div>
                                 </div>
-                                <div className="bg-moon/80 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[310px] lg:w-[52%] absolute top-[95%] md:top-[8%] lg:top-[10%] right-2 md:right-0 z-10">
+                                <div className="bg-moon/80 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[350px] lg:w-[52%] absolute top-[95%] md:top-[8%] lg:top-[10%] right-2 md:right-0 z-10">
                                     <p className="text-white font-display2 text-sm md:text-lg text-left">{data.featured.blurb}</p>
                                 </div>
                             </div>

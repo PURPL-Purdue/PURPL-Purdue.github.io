@@ -358,7 +358,7 @@ export const rdeData = {
             },
             {
                 title: 'Dec 2025',
-                description: "HADES Preliminary Design Review Presented to 14 Reviewers"
+                description: "HADES Preliminary Design Review Presented"
             },
             {
                 title: 'Jan 2026',
