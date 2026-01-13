@@ -91,3 +91,26 @@ code {
 #main-content:target {
   scroll-margin-top: 7rem; /* Account for fixed header (h-28 = 7rem) */
 }
+
+/* Global focus styles for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #9100FF; /* stardust */
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Ensure buttons have proper focus styling */
+button:focus-visible {
+  outline: 2px solid #9100FF;
+  outline-offset: 2px;
+}
+
+/* Links in navigation */
+nav a:focus-visible {
+  outline: 2px solid #9100FF;
+  outline-offset: 2px;
+}
