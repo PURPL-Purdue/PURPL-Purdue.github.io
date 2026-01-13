@@ -63,3 +63,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Skip Navigation Link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #9B72AA; /* stardust */
+  color: #1A1423; /* dusk */
+  padding: 12px 24px;
+  font-family: 'chakra-petch-bold', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 9999;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #CFB991; /* old-gold */
+  outline-offset: 2px;
+}
+
+/* Smooth scroll to target for better UX */
+#main-content:target {
+  scroll-margin-top: 7rem; /* Account for fixed header (h-28 = 7rem) */
+}
