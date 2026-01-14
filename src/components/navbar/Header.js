@@ -176,7 +176,7 @@ const Header = () => {
                     </div>
                 </nav>
             </div>
-            <div id="standard-navbar" className={"invisible lg:visible fixed top-0 w-full h-28 z-10  px-16 bg-dusk "}>
+            <div id="standard-navbar" className={"invisible lg:visible fixed top-0 w-full h-28 z-50  px-16 bg-dusk "}>
                 <nav className="mx-auto inset-x-0 w-full flex items-end justify-end fixed top-0 h-28 px-8 max-w-[1300px]" aria-label="Main navigation">
                     <div className="fixed top-28 left-0 w-full h-2 bg-gradient-to-b from-black to-transparent">
                     </div>
