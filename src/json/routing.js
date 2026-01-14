@@ -30,7 +30,15 @@ export const navLinks = [
             {
                 name: "rde",
                 link: "rde",
-            }
+            },
+            {
+                name: "torch training program",
+                link: "ttp",
+            },
+            {
+                name: "pulsejet",
+                link: "pulsejet",
+            },
         ],
     },
     {
@@ -38,14 +46,23 @@ export const navLinks = [
         link: "#",
         children: [
             {
-                name: "teeny k",
-                link: "teeny-k",
+                name: "biggie k",
+                link: "biggie-k",
             },
             {
                 name: "tachyon",
                 link: "tachyon",
             },
+            {
+                name: "air breathing",
+                link: "air-breathing",
+            },
         ],
+    },
+    {
+        name: "sponsors",
+        link: "sponsors",
+        children: [],
     },
     {
         name: "team",

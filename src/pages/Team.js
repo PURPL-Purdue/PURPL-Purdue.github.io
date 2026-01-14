@@ -29,20 +29,7 @@ function Team() {
                     {teamData.major_exec.map((profile, index) => (
                         <Profile
                             key={profile.name}
-                            imagePath={profile.image2}
-                            name={profile.name}
-                            title={profile.title}
-                            email={profile.email}
-                            linkedin={profile.linkedin}
-                        />
-                    ))}
-                </div>
-                <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Project Leads</p>
-                <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
-                    {teamData.project_leads.map((profile, index) => (
-                        <SmallerProfile
-                            key={profile.name}
-                            imagePath={profile.image2}
+                            imagePath={profile.image}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}
@@ -55,7 +42,20 @@ function Team() {
                     {teamData.admin_exec.map((profile, index) => (
                         <SmallerProfile
                             key={profile.name}
-                            imagePath={profile.image2}
+                            imagePath={profile.image}
+                            name={profile.name}
+                            title={profile.title}
+                            email={profile.email}
+                            linkedin={profile.linkedin}
+                        />
+                    ))}
+                </div>
+                <p className="text-white font-display-bold text-2xl mt-12 md:mt-16 mb-4">Project Leads</p>
+                <div className="flex flex-row mx-auto w-full flex-wrap gap-x-4 md:gap-x-8 md:gap-y-8 justify-center">
+                    {teamData.project_leads.map((profile, index) => (
+                        <SmallerProfile
+                            key={profile.name}
+                            imagePath={profile.image}
                             name={profile.name}
                             title={profile.title}
                             email={profile.email}

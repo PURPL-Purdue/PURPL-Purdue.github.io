@@ -1,5 +1,7 @@
-export const teenykData = {
-    title: "Teeny-K",
+import {teamPhotos} from './gallery.js';
+
+export const biggiekData = {
+    title: "Biggie-K",
     subtitle: "Rocket engine stand made to fire torch ignitors and small rocket engines.",
     specs_table: {
         "Thrust rating": "100lbf",
@@ -13,7 +15,7 @@ export const teenykData = {
         " the test subject to be ignited multiple times in one session without having to replace a cartridge " +
         "or external ignition source as is required with pyrotechnic ignition systems.",
     wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
-    wireframe_alt: "Teeny-k technical drawing"
+    wireframe_alt: "Biggie-k technical drawing"
 };
 
 export const turbopumpData = {
@@ -43,6 +45,23 @@ export const turbopumpData = {
         "pressure of the propellants before entering the combustion chamber.",
     image_2: "/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png",
     image_2_alt: "Turbopump shaft assembly",
+    photo_reel: {
+        title: "About the team",
+        photos: [
+            {
+                src: teamPhotos.turbopump.smiling_photo,
+                alt: "Turbopump team",
+            },
+            {
+                src: teamPhotos.turbopump.fun_photo,
+                alt: "Turbopump team",
+            },
+            {
+                src: teamPhotos.turbopump.serious_photo,
+                alt: "Turbopump team",
+            },
+        ]
+    }
 };
 
 export const epropData = {
@@ -56,10 +75,30 @@ export const epropData = {
             alt: "Electric propulsion physical object",
         },
         blurb: "The Electric Propulsion team combines the minimum-viable project approach with rapid prototyping to bring" +
-            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. Our team intends to fully design, manufacture," +
+            " you Purdue's first ever undergraduate-lead Hall Effect Thruster. The team intends to fully design, manufacture," +
             " and operate our thruster in steady state operation and publish our findings."
     },
-    photo_reel: {
+    photo_reel1: {
+        title: "About the team",
+        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. " +
+                "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
+                "with a junior-and-below roster. This was a huge win for Eprop!",
+        photos: [
+            {
+                src: teamPhotos.eprop.smiling_photo,
+                alt: "Electric propulsion team members smiling",
+            },
+            {
+                src: teamPhotos.eprop.fun_photo,
+                alt: "Electric propulsion team having fun",
+            },
+            {
+                src: teamPhotos.eprop.serious_photo,
+                alt: "Electric propulsion team members serious",
+            },
+        ]
+    },
+    photo_reel2: {
         title: "Testing and hotfire - May '25",
         blurb: "May 2025 marked the first full-scale, wholistic test of PURPL's Hall Thruster, marking the end of the initial " +
             "design process and the beginning of the tuning and researching process. The hotfire attempt saw successful plasma " +
@@ -67,7 +106,15 @@ export const epropData = {
             "operation.",
         photos: [
             {
-                src: "/images/projects/eprop/eprop_01.jpg",
+                src: "/images/projects/eprop/IMG_1567_1.jpg",
+                alt: "Electric propulsion hot-fire",
+            },
+            {
+                src: "/images/projects/eprop/IMG_1477_1.jpg",
+                alt: "Electric propulsion hot-fire",
+            },
+            {
+                src: "/images/projects/eprop/IMG_2904.jpeg",
                 alt: "Electric propulsion hot-fire",
             },
             {
@@ -154,6 +201,22 @@ export const testbedData = {
         "Cooling": "heatsink, regenerative",
         "Injector type": "coaxial swirl",
     },
+    augmented_spark_igniter: {
+        header: "Augmented Spark Igniter",
+        desc: "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source." +
+            " To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. " +
+            "Among other components, the igniter features orifice fittings which ensure precise control over" +
+            " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",
+    },
+    test_2025: {
+        header: "Testing - June '25",
+        desc: "After months of hard work, the team successfully tested their first piece of hardware." +
+            " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" +
+            " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" +
+            " chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
+        image: "/images/projects/testbed/1750551261201.jpg",
+        image_alt: "Torch ignitor",
+    },
     header_1: "Swirl Injectors",
     desc_1:
         "The injector in a rocket engine is responsible for mixing the fuel and oxidizer efficiently to enable " +
@@ -229,64 +292,139 @@ export const testbedData = {
 
 export const rdeData = {
     title: "RDE",
-    subtitle: "",
+    subtitle: "Rotating detonation combustor for clean power generation.",
     featured: {
-        photo: {
-            src: "/images/projects/rde/RDE Cross Section.png",
-            alt: "RDE combustor",
-        },
-        blurb: "The Rotating Detonation Engine team is creating a hydrogen-air rotating detonation combustor" +
-            " (RDC) to be integrated with turbines for energy generation applications. " +
-            "We are in the design phase and intend to begin development and testing soon.",
-    },
-    section_1: {
-        title: "About the Project",
-        desc: "RDE pushes the boundaries of air-breathing detonation technology while providing students " +
-            "with direct and industry-applicable experience in cutting-edge propulsion research. Our team is comprised of four " +
-            "undergraduate students who are all heavily involved in the project. Our team has made steady progress with the help" + 
-            " of experienced mentors like Professor Li Qiao. By the end of our project, we hope to advance current understandings of RDC technology, " + 
-            "pressure gain combustion, and sustainable power generation.",
-    },
-    timeline: {
-        title: "Our Timeline",
-        data: [
-        {
-            title: 'Jan 2025',
-            description:
-                'RDE project begins.'
-        },
-        {
-            title: 'Apr 2025',
-            description:
-                "Preliminary design review",
-        },
-        {
-            title: 'Sep 2025',
-            description:
-                "Critical Design review"
-        },
-        {
-            title: 'Dec 2025',
-            description:
-                "Hotfire campaign for RDC"
-        },
-        {
-            title: 'Jan 2026',
-            description:
-                "Start turbine integration"
-        },
-    ]},
-    photo_reel: {
-        title: "Our Design",
         photos: [
             {
-                src: "/images/projects/rde/RDE Test Stand Isometric.png",
-                alt: "RDE combustor",
+                src: "/images/projects/rde/rde featured.png",
+                alt: "Isometric view of the combustor",
             },
             {
-                src: "/images/projects/rde/RDE w Pre Det.png",
-                alt: "RDE combustor 2",
+                src: "/images/projects/rde/rde gallery 1.png",
+                alt: "Isometric view of the RDE combustor",
+            },
+            {
+                src: "/images/projects/rde/rde gallery 2.png",
+                alt: "Cross-sectional view of the RDE combustor",
+            },
+        ],
+        blurb: "The Rotating Detonation Engine (RDE) team is creating a hydrogen-air rotating " +
+            "detonation combustor (RDC) to be integrated with turbines for clean power " +
+            "generation applications.",
+    },
+    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " + 
+        "currently working on its Critical Design Review, with the goal of hotfiring in Spring 2026.",
+    specs_table: {
+        "propellants": "gaseous hydrogen, air",
+        "total mass flow rate": "2.052 lbm/s",
+        "operating equivalence ratio range": "0.8 - 1.2",
+        "material": "316/304 stainless steel",
+        "ignition": "H2/O2 pre-detonator",
+        "cooling": "heatsink",
+    },
+    photo_reel1: {
+        title: "About the team",
+        blurb: "RDE pushes the boundaries of air-breathing detonation technology while " + 
+            "providing students with industry-applicable experience in cutting-edge " + 
+            "propulsion research. The team is comprised of 25+ undergraduate students who have " + 
+            "made rapid progress in the design and development of the combustor.",
+        photos: [
+            {
+                src: teamPhotos.rde.smiling_photo,
+                alt: "RDE team members smiling",
+            },
+            {
+                src: teamPhotos.rde.fun_photo,
+                alt: "RDE team having fun",
+            },
+        ]
+    },
+    timeline: {
+        title: "Timeline",
+        data: [
+            {
+                title: 'Jan 2025',
+                description:
+                    'RDE Project begins as LOKI'
+            },
+            {
+                title: 'Apr 2025',
+                description:
+                    "LOKI Conceptual Design Review Passed",
+            },
+            {
+                title: 'Oct 2025',
+                description:
+                    "RDC renamed to HADES",
+            },
+            {
+                title: 'Dec 2025',
+                description: "HADES Preliminary Design Review Presented"
+            },
+            {
+                title: 'Jan 2026',
+                description:
+                    "HADES Critical Design Review (Planned)"
+            },
+            {
+                title: 'Apr 2026',
+                description:
+                    "Hotfire Campaign for HADES"
+            },
+            {
+                title: "Aug 2026",
+                description:
+                    "Begin Turbine Integration for HADES"
+            }
+        ]
+    },
+    photo_reel: {
+        title: "Gallery",
+        photos: [
+            {
+                src: "/images/projects/rde/rde gallery 1.png",
+                alt: "Isometric view of the RDE combustor",
+            },
+            {
+                src: "/images/projects/rde/rde gallery 2.png",
+                alt: "Cross-sectional view of the RDE combustor",
             },
         ]
     }
+}
+
+export const ttpData = {
+    title: "Torch Training Program",
+    section_1: {
+        title: "Program Description",
+        desc: "The Torch Training Program (TTP) is a year-long orientation course where new members can learn the basics of liquid propulsion design through the design, buildup, and hot-fire of a torch igniter. Participants work in teams of 3–4 alongside a designated peer mentor to compete in an internal competition graded on various factors such as cost efficiency, ignition reliability, and theoretical accuracy. Content is taught through weekly lectures, covering topics ranging from ignition basics to fluid mechanics. Material also includes engineering tools such as utilizing Python scripting, CEA analysis, and CAD software."
+    },
+    section_2: {
+        title: "Program Goals",
+        desc: "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization."
+    }
+}
+
+export const pulsejetData = {
+    title: "Pulsejet",
+    section_1: {
+        title: "Project Description",
+        desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
+                "The team aims to finish static testing of both valved and valveless engines within its inceptive semester. " + 
+                "Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane."
+    },
+    featured: {
+        photo: {
+            src: "/images/projects/pulsejet/wireframe.png",
+            alt: "Pulsejet wireframe",
+        }
+    }
+}
+
+export const airbreathingData = {
+    title: "Air Breathing",
+    section_1: {
+        title: "Project Description",
+        desc: "The Air Breathing Stand is a 150lbf rated stand for all of our projects that run on normal air/compressed air. It is designed to be modular and is flexible for low thrust engines. We combine the trust structure and fluid panel all into one structure. The plan is for this project to be more portable compared to Biggie-K and Tachyon."
+    },
 }

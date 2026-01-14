@@ -14,7 +14,7 @@ import Contact from '../../pages/Contact';
 
 // Facilities pages components
 import Tachyon from '../../pages/facilities/Tachyon';
-import TeenyK from '../../pages/facilities/TeenyK';
+import BiggieK from '../../pages/facilities/BiggieK';
 
 // Project pages
 import ElectricPropulsion from '../../pages/projects/ElectricPropulsion';
@@ -22,6 +22,10 @@ import Turbojet from '../../pages/projects/Turbojet';
 import Turbopump from '../../pages/projects/Turbopump';
 import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
+import TTP from '../../pages/projects/TTP';
+import Sponsors from "../../pages/Sponsors";
+import Pulsejet from "../../pages/projects/Pulsejet";
+import AirBreathing from "../../pages/projects/AirBreathing";
 
 const router = createHashRouter([
   {
@@ -36,6 +40,10 @@ const router = createHashRouter([
       {
         path: "team",
         element: <Team />,
+      },
+      {
+        path: "sponsors",
+        element: <Sponsors />
       },
       // project pages
       {
@@ -59,12 +67,24 @@ const router = createHashRouter([
         element: <RDE />,
       },
       {
-        path: "teeny-k",
-        element: <TeenyK />,
+        path: "biggie-k",
+        element: <BiggieK />,
       },
       {
         path: "tachyon",
         element: <Tachyon />,
+      },
+      {
+        path: "ttp",
+        element: <TTP />,
+      },
+      {
+        path: "pulsejet",
+        element: <Pulsejet />,
+      },
+      {
+        path: "air-breathing",
+        element: <AirBreathing />,
       },
       {
         path: "contact",
