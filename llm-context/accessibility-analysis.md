@@ -660,8 +660,8 @@ a:hover {
 | 1.3.3 Sensory Characteristics | ✅ Pass | Instructions don't rely solely on sensory characteristics |
 | 2.1.1 Keyboard | ✅ Pass | Dropdown menus now keyboard accessible |
 | 2.1.2 No Keyboard Trap | ✅ Pass | Mobile menu has proper focus trap with Escape to close |
-| 2.2.1 Timing Adjustable | ❌ Fail | Carousel auto-rotation without pause |
-| 2.2.2 Pause, Stop, Hide | ❌ Fail | No pause control for auto-rotating carousels |
+| 2.2.1 Timing Adjustable | ✅ Pass | AccessibleCarousel component with pause/play control |
+| 2.2.2 Pause, Stop, Hide | ✅ Pass | Carousels have pause button, pause on hover, respect prefers-reduced-motion |
 | 2.4.1 Bypass Blocks | ✅ Pass | Skip navigation link implemented |
 | 2.4.2 Page Titled | ⚠️ Unknown | Need to verify page titles |
 | 2.4.3 Focus Order | ✅ Pass | Logical tab order in navigation |
@@ -719,28 +719,27 @@ a:hover {
 3. Add explicit padding-bottom to account for absolute positioning
 4. Restructure with semantic HTML (ol/li for timeline)
 
-### 2. Bootstrap Carousel Accessibility
+### 2. Bootstrap Carousel Accessibility ✅ RESOLVED
 
 **Location:** Multiple pages (all projects, team page)
-**Priority:** High
+**Status:** Fixed - January 2026
 
-**Problem:**
-- 2-second auto-rotation is too fast (WCAG requires pause for >5 seconds)
-- No pause control
-- Keyboard navigation unclear
-- Screen reader support unclear
+**Solution Implemented:**
+- Created `AccessibleCarousel` component wrapping react-bootstrap Carousel
+- Increased interval from 2000ms to 5000ms
+- Added pause/play button (accessible with keyboard)
+- Implemented `pause="hover"` for automatic pausing
+- Added `aria-live="polite"` region for slide announcements
+- Respects `prefers-reduced-motion` media query
+- Shows slide indicator (e.g., "1 / 5")
+- Each slide has `aria-roledescription="slide"` and label
 
-**Impact on Accessibility:**
-- Users who read slowly cannot finish reading before slide changes
-- Keyboard users cannot control carousel
-- Screen reader users don't know when slides change
-
-**Recommended Fix:**
-1. Increase interval to 5000ms or remove auto-rotation
-2. Add visible pause/play button
-3. Implement `pause="hover"` and `keyboard={true}`
-4. Add aria-live announcements
-5. Respect `prefers-reduced-motion`
+**Files Updated:**
+- `src/components/carousel/AccessibleCarousel.js` (new)
+- `src/pages/projects/RDE.js`
+- `src/pages/projects/ElectricPropulsion.js`
+- `src/pages/projects/Turbopump.js`
+- `src/pages/projects/TestBed.js`
 
 ### 3. Dropdown Menu Hover-Only Interaction
 
@@ -808,15 +807,20 @@ a:hover {
    - 2px solid stardust (#9100FF) outline with 2px offset
    - Uses :focus-visible to avoid mouse focus rings
 
-4. **Fix Carousel Auto-Rotation**
-   - Add pause/play button
-   - Increase interval to 5+ seconds or disable
-   - Implement pause on hover/focus
+4. **Fix Carousel Auto-Rotation** ✅ COMPLETED
+   - Created `AccessibleCarousel` component (`src/components/carousel/AccessibleCarousel.js`)
+   - Pause/play button with keyboard support
+   - Increased interval to 5000ms (from 2000ms)
+   - Pauses on hover/focus with `pause="hover"`
+   - Respects `prefers-reduced-motion` media query
+   - ARIA live region for slide announcements
+   - Slide indicator showing "X / Y"
+   - Updated: RDE.js, ElectricPropulsion.js, Turbopump.js, TestBed.js
 
 5. **Add ARIA to Interactive Components** ✅ PARTIALLY COMPLETED
    - Dropdown menus: aria-expanded, aria-haspopup, aria-controls, role="menu", role="menuitem" ✅
    - Buttons: aria-label for icon-only buttons (hamburger, close) ✅
-   - Carousels: aria-live, slide announcements (pending)
+   - Carousels: aria-live, aria-roledescription, slide announcements ✅
    - Forms: aria-required, aria-invalid, aria-describedby (pending)
 
 6. **Fix ContactForm Accessibility**

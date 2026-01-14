@@ -1,7 +1,7 @@
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
-import Carousel from 'react-bootstrap/Carousel';
+import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 import Timeline from '../../components/projects/RDETimeline';
 import SpecsTable from '../../components/projects/SpecsTable';
 
@@ -28,23 +28,11 @@ const RDE = () => {
                         <div className="w-full z-0 mb-[140px] md:mb-0 lg:mb-0">
                             <div className="w-full relative min-h-min">
                                 <div className="w-[50%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
-                                    <div className="col-span-1 contained-bootstrap w-[100%] mx-auto mt-2">
-                                        {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
-                                        <Carousel className="text-white" data-bs-theme="light"
-                                            controls={true}
-                                            slide={true}
-                                            indicators={true}
-                                            touch={true}
-                                        >
-                                            {data.featured.photos.map((photo, index) => {
-                                                return (<Carousel.Item key={index} className="" interval={2000}>
-                                                    <img src={photo.src} alt={photo.alt} className="">
-                                                    </img>
-                                                </Carousel.Item>
-                                                )
-                                            })
-                                            }
-                                        </Carousel>
+                                    <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                        <AccessibleCarousel
+                                            photos={data.featured.photos}
+                                            ariaLabel="Featured RDE project images"
+                                        />
                                     </div>
                                 </div>
                                 <div className="bg-moon/80 p-4 lg:p-6 max-w-[90%] w-[350px] md:w-[350px] lg:w-[52%] absolute top-[95%] md:top-[8%] lg:top-[10%] right-2 md:right-0 z-10">
@@ -62,23 +50,11 @@ const RDE = () => {
                             <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
                                 {data.photo_reel1.blurb}
                             </h2>
-                            <div className="col-span-1 contained-bootstrap w-[100%] mx-auto mt-2">
-                                {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
-                                <Carousel className="text-white" data-bs-theme="light"
-                                    controls={true}
-                                    slide={true}
-                                    indicators={true}
-                                    touch={true}
-                                >
-                                    {data.photo_reel1.photos.map((photo, index) => {
-                                        return (<Carousel.Item key={index} className="" interval={2000}>
-                                            <img src={photo.src} alt={photo.alt} className="">
-                                            </img>
-                                        </Carousel.Item>
-                                        )
-                                    })
-                                    }
-                                </Carousel>
+                            <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                <AccessibleCarousel
+                                    photos={data.photo_reel1.photos}
+                                    ariaLabel={`${data.photo_reel1.title} images`}
+                                />
                             </div>
                         </div>
                     </div>
