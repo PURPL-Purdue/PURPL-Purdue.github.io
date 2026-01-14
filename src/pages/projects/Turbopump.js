@@ -3,7 +3,7 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
-import Carousel from 'react-bootstrap/Carousel';
+import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 
 import { turbopumpData } from '../../json/projects';
 
@@ -25,25 +25,16 @@ const Turbopump = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
+                    <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mt-10 md:mt-4">
+                        {turbopumpData.photo_reel.title}
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
-                        <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbopumpData.blurb}</p>
-                        <div className="col-span-1 contained-bootstrap w-full mx-auto mt-8">
-                            {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
-                            <Carousel className="text-white" data-bs-theme="light"
-                                controls={true}
-                                slide={true}
-                                indicators={true}
-                                touch={true}
-                            >
-                                {turbopumpData.photo_reel.photos.map((photo, index) => {
-                                    return (<Carousel.Item key={index} className="" interval={2000}>
-                                        <img src={photo.src} alt={photo.alt} className="w-[100%] mx-auto">
-                                        </img>
-                                    </Carousel.Item>
-                                    )
-                                })
-                                }
-                            </Carousel>
+                        <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{turbopumpData.blurb}</p>
+                        <div className="col-span-1 w-full mx-auto">
+                            <AccessibleCarousel
+                                photos={turbopumpData.photo_reel.photos}
+                                ariaLabel="Turbopump project images"
+                            />
                         </div>
                     </div>
                     <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />

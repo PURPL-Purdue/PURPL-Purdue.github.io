@@ -3,7 +3,7 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
-import Carousel from 'react-bootstrap/Carousel';
+import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 import { testbedData as data } from '../../json/projects';
 
 const TestBed = () => {
@@ -65,23 +65,11 @@ const TestBed = () => {
                     </div>
                     <div>
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-5">{data.photo_reel.title}</h2>
-                        <div className="contained-bootstrap w-[100%] md:w-[75%] mx-auto">
-                            {/* Need to include data-bs-theme=light attribute to apply Bootstrap CSS classes */}
-                            <Carousel className="text-white" data-bs-theme="light"
-                                controls={true}
-                                slide={true}
-                                indicators={true}
-                                touch={true}
-                            >
-                                {data.photo_reel.photos.map((photo, index) => {
-                                    return (<Carousel.Item key={index} className="" interval={2000}>
-                                        <img src={photo.src} alt={photo.alt} className="">
-                                        </img>
-                                    </Carousel.Item>
-                                    )
-                                })
-                                }
-                            </Carousel>
+                        <div className="w-[100%] md:w-[75%] mx-auto">
+                            <AccessibleCarousel
+                                photos={data.photo_reel.photos}
+                                ariaLabel={`${data.photo_reel.title} images`}
+                            />
                         </div>
                     </div>
                 </div>

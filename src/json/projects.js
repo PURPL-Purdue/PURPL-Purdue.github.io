@@ -46,6 +46,7 @@ export const turbopumpData = {
     image_2: "/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png",
     image_2_alt: "Turbopump shaft assembly",
     photo_reel: {
+        title: "About the team",
         photos: [
             {
                 src: teamPhotos.turbopump.smiling_photo,
