@@ -24,14 +24,14 @@ export const teamPhotos = {
         fun_photo: "/images/team/group_photos/IMG_8477.jpg",
     },
     turbojet: {
-        smiling_photo: "/images/team/group_photos/IMG_8409.jpg",
-        serious_photo: "/images/team/group_photos/IMG_8411.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8416.jpg",
+        smiling_photo: "/images/team/group_photos/IMG_8409_cropped.jpg",
+        serious_photo: "/images/team/group_photos/IMG_8411_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8416_cropped.jpg",
     },
     turbopump: {
-        smiling_photo: "/images/team/group_photos/IMG_8394.jpg",
+        smiling_photo: "/images/team/group_photos/IMG_8394_cropped.jpg",
         serious_photo: "/images/team/group_photos/IMG_8396.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8403.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8403_cropped.jpg",
     },
     test_stand: {
         smiling_photo: "/images/team/group_photos/IMG_8384.jpg",

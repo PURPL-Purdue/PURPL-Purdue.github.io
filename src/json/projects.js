@@ -56,10 +56,6 @@ export const turbopumpData = {
                 src: teamPhotos.turbopump.fun_photo,
                 alt: "Turbopump team",
             },
-            {
-                src: teamPhotos.turbopump.serious_photo,
-                alt: "Turbopump team",
-            },
         ]
     },
     aiaa: {
