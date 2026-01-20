@@ -61,6 +61,23 @@ export const turbopumpData = {
                 alt: "Turbopump team",
             },
         ]
+    },
+    aiaa: {
+        title: "2026 AIAA SciTech Conference",
+        blurb: "The turbopump team returned to campus after a successful week at the 2026 AIAA SciTech conference " +
+            "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
+            "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
+            "entities and academia.",
+        photos: [
+            {
+                src: "/images/projects/turbopump/IMG_0322.jpg",
+                alt: "Turbopump team at AIAA SciTech 2026",
+            },
+            {
+                src: "/images/projects/turbopump/IMG_2917.jpg",
+                alt: "Turbopump team at AIAA SciTech 2026",
+            },
+        ]
     }
 };
 
@@ -147,7 +164,7 @@ export const turbojetData = {
     wireframe: "/images/projects/turbojet/turbojet_wireframe_8_17_24.png",
     wireframe_alt: "Turbojet technical drawing",
     blurb:
-        "The turbojet team is currently developing Purdue’s only undergraduate air breathing propulsion project. " +
+        "The turbojet team is currently developing Purdue's only undergraduate air breathing propulsion project. " +
         "At 50-lbf of thrust, this engine is sized to eventually be usable as a medium sized UAV power plant. This " +
         "engine will also serve as a testbed for a study on sustainable aviation fuels.",
     specs_table: {
@@ -159,25 +176,58 @@ export const turbojetData = {
     desc_1:
         "Turbomachinery design is a very involved process, as the complex shapes found in compressors and " +
         "turbines make it very difficult to create computer models. However, thanks to our sponsor CFTurbo, the " +
-        "design process was streamlined and the team presented a preliminary design review before the end of the semester!",
-    photo_reel: [
-        {
-            src: "/images/projects/turbojet/turbojet_1.png",
-            alt: "Turbojet CAD model",
-        },
-        {
-            src: "/images/projects/turbojet/turbojet_2.png",
-            alt: "Turbojet CAD model",
-        },
-        {
-            src: "/images/projects/turbojet/turbojet_3.png",
-            alt: "Turbojet CAD model",
-        },
-        {
-            src: "/images/projects/turbojet/turbojet_4.png",
-            alt: "Turbojet CAD model",
-        },
-    ]
+        "design process was streamlined and the team completed a design review this past semester!",
+    about_team: {
+        title: "About the Team",
+        photos: [
+            {
+                src: teamPhotos.turbojet.serious_photo,
+                alt: "Turbojet team",
+            },
+            {
+                src: teamPhotos.turbojet.fun_photo,
+                alt: "Turbojet team",
+            },
+        ]
+    },
+    photo_reel: {
+        title: "Project Gallery",
+        photos: [
+            {
+                src: "/images/projects/turbojet/AnsysAnalysis.png",
+                alt: "Compressible Highspeed Flow Modeled through our stator with Ansys Fluent",
+            },
+            {
+                src: "/images/projects/turbojet/CrossSection.png",
+                alt: "Full Engine Cross Section",
+            },
+            {
+                src: "/images/projects/turbojet/Machining_Inprogress.jpg",
+                alt: "In progress turbine manufacturing",
+            },
+            {
+                src: "/images/projects/turbojet/Turbojet_ISO_render.jpg",
+                alt: "Rendered External View of engine",
+            },
+        ]
+    },
+    aiaa: {
+        title: "2026 AIAA SciTech Conference",
+        blurb: "The turbojet team returned to campus after a successful week at the 2026 AIAA SciTech conference " +
+            "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
+            "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
+            "entities and academia.",
+        photos: [
+            {
+                src: "/images/projects/turbojet/IMG_0322.jpg",
+                alt: "Turbojet team at AIAA SciTech 2026",
+            },
+            {
+                src: "/images/projects/turbojet/IMG_2980.jpg",
+                alt: "Turbojet team at AIAA SciTech 2026",
+            },
+        ]
+    }
 };
 
 export const testbedData = {
