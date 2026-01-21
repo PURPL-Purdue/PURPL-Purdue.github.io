@@ -60,7 +60,7 @@ export const turbopumpData = {
     },
     aiaa: {
         title: "2026 AIAA SciTech Conference",
-        blurb: "The turbopump team returned to campus after a successful week at the 2026 AIAA SciTech conference " +
+        blurb: "The turbopump team presented their work at the 2026 AIAA SciTech conference " +
             "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
             "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
             "entities and academia.",
@@ -209,7 +209,7 @@ export const turbojetData = {
     },
     aiaa: {
         title: "2026 AIAA SciTech Conference",
-        blurb: "The turbojet team returned to campus after a successful week at the 2026 AIAA SciTech conference " +
+        blurb: "The turbojet team presented their work at the 2026 AIAA SciTech conference " +
             "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
             "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
             "entities and academia.",
