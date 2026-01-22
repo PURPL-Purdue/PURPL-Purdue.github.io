@@ -10,9 +10,9 @@ export const teamPhotos = {
         fun_photo: "/images/team/group_photos/IMG_8437.jpg",
     },
     testbed: {
-        smiling_photo: "/images/team/group_photos/IMG_8440.jpg",
-        serious_photo: "/images/team/group_photos/IMG_8443.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8448.jpg",
+        smiling_photo: "/images/team/group_photos/IMG_8440_cropped.jpg",
+        serious_photo: "/images/team/group_photos/IMG_8443_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8448_cropped.jpg",
     },
     rde: {
         smiling_photo: "/images/team/group_photos/IMG_8454_cropped.jpg",
@@ -44,3 +44,75 @@ export const teamPhotos = {
         fun_photo: "/images/team/group_photos/IMG_8521.jpg",
     },
 };
+
+// Hotfire test photos from August 2025
+export const testbed_selectedMedia = [
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/1750551261201.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05868.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05870.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05873.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05889.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05915.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05926.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC05928.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06582.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06597.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06606-2.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06624.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06625.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06795-3-5.jpg",
+        alt: "Testbed hotfire test"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/plume3.png",
+        alt: "Testbed engine plume"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/plume4.png",
+        alt: "Testbed engine plume"
+    },
+    {
+        src: "/images/projects/testbed/20250831-SelectedMedia/plume5.png",
+        alt: "Testbed engine plume"
+    },
+];

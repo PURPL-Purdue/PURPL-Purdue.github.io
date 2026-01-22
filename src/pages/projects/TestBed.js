@@ -5,6 +5,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 import { testbedData as data } from '../../json/projects';
+import { testbed_selectedMedia } from '../../json/gallery';
 
 const TestBed = () => {
     return (
@@ -33,44 +34,83 @@ const TestBed = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* About the Team section */}
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.test_2025.header}</h2>
-                        <div className="flex flex-col space-y-6 lg:flex-row lg:items-center w-full">
-                            <img className="max-w-[350px]" src={data.test_2025.image} alt={data.test_2025.image_alt} />
-                            <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
-                                <h2 className="font-display2 text-md md:text-md text-white text-balance text-left">
-                                    {data.test_2025.desc}
-                                </h2>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
+                            {data.about_team.title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                            <p className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
+                                {data.about_team.blurb}
+                            </p>
+                            <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                <AccessibleCarousel
+                                    photos={data.about_team.photos}
+                                    ariaLabel="Testbed team photos"
+                                />
                             </div>
                         </div>
                     </div>
-                    <SpecsTable table={data.specs_table} title="Engine Stats" />
+
+                    {/* Testing - June '25 section with overlay blurb */}
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.header_1}</h2>
-                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {data.desc_1}
-                        </h2>
-                    </div>
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.header_2}</h2>
-                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {data.desc_2}
-                        </h2>
-                    </div>
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3">{data.augmented_spark_igniter.header}</h2>
-                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {data.augmented_spark_igniter.desc}
-                        </h2>
-                    </div>
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-5">{data.photo_reel.title}</h2>
-                        <div className="w-[100%] md:w-[75%] mx-auto">
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.test_2025.header}</h2>
+                        <div className="w-[100%] md:w-[75%] mx-auto mb-6">
                             <AccessibleCarousel
-                                photos={data.photo_reel.photos}
-                                ariaLabel={`${data.photo_reel.title} images`}
+                                photos={testbed_selectedMedia}
+                                ariaLabel="Testbed hotfire test photos"
                             />
                         </div>
+                        <p className="text-white font-display2 text-sm md:text-lg text-left">{data.test_2025.desc}</p>
+                    </div>
+                    <SpecsTable table={data.specs_table} title="Engine Stats" />
+                    <div className="w-[100%] md:w-[75%] mx-auto">
+                        <AccessibleCarousel
+                            photos={data.photo_reel.photos}
+                            ariaLabel={`${data.photo_reel.title} images`}
+                        />
+                    </div>
+                    {/* Technical Details - Expandable Sections */}
+                    <div className="space-y-4">
+                        <h2 className="font-display-bold uppercase text-3xl lg:text-5xl text-white text-left mb-3">Technical Details</h2>
+
+                        <details className="group border border-stardust/30 rounded-lg">
+                            <summary className="flex items-center justify-between cursor-pointer p-4 lg:p-6 text-white font-display-bold text-xl lg:text-2xl hover:bg-stardust/10 transition-colors focus:outline-2 focus:outline-stardust focus:outline-offset-2">
+                                <span>{data.header_1}</span>
+                                <span className="ml-4 transition-transform group-open:rotate-180" aria-hidden="true">▼</span>
+                            </summary>
+                            <div className="p-4 lg:p-6 pt-0">
+                                <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                                    {data.desc_1}
+                                </p>
+                            </div>
+                        </details>
+
+                        <details className="group border border-stardust/30 rounded-lg">
+                            <summary className="flex items-center justify-between cursor-pointer p-4 lg:p-6 text-white font-display-bold text-xl lg:text-2xl hover:bg-stardust/10 transition-colors focus:outline-2 focus:outline-stardust focus:outline-offset-2">
+                                <span>{data.header_2}</span>
+                                <span className="ml-4 transition-transform group-open:rotate-180" aria-hidden="true">▼</span>
+                            </summary>
+                            <div className="p-4 lg:p-6 pt-0">
+                                <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                                    {data.desc_2}
+                                </p>
+                            </div>
+                        </details>
+
+                        <details className="group border border-stardust/30 rounded-lg">
+                            <summary className="flex items-center justify-between cursor-pointer p-4 lg:p-6 text-white font-display-bold text-xl lg:text-2xl hover:bg-stardust/10 transition-colors focus:outline-2 focus:outline-stardust focus:outline-offset-2">
+                                <span>{data.augmented_spark_igniter.header}</span>
+                                <span className="ml-4 transition-transform group-open:rotate-180" aria-hidden="true">▼</span>
+                            </summary>
+                            <div className="p-4 lg:p-6 pt-0">
+                                <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                                    {data.augmented_spark_igniter.desc}
+                                </p>
+                            </div>
+                        </details>
+
                     </div>
                 </div>
             </ContentWrapper>

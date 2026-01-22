@@ -240,6 +240,21 @@ export const testbedData = {
             "testbed engine, is being designed to introduce PURPL to swirl injectors.",
 
     },
+    about_team: {
+        title: "About the Team",
+        blurb: "The Testbed team is responsible for designing, building, and testing PURPL's testbed engine platforms. " +
+            "The team focuses on developing reliable and reusable test infrastructure to support the lab's propulsion research.",
+        photos: [
+            {
+                src: teamPhotos.testbed.serious_photo,
+                alt: "Testbed team",
+            },
+            {
+                src: teamPhotos.testbed.fun_photo,
+                alt: "Testbed team",
+            },
+        ]
+    },
     specs_table: {
         "Thrust": "500 lbf",
         "Propellants": "kerosene and liquid oxygen",

@@ -41,6 +41,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const newUtilities = {
+        '.border-image-dynamic': {
+          borderWidth: theme('borderWidth'), // Use theme border width
+          borderImage: `linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to)) 1`,
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 }
 
