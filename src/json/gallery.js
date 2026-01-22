@@ -96,10 +96,6 @@ export const testbed_selectedMedia = [
         alt: "Testbed hotfire test"
     },
     {
-        src: "/images/projects/testbed/20250831-SelectedMedia/DSC06625.jpg",
-        alt: "Testbed hotfire test"
-    },
-    {
         src: "/images/projects/testbed/20250831-SelectedMedia/DSC06795-3-5.jpg",
         alt: "Testbed hotfire test"
     },

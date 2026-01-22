@@ -21,7 +21,7 @@ export const landingData = {
     ],
     carouselPhotos2: [
         testbed_selectedMedia[12],
-        testbed_selectedMedia[13],
+        testbed_selectedMedia[2],
         { src: teamPhotos.entire_club.fun_photo, alt: "PURPL club members" },
         testbed_selectedMedia[6],
         testbed_selectedMedia[10],
