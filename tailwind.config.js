@@ -33,7 +33,7 @@ module.exports = {
         'gradient-background': "url('../public/images/backgrounds/background_1.jpg')",
         'mountains-background': "url('../public/images/backgrounds/background_2.jpg')",
         'DSC01166-background': "url('../public/images/DSC/DSC01166.jpg')",
-        'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.PNG')"
+        'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.png')"
       },
       boxShadow: {
         'lg-top': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',
@@ -41,6 +41,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const newUtilities = {
+        '.border-image-dynamic': {
+          borderWidth: theme('borderWidth'), // Use theme border width
+          borderImage: `linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to)) 1`,
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 }
 

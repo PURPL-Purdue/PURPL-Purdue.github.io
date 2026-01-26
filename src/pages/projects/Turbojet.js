@@ -3,6 +3,7 @@ import SpecsTable from '../../components/projects/SpecsTable';
 import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
+import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 
 import { turbojetData } from '../../json/projects';
 
@@ -23,16 +24,47 @@ const Turbojet = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    <p className="text-white text-md md:text-lg font-display2 text-left lg:mt-16">{turbojetData.blurb}</p>
+                    {/* About the Team section with intro blurb */}
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
+                            {turbojetData.about_team.title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                            <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{turbojetData.blurb}</p>
+                            <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                <AccessibleCarousel
+                                    photos={turbojetData.about_team.photos}
+                                    ariaLabel="Turbojet team photos"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    {/* AIAA Conference section */}
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase">
+                            {turbojetData.aiaa.title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                            <p className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
+                                {turbojetData.aiaa.blurb}
+                            </p>
+                            <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                <AccessibleCarousel
+                                    photos={turbojetData.aiaa.photos}
+                                    ariaLabel="AIAA SciTech 2026 conference photos"
+                                />
+                            </div>
+                        </div>
+                    </div>
                     <SpecsTable table={turbojetData.specs_table} title="Engine Stats" />
                     <p className="text-white text-md md:text-lg font-display2 text-left">
                         {turbojetData.desc_1}
                     </p>
-
-                    <div className="flex flex-row flex-wrap w-full justify-items-start">
-                        {turbojetData.photo_reel.map((photo, index) => (
-                            <img key={index} className="w-1/2 md:w-1/3 pr-2 pt-2" src={photo.src} alt={photo.alt} />
-                        ))}
+                    <div className="w-[100%] md:w-[75%] mx-auto mt-8">
+                        <AccessibleCarousel
+                            photos={turbojetData.photo_reel.photos}
+                            ariaLabel="Turbojet project gallery"
+                        />
                     </div>
                 </div>
             </ContentWrapper>

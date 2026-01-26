@@ -65,12 +65,4 @@ To get started with this project, you will need:
     ├── .gitignore            
     ├── package.json          
     └── tailwind.config.js     # Tailwind CSS configuration (eg. theme colors)
-
-
-## Copilot Context and Instructions
-
-Use tailwind where possible to style elements. Follow the stylistic choices made in other files like `Team.js` -- attempt to maintain a cohesive and consistent code structure. Following a file change, read the output of the web server to determine if adjustments need to be made.
-
-Do not use random fonts and colors. Use fonts and theme colors and reference them by name as they are defined in `tailwind.config.js` to style elements. It is important to maintain consistent theming across the site.
-
     
