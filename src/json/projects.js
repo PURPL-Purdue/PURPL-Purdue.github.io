@@ -236,14 +236,16 @@ export const testbedData = {
         },
         blurb:
             "As a propulsion laboratory, our mission is to push the limits of collegiate rocketry by testing new " +
-            "approaches to propulsion. To facilitate this testing, the testbed team was born. Maelstrom, our current " +
+            "approaches to propulsion. To facilitate this testing, the testbed team was born. Maelstrom, our " +
             "testbed engine, is being designed to introduce PURPL to swirl injectors.",
 
     },
     about_team: {
         title: "About the Team",
-        blurb: "The Testbed team is responsible for designing, building, and testing PURPL's testbed engine platforms. " +
-            "The team focuses on developing reliable and reusable test infrastructure to support the lab's propulsion research.",
+        blurb: 
+            "Testbed holds a special place among the PURPL teams, driving advanced chemical propulsion through " +
+            "rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team " +
+            "to continuously build on past lessons and push performance forward.",
         photos: [
             {
                 src: teamPhotos.testbed.serious_photo,
