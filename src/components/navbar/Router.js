@@ -11,6 +11,7 @@ import ErrorPage from '../../pages/ErrorPage';
 import Team from '../../pages/Team';
 import Landing from '../../pages/Landing';
 import Contact from '../../pages/Contact';
+import Press from '../../pages/Press';
 
 // Facilities pages components
 import Tachyon from '../../pages/facilities/Tachyon';
@@ -89,6 +90,10 @@ const router = createHashRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "press",
+        element: <Press />,
       },
       {
         path: "404",

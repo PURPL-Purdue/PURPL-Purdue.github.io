@@ -131,6 +131,7 @@ PURPL-Purdue.github.io/
 │   │   ├── Team.js                # Team members page
 │   │   ├── Contact.js             # Contact form page
 │   │   ├── Sponsors.js            # Sponsors page
+│   │   ├── Press.js               # Press/news articles page
 │   │   ├── ErrorPage.js           # 404 error page
 │   │   ├── projects/              # Project detail pages (8 files)
 │   │   │   ├── RDE.js
@@ -210,10 +211,23 @@ PURPL-Purdue.github.io/
 - **File:** `src/pages/Sponsors.js`
 - **Purpose:** Recognition of sponsors and partners
 - **Content:**
-  - Sponsor logos
-  - Sponsor tier information
+  - Sponsor logos organized by tier (Platinum, Gold, Silver)
   - Partnership opportunities
 - **Key Components:** Sponsor display grid
+- **Current Sponsors:**
+  - Platinum: Protolabs, Marotta, National Instruments
+  - Gold: Honeywell, PEPC
+  - Silver: Polymaker, Ansys, PESC, BIDC, CFturbo, 3D Connexion, Purdue ME, Snyder & Lehnen, AEA, Proportion Air, SECO Seals, MSM, Notion, Interstate Advanced Materials
+
+#### 5. Press Page (`/press`)
+- **File:** `src/pages/Press.js`
+- **Purpose:** News articles and media coverage about PURPL
+- **Content:**
+  - Page banner with title
+  - Introductory text
+  - List of news article links with title, source, and date
+- **Key Components:** Article link cards with hover effects
+- **Data:** Articles defined in `pressArticles` array within the component
 
 ### Project Pages (8 projects)
 
@@ -428,14 +442,15 @@ All static content is managed through JSON/JS files to prevent duplication and e
 
 #### routing.js
 ```javascript
-// Navigation menu structure
+// Navigation menu structure (actual structure uses name/link/children)
 export const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Projects", dropdown: [...] },
-  { label: "Facilities", dropdown: [...] },
-  { label: "Team", path: "/team" },
-  { label: "Sponsors", path: "/sponsors" },
-  { label: "Contact", path: "/contact" }
+  { name: "home", link: "", children: [] },
+  { name: "projects", link: "#", children: [...] },
+  { name: "facilities", link: "#", children: [...] },
+  { name: "sponsors", link: "sponsors", children: [] },
+  { name: "team", link: "team", children: [] },
+  { name: "contact", link: "contact", children: [] },
+  { name: "press", link: "press", children: [] }
 ]
 ```
 
@@ -498,9 +513,10 @@ export const teamPhotos = {
 - Images and descriptions
 
 #### shared.js
-- Contact information (email, social media)
-- Shared constants
-- Organization details
+- Contact information (email: purpl24@purdue.edu)
+- Sponsor data objects with structure: `{ image, img_alt, link }` or `{ name, link }` for text-only sponsors
+- All sponsor logos stored in `/public/images/sponsors/`
+- **Adding new sponsors:** Add entry to `sponsors` object in shared.js, then add display element in Sponsors.js under appropriate tier
 
 ---
 
@@ -578,7 +594,8 @@ specs_table: {
 │   └── /biggie-k
 ├── /team
 ├── /sponsors
-└── /contact
+├── /contact
+└── /press
 ```
 
 ### Navigation Menu Structure
@@ -586,7 +603,7 @@ specs_table: {
 **Desktop:**
 - Horizontal navigation bar
 - Dropdown menus for Projects and Facilities
-- Direct links for Team, Sponsors, Contact
+- Direct links for Sponsors, Team, Contact, Press
 
 **Mobile:**
 - Hamburger menu icon
@@ -764,9 +781,9 @@ REACT_APP_GOOGLE_API_KEY=<key>
 
 ## Appendix A: File Counts
 
-- **Total source files:** 51 components + 8 project pages + 2 facility pages + 5 primary pages + 6 data files = 72 files
+- **Total source files:** 51 components + 8 project pages + 2 facility pages + 6 primary pages + 6 data files = 73 files
 - **Component files:** 51
-- **Page files:** 15
+- **Page files:** 16 (Landing, Team, Contact, Sponsors, Press, ErrorPage + 8 projects + 2 facilities)
 - **Data files:** 6
 - **Images:** 100+ images across all directories
 

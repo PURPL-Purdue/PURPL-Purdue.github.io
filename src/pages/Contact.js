@@ -3,7 +3,7 @@ import PageWrapper from '../components/layout/PageWrapper';
 import Banner from '../components/banner/Banner';
 import ContentWrapper from '../components/layout/ContentWrapper';
 import ContactForm from '../components/ContactForm';
-import { contactInfo } from '../json/shared';
+import { contactInfo } from '../json/contact';
 
 const Contact = () => {
     return (

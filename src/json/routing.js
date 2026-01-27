@@ -46,7 +46,7 @@ export const navLinks = [
         link: "#",
         children: [
             {
-                name: "biggie k",
+                name: "biggie-k",
                 link: "biggie-k",
             },
             {
@@ -72,6 +72,11 @@ export const navLinks = [
     {
         name: "contact",
         link: "contact",
+        children: [],
+    },
+    {
+        name: "press",
+        link: "press",
         children: [],
     },
 ];

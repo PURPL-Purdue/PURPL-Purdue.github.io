@@ -1,4 +1,4 @@
-import { sponsors } from "../../json/shared";
+import { sponsors } from "../../json/sponsors.js";
 
 const SponsorsMiniView = () => {
     return (
