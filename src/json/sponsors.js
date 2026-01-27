@@ -1,7 +1,3 @@
-export const contactInfo = {
-    email: "purpl24@purdue.edu",
-};
-
 export const sponsors = {
     featured: {
         image: "/images/sponsors/202509_Protolabs_article_screenshot.png",
@@ -11,8 +7,7 @@ export const sponsors = {
         image: "/images/sponsors/marotta_controls_logo.png",
         img_alt: "Marotta Controls",
         link: "https://www.marotta.com/",
-    }
-    ,
+    },
     protolabs: {
         image: "/images/sponsors/Protolabs_logo_white.png",
         img_alt: "Protolabs sponsor logo",
@@ -81,7 +76,7 @@ export const sponsors = {
     three_d_connexion: {
         image: "/images/sponsors/3dconnexion_logo_white.png",
         img_alt: "3D Connexion sponsor logo",
-        link: "https://3dconnexion.com/us/"    
+        link: "https://3dconnexion.com/us/"
     },
     notion: {
         image: "/images/sponsors/notion-logo-white.png",
@@ -111,6 +106,15 @@ export const sponsors = {
         image: "/images/sponsors/msmlogo-1764661165.jpg",
         img_alt: "MSM sponsor logo",
         link: "https://https://www.metalsupermarkets.com",
-    }
-
+    },
+    interstate_am: {
+        image: "/images/sponsors/interstateam_white.png",
+        img_alt: "Interstate Advanced Materials sponsor logo",
+        link: "https://interstateam.com/",
+    },
+    national_instruments: {
+        image: "/images/sponsors/national-instruments.png",
+        img_alt: "National Instruments sponsor logo",
+        link: "https://ni.com",
+    },
 };
