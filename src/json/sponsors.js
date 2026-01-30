@@ -117,4 +117,9 @@ export const sponsors = {
         img_alt: "National Instruments sponsor logo",
         link: "https://ni.com",
     },
+    precision_piping: {
+        image: "/images/sponsors/precision-piping-products.png",
+        img_alt: "Precision Piping Products sponsor logo",
+        link: "https://www.precisionpipingproducts.com/",
+    },
 };
