@@ -387,9 +387,9 @@ export const rdeData = {
     },
     photo_reel1: {
         title: "About the team",
-        blurb: "RDE pushes the boundaries of air-breathing detonation technology while " + 
-            "providing students with industry-applicable experience in cutting-edge " + 
-            "propulsion research. The team is comprised of 25+ undergraduate students who have " + 
+        blurb: "RDE pushes the boundaries of air-breathing detonation technology while " +
+            "providing students with industry-applicable experience in cutting-edge " +
+            "propulsion research. The team is comprised of 25+ undergraduate students who have " +
             "made rapid progress in the design and development of the combustor.",
         photos: [
             {
@@ -400,44 +400,65 @@ export const rdeData = {
                 src: teamPhotos.rde.fun_photo,
                 alt: "RDE team having fun",
             },
+            {
+                src: "/images/projects/rde/IMG_7460.jpg",
+                alt: "RDE team",
+            },
+            {
+                src: "/images/projects/rde/DazzleShotImages_006.jpg",
+                alt: "RDE team",
+            },
+            {
+                src: "/images/projects/rde/DazzleShotImages_011.jpg",
+                alt: "RDE team",
+            },
         ]
     },
     timeline: {
-        title: "Timeline",
+        title: "Roadmap",
+        blurb: "See the history of the RDE project and what's coming up for the team.",
         data: [
             {
-                title: 'Jan 2025',
-                description:
-                    'RDE Project begins as LOKI'
+                title: 'Project Kickoff',
+                date: 'Jan 2025',
+                description: 'RDE Project begins as LOKI',
+                status: 'completed'
             },
             {
-                title: 'Apr 2025',
-                description:
-                    "LOKI Conceptual Design Review Passed",
+                title: 'Conceptual Design Review',
+                date: 'Apr 2025',
+                description: 'LOKI Conceptual Design Review Passed',
+                status: 'completed'
             },
             {
-                title: 'Oct 2025',
-                description:
-                    "RDC renamed to HADES",
+                title: 'Project Rename',
+                date: 'Oct 2025',
+                description: 'RDC renamed to HADES',
+                status: 'completed'
             },
             {
-                title: 'Dec 2025',
-                description: "HADES Preliminary Design Review Presented"
+                title: 'Preliminary Design Review',
+                date: 'Dec 2025',
+                description: 'HADES Preliminary Design Review Presented',
+                status: 'completed'
             },
             {
-                title: 'Jan 2026',
-                description:
-                    "HADES Critical Design Review (Planned)"
+                title: 'Critical Design Review',
+                date: 'Feb 2026',
+                description: 'HADES Critical Design Review',
+                status: 'planned'
             },
             {
-                title: 'Apr 2026',
-                description:
-                    "Hotfire Campaign for HADES"
+                title: 'Hotfire Campaign',
+                date: 'Apr 2026',
+                description: 'Hotfire Campaign for HADES',
+                status: 'planned'
             },
             {
-                title: "Aug 2026",
-                description:
-                    "Begin Turbine Integration for HADES"
+                title: 'Turbine Integration',
+                date: 'Aug 2026',
+                description: 'Begin Turbine Integration for HADES',
+                status: 'planned'
             }
         ]
     },

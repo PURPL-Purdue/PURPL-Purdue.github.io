@@ -25,9 +25,9 @@ const RDE = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
-                        <div className="w-full z-0 mb-[140px] md:mb-0 lg:mb-0">
+                        <div className="w-full z-0 mb-[160px] md:mb-[140px] md:mb-0 lg:mb-0">
                             <div className="w-full relative min-h-min">
-                                <div className="w-[50%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
+                                <div className="w-[70%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
                                     <div className="col-span-1 w-[100%] mx-auto mt-2">
                                         <AccessibleCarousel
                                             photos={data.featured.photos}

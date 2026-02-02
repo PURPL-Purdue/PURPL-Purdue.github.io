@@ -45,8 +45,11 @@ function Sponsors() {
                                 <a className="h-12" href={sponsors.marotta.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.marotta.image} alt={sponsors.marotta.img_alt} className="h-12 object-contain" />
                                 </a>
-                                <a className="h-12" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-12 object-contain" />
+                                <a className="h-28" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-28 object-contain" />
+                                </a>
+                                <a className="h-24" href={sponsors.notion.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-24 object-contain" />
                                 </a>
                             </div>
                         </div>
@@ -106,11 +109,11 @@ function Sponsors() {
                                 <a className="h-12" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
-                                <a className="h-8" href={sponsors.notion.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-8 mt-1 object-contain" />
-                                </a>
                                 <a className="h-12" href={sponsors.interstate_am.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.interstate_am.image} alt={sponsors.interstate_am.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.precision_piping.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.precision_piping.image} alt={sponsors.precision_piping.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>
