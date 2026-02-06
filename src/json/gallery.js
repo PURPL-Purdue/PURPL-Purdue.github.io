@@ -33,10 +33,10 @@ export const teamPhotos = {
         serious_photo: "/images/team/group_photos/IMG_8396.jpg",
         fun_photo: "/images/team/group_photos/IMG_8403_cropped.jpg",
     },
-    test_stand: {
-        smiling_photo: "/images/team/group_photos/IMG_8384.jpg",
-        serious_photo: "/images/team/group_photos/IMG_8386.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8387.jpg",
+    biggiek: {
+        smiling_photo: "/images/team/group_photos/IMG_8384_cropped.jpg",
+        serious_photo: "/images/team/group_photos/IMG_8386_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8387_cropped.jpg",
     },
     entire_club: {
         smiling_photo: "/images/team/group_photos/IMG_8486.jpg",
