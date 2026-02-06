@@ -1,19 +1,30 @@
-import {teamPhotos} from './gallery.js';
+import { teamPhotos } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
-    subtitle: "Rocket engine stand made to fire torch ignitors and small rocket engines.",
+    subtitle: "Portable rocket engine test stand capable of testing a wide variety of engines.",
     specs_table: {
-        "Thrust rating": "100lbf",
-        "Propellants": "GOX, hydrocarbons",
+        "Thrust rating": "500lbf",
+        "Propellants": "H2, CH4, Liquid Hydrocarbons, GOX, LOX",
         "Manufacturing method": "machined/bolted from aluminum extrusions",
         "Dimensions (L x W x H)": "24in x 14in x 12in"
     },
     blurb:
-        "This test stand was designed to accommodate small engine/torch igniter projects up to 100lbf. " +
-        "It is low-cost and simple, and accommodates for PURPL's early project needs. The torch allows for" +
-        " the test subject to be ignited multiple times in one session without having to replace a cartridge " +
-        "or external ignition source as is required with pyrotechnic ignition systems.",
+        "Currently PURPL’s primary test stand, Biggie-K was built in 2025 to test small engines and torch igniters. After the spring test campaign, it was decided that Biggie-K would be upgraded to accommodate a wider range of engines. The team overhauled the fluid system, allowing for a wider range of propellants including liquid oxygen, much higher mass flows and higher chamber pressures. The thrust structure was redesigned to accommodate engines up to 500lbf of thrust, and the team developed a industry-grade data acquisition system capable of 250 kilo-samples per second which replaced our older system. All of this was done while ensuring Biggie-K remains mobile.",
+    photo_reel1: {
+        title: "About the team",
+        blurb: "Currently PURPL’s primary test stand, Biggie-K was built in 2025 to test small engines and torch igniters. After the spring test campaign, it was decided that Biggie-K would be upgraded to accommodate a wider range of engines. The team overhauled the fluid system, allowing for a wider range of propellants including liquid oxygen, much higher mass flows and higher chamber pressures. The thrust structure was redesigned to accommodate engines up to 500lbf of thrust, and the team developed a industry-grade data acquisition system capable of 250 kilo-samples per second which replaced our older system. All of this was done while ensuring Biggie-K remains mobile.",
+        photos: [
+            {
+                src: teamPhotos.biggiek.smiling_photo,
+                alt: "Test stand team members smiling",
+            },
+            {
+                src: teamPhotos.biggiek.fun_photo,
+                alt: "Test stand team having fun",
+            },
+        ]
+    },
     wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
     wireframe_alt: "Biggie-k technical drawing"
 };
@@ -94,8 +105,8 @@ export const epropData = {
     photo_reel1: {
         title: "About the team",
         blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. " +
-                "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
-                "with a junior-and-below roster. This was a huge win for Eprop!",
+            "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
+            "with a junior-and-below roster. This was a huge win for Eprop!",
         photos: [
             {
                 src: teamPhotos.eprop.smiling_photo,
@@ -242,7 +253,7 @@ export const testbedData = {
     },
     about_team: {
         title: "About the Team",
-        blurb: 
+        blurb:
             "Testbed holds a special place among the PURPL teams, driving advanced chemical propulsion through " +
             "rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team " +
             "to continuously build on past lessons and push performance forward.",
@@ -375,7 +386,7 @@ export const rdeData = {
             "detonation combustor (RDC) to be integrated with turbines for clean power " +
             "generation applications.",
     },
-    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " + 
+    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " +
         "currently working on its Critical Design Review, with the goal of hotfiring in Spring 2026.",
     specs_table: {
         "propellants": "gaseous hydrogen, air",
@@ -494,8 +505,8 @@ export const pulsejetData = {
     section_1: {
         title: "Project Description",
         desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
-                "The team aims to finish static testing of both valved and valveless engines within its inceptive semester. " + 
-                "Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane."
+            "The team aims to finish static testing of both valved and valveless engines within its inceptive semester. " +
+            "Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane."
     },
     featured: {
         photo: {
