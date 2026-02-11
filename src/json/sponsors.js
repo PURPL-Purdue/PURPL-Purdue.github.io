@@ -8,6 +8,11 @@ export const sponsors = {
         img_alt: "Marotta Controls",
         link: "https://www.marotta.com/",
     },
+    l3harris: {
+        image: "/images/sponsors/l3harris_logo.png",
+        img_alt: "L3HARRIS",
+        link: "https://www.l3harris.com/",
+    },
     protolabs: {
         image: "/images/sponsors/Protolabs_logo_white.png",
         img_alt: "Protolabs sponsor logo",

@@ -38,18 +38,18 @@ function Sponsors() {
                                 Platinum Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
                                 <a className="h-24" href={sponsors.protolabs.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.protolabs.image} alt={sponsors.protolabs.img_alt} className="h-24 object-contain" />
                                 </a>
                                 <a className="h-12" href={sponsors.marotta.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.marotta.image} alt={sponsors.marotta.img_alt} className="h-12 object-contain" />
                                 </a>
-                                <a className="h-28" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-28 object-contain" />
+                                <a className="h-28 mr-8" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-20 md:h-28 object-contain" />
                                 </a>
                                 <a className="h-24" href={sponsors.notion.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-24 object-contain" />
+                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-16 md:h-24 object-contain" />
                                 </a>
                             </div>
                         </div>
@@ -58,12 +58,15 @@ function Sponsors() {
                                 Gold Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8">
-                                <a className="h-12" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
+                                <a className="h-16" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.honeywell.image} alt={sponsors.honeywell.img_alt} className="h-8 mt-1 object-contain" />
                                 </a>
-                                <a className="h-12 text-white font-display2-bold pt-1 md:text-lg text-sm" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
+                                <a className="h-16 text-white font-display2-bold pt-1 md:text-lg text-sm" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
                                     {sponsors.pepc.name}
+                                </a>
+                                  <a className="h-16" href={sponsors.l3harris.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.l3harris.image} alt={sponsors.l3harris.img_alt} className="h-12 md:h-16 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>
@@ -72,7 +75,7 @@ function Sponsors() {
                                 Silver Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8 flex-wrap space-y-8">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
                                 <a className="h-16" href={sponsors.polymaker.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.polymaker.image} alt={sponsors.polymaker.img_alt} className="h-16 object-contain" />
                                 </a>
