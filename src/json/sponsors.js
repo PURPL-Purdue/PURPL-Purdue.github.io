@@ -3,6 +3,26 @@ export const sponsors = {
         image: "/images/sponsors/202509_Protolabs_article_screenshot.png",
         link: "https://www.protolabs.com/resources/partnerships/purpl/",
     },
+    altair: {
+        image: "/images/sponsors/siemens_logo.png",
+        img_alt: "Altair owned by Siemens",
+        link: "https://altair.com/",
+    },
+    synnax: {
+        image: "/images/sponsors/synnax_logo.png",
+        img_alt: "Synnax Labs",
+        link: "https://synnaxlabs.com/",
+    },
+    drake_plastics: {
+        image: "/images/sponsors/drake_plastics_logo.png",
+        img_alt: "drake plastics",
+        link: "https://drakeplastics.com/",
+    },
+    blue_origin: {
+        image: "/images/sponsors/blue_origin_logo.png",
+        img_alt: "Blue Origin",
+        link: "https://www.blueorigin.com/",
+    },
     marotta: {
         image: "/images/sponsors/marotta_controls_logo.png",
         img_alt: "Marotta Controls",
