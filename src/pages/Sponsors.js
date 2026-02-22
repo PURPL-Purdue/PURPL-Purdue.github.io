@@ -68,6 +68,12 @@ function Sponsors() {
                                   <a className="h-16" href={sponsors.l3harris.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.l3harris.image} alt={sponsors.l3harris.img_alt} className="h-12 md:h-16 mt-1 object-contain" />
                                 </a>
+                                <a className="h-16" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-16 mt-1 object-contain" />
+                                </a>
+                                <a className="h-24" href={sponsors.blue_origin.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.blue_origin.image} alt={sponsors.blue_origin.img_alt} className="h-24 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                         <div>
@@ -109,14 +115,21 @@ function Sponsors() {
                                 <a className="h-12" href={sponsors.seco_seals.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.seco_seals.image} alt={sponsors.seco_seals.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
-                                <a className="h-12" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-12 mt-1 object-contain" />
-                                </a>
+                                
                                 <a className="h-12" href={sponsors.interstate_am.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.interstate_am.image} alt={sponsors.interstate_am.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
                                 <a className="h-12" href={sponsors.precision_piping.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.precision_piping.image} alt={sponsors.precision_piping.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.altair.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.altair.image} alt={sponsors.altair.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-[110px]" href={sponsors.drake_plastics.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.drake_plastics.image} alt={sponsors.drake_plastics.img_alt} className="h-[110px] mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.synnax.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.synnax.image} alt={sponsors.synnax.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>
