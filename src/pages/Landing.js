@@ -14,7 +14,7 @@ const Landing = () => {
 
     return (
         <PageWrapper>
-            <div className="relative h-[380px] md:min-h-[700px] lg:min-h-[720px] bg-cover object-none bg-plume-background">
+            <div className="relative h-[380px] md:min-h-[700px] lg:min-h-[720px] max-w-[1800px] mx-auto bg-cover object-none bg-plume-background">
                 <div className="absolute w-full bottom-0 h-1/3 bg-gradient-to-t from-dusk" />
                 <div className="h-[450px] md:min-h-[700px] lg:min-h-[720px] ">
                     <div className="absolute left-8 bottom-12 pr-12 md:left-12 lg:left-36 md:bottom-24">
@@ -78,6 +78,16 @@ const Landing = () => {
                     </iframe>
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
+                </div>
+                <DividerLine />
+                {/* LightWidget Instagram feed widget */}
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <div className="py-8 lg:py-12">
+                    <iframe src="//lightwidget.com/widgets/015d3896ec025ceb89d155914c39a008.html" allowtransparency="true"
+                        title="IG-LightWidget"
+                        className="lightwidget-widget sm:h-[130px] md:h-[200px] lg:h-[290px]"
+                        style={{ width: "100%", border: 0 }}>
+                    </iframe>
                 </div>
             </ContentWrapper>
 

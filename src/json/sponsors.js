@@ -3,6 +3,11 @@ export const sponsors = {
         image: "/images/sponsors/202509_Protolabs_article_screenshot.png",
         link: "https://www.protolabs.com/resources/partnerships/purpl/",
     },
+    kulite: {
+        image: "/images/sponsors/kulite_logo.png",
+        img_alt: "Kulite",
+        link: "https://kulite.com/",
+    },
     altair: {
         image: "/images/sponsors/siemens_logo.png",
         img_alt: "Altair owned by Siemens",
