@@ -22,15 +22,6 @@ function Sponsors() {
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full lg:w-[600px] mx-auto mb-16">
-                    <div className="flex flex-col m-1 items-center h-fit">
-                        <div className="w-full bg-dusk py-4 px-auto space-y-4 flex flex-col items-center">
-                            <h2 className="font-display2 text-md md:text-xl text-white text-balance">
-                                Read about our partnership with<br></br> Protolabs <a className="underline" target="_blank" rel="noopener noreferrer" href={`${sponsors.featured.link}`}>here</a>.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
                 <div className="flex flex-col space-y-8">
                     <div className="w-full max-w-[800px] bg-dusk h-min flex flex-col space-y-5">
                         <div>
@@ -73,6 +64,9 @@ function Sponsors() {
                                 </a>
                                 <a className="h-24" href={sponsors.blue_origin.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.blue_origin.image} alt={sponsors.blue_origin.img_alt} className="h-24 mt-1 object-contain" />
+                                </a>
+                                <a className="h-20" href={sponsors.kulite.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.kulite.image} alt={sponsors.kulite.img_alt} className="h-20 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>

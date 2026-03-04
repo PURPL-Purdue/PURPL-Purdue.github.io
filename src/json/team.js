@@ -138,6 +138,36 @@ const people = {
     aathiysh_surgunavel: {
         name: "Aathiysh Surgunavel",
     },
+    vasundhra_arulazi: {
+        name: "Vasundhra Arulazi",
+    },
+    braeden_nelson_archer: {
+        name: "Braeden Nelson-Archer",
+    },
+    ben_beckman: {
+        name: "Ben Beckman",
+    },
+    ashutosh_barman: {
+        name: "Ashutosh Barman",
+    },
+    trevor_lien: {
+        name: "Trevor Lien",
+    },
+    tucker_bremer: {
+        name: "Tucker Bremer",
+    },
+    sumit_laha: {
+        name: "Sumit Laha",
+    },
+    patrick_nowak: {
+        name: "Patrick Nowak",
+    },
+    andy_corbett: {
+        name: "Andy Corbett",
+    },
+    trent_crawford: {
+        name: "Trent Crawford",
+    },
 };
 
 /**
@@ -161,20 +191,30 @@ const teamData = {
     major_exec: [
         member("parth_karande", "President"),
         member("tobey_uhm", "Treasurer"),
-        member("max_neitzke", "Project Director"),
-        member("jonah_nobel", "Test Stand Director"),
+        member("max_neitzke", "VP of Propulsion"),
+        member("jonah_nobel", "VP of Test Infrastructure"),
     ],
     project_leads: [
         member("alejandro_diaz_contreras", "Turbopump Co-Lead"),
         member("andrew_fontanetta", "Turbopump Co-Lead"),
-        member("marvel_zheng", "Turbojet Lead"),
-        member("max_neitzke", "Electric Propulsion Co-Lead"),
         member("madeline_taylor", "Electric Propulsion Co-Lead"),
+        member("max_neitzke", "Electric Propulsion Co-Lead"),
+        member("marvel_zheng", "Turbojet Co-Lead"),
+        member("trevor_lien", "Turbojet Co-Lead"),
         member("dominik_sloup", "Testbed Co-Lead"),
-        member("james_nida", "Testbed Co-Lead"),
-        member("declan_koch", "Biggy-K Lead"),
+        member("tucker_bremer", "Testbed Co-Lead"),
+        member("deepesh_balwani", "RDE Co-Lead"),
+        member("sumit_laha", "RDE Co-Lead"),
+        member("braeden_nelson_archer", "TTP Lead"),
+        member("ben_beckman", "Pulsejet Co-Lead"),
+        member("patrick_nowak", "Pulsejet Co-Lead"),
+        member("jonah_nobel", "Biggy-K Co-Lead"),
+        member("declan_koch", "Biggy-K Co-Lead"),
         member("jack_woods", "Tachyon Lead"),
-        member("deepesh_balwani", "RDE Lead"),
+        member("kyle_tang", "Air Breathing Co-Lead"),
+        member("andy_corbett", "Air Breathing Co-Lead"),
+        member("ashutosh_barman", "Manufacturing Co-Lead"),
+        member("trent_crawford", "Manufacturing Co-Lead"),
     ],
     admin_exec: [
         member("kyle_tang", "Safety Officer"),
@@ -186,6 +226,7 @@ const teamData = {
         member("daniel_bennett", "IT Chair"),
         member("alina_li", "Webmaster"),
         member("aathiysh_surgunavel", "Photographer"),
+        member("vasundhra_arulazi", "Photographer"),
         member("jeramiah_arona", "Event Coordinator"),
     ],
 };
