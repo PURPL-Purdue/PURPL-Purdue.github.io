@@ -4,10 +4,15 @@ export const teamPhotos = {
         smiling_photo: "/images/team/group_photos/IMG_8532.jpg",
         img_alt: "Executive Team 2024-2025"
     },
+    ttp: {
+        smiling_photo: "/images/team/group_photos/IMG_8468_cropped.jpg",
+        serious_photo: "/images/team/group_photos/IMG_8474_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8477_cropped.jpg",
+    },
     eprop: {
-        smiling_photo: "/images/team/group_photos/IMG_8424.jpg",
-        serious_photo: "/images/team/group_photos/IMG_8429.jpg",
-        fun_photo: "/images/team/group_photos/IMG_8437.jpg",
+        smiling_photo: "/images/team/group_photos/IMG_8424_cropped.jpg",
+        serious_photo: "/images/team/group_photos/IMG_8429_cropped.jpg",
+        fun_photo: "/images/team/group_photos/IMG_8437_cropped.jpg",
     },
     testbed: {
         smiling_photo: "/images/team/group_photos/IMG_8440_cropped.jpg",

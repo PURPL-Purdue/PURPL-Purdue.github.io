@@ -2,6 +2,8 @@ import PageWrapper from "../../components/layout/PageWrapper";
 import Banner from "../../components/banner/Banner";
 import { ttpData } from "../../json/projects";
 import ContentWrapper from "../../components/layout/ContentWrapper";
+import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
+import DividerLine from '../../components/layout/DividerLine.js';
 
 const TTP = () => {
     return (
@@ -20,17 +22,34 @@ const TTP = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
-                    <div>
+                    <div className="space-y-8 md:space-y-12">
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{ttpData.section_1.title}</h2>
-                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {ttpData.section_1.desc}
-                        </h2>
+                        <div className="space-y-4">
+                            <div className="w-[100px] ">
+                                <DividerLine />
+                            </div>
+                            <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                                {ttpData.section_1.desc}
+                            </p>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="w-[100px] ">
+                                <DividerLine />
+                            </div>
+                            <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                                {ttpData.section_1.desc2}
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{ttpData.section_2.title}</h2>
-                        <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
-                            {ttpData.section_2.desc}
-                        </h2>
+                    {/* About the Team section with intro blurb */}
+                    <div className="space-y-3">
+                        <div className="col-span-1 w-full md:w-[60%] mx-auto mt-2">
+                            <AccessibleCarousel
+                                photos={ttpData.about_team.photos}
+                                ariaLabel="Turbojet team photos"
+                            />
+                        </div>
+                        <p className="font-display2 text-sm md:text-md text-white italic text-center">The Fall 2025 team!</p>
                     </div>
                 </div>
             </ContentWrapper>
