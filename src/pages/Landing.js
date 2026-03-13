@@ -8,6 +8,7 @@ import ContentWrapper from '../components/layout/ContentWrapper.js';
 import PageWrapper from '../components/layout/PageWrapper.js';
 import AccessibleCarousel from '../components/carousel/AccessibleCarousel.js';
 import { landingData } from '../json/landing.js';
+import SponsorScrollBanner from '../components/sponsors/SponsorScrollBanner.js';
 
 const Landing = () => {
     const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
@@ -28,7 +29,7 @@ const Landing = () => {
                 </div>
             </div>
             <ContentWrapper>
-                <div className="w-full h-full">
+                <div className="w-full h-full pb-8 md:pb-12">
                     <div className="flex flex-col space-y-8 pb-8 lg:pb-12 lg:grid lg:grid-cols-2 w-full lg:justify-items-end">
                         <div className={`flex flex-col justify-start text-left lg:pr-24 lg:mt-4 space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
@@ -43,12 +44,8 @@ const Landing = () => {
                             />
                         </div>
                     </div>
-                </div>
-                <DividerLine />
-                <div className="py-8 lg:py-12">
-                    <h1 className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Quick Stats</h1>
                     <DisplayGrid />
-                </div>
+                </div>                
                 <DividerLine />
                 <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:items-center w-full py-8 lg:py-12 lg:justify-items-end">
                     <div className="w-full md:w-[75%] lg:w-full">
@@ -70,12 +67,15 @@ const Landing = () => {
                         />
                     </div>
                 </div>
+                <SponsorScrollBanner />
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
-                    <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] max-w-[900px] lg:h-[600px] mx-auto mt-4 lg:mt-8"
-                        title="PURPL Google Calendar">
-                    </iframe>
+                    <div className="rounded-lg overflow-hidden max-w-[900px] mx-auto mt-4 lg:mt-8 border border-oscuro">
+                        <iframe src={landingData.calendar.embed_link} className="border-0 w-full h-[400px] md:h-[500px] lg:h-[600px] invert hue-rotate-180"
+                            title="PURPL Google Calendar">
+                        </iframe>
+                    </div>
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
                 </div>
@@ -83,6 +83,9 @@ const Landing = () => {
                 {/* LightWidget Instagram feed widget */}
                 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                 <div className="py-8 lg:py-12">
+                    <h2 className="font-display-bold text-2xl lg:text-3xl text-white italic mb-6 lg:mb-8 text-center">
+                        Follow us on Instagram for updates
+                    </h2>
                     <iframe src="//lightwidget.com/widgets/015d3896ec025ceb89d155914c39a008.html" allowtransparency="true"
                         title="IG-LightWidget"
                         className="lightwidget-widget sm:h-[130px] md:h-[200px] lg:h-[290px]"
@@ -90,7 +93,6 @@ const Landing = () => {
                     </iframe>
                 </div>
             </ContentWrapper>
-
             {/* Floating Video Popup */}
             {isVideoPopupOpen ? (
                 <div
