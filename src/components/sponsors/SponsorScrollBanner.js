@@ -1,7 +1,7 @@
 import { sponsors } from '../../json/sponsors.js';
 
 const allSponsors = Object.entries(sponsors)
-    .filter(([key, s]) => key !== 'featured' && s.image)
+    .filter(([key, s]) => s.image)
     .map(([, s]) => s);
 
 const SponsorScrollBanner = () => {
@@ -15,7 +15,7 @@ const SponsorScrollBanner = () => {
                 <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-dusk to-transparent z-10" />
                 <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-dusk to-transparent z-10" />
 
-                <div className="flex animate-scroll-left w-max">
+                <div className="flex animate-scroll-left w-max h-10 md:h-20">
                     {/* Duplicate the list for seamless looping */}
                     {[...allSponsors, ...allSponsors].map((sponsor, i) => (
                         <a
@@ -23,12 +23,13 @@ const SponsorScrollBanner = () => {
                             href={sponsor.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-shrink-0 mx-6 md:mx-10 flex items-center"
+                            className="flex-shrink-0 mx-6 md:mx-10 flex items-center h-full"
                         >
                             <img
                                 src={sponsor.image}
                                 alt={sponsor.img_alt}
-                                className="h-10 md:h-14 object-contain"
+                                className="object-contain"
+                                style={{ height: `${sponsor.height ?? 100}%` }}
                             />
                         </a>
                     ))}

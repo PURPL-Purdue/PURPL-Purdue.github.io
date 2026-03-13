@@ -30,7 +30,7 @@ const Landing = () => {
             </div>
             <ContentWrapper>
                 <div className="w-full h-full pb-8 md:pb-12">
-                    <div className="flex flex-col space-y-8 pb-8 lg:pb-12 lg:grid lg:grid-cols-2 w-full lg:justify-items-end">
+                    <div className="flex flex-col space-y-8 pb-8 lg:pb-12 lg:grid lg:grid-cols-2 w-full lg:min-h-[450px] lg:justify-items-end">
                         <div className={`flex flex-col justify-start text-left lg:pr-24 lg:mt-4 space-y-4 lg:space-y-8`}>
                             <h1 className="font-display-bold text-3xl lg:text-5xl text-white leading-normal pb-3">Purdue's Dedicated Propulsion Club</h1>
                             <h2 className="font-display2 text-md md:text-xl text-white text-balance">
