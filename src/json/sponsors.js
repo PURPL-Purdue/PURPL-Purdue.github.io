@@ -1,22 +1,21 @@
 export const sponsors = {
-    featured: {
-        image: "/images/sponsors/202509_Protolabs_article_screenshot.png",
-        link: "https://www.protolabs.com/resources/partnerships/purpl/",
-    },
     lockheed_martin: {
         image: "/images/sponsors/lockheed_martin_logo_light.png",
         img_alt: "Lockheed Martin",
         link: "https://www.lockheedmartin.com/",
+        height: 140
     },
     kulite: {
         image: "/images/sponsors/kulite_logo.png",
         img_alt: "Kulite",
         link: "https://kulite.com/",
+        height: 75,
     },
     altair: {
         image: "/images/sponsors/siemens_logo.png",
         img_alt: "Altair owned by Siemens",
         link: "https://altair.com/",
+        height: 70
     },
     synnax: {
         image: "/images/sponsors/synnax_logo.png",
@@ -27,16 +26,19 @@ export const sponsors = {
         image: "/images/sponsors/drake_plastics_logo.png",
         img_alt: "drake plastics",
         link: "https://drakeplastics.com/",
+        height: 90,
     },
     blue_origin: {
         image: "/images/sponsors/blue_origin_logo_light.png",
         img_alt: "Blue Origin",
         link: "https://www.blueorigin.com/",
+        height: 100,
     },
     marotta: {
         image: "/images/sponsors/marotta_controls_logo.png",
         img_alt: "Marotta Controls",
         link: "https://www.marotta.com/",
+        height: 60,
     },
     l3harris: {
         image: "/images/sponsors/l3harris_logo.png",
@@ -52,36 +54,18 @@ export const sponsors = {
         name: "Purdue Engineering Presidents' Council",
         link: "https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC"
     },
-    shreve: {
-        image: "/images/sponsors/shreve_hall_club_mascot.jpg",
-        img_alt: "Shreve Hall Club sponsor mascot",
-        link: "https://web.ics.purdue.edu/~shreve/"
-    },
     bidc: {
         image: "/images/sponsors/bechtel-logo.png",
         image_dark: "/images/sponsors/BIDC_V-Full-RGB.png",
         img_alt: "Bechtel Innovation Design Center sponsor logo",
-        link: "https://www.purdue.edu/bidc/"
-    },
-    revolution: {
-        image: "/images/sponsors/Revolution-Barbeque-Icon-transparent.png",
-        img_alt: "Revolution Barbeque sponsor logo",
-        link: "https://www.revolution-bbq.com/"
-    },
-    chipotle: {
-        image: "/images/sponsors/chipotle.png",
-        img_alt: "Chipotle sponsor logo",
-        link: "https://chipotle.com"
-    },
-    dyrobes: {
-        image: "/images/sponsors/dyrobes.png",
-        img_alt: "Dyrobes sponsor logo",
-        link: "https://dyrobes.com/"
+        link: "https://www.purdue.edu/bidc/",
+        height: 70,
     },
     cfturbo: {
         image: "/images/sponsors/CFturbo-Logo-white-transparent.png",
         img_alt: "CFturbo sponsor logo",
-        link: "https://cfturbo.com/"
+        link: "https://cfturbo.com/",
+        height: 70,
     },
     ansys: {
         image: "/images/sponsors/ansys-logo-black-background.jpg",
@@ -101,17 +85,20 @@ export const sponsors = {
     honeywell: {
         image: "/images/sponsors/Honeywell_logo.png",
         img_alt: "Honeywell sponsor logo",
-        link: "https://www.honeywell.com/us/en"
+        link: "https://www.honeywell.com/us/en",
+        height: 70,
     },
     purdue_mechanical_eng: {
         image: "/images/sponsors/MechEng_H-Full-Reverse-RGB.png",
         img_alt: "Purdue University Mechanical Engineering sponsor logo",
-        link: "https://engineering.purdue.edu/ME"
+        link: "https://engineering.purdue.edu/ME",
+        height: 70,
     },
     three_d_connexion: {
         image: "/images/sponsors/3dconnexion_logo_white.png",
         img_alt: "3D Connexion sponsor logo",
-        link: "https://3dconnexion.com/us/"
+        link: "https://3dconnexion.com/us/",
+        height: 80,
     },
     notion: {
         image: "/images/sponsors/notion-logo-white.png",
@@ -131,11 +118,13 @@ export const sponsors = {
         image: "/images/sponsors/proportion_air_logo.jpg",
         img_alt: "Proportion Air sponsor logo",
         link: "https://www.proportionair.com/",
+        height: 70,
     },
     seco_seals: {
         image: "/images/sponsors/seco-seals-placeholder_1-4132690478.png",
         img_alt: "SECO Seals sponsor logo",
         link: "https://secoseals.com/",
+        height: 110,
     },
     msm: {
         image: "/images/sponsors/msmlogo-1764661165.jpg",
@@ -146,6 +135,7 @@ export const sponsors = {
         image: "/images/sponsors/interstateam_white.png",
         img_alt: "Interstate Advanced Materials sponsor logo",
         link: "https://interstateam.com/",
+        height: 80,
     },
     national_instruments: {
         image: "/images/sponsors/national-instruments.png",
@@ -153,8 +143,31 @@ export const sponsors = {
         link: "https://ni.com",
     },
     precision_piping: {
-        image: "/images/sponsors/precision-piping-products.png",
+        image: "/images/sponsors/precision-piping-products_light.png",
         img_alt: "Precision Piping Products sponsor logo",
         link: "https://www.precisionpipingproducts.com/",
     },
 };
+
+export const priorSponsors = {
+    shreve: {
+        image: "/images/sponsors/shreve_hall_club_mascot.jpg",
+        img_alt: "Shreve Hall Club sponsor mascot",
+        link: "https://web.ics.purdue.edu/~shreve/"
+    },
+     revolution: {
+        image: "/images/sponsors/Revolution-Barbeque-Icon-transparent.png",
+        img_alt: "Revolution Barbeque sponsor logo",
+        link: "https://www.revolution-bbq.com/"
+    },
+    chipotle: {
+        image: "/images/sponsors/chipotle.png",
+        img_alt: "Chipotle sponsor logo",
+        link: "https://chipotle.com"
+    },
+    dyrobes: {
+        image: "/images/sponsors/dyrobes.png",
+        img_alt: "Dyrobes sponsor logo",
+        link: "https://dyrobes.com/"
+    },
+}

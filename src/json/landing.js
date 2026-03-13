@@ -1,9 +1,9 @@
-import { teamPhotos, 
-         testbed_202508_selectedMedia, 
-         manufacturing_202603_selectedMedia, 
-         testbed_202603_media, 
-         lhm_event_202603_media, 
-         eprop_202505_selectedMedia,
+import { 
+        teamPhotos, 
+        testbed_202508_selectedMedia, 
+        manufacturing_202603_selectedMedia, 
+        testbed_202603_media, 
+        eprop_202505_selectedMedia,
         testbed_202428_selectedMedia,
         rde_2025_media } from './gallery.js';
 
@@ -19,24 +19,20 @@ export const landingData = {
         embed_link: "https://calendar.google.com/calendar/embed?src=purpl24%40purdue.edu&ctz=America%2FIndiana%2FIndianapolis",
     },
     carouselPhotos1: [
-        teamPhotos.entire_club.smiling_photo,
-        teamPhotos.entire_club.smiling2_photo,
+        teamPhotos.entire_club.fun_photo,
+        testbed_202508_selectedMedia[1],
         eprop_202505_selectedMedia[1],
+        testbed_202428_selectedMedia[0],
         testbed_202508_selectedMedia[0],
-        lhm_event_202603_media[3],
-        manufacturing_202603_selectedMedia[0],
-        testbed_202603_media[15],
-        testbed_202508_selectedMedia[8],
+        testbed_202428_selectedMedia[10],
     ],
     carouselPhotos2: [
-        lhm_event_202603_media[5],
-        teamPhotos.entire_club.fun_photo,
-        testbed_202508_selectedMedia[10],
         rde_2025_media[2],
         testbed_202603_media[4],
-        testbed_202428_selectedMedia[0],
+        testbed_202508_selectedMedia[10],
+        manufacturing_202603_selectedMedia[0],
         testbed_202508_selectedMedia[12],
-        testbed_202428_selectedMedia[10],
+        testbed_202603_media[15],
     ],
 
 };

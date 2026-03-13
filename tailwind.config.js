@@ -37,7 +37,7 @@ module.exports = {
       },
       animation: {
         'scroll-left': 'scroll-left 110s linear infinite',        'scroll-left': 'scroll-left 110s linear infinite',
-        'scroll-left-fast': 'scroll-left 40s linear infinite',
+        'scroll-left-fast': 'scroll-left 25s linear infinite',
       },
       keyframes: {
         'scroll-left': {
