@@ -25,6 +25,7 @@ import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
 import TTP from '../../pages/projects/TTP';
 import Sponsors from "../../pages/Sponsors";
+import Donate from "../../pages/Donate";
 import Pulsejet from "../../pages/projects/Pulsejet";
 import AirBreathing from "../../pages/projects/AirBreathing";
 
@@ -94,6 +95,10 @@ const router = createHashRouter([
       {
         path: "press",
         element: <Press />,
+      },
+      {
+        path: "donate",
+        element: <Donate />,
       },
       {
         path: "404",

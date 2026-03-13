@@ -1,4 +1,11 @@
-import { teamPhotos, testbed_selectedMedia } from './gallery.js';
+import { teamPhotos, 
+         testbed_202508_selectedMedia, 
+         manufacturing_202603_selectedMedia, 
+         testbed_202603_media, 
+         lhm_event_202603_media, 
+         eprop_202505_selectedMedia,
+        testbed_202428_selectedMedia,
+        rde_2025_media } from './gallery.js';
 
 export const landingData = {
     quick_stats: [
@@ -11,19 +18,25 @@ export const landingData = {
     calendar: {
         embed_link: "https://calendar.google.com/calendar/embed?src=purpl24%40purdue.edu&ctz=America%2FIndiana%2FIndianapolis",
     },
-    // Carousel photos combining entire club photos with testbed_selectedMedia
     carouselPhotos1: [
-        { src: teamPhotos.entire_club.smiling_photo, alt: "PURPL club members" },
-        { src: teamPhotos.entire_club.smiling2_photo, alt: "PURPL club members" },
-        testbed_selectedMedia[0],
-        testbed_selectedMedia[4],
-        testbed_selectedMedia[8],
+        teamPhotos.entire_club.smiling_photo,
+        teamPhotos.entire_club.smiling2_photo,
+        eprop_202505_selectedMedia[1],
+        testbed_202508_selectedMedia[0],
+        lhm_event_202603_media[3],
+        manufacturing_202603_selectedMedia[0],
+        testbed_202603_media[15],
+        testbed_202508_selectedMedia[8],
     ],
     carouselPhotos2: [
-        testbed_selectedMedia[12],
-        testbed_selectedMedia[2],
-        { src: teamPhotos.entire_club.fun_photo, alt: "PURPL club members" },
-        testbed_selectedMedia[6],
-        testbed_selectedMedia[10],
+        lhm_event_202603_media[5],
+        teamPhotos.entire_club.fun_photo,
+        testbed_202508_selectedMedia[10],
+        rde_2025_media[2],
+        testbed_202603_media[4],
+        testbed_202428_selectedMedia[0],
+        testbed_202508_selectedMedia[12],
+        testbed_202428_selectedMedia[10],
     ],
+
 };

@@ -35,6 +35,16 @@ module.exports = {
         'DSC01166-background': "url('../public/images/DSC/DSC01166.jpg')",
         'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.png')"
       },
+      animation: {
+        'scroll-left': 'scroll-left 110s linear infinite',        'scroll-left': 'scroll-left 110s linear infinite',
+        'scroll-left-fast': 'scroll-left 40s linear infinite',
+      },
+      keyframes: {
+        'scroll-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
       boxShadow: {
         'lg-top': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',
         'md-top': '0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1)',

@@ -174,6 +174,13 @@ const Header = () => {
                         })
                         }</ul>
                     </div>
+                    <NavLink
+                        to="donate"
+                        className="font-display-bold block mt-4 mx-3 px-4 py-2 text-sm text-center text-dusk bg-old-gold rounded-md hover:bg-boilermaker-gold transition-colors"
+                        onClick={closeMobileMenu}
+                    >
+                        donate
+                    </NavLink>
                 </nav>
             </div>
             <div id="standard-navbar" className={"invisible lg:visible fixed top-0 w-full h-28 z-50  px-16 bg-dusk "}>
@@ -182,7 +189,7 @@ const Header = () => {
                     </div>
                     <NavLink className="h-12 mr-auto mb-6" to=""><img className="h-12 mr-auto mb-3" src="/images/logo/PURPL_white_logo.png" alt="PURPL logo"></img></NavLink>
 
-                    <div className="content-fill mb-6 space-x-4">
+                    <div className="content-fill mb-6 space-x-4 flex items-center">
                         {navLinks.map((navLink) => {
                             return (
                                 <div className="inline-block relative"
@@ -233,6 +240,12 @@ const Header = () => {
                                 </div>
                             );
                         })}
+                        <NavLink
+                            to="donate"
+                            className="font-display-bold text-lg px-5 py-1.5 text-dusk bg-old-gold rounded-md hover:bg-boilermaker-gold transition-colors whitespace-nowrap"
+                        >
+                            donate
+                        </NavLink>
                     </div>
                 </nav>
             </div>

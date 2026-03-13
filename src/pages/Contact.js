@@ -52,7 +52,6 @@ const Contact = () => {
                                 </p>
                             </div>
                         </div>
-
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10157.6625308148!2d-86.91906866377394!3d40.4273754830227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2b44b97d635%3A0xeba05cd76eaa53d8!2sBechtel%20Innovation%20Design%20Center%20Purdue!5e0!3m2!1sen!2sus!4v1736202898039!5m2!1sen!2sus"
                             className="border-0 w-full max-w-[600px] h-[300px] md:h-[400px]" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                             title="PURPL location on Google Maps">

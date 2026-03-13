@@ -3,6 +3,11 @@ export const sponsors = {
         image: "/images/sponsors/202509_Protolabs_article_screenshot.png",
         link: "https://www.protolabs.com/resources/partnerships/purpl/",
     },
+    lockheed_martin: {
+        image: "/images/sponsors/lockheed_martin_logo_light.png",
+        img_alt: "Lockheed Martin",
+        link: "https://www.lockheedmartin.com/",
+    },
     kulite: {
         image: "/images/sponsors/kulite_logo.png",
         img_alt: "Kulite",
@@ -24,7 +29,7 @@ export const sponsors = {
         link: "https://drakeplastics.com/",
     },
     blue_origin: {
-        image: "/images/sponsors/blue_origin_logo.png",
+        image: "/images/sponsors/blue_origin_logo_light.png",
         img_alt: "Blue Origin",
         link: "https://www.blueorigin.com/",
     },
@@ -123,7 +128,7 @@ export const sponsors = {
         link: "https://americanearthanchors.com/",
     },
     proportion_air: {
-        image: "/images/sponsors/Proportion-Air-40th-Ani-Logo.webp",
+        image: "/images/sponsors/proportion_air_logo.jpg",
         img_alt: "Proportion Air sponsor logo",
         link: "https://www.proportionair.com/",
     },
