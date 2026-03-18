@@ -6,11 +6,11 @@ const Profile = (props) => {
     return (
         <div className="w-36 lg:w-48 mb-4">
             <div className="flex flex-col items-center h-fit">
-                <div className="bg-gradient-to-b from-stardust to-old-gold w-full h-full">
+                {/*<div className="bg-gradient-to-b from-stardust to-old-gold w-full h-full">*/}
                     <div className="m-1 bg-dusk">
                         <img className={`w-36 lg:w-48 mx-auto`} src={imagePath} alt="Headshot" />
                     </div>
-                </div>
+                {/*</div>*/}
                 <div className="flex flex-col items-center bg-dusk w-full ">
                     <h2 className="font-display2-bold text-white text-md mb-1 mt-3">{name}</h2>
                     <h3 className="font-display2 text-sm md:text-md text-white mb-1">{title}</h3>
