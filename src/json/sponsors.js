@@ -147,6 +147,11 @@ export const sponsors = {
         img_alt: "Precision Piping Products sponsor logo",
         link: "https://www.precisionpipingproducts.com/",
     },
+    technetics: {
+        image: "/images/sponsors/technetics-logo.png",
+        img_alt: "Technetics sponsor logo",
+        link: "https://technetics.com/",
+    },
 };
 
 export const priorSponsors = {

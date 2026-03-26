@@ -254,17 +254,17 @@ export const rdeData = {
             { src: "/images/projects/rde/rde gallery 1.png", alt: "Isometric view of the RDE combustor", },
             { src: "/images/projects/rde/rde gallery 2.png", alt: "Cross-sectional view of the RDE combustor",},
         ],
-        blurb: "The Rotating Detonation Engine (RDE) team is creating a hydrogen-air rotating " +
-            "detonation combustor (RDC) to be integrated with turbines for clean power " +
-            "generation applications.",
+        blurb: "The Rotating Detonation Engine (RDE) team is creating the Hydrogen-Air Detonation Engine by Students" +
+                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " + 
+                "sustainable power generation applications.",
     },
-    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " +
-        "currently working on its Critical Design Review, with the goal of hotfiring in Spring 2026.",
+    highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
+        "currently manufacturing in preparation for the hotfire campaign in Spring 2026.",
     specs_table: {
         "propellants": "gaseous hydrogen, air",
-        "total mass flow rate": "2.052 lbm/s",
+        "mass flux range": "337 - 341 kg/m^2-s",
         "operating equivalence ratio range": "0.8 - 1.2",
-        "material": "316/304 stainless steel",
+        "material": "316 stainless steel",
         "ignition": "H2/O2 pre-detonator",
         "cooling": "heatsink",
     },
@@ -312,13 +312,13 @@ export const rdeData = {
             },
             {
                 title: 'Critical Design Review',
-                date: 'Feb 2026',
+                date: 'Mar 2026',
                 description: 'HADES Critical Design Review',
-                status: 'planned'
+                status: 'completed'
             },
             {
                 title: 'Hotfire Campaign',
-                date: 'Apr 2026',
+                date: 'May 2026',
                 description: 'Hotfire Campaign for HADES',
                 status: 'planned'
             },

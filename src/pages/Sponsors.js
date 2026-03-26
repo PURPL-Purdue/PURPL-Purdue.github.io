@@ -71,6 +71,9 @@ function Sponsors() {
                                 <a className="h-20" href={sponsors.lockheed_martin.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.lockheed_martin.image} alt={sponsors.lockheed_martin.img_alt} className="h-20 mt-1 object-contain" />
                                 </a>
+                                <a className="h-20" href={sponsors.technetics.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.technetics.image} alt={sponsors.technetics.img_alt} className="h-20 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                         <div>
