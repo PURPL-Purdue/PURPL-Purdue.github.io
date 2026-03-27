@@ -48,7 +48,7 @@ const Donate = () => {
                                         3. If you would like to donate to a specific team (ie. Turbopump, E-Prop, etc.), select the box next to "Additional Comments/Special Instructions". Describe where your donation should go in the comment box.
                                     </li>
                                     <li>
-                                        4. Choose "Proceed to Payment" &mdash; Thank you for supporting the Purdue Space Program!
+                                        4. Choose "Proceed to Payment" &mdash; Thank you for supporting Purdue Undergraduate Rocket Propulsion Laboratory!
                                     </li>
                                 </ol>
                             </div>
@@ -61,7 +61,7 @@ const Donate = () => {
                                 <div className="h-1 max-w-sm mx-auto bg-gradient-to-r from-old-gold to-stardust mb-6" />
                                 <ol className="ml-6 space-y-3 text-white font-display2 text-sm md:text-lg">
                                     <li>
-                                        1. Make checks payable to "Undergraduate Rocket Propulsion Lab".
+                                        1. Make checks payable to "Undergraduate Rocket Propulsion Laboratory at Purdue".
                                     </li>
                                     <li>
                                         2. Mail to "Business Office for Student Organizations", 1198 Third St, Room 365, West Lafayette, IN 47907, United States
