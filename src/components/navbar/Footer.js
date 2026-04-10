@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="mb-10 mr-auto md:mt-4 md:mb-auto md:ml-auto lg:mr-6">
-                <img src="images/PU-H-Full-Rev-RGB.svg" alt="Purdue University logo" className="h-6 md:h-9 lg:h-12" />
+                <img src="images/sponsors/PU-H-Full-Rev-RGB.svg" alt="Purdue University logo" className="h-6 md:h-9 lg:h-12" />
             </div>
         </div>
     );

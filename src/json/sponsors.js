@@ -1,4 +1,9 @@
 export const sponsors = {
+    northside_mt: {
+        image: "/images/sponsors/northside_mt.png",
+        img_alt: "Northside Machine & Tool",
+        link: "https://www.northsidemt.com/",
+    },
     lockheed_martin: {
         image: "/images/sponsors/lockheed_martin_logo_light.png",
         img_alt: "Lockheed Martin",
