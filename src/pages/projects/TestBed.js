@@ -5,7 +5,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
 import { testbedData as data } from '../../json/projects';
-import { testbed_selectedMedia } from '../../json/gallery';
+import { testbed_202508_selectedMedia } from '../../json/gallery';
 
 const TestBed = () => {
     return (
@@ -58,7 +58,7 @@ const TestBed = () => {
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{data.test_2025.header}</h2>
                         <div className="w-[100%] md:w-[75%] mx-auto mb-6">
                             <AccessibleCarousel
-                                photos={testbed_selectedMedia}
+                                photos={testbed_202508_selectedMedia}
                                 ariaLabel="Testbed hotfire test photos"
                             />
                         </div>

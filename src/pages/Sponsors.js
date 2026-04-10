@@ -22,15 +22,6 @@ function Sponsors() {
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full lg:w-[600px] mx-auto mb-16">
-                    <div className="flex flex-col m-1 items-center h-fit">
-                        <div className="w-full bg-dusk py-4 px-auto space-y-4 flex flex-col items-center">
-                            <h2 className="font-display2 text-md md:text-xl text-white text-balance">
-                                Read about our partnership with<br></br> Protolabs <a className="underline" target="_blank" rel="noopener noreferrer" href={`${sponsors.featured.link}`}>here</a>.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
                 <div className="flex flex-col space-y-8">
                     <div className="w-full max-w-[800px] bg-dusk h-min flex flex-col space-y-5">
                         <div>
@@ -38,18 +29,18 @@ function Sponsors() {
                                 Platinum Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
                                 <a className="h-24" href={sponsors.protolabs.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.protolabs.image} alt={sponsors.protolabs.img_alt} className="h-24 object-contain" />
                                 </a>
                                 <a className="h-12" href={sponsors.marotta.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.marotta.image} alt={sponsors.marotta.img_alt} className="h-12 object-contain" />
                                 </a>
-                                <a className="h-28" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-28 object-contain" />
+                                <a className="h-28 mr-8" href={sponsors.national_instruments.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.national_instruments.image} alt={sponsors.national_instruments.img_alt} className="h-20 md:h-28 object-contain" />
                                 </a>
                                 <a className="h-24" href={sponsors.notion.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-24 object-contain" />
+                                    <img src={sponsors.notion.image} alt={sponsors.notion.img_alt} className="h-16 md:h-24 object-contain" />
                                 </a>
                             </div>
                         </div>
@@ -58,12 +49,30 @@ function Sponsors() {
                                 Gold Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8">
-                                <a className="h-12" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
+                                <a className="h-16" href={sponsors.honeywell.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.honeywell.image} alt={sponsors.honeywell.img_alt} className="h-8 mt-1 object-contain" />
                                 </a>
-                                <a className="h-12 text-white font-display2-bold pt-1 md:text-lg text-sm" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
+                                <a className="h-16 text-white font-display2-bold pt-1 md:text-lg text-sm" href={sponsors.pepc.link} target="_blank" rel="noopener noreferrer">
                                     {sponsors.pepc.name}
+                                </a>
+                                  <a className="h-16" href={sponsors.l3harris.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.l3harris.image} alt={sponsors.l3harris.img_alt} className="h-12 md:h-16 mt-1 object-contain" />
+                                </a>
+                                <a className="h-16" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-16 mt-1 object-contain" />
+                                </a>
+                                <a className="h-24" href={sponsors.blue_origin.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.blue_origin.image} alt={sponsors.blue_origin.img_alt} className="h-24 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.kulite.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.kulite.image} alt={sponsors.kulite.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-20" href={sponsors.lockheed_martin.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.lockheed_martin.image} alt={sponsors.lockheed_martin.img_alt} className="h-20 mt-1 object-contain" />
+                                </a>
+                                <a className="h-20" href={sponsors.technetics.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.technetics.image} alt={sponsors.technetics.img_alt} className="h-20 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>
@@ -72,7 +81,7 @@ function Sponsors() {
                                 Silver Tier
                             </h2>
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
-                            <div className="flex justify-center items-center space-x-8 mb-8 flex-wrap space-y-8">
+                            <div className="flex justify-center items-center md:space-x-8 mb-8 flex-wrap space-y-8">
                                 <a className="h-16" href={sponsors.polymaker.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.polymaker.image} alt={sponsors.polymaker.img_alt} className="h-16 object-contain" />
                                 </a>
@@ -106,14 +115,24 @@ function Sponsors() {
                                 <a className="h-12" href={sponsors.seco_seals.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.seco_seals.image} alt={sponsors.seco_seals.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
-                                <a className="h-12" href={sponsors.msm.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsors.msm.image} alt={sponsors.msm.img_alt} className="h-12 mt-1 object-contain" />
-                                </a>
+                                
                                 <a className="h-12" href={sponsors.interstate_am.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.interstate_am.image} alt={sponsors.interstate_am.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
                                 <a className="h-12" href={sponsors.precision_piping.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.precision_piping.image} alt={sponsors.precision_piping.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.altair.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.altair.image} alt={sponsors.altair.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-[110px]" href={sponsors.drake_plastics.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.drake_plastics.image} alt={sponsors.drake_plastics.img_alt} className="h-[110px] mt-1 object-contain" />
+                                </a>
+                                <a className="h-12" href={sponsors.synnax.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.synnax.image} alt={sponsors.synnax.img_alt} className="h-12 mt-1 object-contain" />
+                                </a>
+                                <a className="h-20" href={sponsors.northside_mt.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.northside_mt.image} alt={sponsors.northside_mt.img_alt} className="h-20 mt-1 object-contain" />
                                 </a>
                             </div>
                         </div>

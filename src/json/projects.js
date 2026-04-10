@@ -1,4 +1,4 @@
-import { teamPhotos } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -15,14 +15,8 @@ export const biggiekData = {
         title: "About the team",
         blurb: "Currently PURPL’s primary test stand, Biggie-K was built in 2025 to test small engines and torch igniters. After the spring test campaign, it was decided that Biggie-K would be upgraded to accommodate a wider range of engines. The team overhauled the fluid system, allowing for a wider range of propellants including liquid oxygen, much higher mass flows and higher chamber pressures. The thrust structure was redesigned to accommodate engines up to 500lbf of thrust, and the team developed a industry-grade data acquisition system capable of 250 kilo-samples per second which replaced our older system. All of this was done while ensuring Biggie-K remains mobile.",
         photos: [
-            {
-                src: teamPhotos.biggiek.smiling_photo,
-                alt: "Test stand team members smiling",
-            },
-            {
-                src: teamPhotos.biggiek.fun_photo,
-                alt: "Test stand team having fun",
-            },
+            teamPhotos.biggiek.smiling_photo,
+            teamPhotos.biggiek.fun_photo,
         ]
     },
     wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
@@ -59,14 +53,8 @@ export const turbopumpData = {
     photo_reel: {
         title: "About the team",
         photos: [
-            {
-                src: teamPhotos.turbopump.smiling_photo,
-                alt: "Turbopump team",
-            },
-            {
-                src: teamPhotos.turbopump.fun_photo,
-                alt: "Turbopump team",
-            },
+            teamPhotos.turbopump.smiling_photo,
+            teamPhotos.turbopump.fun_photo,
         ]
     },
     aiaa: {
@@ -95,7 +83,7 @@ export const epropData = {
     wireframe_alt: "Electric propulsion project technical drawing",
     featured: {
         photo: {
-            src: "/images/projects/eprop/eprop_07.png",
+            src: "/images/projects/eprop/2025-05-SelectedMedia/eprop_07.png",
             alt: "Electric propulsion physical object",
         },
         blurb: "The Electric Propulsion team combines the minimum-viable project approach with rapid prototyping to bring" +
@@ -108,18 +96,9 @@ export const epropData = {
             "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
             "with a junior-and-below roster. This was a huge win for Eprop!",
         photos: [
-            {
-                src: teamPhotos.eprop.smiling_photo,
-                alt: "Electric propulsion team members smiling",
-            },
-            {
-                src: teamPhotos.eprop.fun_photo,
-                alt: "Electric propulsion team having fun",
-            },
-            {
-                src: teamPhotos.eprop.serious_photo,
-                alt: "Electric propulsion team members serious",
-            },
+            teamPhotos.eprop.smiling_photo,
+            teamPhotos.eprop.fun_photo,
+            teamPhotos.eprop.serious_photo,
         ]
     },
     photo_reel2: {
@@ -128,40 +107,7 @@ export const epropData = {
             "design process and the beginning of the tuning and researching process. The hotfire attempt saw successful plasma " +
             "generation and measurable emission current from the hotwire neutralizer filament, getting us closer to steady state " +
             "operation.",
-        photos: [
-            {
-                src: "/images/projects/eprop/IMG_1567_1.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/IMG_1477_1.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/IMG_2904.jpeg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/eprop_02.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/eprop_03.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/eprop_04.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/eprop_05.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-            {
-                src: "/images/projects/eprop/eprop_06.jpg",
-                alt: "Electric propulsion hot-fire",
-            },
-        ]
+        photos: eprop_202505_selectedMedia,
     },
 }
 
@@ -187,14 +133,8 @@ export const turbojetData = {
     about_team: {
         title: "About the Team",
         photos: [
-            {
-                src: teamPhotos.turbojet.serious_photo,
-                alt: "Turbojet team",
-            },
-            {
-                src: teamPhotos.turbojet.fun_photo,
-                alt: "Turbojet team",
-            },
+            teamPhotos.turbojet.serious_photo,
+            teamPhotos.turbojet.fun_photo,
         ]
     },
     photo_reel: {
@@ -258,14 +198,8 @@ export const testbedData = {
             "rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team " +
             "to continuously build on past lessons and push performance forward.",
         photos: [
-            {
-                src: teamPhotos.testbed.serious_photo,
-                alt: "Testbed team",
-            },
-            {
-                src: teamPhotos.testbed.fun_photo,
-                alt: "Testbed team",
-            },
+            teamPhotos.testbed.serious_photo,
+            teamPhotos.testbed.fun_photo,
         ]
     },
     specs_table: {
@@ -307,60 +241,7 @@ export const testbedData = {
         "of fuel and uses it to remove heat from the chamber walls through tiny channels that run along the length of the engine.",
     photo_reel: {
         title: "More Photos",
-        photos: [
-            {
-                src: "/images/projects/testbed/20250428/DSC0025.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC0031.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC0034.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9960.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9965.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9975.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9977.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9978.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9981.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9983.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9986.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9987.JPG",
-                alt: "Testbed",
-            },
-            {
-                src: "/images/projects/testbed/20250428/DSC9988.JPG",
-                alt: "Testbed",
-            },
-        ]
+        photos: testbed_202428_selectedMedia,
     },
 }
 
@@ -369,30 +250,21 @@ export const rdeData = {
     subtitle: "Rotating detonation combustor for clean power generation.",
     featured: {
         photos: [
-            {
-                src: "/images/projects/rde/rde featured.png",
-                alt: "Isometric view of the combustor",
-            },
-            {
-                src: "/images/projects/rde/rde gallery 1.png",
-                alt: "Isometric view of the RDE combustor",
-            },
-            {
-                src: "/images/projects/rde/rde gallery 2.png",
-                alt: "Cross-sectional view of the RDE combustor",
-            },
+            { src: "/images/projects/rde/rde featured.png", alt: "Isometric view of the combustor", },
+            { src: "/images/projects/rde/rde gallery 1.png", alt: "Isometric view of the RDE combustor", },
+            { src: "/images/projects/rde/rde gallery 2.png", alt: "Cross-sectional view of the RDE combustor",},
         ],
-        blurb: "The Rotating Detonation Engine (RDE) team is creating a hydrogen-air rotating " +
-            "detonation combustor (RDC) to be integrated with turbines for clean power " +
-            "generation applications.",
+        blurb: "The Rotating Detonation Engine (RDE) team is creating the Hydrogen-Air Detonation Engine by Students" +
+                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " + 
+                "sustainable power generation applications.",
     },
-    highlight: "The team recently passed its Preliminary Design Review in December 2025 and is " +
-        "currently working on its Critical Design Review, with the goal of hotfiring in Spring 2026.",
+    highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
+        "currently manufacturing in preparation for the hotfire campaign in Spring 2026.",
     specs_table: {
         "propellants": "gaseous hydrogen, air",
-        "total mass flow rate": "2.052 lbm/s",
+        "mass flux range": "337 - 341 kg/m^2-s",
         "operating equivalence ratio range": "0.8 - 1.2",
-        "material": "316/304 stainless steel",
+        "material": "316 stainless steel",
         "ignition": "H2/O2 pre-detonator",
         "cooling": "heatsink",
     },
@@ -403,26 +275,11 @@ export const rdeData = {
             "propulsion research. The team is comprised of 25+ undergraduate students who have " +
             "made rapid progress in the design and development of the combustor.",
         photos: [
-            {
-                src: teamPhotos.rde.smiling_photo,
-                alt: "RDE team members smiling",
-            },
-            {
-                src: teamPhotos.rde.fun_photo,
-                alt: "RDE team having fun",
-            },
-            {
-                src: "/images/projects/rde/IMG_7460.jpg",
-                alt: "RDE team",
-            },
-            {
-                src: "/images/projects/rde/DazzleShotImages_006.jpg",
-                alt: "RDE team",
-            },
-            {
-                src: "/images/projects/rde/DazzleShotImages_011.jpg",
-                alt: "RDE team",
-            },
+            teamPhotos.rde.smiling_photo,
+            teamPhotos.rde.fun_photo,
+            rde_2025_media[0],
+            rde_2025_media[1],
+            rde_2025_media[2],
         ]
     },
     timeline: {
@@ -455,13 +312,13 @@ export const rdeData = {
             },
             {
                 title: 'Critical Design Review',
-                date: 'Feb 2026',
+                date: 'Mar 2026',
                 description: 'HADES Critical Design Review',
-                status: 'planned'
+                status: 'completed'
             },
             {
                 title: 'Hotfire Campaign',
-                date: 'Apr 2026',
+                date: 'May 2026',
                 description: 'Hotfire Campaign for HADES',
                 status: 'planned'
             },
@@ -492,28 +349,29 @@ export const ttpData = {
     title: "Torch Training Program",
     section_1: {
         title: "Program Description",
-        desc: "The Torch Training Program (TTP) is a year-long orientation course where new members can learn the basics of liquid propulsion design through the design, buildup, and hot-fire of a torch igniter. Participants work in teams of 3–4 alongside a designated peer mentor to compete in an internal competition graded on various factors such as cost efficiency, ignition reliability, and theoretical accuracy. Content is taught through weekly lectures, covering topics ranging from ignition basics to fluid mechanics. Material also includes engineering tools such as utilizing Python scripting, CEA analysis, and CAD software."
+        desc: "The Torch Training Program (TTP) is a year-long orientation course where new members can learn the basics of liquid propulsion design through the design, buildup, and hot-fire of a torch igniter. Participants work in teams of 3–4 alongside a designated peer mentor to compete in an internal competition graded on various factors such as cost efficiency, ignition reliability, and theoretical accuracy. Content is taught through weekly lectures, covering topics ranging from ignition basics to fluid mechanics. Material also includes engineering tools such as utilizing Python scripting, CEA analysis, and CAD software.",
+        desc2: "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization."
     },
-    section_2: {
-        title: "Program Goals",
-        desc: "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization."
-    }
+    about_team: {
+        photos: [
+            teamPhotos.ttp.smiling_photo,
+            teamPhotos.ttp.fun_photo,
+        ]
+    },
 }
 
 export const pulsejetData = {
     title: "Pulsejet",
-    section_1: {
-        title: "Project Description",
-        desc: "The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
-            "The team aims to finish static testing of both valved and valveless engines within its inceptive semester. " +
-            "Pulsejet marks PURPL's first collaboration with an external club, working with Purdue NDS to create a jet-powered RC plane."
+    about_team: {
+        title: "About the Team",
+        blurb:"The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
+            "The team works on static testing of both valved and valveless engines. " +
+            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.", 
+        photos: [
+            teamPhotos.pulsejet.smiling_photo,
+            teamPhotos.pulsejet.fun_photo,
+        ]
     },
-    featured: {
-        photo: {
-            src: "/images/projects/pulsejet/wireframe.png",
-            alt: "Pulsejet wireframe",
-        }
-    }
 }
 
 export const airbreathingData = {

@@ -768,15 +768,6 @@ className="space-y-4 md:space-y-8"        // Vertical spacing
    - Custom domain support via CNAME file
    - HTTPS enabled
 
-### Environment Variables
-
-**File:** `.env`
-```
-REACT_APP_GOOGLE_API_KEY=<key>
-```
-
-**Usage:** Google Calendar API integration for event calendar
-
 ---
 
 ## Appendix A: File Counts

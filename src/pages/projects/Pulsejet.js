@@ -2,6 +2,7 @@ import PageWrapper from "../../components/layout/PageWrapper";
 import Banner from "../../components/banner/Banner";
 import { pulsejetData } from "../../json/projects";
 import ContentWrapper from "../../components/layout/ContentWrapper";
+import AccessibleCarousel from "../../components/carousel/AccessibleCarousel";
 
 const Pulsejet = () => {
     return (
@@ -20,14 +21,20 @@ const Pulsejet = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mt-10 md:mt-4 mb-3">{pulsejetData.section_1.title}</h2>
-                        <div className="flex flex-col space-y-4 md:grid md:grid-cols-3 md:items-center">
-                            <img className="col-span-1 max-w-[220px] md:w-auto md:h-auto" src={pulsejetData.featured.photo.src} alt={pulsejetData.featured.photo.alt} />
 
-                            <h2 className="col-span-2 font-display2 text-md md:text-lg text-white text-balance text-left">
-                                {pulsejetData.section_1.desc}
-                            </h2>
+                    {/* About the Team section with intro blurb */}
+                    <div>
+                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
+                            {pulsejetData.about_team.title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                            <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{pulsejetData.about_team.blurb}</p>
+                            <div className="col-span-1 w-[100%] mx-auto mt-2">
+                                <AccessibleCarousel
+                                    photos={pulsejetData.about_team.photos}
+                                    ariaLabel="pulsejet team photos"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

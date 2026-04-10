@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Dropdown = ({ isActiveProp, menuItems, id, labelledBy, onClose }) => {
@@ -61,7 +61,7 @@ const Dropdown = ({ isActiveProp, menuItems, id, labelledBy, onClose }) => {
                     id={id}
                     role="menu"
                     aria-labelledby={labelledBy}
-                    className={"flex flex-col space-y-1 text-left bg-white opacity-90 text-stardust pt-3 min-w-32 font-display2 text-lg p-2 pl-3 pr-6"}
+                    className={"flex flex-col space-y-1 text-left bg-white opacity-90 text-stardust pt-3 min-w-48 font-display2 text-lg p-2 pl-10 pr-6 -indent-4"}
                 >
                     {menuItems.map((menuItem, index) => {
                         return (
@@ -82,7 +82,7 @@ const Dropdown = ({ isActiveProp, menuItems, id, labelledBy, onClose }) => {
                                         e.target.style.transform = "translateX(0)";
                                     }}
                                 >
-                                    {menuItem.name}
+                                    &gt; {menuItem.name}
                                 </NavLink>
                             </li>
                         );

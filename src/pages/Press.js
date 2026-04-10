@@ -1,7 +1,7 @@
 import PageWrapper from '../components/layout/PageWrapper';
 import Banner from '../components/banner/Banner';
 import ContentWrapper from '../components/layout/ContentWrapper';
-import { pressArticles } from '../json/press.js';
+import { pressArticles, publications } from '../json/press.js';
 
 const Press = () => {
     return (
@@ -32,6 +32,32 @@ const Press = () => {
                             <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
                             <div className="flex flex-col space-y-4">
                                 {pressArticles.map((article, index) => (
+                                    <a
+                                        key={index}
+                                        href={article.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-moon/50 hover:bg-moon/80 transition-colors p-4 rounded-lg"
+                                    >
+                                        <div className="flex flex-col space-y-1">
+                                            <h3 className="font-display-semibold text-lg md:text-xl text-white hover:text-stardust">
+                                                {article.title}
+                                            </h3>
+                                            <p className="font-display2 text-sm md:text-md text-stardust">
+                                                {article.source} {article.date && `• ${article.date}`}
+                                            </p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="w-full max-w-[800px] flex flex-col space-y-6">
+                            <h2 className="font-display-bold text-3xl lg:text-4xl text-white text-center">
+                                Publications
+                            </h2>
+                            <div className="h-1 max-w-lg mx-auto w-full bg-gradient-to-r from-old-gold to-stardust mb-6" />
+                            <div className="flex flex-col space-y-4">
+                                {publications.map((article, index) => (
                                     <a
                                         key={index}
                                         href={article.link}
