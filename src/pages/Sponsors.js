@@ -131,6 +131,9 @@ function Sponsors() {
                                 <a className="h-12" href={sponsors.synnax.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.synnax.image} alt={sponsors.synnax.img_alt} className="h-12 mt-1 object-contain" />
                                 </a>
+                                <a className="h-20" href={sponsors.northside_mt.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.northside_mt.image} alt={sponsors.northside_mt.img_alt} className="h-20 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                     </div>

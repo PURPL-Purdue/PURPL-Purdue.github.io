@@ -31,8 +31,6 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-background': "url('../public/images/backgrounds/background_1.jpg')",
-        'mountains-background': "url('../public/images/backgrounds/background_2.jpg')",
-        'DSC01166-background': "url('../public/images/DSC/DSC01166.jpg')",
         'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.png')"
       },
       animation: {
