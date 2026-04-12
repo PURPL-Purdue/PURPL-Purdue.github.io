@@ -65,6 +65,16 @@ const RDE = () => {
                             </div>
                         </div>
                     </div>
+
+                   <div className="w-full flex justify-center">
+                        <div className="w-full md:w-[80%] lg:w-[70%]">
+                            <AccessibleCarousel
+                                photos={data.status_photos}
+                                ariaLabel="RDE current status images"
+                            />
+                        </div>
+                   </div>
+
                     <SpecsTable table={data.specs_table} title="Engine Stats" />
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">{data.timeline.title}</h2>
                     <Timeline />
