@@ -234,7 +234,6 @@ const teamData = {
         member("braeden_nelson_archer", "TTP Lead"),
         member("ben_beckman", "Pulsejet Co-Lead"),
         member("patrick_nowak", "Pulsejet Co-Lead"),
-        member("jonah_nobel", "Biggy-K Co-Lead"),
         member("declan_koch", "Biggy-K Co-Lead"),
         member("jack_woods", "Tachyon Lead"),
         member("kyle_tang", "Air Breathing Co-Lead"),
