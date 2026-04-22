@@ -137,6 +137,9 @@ function Sponsors() {
                                 <a className="h-8" href={sponsors.sendcutsend.link} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsors.sendcutsend.image} alt={sponsors.sendcutsend.img_alt} className="h-8 mt-1 object-contain" />
                                 </a>
+                                <a className="h-20" href={sponsors.northside_mt.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsors.northside_mt.image} alt={sponsors.northside_mt.img_alt} className="h-20 mt-1 object-contain" />
+                                </a>
                             </div>
                         </div>
                     </div>

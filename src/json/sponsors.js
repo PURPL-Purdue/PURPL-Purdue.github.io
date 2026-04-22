@@ -10,6 +10,11 @@ export const sponsors = {
         link: "https://sendcutsend.com/",
         height: 60,
     },
+    northside_mt: {
+        image: "/images/sponsors/northside_mt.png",
+        img_alt: "Northside Machine & Tool",
+        link: "https://www.northsidemt.com/",
+    },
     lockheed_martin: {
         image: "/images/sponsors/lockheed_martin_logo.png",
         img_alt: "Lockheed Martin",
