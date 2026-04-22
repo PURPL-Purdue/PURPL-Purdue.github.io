@@ -1,11 +1,22 @@
 export const sponsors = {
+    imaginarium: {
+        image: "/images/sponsors/imaginarium_logo.png",
+        img_alt: "Imaginarium",
+        link: "https://imaginarium.io",
+    },
+    sendcutsend: {
+        image: "/images/sponsors/sendcutsend_logo.png",
+        img_alt: "Send cut send",
+        link: "https://sendcutsend.com/",
+        height: 60,
+    },
     northside_mt: {
         image: "/images/sponsors/northside_mt.png",
         img_alt: "Northside Machine & Tool",
         link: "https://www.northsidemt.com/",
     },
     lockheed_martin: {
-        image: "/images/sponsors/lockheed_martin_logo_light.png",
+        image: "/images/sponsors/lockheed_martin_logo.png",
         img_alt: "Lockheed Martin",
         link: "https://www.lockheedmartin.com/",
         height: 140
@@ -34,7 +45,7 @@ export const sponsors = {
         height: 90,
     },
     blue_origin: {
-        image: "/images/sponsors/blue_origin_logo_light.png",
+        image: "/images/sponsors/blue_origin_logo.png",
         img_alt: "Blue Origin",
         link: "https://www.blueorigin.com/",
         height: 100,
@@ -43,7 +54,7 @@ export const sponsors = {
         image: "/images/sponsors/marotta_controls_logo.png",
         img_alt: "Marotta Controls",
         link: "https://www.marotta.com/",
-        height: 60,
+        height: 40,
     },
     l3harris: {
         image: "/images/sponsors/l3harris_logo.png",
@@ -57,7 +68,9 @@ export const sponsors = {
     },
     pepc: {
         name: "Purdue Engineering Presidents' Council",
-        link: "https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC"
+        image: "/images/sponsors/pepc_logo.png",
+        img_alt: "Purdue Engineering Presidents' Council text",
+        link: "https://engineering.purdue.edu/Engr/Academics/Undergraduate/PEPC",
     },
     bidc: {
         image: "/images/sponsors/bechtel-logo.png",
@@ -73,7 +86,7 @@ export const sponsors = {
         height: 70,
     },
     ansys: {
-        image: "/images/sponsors/ansys-logo-black-background.jpg",
+        image: "/images/sponsors/ansys_logo.png",
         img_alt: "Ansys sponsor logo",
         link: "https://ansys.com"
     },
@@ -120,10 +133,10 @@ export const sponsors = {
         link: "https://americanearthanchors.com/",
     },
     proportion_air: {
-        image: "/images/sponsors/proportion_air_logo.jpg",
+        image: "/images/sponsors/proportion_air_logo.png",
         img_alt: "Proportion Air sponsor logo",
         link: "https://www.proportionair.com/",
-        height: 70,
+        height: 50,
     },
     seco_seals: {
         image: "/images/sponsors/seco-seals-placeholder_1-4132690478.png",

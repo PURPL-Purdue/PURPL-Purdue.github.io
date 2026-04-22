@@ -255,11 +255,14 @@ export const rdeData = {
             { src: "/images/projects/rde/rde gallery 2.png", alt: "Cross-sectional view of the RDE combustor",},
         ],
         blurb: "The Rotating Detonation Engine (RDE) team is creating the Hydrogen-Air Detonation Engine by Students" +
-                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " + 
+                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " +
                 "sustainable power generation applications.",
     },
     highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
         "currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
+    status_photos: [
+        { src: "/images/projects/rde/rde status 1.png", alt: "RDE status image"}
+    ],
     specs_table: {
         "propellants": "gaseous hydrogen, air",
         "mass flux range": "337 - 341 kg/m^2-s",
@@ -377,7 +380,7 @@ export const pulsejetData = {
         title: "About the Team",
         blurb:"The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
             "The team works on static testing of both valved and valveless engines. " +
-            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.", 
+            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.",
         photos: [
             teamPhotos.pulsejet.smiling_photo,
             teamPhotos.pulsejet.fun_photo,

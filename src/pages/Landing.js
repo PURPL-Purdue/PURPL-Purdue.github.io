@@ -79,19 +79,8 @@ const Landing = () => {
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
                 </div>
-                <DividerLine />
-                {/* LightWidget Instagram feed widget */}
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                <div className="py-8 lg:py-12">
-                    <h2 className="font-display-bold text-2xl lg:text-3xl text-white italic mb-6 lg:mb-8 text-center">
-                        Follow us on Instagram for updates
-                    </h2>
-                    <iframe src="//lightwidget.com/widgets/015d3896ec025ceb89d155914c39a008.html" allowtransparency="true"
-                        title="IG-LightWidget"
-                        className="lightwidget-widget sm:h-[130px] md:h-[200px] lg:h-[290px]"
-                        style={{ width: "100%", border: 0 }}>
-                    </iframe>
-                </div>
+                
+                
             </ContentWrapper>
             {/* Floating Video Popup */}
             {isVideoPopupOpen ? (
