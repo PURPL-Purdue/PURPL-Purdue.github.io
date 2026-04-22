@@ -137,9 +137,9 @@ export const rde_2025_media = [
 ];
 
 export const rde_2026_aiaa = [
-    { src: "/images/projects/rde/2026-aiaa/_MG_0321.jpg", alt: "RDE group photo with judges at AIAA" },
-    { src: "/images/projects/rde/2026-aiaa/_MG_0485.jpg", alt: "RDE team members group photo" },
-    { src: "/images/projects/rde/2026-aiaa/_MG_0521.jpg", alt: "RDE taem members posing with award"},
+    { src: "/images/projects/rde/2026-aiaa/IMG_0321.jpg", alt: "RDE group photo with judges at AIAA" },
+    { src: "/images/projects/rde/2026-aiaa/IMG_0485.jpg", alt: "RDE team members group photo" },
+    { src: "/images/projects/rde/2026-aiaa/IMG_0521.jpg", alt: "RDE taem members posing with award"},
     { src: "/images/projects/rde/2026-aiaa/8DFCB7A6-FEF2-422E-AE39-C8209BDE6634.jpg", alt: "RDE team members group photo in front of the projector"},
     { src: "/images/projects/rde/2026-aiaa/IMG_7202.jpg", alt: "RDE team members giving their presentation at AIAA"},
 ]
