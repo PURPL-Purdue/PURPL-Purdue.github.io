@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media, rde_2026_aiaa } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -259,7 +259,7 @@ export const rdeData = {
                 "sustainable power generation applications.",
     },
     highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
-        "currently manufacturing in preparation for the hotfire campaign in Spring 2026.",
+        "currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
     status_photos: [
         { src: "/images/projects/rde/rde status 1.png", alt: "RDE status image"}
     ],
@@ -279,10 +279,15 @@ export const rdeData = {
             "made rapid progress in the design and development of the combustor.",
         photos: [
             teamPhotos.rde.smiling_photo,
-            teamPhotos.rde.fun_photo,
+            rde_2026_aiaa[0],
+            rde_2026_aiaa[3],
             rde_2025_media[0],
+            teamPhotos.rde.fun_photo,
             rde_2025_media[1],
+            rde_2026_aiaa[1],
+            rde_2026_aiaa[4],
             rde_2025_media[2],
+            rde_2026_aiaa[2],
         ]
     },
     timeline: {
@@ -320,14 +325,20 @@ export const rdeData = {
                 status: 'completed'
             },
             {
+                title: 'AIAA',
+                date: 'Apr 2026',
+                description: 'HADES team places 3rd at AIAA Region III 2026',
+                status: 'completed'
+            },
+            {
                 title: 'Hotfire Campaign',
-                date: 'May 2026',
+                date: 'Sep 2026',
                 description: 'Hotfire Campaign for HADES',
                 status: 'planned'
             },
             {
                 title: 'Turbine Integration',
-                date: 'Aug 2026',
+                date: 'Jan 2027',
                 description: 'Begin Turbine Integration for HADES',
                 status: 'planned'
             }

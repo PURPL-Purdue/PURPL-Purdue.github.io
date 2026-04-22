@@ -136,6 +136,14 @@ export const rde_2025_media = [
     { src: "/images/projects/rde/2025-media/IMG_7460.jpg", alt: "RDE member demonstrating project to industry professional at club event"}
 ];
 
+export const rde_2026_aiaa = [
+    { src: "/images/projects/rde/2026-aiaa/_MG_0321.jpg", alt: "RDE group photo with judges at AIAA" },
+    { src: "/images/projects/rde/2026-aiaa/_MG_0485.jpg", alt: "RDE team members group photo" },
+    { src: "/images/projects/rde/2026-aiaa/_MG_0521.jpg", alt: "RDE taem members posing with award"},
+    { src: "/images/projects/rde/2026-aiaa/8DFCB7A6-FEF2-422E-AE39-C8209BDE6634.jpg", alt: "RDE team members group photo in front of the projector"},
+    { src: "/images/projects/rde/2026-aiaa/IMG_7202.jpg", alt: "RDE team members giving their presentation at AIAA"},
+]
+
 // LHM event photos from March 2026
 export const lhm_event_202603_media = [
     { src: "/images/other-media/2026-03-LHM-event/IMG_1478.jpeg", alt: "LHM event" },
