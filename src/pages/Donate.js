@@ -5,6 +5,8 @@ import Button from '../components/button/Button';
 import { donateInfo } from '../json/donate';
 import { NavLink } from 'react-router-dom';
 
+const pdogDonationLink = "https://dayofgiving.purdue.edu/p2p/687326/purpl-purdue";
+
 const Donate = () => {
     return (
         <PageWrapper>
@@ -31,6 +33,23 @@ const Donate = () => {
                         </p>
 
                         <div className="w-full max-w-[700px] mx-auto space-y-12">
+                            {/* Day of Giving */}
+                            <div>
+                                <h2 className="font-display-bold text-2xl lg:text-3xl text-white mb-4 text-center">
+                                    Purdue Day of Giving this Wednesday!
+                                </h2>
+                                <div className="h-1 max-w-sm mx-auto bg-gradient-to-r from-old-gold to-stardust mb-6" />
+                                <p className="text-white font-display2 text-sm md:text-lg text-center text-balance">
+                                    Support PURPL during Purdue's annual Day of Giving on April 29th, 2026! Every dollar makes a difference in helping us push the boundaries of student rocketry. Donate directly to our team through the link below.
+                                </p>
+                                <Button
+                            text="Give on the Day of Giving"
+                            link={pdogDonationLink}
+                            isNavLink={false}
+                            className="mx-auto mt-4"
+                        />
+                            </div>
+
                             {/* Online Donation */}
                             <div>
                                 <h2 className="font-display-bold text-2xl lg:text-3xl text-white mb-4 text-center">
@@ -74,7 +93,7 @@ const Donate = () => {
                         </div>
 
                         <Button
-                            text="Donate Now"
+                            text="Donate Online Now"
                             link={donateInfo.donationLink}
                             isNavLink={false}
                             className="mx-auto mt-4"
