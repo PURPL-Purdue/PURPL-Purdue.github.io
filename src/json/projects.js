@@ -19,8 +19,6 @@ export const biggiekData = {
             teamPhotos.biggiek.fun_photo,
         ]
     },
-    wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
-    wireframe_alt: "Biggie-k technical drawing"
 };
 
 export const turbopumpData = {
@@ -79,8 +77,6 @@ export const turbopumpData = {
 export const epropData = {
     title: "Electric Propulsion",
     subtitle: "Hall thruster commonly used on in-space propulsion systems for satellites.",
-    wireframe: "/images/projects/wireframes/electric_propulsion_8_17_24.png",
-    wireframe_alt: "Electric propulsion project technical drawing",
     featured: {
         photo: {
             src: "/images/projects/eprop/2025-05-SelectedMedia/eprop_07.png",

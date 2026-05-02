@@ -26,6 +26,10 @@ export const landingData = {
         testbed_202508_selectedMedia[0],
         testbed_202428_selectedMedia[10],
     ],
+    quote: {
+        text: "The most valuable part of PURPL is not the growth. It is not the projects. It is not even the recognition. It is the people.",
+        attribution: "Parth Karande",
+    },
     carouselPhotos2: [
         rde_2025_media[2],
         testbed_202603_media[4],
