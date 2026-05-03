@@ -11,6 +11,12 @@ export const pressArticles = [
         link: "https://www.protolabs.com/resources/partnerships/purpl/",
         date: "2025",
     },
+    {
+        title: "PURPL RDE Combustion Team Wins 3rd Place at AIAA Region III Student Conference",
+        source: "Purdue AAE Flight Plan Newsletter",
+        link: "https://engineering.purdue.edu/AAEFlightPlanNews/news/misc/aiaa-region-iii-student-conference-",
+        date: "Apr 28 2026",
+    }
 ];
 
 export const publications = [
