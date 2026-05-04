@@ -8,6 +8,10 @@ import {
 // General pages
 import App from '../../App'
 import ErrorPage from '../../pages/ErrorPage';
+
+// Admin pages
+import AdminLogin from '../../pages/admin/AdminLogin';
+import AdminDashboard from '../../pages/admin/AdminDashboard';
 import Team from '../../pages/Team';
 import Landing from '../../pages/Landing';
 import Contact from '../../pages/Contact';
@@ -30,6 +34,14 @@ import Pulsejet from "../../pages/projects/Pulsejet";
 import AirBreathing from "../../pages/projects/AirBreathing";
 
 const router = createHashRouter([
+  {
+    path: "/admin",
+    element: <AdminLogin />,
+  },
+  {
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
+  },
   {
     path: "/",
     element: <App />,
