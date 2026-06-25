@@ -9,6 +9,7 @@ import PageWrapper from '../components/layout/PageWrapper.js';
 import AccessibleCarousel from '../components/carousel/AccessibleCarousel.js';
 import { landingData } from '../json/landing.js';
 import SponsorScrollBanner from '../components/sponsors/SponsorScrollBanner.js';
+import LandingQuoteGallery from '../components/landing/LandingQuoteGallery.js';
 
 const Landing = () => {
     const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
@@ -67,7 +68,8 @@ const Landing = () => {
                         />
                     </div>
                 </div>
-                <SponsorScrollBanner />
+                <DividerLine />
+                <LandingQuoteGallery />
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
@@ -79,8 +81,8 @@ const Landing = () => {
                     <p className="text-white font-display2 mt-6 text-md md:text-xl">Can't see the calendar? <a className="hover:text-stardust underline" href={landingData.calendar.embed_link}>Try this link.</a></p>
 
                 </div>
-                
-                
+                <DividerLine />
+                <SponsorScrollBanner />
             </ContentWrapper>
             {/* Floating Video Popup */}
             {isVideoPopupOpen ? (
