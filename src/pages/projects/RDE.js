@@ -200,6 +200,71 @@ const RoadmapPreview = ({ roadmap }) => {
         </div>
     );
 };
+const sharedPublications = [
+    {
+        label: "HADES",
+        title: "Design and Analysis of a Hydrogen-Air RDC for Power Generation Research",
+        description:
+            "Published research describing the design, analysis, and validation of PURPL's hydrogen-air rotating detonation combustor for sustainable power generation.",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116280",
+    },
+    {
+        label: "DEIMOS",
+        title: "Design and Analysis of a Methane-GOx RDRE with Variable Impinging Injector Layout",
+        description:
+            "Published research describing PURPL's methane-gaseous oxygen rotating detonation rocket engine and the development of a variable impinging injector architecture.",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116353",
+    },
+];
+
+const PublicationsSection = () => {
+    return (
+        <div>
+            <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase md:mt-4">
+                Research Publications
+            </h2>
+
+            <div className="border-2 border-white/40 p-5 md:p-6 relative overflow-hidden">
+                <div className="absolute top-0 left-0 h-full w-1 bg-stardust"></div>
+
+                <p className="font-display2 text-white/80 text-sm md:text-md leading-7 mb-6">
+                    PURPL's rotating detonation engine program has resulted in multiple peer-reviewed
+                    publications through the American Institute of Aeronautics and Astronautics (AIAA),
+                    highlighting both the HADES hydrogen-air combustor and the DEIMOS methane-GOx
+                    rocket engine.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {sharedPublications.map((paper) => (
+                        <a
+                            key={paper.title}
+                            href={paper.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="border-2 border-white/40 p-5 transition-all hover:border-stardust hover:bg-moon/30"
+                        >
+                            <p className="font-display2 text-stardust text-sm uppercase mb-2">
+                                {paper.label}
+                            </p>
+
+                            <h3 className="font-display-bold text-white text-xl uppercase mb-3">
+                                {paper.title}
+                            </h3>
+
+                            <p className="font-display2 text-white/70 text-sm leading-6 mb-5">
+                                {paper.description}
+                            </p>
+
+                            <p className="font-display2 text-stardust text-sm uppercase">
+                                View Publication →
+                            </p>
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
 
 const RDEMockup = () => {
     const [activeEngine, setActiveEngine] = useState("hades");
@@ -353,6 +418,8 @@ const RDEMockup = () => {
                     </div>
 
                     <SpecsTable table={data.specs_table} title={`${data.title} Engine Stats`} />
+
+                    <PublicationsSection />
 
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">
                         Roadmap
