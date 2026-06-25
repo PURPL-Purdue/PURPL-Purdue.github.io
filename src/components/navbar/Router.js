@@ -27,7 +27,6 @@ import Turbojet from '../../pages/projects/Turbojet';
 import Turbopump from '../../pages/projects/Turbopump';
 import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
-import RDEMockup from '../../pages/projects/RDEMockup';
 import TTP from '../../pages/projects/TTP';
 import Sponsors from "../../pages/Sponsors";
 import Donate from "../../pages/Donate";
@@ -80,10 +79,6 @@ const router = createHashRouter([
       {
         path: "rde",
         element: <RDE />,
-      },
-      {
-        path: "rde-mockup",
-        element: <RDEMockup />,
       },
       {
         path: "biggie-k",
