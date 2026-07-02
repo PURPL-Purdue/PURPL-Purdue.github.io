@@ -28,7 +28,7 @@ export const landingData = {
     ],
     quote: {
         text: "The most valuable part of PURPL is not the growth. It is not the projects. It is not even the recognition. It is the people.",
-        attribution: "Parth Karande",
+        attribution: "Parth Karande, Co-Founder & Former President",
     },
     carouselPhotos2: [
         rde_2025_media[2],
