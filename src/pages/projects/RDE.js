@@ -25,7 +25,7 @@ const RDE = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div className="flex flex-col mx-auto space-x-2 lg:space-x-4">
-                        <div className="w-full z-0 mb-[160px] md:mb-[140px] md:mb-0 lg:mb-0">
+                        <div className="w-full z-0 mb-[200px] md:mb-[140px] md:mb-0 lg:mb-0">
                             <div className="w-full relative min-h-min">
                                 <div className="w-[70%] md:w-[60%] lg:w-[50%] relative top-0 left-0">
                                     <div className="col-span-1 w-[100%] mx-auto mt-2">
@@ -65,6 +65,16 @@ const RDE = () => {
                             </div>
                         </div>
                     </div>
+
+                   <div className="w-full flex justify-center">
+                        <div className="w-full md:w-[80%] lg:w-[70%]">
+                            <AccessibleCarousel
+                                photos={data.status_photos}
+                                ariaLabel="RDE current status images"
+                            />
+                        </div>
+                   </div>
+
                     <SpecsTable table={data.specs_table} title="Engine Stats" />
                     <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">{data.timeline.title}</h2>
                     <Timeline />

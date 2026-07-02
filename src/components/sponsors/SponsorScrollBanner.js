@@ -29,7 +29,7 @@ const SponsorScrollBanner = () => {
                                 src={sponsor.image}
                                 alt={sponsor.img_alt}
                                 className="object-contain"
-                                style={{ height: `${sponsor.height ?? 100}%` }}
+                                style={{ height: `${sponsor.banner_height ?? 100}%` }}
                             />
                         </a>
                     ))}

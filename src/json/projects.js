@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media, rde_2026_aiaa } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -19,8 +19,6 @@ export const biggiekData = {
             teamPhotos.biggiek.fun_photo,
         ]
     },
-    wireframe: "/images/projects/wireframes/test_stand_8_17_24.png",
-    wireframe_alt: "Biggie-k technical drawing"
 };
 
 export const turbopumpData = {
@@ -79,8 +77,6 @@ export const turbopumpData = {
 export const epropData = {
     title: "Electric Propulsion",
     subtitle: "Hall thruster commonly used on in-space propulsion systems for satellites.",
-    wireframe: "/images/projects/wireframes/electric_propulsion_8_17_24.png",
-    wireframe_alt: "Electric propulsion project technical drawing",
     featured: {
         photo: {
             src: "/images/projects/eprop/2025-05-SelectedMedia/eprop_07.png",
@@ -255,11 +251,14 @@ export const rdeData = {
             { src: "/images/projects/rde/rde gallery 2.png", alt: "Cross-sectional view of the RDE combustor",},
         ],
         blurb: "The Rotating Detonation Engine (RDE) team is creating the Hydrogen-Air Detonation Engine by Students" +
-                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " + 
+                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " +
                 "sustainable power generation applications.",
     },
     highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
-        "currently manufacturing in preparation for the hotfire campaign in Spring 2026.",
+        "currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
+    status_photos: [
+        { src: "/images/projects/rde/rde status 1.png", alt: "RDE status image"}
+    ],
     specs_table: {
         "propellants": "gaseous hydrogen, air",
         "mass flux range": "337 - 341 kg/m^2-s",
@@ -276,10 +275,15 @@ export const rdeData = {
             "made rapid progress in the design and development of the combustor.",
         photos: [
             teamPhotos.rde.smiling_photo,
-            teamPhotos.rde.fun_photo,
+            rde_2026_aiaa[0],
+            rde_2026_aiaa[3],
             rde_2025_media[0],
+            teamPhotos.rde.fun_photo,
             rde_2025_media[1],
+            rde_2026_aiaa[1],
+            rde_2026_aiaa[4],
             rde_2025_media[2],
+            rde_2026_aiaa[2],
         ]
     },
     timeline: {
@@ -317,14 +321,20 @@ export const rdeData = {
                 status: 'completed'
             },
             {
+                title: 'AIAA',
+                date: 'Apr 2026',
+                description: 'HADES team places 3rd at AIAA Region III 2026',
+                status: 'completed'
+            },
+            {
                 title: 'Hotfire Campaign',
-                date: 'May 2026',
+                date: 'Sep 2026',
                 description: 'Hotfire Campaign for HADES',
                 status: 'planned'
             },
             {
                 title: 'Turbine Integration',
-                date: 'Aug 2026',
+                date: 'Jan 2027',
                 description: 'Begin Turbine Integration for HADES',
                 status: 'planned'
             }
@@ -366,7 +376,7 @@ export const pulsejetData = {
         title: "About the Team",
         blurb:"The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
             "The team works on static testing of both valved and valveless engines. " +
-            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.", 
+            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.",
         photos: [
             teamPhotos.pulsejet.smiling_photo,
             teamPhotos.pulsejet.fun_photo,

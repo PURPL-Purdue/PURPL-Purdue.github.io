@@ -9,6 +9,7 @@ import PageWrapper from '../components/layout/PageWrapper.js';
 import AccessibleCarousel from '../components/carousel/AccessibleCarousel.js';
 import { landingData } from '../json/landing.js';
 import SponsorScrollBanner from '../components/sponsors/SponsorScrollBanner.js';
+import LandingQuoteGallery from '../components/landing/LandingQuoteGallery.js';
 
 const Landing = () => {
     const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
@@ -67,7 +68,8 @@ const Landing = () => {
                         />
                     </div>
                 </div>
-                <SponsorScrollBanner />
+                <DividerLine />
+                <LandingQuoteGallery />
                 <DividerLine />
                 <div className="py-8 lg:py-12">
                     <p className="font-display-bold text-3xl lg:text-5xl text-white mb-4 lg:mb-12 text-balance leading-normal">Upcoming Events</p>
@@ -80,18 +82,7 @@ const Landing = () => {
 
                 </div>
                 <DividerLine />
-                {/* LightWidget Instagram feed widget */}
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                <div className="py-8 lg:py-12">
-                    <h2 className="font-display-bold text-2xl lg:text-3xl text-white italic mb-6 lg:mb-8 text-center">
-                        Follow us on Instagram for updates
-                    </h2>
-                    <iframe src="//lightwidget.com/widgets/015d3896ec025ceb89d155914c39a008.html" allowtransparency="true"
-                        title="IG-LightWidget"
-                        className="lightwidget-widget sm:h-[130px] md:h-[200px] lg:h-[290px]"
-                        style={{ width: "100%", border: 0 }}>
-                    </iframe>
-                </div>
+                <SponsorScrollBanner />
             </ContentWrapper>
             {/* Floating Video Popup */}
             {isVideoPopupOpen ? (

@@ -38,6 +38,7 @@ To get started with this project, you will need:
 
     ```
     npm start
+    npm start --reset-cache
     ```
     
 ## Folder Structure
