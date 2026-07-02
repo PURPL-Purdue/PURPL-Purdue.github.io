@@ -8,6 +8,10 @@ import {
 // General pages
 import App from '../../App'
 import ErrorPage from '../../pages/ErrorPage';
+
+// Admin pages
+import AdminLogin from '../../pages/admin/AdminLogin';
+import AdminDashboard from '../../pages/admin/AdminDashboard';
 import Team from '../../pages/Team';
 import Landing from '../../pages/Landing';
 import Contact from '../../pages/Contact';
@@ -23,6 +27,7 @@ import Turbojet from '../../pages/projects/Turbojet';
 import Turbopump from '../../pages/projects/Turbopump';
 import TestBed from '../../pages/projects/TestBed';
 import RDE from '../../pages/projects/RDE';
+import RDEMockup from '../../pages/projects/RDEMockup';
 import TTP from '../../pages/projects/TTP';
 import Sponsors from "../../pages/Sponsors";
 import Donate from "../../pages/Donate";
@@ -30,6 +35,14 @@ import Pulsejet from "../../pages/projects/Pulsejet";
 import AirBreathing from "../../pages/projects/AirBreathing";
 
 const router = createHashRouter([
+  {
+    path: "/admin",
+    element: <AdminLogin />,
+  },
+  {
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
+  },
   {
     path: "/",
     element: <App />,
@@ -67,6 +80,10 @@ const router = createHashRouter([
       {
         path: "rde",
         element: <RDE />,
+      },
+      {
+        path: "rde-mockup",
+        element: <RDEMockup />,
       },
       {
         path: "biggie-k",

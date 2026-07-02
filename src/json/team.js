@@ -215,10 +215,11 @@ function member(key, title) {
 
 const teamData = {
     major_exec: [
-        member("parth_karande", "President"),
-        member("tobey_uhm", "Treasurer"),
-        member("max_neitzke", "VP of Propulsion"),
-        member("jonah_nobel", "VP of Test Infrastructure"),
+        member("jack_woods", "President"),
+        member("winston_zhu", "Treasurer"),
+        member("anjali_patel", "VP of Engagement"),
+        member("dominik_sloup", "VP of Propulsion"),
+        member("declan_koch", "VP of Test Infrastructure"),
     ],
     project_leads: [
         member("alejandro_diaz_contreras", "Turbopump Co-Lead"),
@@ -234,8 +235,7 @@ const teamData = {
         member("braeden_nelson_archer", "TTP Lead"),
         member("ben_beckman", "Pulsejet Co-Lead"),
         member("patrick_nowak", "Pulsejet Co-Lead"),
-        member("jonah_nobel", "Biggy-K Co-Lead"),
-        member("declan_koch", "Biggy-K Co-Lead"),
+        member("declan_koch", "Biggy-K Lead"),
         member("jack_woods", "Tachyon Lead"),
         member("kyle_tang", "Air Breathing Co-Lead"),
         member("andy_corbett", "Air Breathing Co-Lead"),
