@@ -21,6 +21,18 @@ export const pressArticles = [
 
 export const publications = [
     {
+        title: "Design and Analysis of a Hydrogen-Air RDC for Power Generation Research",
+        source: "AIAA",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116280",
+        date: "Jun 2026",
+    },
+    {
+        title: "Design and Analysis of a Methane-GOx RDRE with Variable Impinging Injector Layout",
+        source: "AIAA",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116353",
+        date: "Jun 2026",
+    },
+    {
         title: "Design and Testing of \"Marlin\", a 5,000 lbf Open-Cycle Kerosene-Oxygen Turbopump Rocket Engine",
         source: "AIAA",
         link: "https://arc.aiaa.org/doi/10.2514/6.2026-0983",
