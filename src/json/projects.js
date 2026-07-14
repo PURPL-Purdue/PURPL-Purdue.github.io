@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, rde_2025_media, rde_2026_aiaa } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -241,134 +241,264 @@ export const testbedData = {
     },
 }
 
-export const rdeData = {
-    title: "RDE",
-    subtitle: "Rotating detonation combustor for clean power generation.",
+
+const sharedAboutPhotos = [
+    {
+        src: "/images/team/group_photos/2025_fall/IMG_8459_cropped.jpg",
+        alt: "PURPL fall 2025 team photo",
+    },
+    {
+        src: "/images/projects/rde/2025-media/DazzleShotImages_011.jpg",
+        alt: "RDE team project meeting",
+    },
+    {
+        src: "/images/team/group_photos/2025_fall/IMG_8462_cropped.jpg",
+        alt: "PURPL fall 2025 team group photo",
+    },
+    {
+        src: "/images/projects/rde/2025-media/IMG_7460.jpg",
+        alt: "RDE student presenting hardware",
+    },
+    {
+        src: "/images/projects/rde/2025-media/DazzleShotImages_006.jpg",
+        alt: "RDE team working during a project meeting",
+    },
+];
+
+const sharedAIAAPhotos = [
+    {
+        src: "/images/projects/rde/2026-aiaa/IMG_0321.jpg",
+        alt: "PURPL presenting RDE research at AIAA Region III",
+    },
+    {
+        src: "/images/projects/rde/2026-aiaa/IMG_0521.jpg",
+        alt: "PURPL RDE presentation at AIAA Region III",
+    },
+    {
+        src: "/images/projects/rde/2026-aiaa/IMG_0485.jpg",
+        alt: "PURPL poster discussion at AIAA Region III",
+    },
+    {
+        src: "/images/projects/rde/2026-aiaa/8DFCB7A6-FEF2-422E-AE39-C8209BDE6634.jpg",
+        alt: "PURPL team at AIAA Region III",
+    },
+    {
+        src: "/images/projects/rde/2026-aiaa/IMG_7202.jpg",
+        alt: "PURPL RDE project display at AIAA Region III",
+    },
+];
+
+const sharedRoadmap = [
+    [
+        "Jan 2027",
+        "Turbine Integration",
+        "Begin turbine integration for HADES.",
+    ],
+    [
+        "Sep 2026",
+        "Hotfire Campaign",
+        "Planned hotfire campaign.",
+    ],
+    [
+        "Apr 2026",
+        "AIAA Region III",
+        "HADES places 3rd at AIAA Region III 2026.",
+    ],
+    [
+        "Mar 2026",
+        "Critical Design Review",
+        "HADES CDR completed.",
+    ],
+    [
+        "Oct 2025",
+        "Renamed to HADES",
+        "RDC project renamed to HADES.",
+    ],
+    [
+        "Apr 2025",
+        "Conceptual Design Review Complete",
+        "Initial concept and direction reviewed.",
+    ],
+    [
+        "Jan 2025",
+        "Project Founded",
+        "RDE project begins as LOKI.",
+    ],
+];
+
+const hadesData = {
+    key: "hades",
+    title: "HADES",
+    subtitle: "Hydrogen-Air Detonation Engine by Students",
+
+    selector_blurb:
+        "HADES (Hydrogen-Air Detonation Engine by Students) is PURPL’s hydrogen-air rotating detonation combustor, developed to advance air-breathing detonation technology for sustainable power generation applications.",
+
+    dashboard_title: "Current HADES Status",
+
+    dashboard_blurb:
+        "HADES is currently in the manufacturing phase following a successful Critical Design Review and a third-place finish at the 2026 AIAA Region III Student Conference. The team is preparing for Fall 2026 hotfire testing and future turbine integration.",
+
+    dashboard_cards: [
+        ["STATUS", "Manufacturing"],
+        ["NEXT", "Fall 2026 hotfire"],
+        ["AIAA", "3rd at Region III"],
+        ["MEDIA", "AIAA + status photos"],
+    ],
+
+    content_sections: [
+        ["OVERVIEW", "Project summary and purpose"],
+        ["MEDIA", "Team photos, CAD renders, and status images"],
+        ["SPECS", "Engine stats and technical details"],
+    ],
+
     featured: {
         photos: [
-            { src: "/images/projects/rde/rde featured.png", alt: "Isometric view of the combustor", },
-            { src: "/images/projects/rde/rde gallery 1.png", alt: "Isometric view of the RDE combustor", },
-            { src: "/images/projects/rde/rde gallery 2.png", alt: "Cross-sectional view of the RDE combustor",},
+            {
+                src: "/images/projects/rde/shared/featured-render.png",
+                alt: "HADES combustor render",
+            },
+            {
+                src: "/images/projects/rde/shared/engine-render-1.png",
+                alt: "HADES combustor render",
+            },
+            {
+                src: "/images/projects/rde/shared/engine-cross-section.png",
+                alt: "HADES combustor cross section",
+            },
         ],
-        blurb: "The Rotating Detonation Engine (RDE) team is creating the Hydrogen-Air Detonation Engine by Students" +
-                " (HADES), a hydrogen-air rotating detonation combustor (RDC) to be integrated with turbines for " +
-                "sustainable power generation applications.",
+
+        blurb:
+            "The Hydrogen-Air Detonation Engine by Students (HADES) is a hydrogen-air rotating detonation combustor designed for future integration with gas turbines for sustainable power generation applications.",
     },
-    highlight: "The team recently passed its Critical Design Review in March 2026 and is " +
-        "currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
-    status_photos: [
-        { src: "/images/projects/rde/rde status 1.png", alt: "RDE status image"}
-    ],
+
+    about: {
+        title: "About HADES",
+
+        blurb:
+            "HADES gives undergraduate students hands-on experience in the design, analysis, manufacturing, and experimental validation of hydrogen-air rotating detonation combustors for sustainable power generation. The team has made rapid progress through design review, AIAA presentation, and current manufacturing preparation.",
+
+        photos: [
+            {
+                src: "/images/projects/rde/hades/presentation-1.png",
+                alt: "HADES presentation photo",
+            },
+            {
+                src: "/images/projects/rde/hades/presentation-2.png",
+                alt: "HADES poster discussion",
+            },
+        ],
+    },
+
+    highlight:
+        "The HADES team recently passed its Critical Design Review in March 2026 and is currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
+
     specs_table: {
-        "propellants": "gaseous hydrogen, air",
+        propellants: "gaseous hydrogen, air",
         "mass flux range": "337 - 341 kg/m^2-s",
-        "operating equivalence ratio range": "0.8 - 1.2",
-        "material": "316 stainless steel",
-        "ignition": "H2/O2 pre-detonator",
-        "cooling": "heatsink",
+        "equivalence ratio": "0.8 - 1.2",
+        material: "316 stainless steel",
+        ignition: "H2/O2 pre-detonator",
+        cooling: "heatsink",
     },
-    photo_reel1: {
-        title: "About the team",
-        blurb: "RDE pushes the boundaries of air-breathing detonation technology while " +
-            "providing students with industry-applicable experience in cutting-edge " +
-            "propulsion research. The team is comprised of 25+ undergraduate students who have " +
-            "made rapid progress in the design and development of the combustor.",
-        photos: [
-            teamPhotos.rde.smiling_photo,
-            rde_2026_aiaa[0],
-            rde_2026_aiaa[3],
-            rde_2025_media[0],
-            teamPhotos.rde.fun_photo,
-            rde_2025_media[1],
-            rde_2026_aiaa[1],
-            rde_2026_aiaa[4],
-            rde_2025_media[2],
-            rde_2026_aiaa[2],
-        ]
-    },
-    timeline: {
-        title: "Roadmap",
-        blurb: "See the history of the RDE project and what's coming up for the team.",
-        data: [
-            {
-                title: 'Project Kickoff',
-                date: 'Jan 2025',
-                description: 'RDE Project begins as LOKI',
-                status: 'completed'
-            },
-            {
-                title: 'Conceptual Design Review',
-                date: 'Apr 2025',
-                description: 'LOKI Conceptual Design Review Passed',
-                status: 'completed'
-            },
-            {
-                title: 'Project Rename',
-                date: 'Oct 2025',
-                description: 'RDC renamed to HADES',
-                status: 'completed'
-            },
-            {
-                title: 'Preliminary Design Review',
-                date: 'Dec 2025',
-                description: 'HADES Preliminary Design Review Presented',
-                status: 'completed'
-            },
-            {
-                title: 'Critical Design Review',
-                date: 'Mar 2026',
-                description: 'HADES Critical Design Review',
-                status: 'completed'
-            },
-            {
-                title: 'AIAA',
-                date: 'Apr 2026',
-                description: 'HADES team places 3rd at AIAA Region III 2026',
-                status: 'completed'
-            },
-            {
-                title: 'Hotfire Campaign',
-                date: 'Sep 2026',
-                description: 'Hotfire Campaign for HADES',
-                status: 'planned'
-            },
-            {
-                title: 'Turbine Integration',
-                date: 'Jan 2027',
-                description: 'Begin Turbine Integration for HADES',
-                status: 'planned'
-            }
-        ]
-    },
-    photo_reel: {
-        title: "Gallery",
+};
+
+const deimosData = {
+    key: "deimos",
+    title: "DEIMOS",
+    subtitle: "Methane-GOx Rotating Detonation Rocket Engine",
+
+    selector_blurb:
+        "DEIMOS is PURPL’s methane-gaseous oxygen rotating detonation rocket engine, expanding the team’s research into liquid rocket propulsion and high-performance rotating detonation engines.",
+
+    dashboard_title: "Current DEIMOS Status",
+
+    dashboard_blurb:
+        "DEIMOS is PURPL’s second rotating detonation engine program. The project focuses on methane-gaseous oxygen propulsion and is currently progressing through hardware manufacturing ahead of hotfire testing.",
+
+    dashboard_cards: [
+        ["STATUS", "Manufacturing"],
+        ["NEXT", "Hotfire testing"],
+        ["ENGINE", "Methane / GOx"],
+        ["AIAA", "SciTech 2027"],
+    ],
+
+    content_sections: [
+        ["OVERVIEW", "Methane-GOx RDRE project summary"],
+        ["MEDIA", "CAD render, poster, and future manufacturing photos"],
+        ["SPECS", "Engine stats and technical details"],
+    ],
+
+    featured: {
         photos: [
             {
-                src: "/images/projects/rde/rde gallery 1.png",
-                alt: "Isometric view of the RDE combustor",
+                src: "/images/projects/rde/shared/status-photo-1.png",
+                alt: "DEIMOS rotating detonation rocket engine poster",
             },
+        ],
+
+        blurb:
+            "DEIMOS is a methane-gaseous oxygen rotating detonation rocket engine designed to investigate compact, high-performance rocket propulsion using rotating detonation combustion.",
+    },
+
+    about: {
+        title: "About DEIMOS",
+
+        blurb:
+            "DEIMOS is PURPL’s methane-gaseous oxygen rotating detonation rocket engine, developed to investigate high-performance rocket propulsion through rotating detonation combustion. The project builds on PURPL’s experience with HADES while expanding into liquid rocket engine research.",
+
+        photos: [
             {
-                src: "/images/projects/rde/rde gallery 2.png",
-                alt: "Cross-sectional view of the RDE combustor",
+                src: "/images/projects/rde/deimos/presentation-1.png",
+                alt: "DEIMOS presentation photo",
             },
-        ]
-    }
-}
+        ],
+    },
+
+    highlight:
+        "Hardware manufacturing is underway, with full engine assembly targeted ahead of Fall 2026 hotfire testing. Research results will be presented at AIAA SciTech 2027.",
+
+    specs_table: {
+        thrust: "1350 N",
+        "nominal eq. ratio": "1.3",
+        propellants: "CH4 / O2",
+        "mass flow rate": "0.59 kg/s",
+        ignition: "pre-detonator",
+        material: "C110 / SS316",
+        cooling: "heat sink",
+    },
+};
+
+const engines = {
+    hades: hadesData,
+    deimos: deimosData,
+};
+
+export const rdeData = {
+    sharedAboutPhotos,
+    sharedAIAAPhotos,
+    sharedRoadmap,
+    hadesData,
+    deimosData,
+    engines,
+};
 
 export const ttpData = {
     title: "Torch Training Program",
     section_1: {
         title: "Program Description",
-        desc: "The Torch Training Program (TTP) is a year-long orientation course where new members can learn the basics of liquid propulsion design through the design, buildup, and hot-fire of a torch igniter. Participants work in teams of 3–4 alongside a designated peer mentor to compete in an internal competition graded on various factors such as cost efficiency, ignition reliability, and theoretical accuracy. Content is taught through weekly lectures, covering topics ranging from ignition basics to fluid mechanics. Material also includes engineering tools such as utilizing Python scripting, CEA analysis, and CAD software.",
-        desc2: "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization."
+        desc:
+            "The Torch Training Program (TTP) is a year-long orientation course where new members can learn the basics of liquid propulsion design through the design, buildup, and hot-fire of a torch igniter. Participants work in teams of 3–4 alongside a designated peer mentor to compete in an internal competition graded on various factors such as cost efficiency, ignition reliability, and theoretical accuracy. Content is taught through weekly lectures, covering topics ranging from ignition basics to fluid mechanics. Material also includes engineering tools such as utilizing Python scripting, CEA analysis, and CAD software.",
+        desc2:
+            "The program focuses on individual product ownership, encouraging participants to consider design trade-offs and manage their projects from conception to testing. By the end of the year, members will have gained hands-on experience in propulsion engineering, teamwork, and technical problem-solving, while building a strong foundation for future contributions to larger liquid engine development projects within the organization.",
     },
     about_team: {
         photos: [
             teamPhotos.ttp.smiling_photo,
             teamPhotos.ttp.fun_photo,
-        ]
+        ],
     },
-}
+};
 
 export const pulsejetData = {
     title: "Pulsejet",
