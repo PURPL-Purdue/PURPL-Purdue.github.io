@@ -58,13 +58,6 @@ const RDE = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-gradient-to-br from-old-gold to-stardust from-30% h-full w-full">
-                        <div className="flex flex-col m-1 items-center h-fit">
-                            <div className="w-full bg-dusk py-3 px-auto space-y-1">
-                                <h2 className="font-display2 italic text-md md:text-lg text-white text-balance">{data.highlight}</h2>
-                            </div>
-                        </div>
-                    </div>
 
                    <div className="w-full flex justify-center">
                         <div className="w-full md:w-[80%] lg:w-[70%]">
