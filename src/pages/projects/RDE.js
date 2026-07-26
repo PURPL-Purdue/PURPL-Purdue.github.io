@@ -179,7 +179,7 @@ const RDE = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
                             <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
-                                RDE pushes the boundaries of detonation technology not just air-breathing
+                                RDE pushes the boundaries of detonation technology
                                 while providing students with industry-applicable experience in
                                 cutting-edge propulsion research. The team is comprised of 25+
                                 undergraduate students who have made rapid progress in the design
