@@ -1,6 +1,5 @@
 import Banner from '../components/banner/Banner';
 import PageWrapper from '../components/layout/PageWrapper';
-import Button from '../components/button/Button.js';
 
 import { contactInfo } from '../json/contact.js';
 import { sponsors } from '../json/sponsors.js';
