@@ -83,12 +83,14 @@ function Sponsors() {
                         Want to sponsor us? Email us at <a className="underline" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.<br></br>
                         We would love your support!
                     </h2>
+                    {/*
                     <Button
                         text="View our corporate newsletter"
                         link="/PURPL-Corporate-Newsletter-25-26.pdf"
                         isNavLink={false}
                         className="mx-auto mt-6"
                     />
+                    */}
                 </div>
             </ContentWrapper>
         </PageWrapper>
