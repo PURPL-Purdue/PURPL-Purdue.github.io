@@ -18,6 +18,10 @@ const AccessibleCarousel = ({
     const liveRegionRef = useRef(null);
 
     useEffect(() => {
+        setActiveIndex(0);
+    }, [photos]);
+
+    useEffect(() => {
         if (!photos || photos.length === 0) return;
 
         const firstImage = new Image();
@@ -85,7 +89,7 @@ const AccessibleCarousel = ({
                 className="absolute top-2 left-2 z-20 bg-gray-200/70 text-dusk text-xs px-2 py-1 rounded font-display2"
                 aria-hidden="true"
             >
-                {activeIndex + 1} / {photos.length}
+                {Math.min(activeIndex + 1, photos.length)} / {photos.length}
             </div>
 
             <Carousel
