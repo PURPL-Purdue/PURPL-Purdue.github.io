@@ -332,30 +332,63 @@ const sharedRoadmap = [
     ],
 ];
 
+// Shared "About the Team" copy for the RDE page. Describes the overall team
+// and both engine programs at a high level (not a deep dive on either engine).
+// TODO: confirm RDE team-approved phrasing for the DEIMOS sentence below.
+const teamBlurb =
+    "RDE pushes the boundaries of detonation technology while providing students with industry-applicable experience in cutting-edge propulsion research. The team is comprised of 25+ undergraduate students who have made rapid progress in the design and development of the combustor. Alongside HADES, the team develops DEIMOS, a methane-gaseous oxygen rotating detonation rocket engine that expands PURPL’s research into liquid rocket propulsion.";
+
+// Shared AIAA Region III recognition. Appears once on the RDE page, above the
+// project profiles, since it covers both HADES and DEIMOS.
+const sharedAIAA = {
+    blurb:
+        "PURPL represented Purdue University at the 2026 AIAA Region III Student Conference with presentations on both HADES and DEIMOS. The HADES research paper, Design of a Hydrogen-Air Rotating Detonation Combustor for Sustainable Power Generation, received 3rd Place in the conference competition, recognizing the team’s undergraduate research in rotating detonation technology.",
+    photos: sharedAIAAPhotos,
+};
+
+// Shared RDE research publications. Rendered as simple title + link cards.
+const publications = [
+    {
+        title: "Hydrogen-Air RDC for Power Generation Research",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116280",
+    },
+    {
+        title: "Methane-GOx RDRE with Variable Injector Layout",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2026-116353",
+    },
+];
+
 const hadesData = {
     key: "hades",
     title: "HADES",
     subtitle: "Hydrogen-Air Detonation Engine by Students",
 
-    selector_blurb:
-        "HADES (Hydrogen-Air Detonation Engine by Students) is PURPL’s hydrogen-air rotating detonation combustor, developed to advance air-breathing detonation technology for sustainable power generation applications.",
+    // Selector card: identifies the project only.
+    selector_subtitle: "Hydrogen-Air Rotating Detonation Engine",
+    selector_purpose: "Power generation research",
 
     dashboard_title: "Current HADES Status",
 
+    // Current work only. What HADES *is* lives in `featured.blurb`.
     dashboard_blurb:
-        "HADES is currently in the manufacturing phase following a successful Critical Design Review and a third-place finish at the 2026 AIAA Region III Student Conference. The team is preparing for Fall 2026 hotfire testing and future turbine integration.",
+        "The HADES team recently passed its Critical Design Review in March 2026 and is currently manufacturing in preparation for the hotfire campaign in Fall 2026. Turbine integration will follow the hotfire campaign.",
 
     dashboard_cards: [
         ["STATUS", "Manufacturing"],
         ["NEXT", "Fall 2026 hotfire"],
-        ["AIAA", "3rd at Region III"],
-        ["MEDIA", "AIAA + status photos"],
+        ["THEN", "Turbine integration"],
+        ["MEDIA", "Status & project photos"],
     ],
 
-    content_sections: [
-        ["OVERVIEW", "Project summary and purpose"],
-        ["MEDIA", "Team photos, CAD renders, and status images"],
-        ["SPECS", "Engine stats and technical details"],
+    dashboard_photos: [
+        {
+            src: "/images/projects/rde/hades/presentation-1.png",
+            alt: "HADES presentation photo",
+        },
+        {
+            src: "/images/projects/rde/hades/presentation-2.png",
+            alt: "HADES poster discussion",
+        },
     ],
 
     featured: {
@@ -378,27 +411,6 @@ const hadesData = {
             "The Hydrogen-Air Detonation Engine by Students (HADES) is a hydrogen-air rotating detonation combustor designed for future integration with gas turbines for sustainable power generation applications.",
     },
 
-    about: {
-        title: "About HADES",
-
-        blurb:
-            "HADES gives undergraduate students hands-on experience in the design, analysis, manufacturing, and experimental validation of hydrogen-air rotating detonation combustors for sustainable power generation. The team has made rapid progress through design review, AIAA presentation, and current manufacturing preparation.",
-
-        photos: [
-            {
-                src: "/images/projects/rde/hades/presentation-1.png",
-                alt: "HADES presentation photo",
-            },
-            {
-                src: "/images/projects/rde/hades/presentation-2.png",
-                alt: "HADES poster discussion",
-            },
-        ],
-    },
-
-    highlight:
-        "The HADES team recently passed its Critical Design Review in March 2026 and is currently manufacturing in preparation for the hotfire campaign in Fall 2026.",
-
     specs_table: {
         propellants: "gaseous hydrogen, air",
         "mass flux range": "337 - 341 kg/m^2-s",
@@ -414,25 +426,28 @@ const deimosData = {
     title: "DEIMOS",
     subtitle: "Methane-GOx Rotating Detonation Rocket Engine",
 
-    selector_blurb:
-        "DEIMOS is PURPL’s methane-gaseous oxygen rotating detonation rocket engine, expanding the team’s research into liquid rocket propulsion and high-performance rotating detonation engines.",
+    // Selector card: identifies the project only.
+    selector_subtitle: "Methane-GOx Rotating Detonation Rocket Engine",
+    selector_purpose: "Rocket propulsion research",
 
     dashboard_title: "Current DEIMOS Status",
 
+    // Current work only. What DEIMOS *is* lives in `featured.blurb`.
     dashboard_blurb:
-        "DEIMOS is PURPL’s second rotating detonation engine program. The project focuses on methane-gaseous oxygen propulsion and is currently progressing through hardware manufacturing ahead of hotfire testing.",
+        "Hardware manufacturing is underway, with full engine assembly targeted ahead of Fall 2026 hotfire testing. Research results will be presented at AIAA SciTech 2027.",
 
     dashboard_cards: [
         ["STATUS", "Manufacturing"],
         ["NEXT", "Hotfire testing"],
         ["ENGINE", "Methane / GOx"],
-        ["AIAA", "SciTech 2027"],
+        ["MEDIA", "CAD render & poster"],
     ],
 
-    content_sections: [
-        ["OVERVIEW", "Methane-GOx RDRE project summary"],
-        ["MEDIA", "CAD render, poster, and future manufacturing photos"],
-        ["SPECS", "Engine stats and technical details"],
+    dashboard_photos: [
+        {
+            src: "/images/projects/rde/deimos/presentation-1.png",
+            alt: "DEIMOS presentation photo",
+        },
     ],
 
     featured: {
@@ -446,23 +461,6 @@ const deimosData = {
         blurb:
             "DEIMOS is a methane-gaseous oxygen rotating detonation rocket engine designed to investigate compact, high-performance rocket propulsion using rotating detonation combustion.",
     },
-
-    about: {
-        title: "About DEIMOS",
-
-        blurb:
-            "DEIMOS is PURPL’s methane-gaseous oxygen rotating detonation rocket engine, developed to investigate high-performance rocket propulsion through rotating detonation combustion. The project builds on PURPL’s experience with HADES while expanding into liquid rocket engine research.",
-
-        photos: [
-            {
-                src: "/images/projects/rde/deimos/presentation-1.png",
-                alt: "DEIMOS presentation photo",
-            },
-        ],
-    },
-
-    highlight:
-        "Hardware manufacturing is underway, with full engine assembly targeted ahead of Fall 2026 hotfire testing. Research results will be presented at AIAA SciTech 2027.",
 
     specs_table: {
         thrust: "1350 N",
@@ -481,8 +479,10 @@ const engines = {
 };
 
 export const rdeData = {
+    teamBlurb,
     sharedAboutPhotos,
-    sharedAIAAPhotos,
+    sharedAIAA,
+    publications,
     sharedRoadmap,
     hadesData,
     deimosData,

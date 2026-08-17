@@ -4,5 +4,11 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "discord.removeDetails": true,
+    "discord.removeLowerDetails": true,
+    "discord.removeRemoteRepository": true,
+    "discord.removeTimestamp": true,
+    "discord.suppressNotifications": true,
+    "discord.swapBigAndSmallImage": true
 }
