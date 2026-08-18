@@ -154,6 +154,14 @@ export const lhm_event_202603_media = [
     { src: "/images/other-media/2026-03-LHM-event/IMG_1483.jpeg", alt: "LHM event" },
 ];
 
+export const tachyon_media = [
+    { src: "/images/projects/tachyon/tachyon-1.png", alt: "Tachyon test stand CAD render" },
+    { src: "/images/projects/tachyon/tachyon-2.png", alt: "Tachyon test stand CAD render" },
+    { src: "/images/projects/tachyon/tachyon-3.png", alt: "Tachyon test stand CAD render" },
+    { src: "/images/projects/tachyon/tachyon-4.png", alt: "Tachyon test stand CAD render" },
+    { src: "/images/projects/tachyon/tachyon-5.png", alt: "Tachyon test stand CAD render" },
+];
+
 // Electric propulsion selected media from May 2025
 export const eprop_202505_selectedMedia = [
     { src: "/images/projects/eprop/2025-05-SelectedMedia/IMG_1567_1.jpg", alt: "Electric propulsion hot-fire" },

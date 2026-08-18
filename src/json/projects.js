@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, tachyon_media } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -18,6 +18,21 @@ export const biggiekData = {
             teamPhotos.biggiek.smiling_photo,
             teamPhotos.biggiek.fun_photo,
         ]
+    },
+};
+
+export const tachyonData = {
+    title: "Tachyon",
+    subtitle: "PURPL’s dedicated large engine test stand.",
+    specs_table: {
+        "Engine capabilities": ">5,000lbf",
+        "Propellants": "cryogenic propellants capable",
+        "Thrust structures": "2 independent thrust structures"
+    },
+    photo_reel1: {
+        title: "About Tachyon",
+        blurb: "Tachyon is PURPL’s dedicated large engine test stand, capable of supporting PURPL’s 5,000 lbf turbopump engine and future propulsion projects. Tachyon builds upon the lessons learned from Biggie-K and is one of the most advanced test cells in collegiate rocketry.",
+        photos: tachyon_media
     },
 };
 
