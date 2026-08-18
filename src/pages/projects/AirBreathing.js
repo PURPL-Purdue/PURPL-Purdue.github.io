@@ -21,13 +21,49 @@ const AirBreathing = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mt-10 md:mt-4 mb-3">{airbreathingData.section_1.title}</h2>
                         <div className="flex flex-col space-y-4 md:grid md:grid-cols-3 md:items-center">
                             <h2 className="col-span-3 font-display2 text-md md:text-lg text-white text-balance text-left">
                                 {airbreathingData.section_1.desc}
                             </h2>
                         </div>
                     </div>
+                    <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                        <div>
+                            <img
+                                className="w-full object-cover"
+                                src={airbreathingData.section_1.design_photos.ts_design.src}
+                                alt={airbreathingData.section_1.design_photos.ts_design.alt}
+                            />
+                            <p className="font-display2 italic text-white/70 text-sm text-center mt-2">
+                                {airbreathingData.section_1.design_photos.ts_design.caption}
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-4 lg:gap-6">
+                            <div>
+                                <img
+                                    className="w-full object-cover"
+                                    src={airbreathingData.section_1.design_photos.fs_design.src}
+                                    alt={airbreathingData.section_1.design_photos.fs_design.alt}
+                                />
+                                <p className="font-display2 italic text-white/70 text-sm text-center mt-2">
+                                    {airbreathingData.section_1.design_photos.fs_design.caption}
+                                </p>
+                            </div>
+                            <div>
+                                <img
+                                    className="w-full object-cover"
+                                    src={airbreathingData.section_1.design_photos.pnid_fluid_panel.src}
+                                    alt={airbreathingData.section_1.design_photos.pnid_fluid_panel.alt}
+                                />
+                                <p className="font-display2 italic text-white/70 text-sm text-center mt-2">
+                                    {airbreathingData.section_1.design_photos.pnid_fluid_panel.caption}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 className="font-display2 text-md md:text-lg text-white text-balance text-left">
+                        {airbreathingData.section_1.desc_2}
+                    </h2>
                 </div>
             </ContentWrapper>
         </PageWrapper>

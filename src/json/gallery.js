@@ -154,6 +154,12 @@ export const lhm_event_202603_media = [
     { src: "/images/other-media/2026-03-LHM-event/IMG_1483.jpeg", alt: "LHM event" },
 ];
 
+export const air_breathing_design_media = {
+    ts_design: { src: "/images/projects/air-breathing/ts_design.png", alt: "Air breathing test stand thrust structure design", caption: "Design of thrust structure" },
+    fs_design: { src: "/images/projects/air-breathing/fs_design.png", alt: "Air breathing test stand fluid system design", caption: "Design of fluid system" },
+    pnid_fluid_panel: { src: "/images/projects/air-breathing/pnid_fluid_panel.png", alt: "Air breathing test stand P&ID fluid panel", caption: "PNID of the fluid panel" },
+};
+
 export const tachyon_media = [
     { src: "/images/projects/tachyon/tachyon-1.png", alt: "Tachyon test stand CAD render" },
     { src: "/images/projects/tachyon/tachyon-2.png", alt: "Tachyon test stand CAD render" },

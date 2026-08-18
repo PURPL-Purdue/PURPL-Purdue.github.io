@@ -4,6 +4,7 @@ import ContentWrapper from '../../components/layout/ContentWrapper';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Banner from '../../components/banner/Banner';
 import AccessibleCarousel from '../../components/carousel/AccessibleCarousel';
+import DividerLine from '../../components/layout/DividerLine';
 
 import { turbopumpData } from '../../json/projects';
 
@@ -24,38 +25,28 @@ const Turbopump = () => {
                 </div>
             </Banner>
             <ContentWrapper>
-                <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
-                    {/* About the Team section */}
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mt-10 md:mt-4 mb-4">
-                            {turbopumpData.photo_reel.title}
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
-                            <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{turbopumpData.blurb}</p>
-                            <div className="col-span-1 w-full mx-auto">
-                                <AccessibleCarousel
-                                    photos={turbopumpData.photo_reel.photos}
-                                    ariaLabel="Turbopump project images"
-                                />
-                            </div>
+                <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-18">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
+                        <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{turbopumpData.blurb}</p>
+                        <div className="col-span-1 w-full mx-auto">
+                            <AccessibleCarousel
+                                photos={turbopumpData.photo_reel.photos}
+                                ariaLabel="Turbopump project images"
+                            />
                         </div>
                     </div>
-
-                    {/* AIAA Conference section */}
-                    <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase">
-                            {turbopumpData.aiaa.title}
+                    <div className="w-[100px] ">
+                        <DividerLine />
+                    </div>
+                    <div className="gap-4">
+                        <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left mt-2">
+                            {turbopumpData.aiaa.blurb}
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
-                            <p className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
-                                {turbopumpData.aiaa.blurb}
-                            </p>
-                            <div className="col-span-1 w-[100%] mx-auto mt-2">
-                                <AccessibleCarousel
-                                    photos={turbopumpData.aiaa.photos}
-                                    ariaLabel="AIAA SciTech 2026 conference photos"
-                                />
-                            </div>
+                        <div className="md:w-[50%] mt-6 mx-auto">
+                            <AccessibleCarousel
+                                photos={turbopumpData.aiaa.photos}
+                                ariaLabel="AIAA SciTech 2026 conference photos"
+                            />
                         </div>
                     </div>
 
