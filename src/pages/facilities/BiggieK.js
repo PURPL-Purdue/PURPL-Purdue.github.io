@@ -29,10 +29,6 @@ const BiggieK = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-12 md:space-y-18">
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
-                            {data.photo_reel1.title}
-                        </h2>
-                        
                          <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left mt-2">
                                 {data.photo_reel1.blurb}
                             </h2>

@@ -21,12 +21,7 @@ const Pulsejet = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
-
-                    {/* About the Team section with intro blurb */}
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">
-                            {pulsejetData.about_team.title}
-                        </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
                             <p className="col-span-1 text-white text-md md:text-lg font-display2 text-left">{pulsejetData.about_team.blurb}</p>
                             <div className="col-span-1 w-[100%] mx-auto mt-2">

@@ -163,7 +163,6 @@ const RDE = () => {
                         <div className="text-center">
                             <h1 className="font-display-bold text-5xl md:text-6xl lg:text-7xl text-white">RDE</h1>
                             <p className="font-display2 text-white/80 text-sm md:text-lg mt-4 max-w-[760px] mx-auto">
-                                PURPL’s rotating detonation engine work can be organized as one shared project page with separate profiles for HADES and DEIMOS.
                             </p>
                         </div>
                     </div>
@@ -173,10 +172,6 @@ const RDE = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div>
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase md:mt-4">
-                            About the Team
-                        </h2>
-
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
                             <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
                                 RDE pushes the boundaries of detonation technology

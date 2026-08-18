@@ -23,15 +23,10 @@ const TTP = () => {
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
                     <div className="space-y-8 md:space-y-12">
-                        <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase mt-10 md:mt-4">{ttpData.section_1.title}</h2>
-                        <div className="space-y-4">
-                            <div className="w-[100px] ">
-                                <DividerLine />
-                            </div>
+                   
                             <p className="font-display2 text-md md:text-lg text-white text-balance text-left">
                                 {ttpData.section_1.desc}
                             </p>
-                        </div>
                         <div className="space-y-4">
                             <div className="w-[100px] ">
                                 <DividerLine />
@@ -41,7 +36,6 @@ const TTP = () => {
                             </p>
                         </div>
                     </div>
-                    {/* About the Team section with intro blurb */}
                     <div className="space-y-3">
                         <div className="col-span-1 w-full md:w-[60%] mx-auto mt-2">
                             <AccessibleCarousel
@@ -49,7 +43,7 @@ const TTP = () => {
                                 ariaLabel="Turbojet team photos"
                             />
                         </div>
-                        <p className="font-display2 text-sm md:text-md text-white italic text-center">The Fall 2025 team!</p>
+                        <p className="font-display2 text-sm md:text-md text-white italic text-center">Fall 2025 participants</p>
                     </div>
                 </div>
             </ContentWrapper>

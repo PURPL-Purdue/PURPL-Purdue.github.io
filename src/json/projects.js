@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, tachyon_media, air_breathing_design_media } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -9,8 +9,6 @@ export const biggiekData = {
         "Manufacturing method": "machined/bolted from aluminum extrusions",
         "Dimensions (L x W x H)": "24in x 14in x 12in"
     },
-    blurb:
-        "Currently PURPL’s primary test stand, Biggie-K was built in 2025 to test small engines and torch igniters. After the spring test campaign, it was decided that Biggie-K would be upgraded to accommodate a wider range of engines. The team overhauled the fluid system, allowing for a wider range of propellants including liquid oxygen, much higher mass flows and higher chamber pressures. The thrust structure was redesigned to accommodate engines up to 500lbf of thrust, and the team developed a industry-grade data acquisition system capable of 250 kilo-samples per second which replaced our older system. All of this was done while ensuring Biggie-K remains mobile.",
     photo_reel1: {
         title: "About the team",
         blurb: "Currently PURPL’s primary test stand, Biggie-K was built in 2025 to test small engines and torch igniters. After the spring test campaign, it was decided that Biggie-K would be upgraded to accommodate a wider range of engines. The team overhauled the fluid system, allowing for a wider range of propellants including liquid oxygen, much higher mass flows and higher chamber pressures. The thrust structure was redesigned to accommodate engines up to 500lbf of thrust, and the team developed a industry-grade data acquisition system capable of 250 kilo-samples per second which replaced our older system. All of this was done while ensuring Biggie-K remains mobile.",
@@ -18,6 +16,21 @@ export const biggiekData = {
             teamPhotos.biggiek.smiling_photo,
             teamPhotos.biggiek.fun_photo,
         ]
+    },
+};
+
+export const tachyonData = {
+    title: "Tachyon",
+    subtitle: "PURPL’s dedicated large engine test stand.",
+    specs_table: {
+        "Engine capabilities": ">5,000lbf",
+        "Propellants": "cryogenic propellants capable",
+        "Thrust structures": "2 independent thrust structures"
+    },
+    photo_reel1: {
+        title: "About Tachyon",
+        blurb: "Tachyon is PURPL’s dedicated large engine test stand, capable of supporting PURPL’s 5,000 lbf turbopump engine and future propulsion projects. Tachyon builds upon the lessons learned from Biggie-K and is one of the most advanced test cells in collegiate rocketry.",
+        photos: tachyon_media
     },
 };
 
@@ -49,15 +62,13 @@ export const turbopumpData = {
     image_2: "/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png",
     image_2_alt: "Turbopump shaft assembly",
     photo_reel: {
-        title: "About the team",
         photos: [
             teamPhotos.turbopump.smiling_photo,
             teamPhotos.turbopump.fun_photo,
         ]
     },
     aiaa: {
-        title: "2026 AIAA SciTech Conference",
-        blurb: "The turbopump team presented their work at the 2026 AIAA SciTech conference " +
+        blurb: "Recently, the turbopump team presented their work at the 2026 AIAA SciTech conference " +
             "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
             "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
             "entities and academia.",
@@ -87,8 +98,7 @@ export const epropData = {
             " and operate our thruster in steady state operation and publish our findings."
     },
     photo_reel1: {
-        title: "About the team",
-        blurb: "The Electric Propulsion team was formed in 2024 and is composed of undergraduate students at Purdue. " +
+        blurb: "The team was formed in 2024 and is composed of undergraduate students at Purdue. " +
             "The team recently won third place in the undergraduate research category at IMECE 2025, impressing the judges " +
             "with a junior-and-below roster. This was a huge win for Eprop!",
         photos: [
@@ -98,8 +108,7 @@ export const epropData = {
         ]
     },
     photo_reel2: {
-        title: "Testing and hotfire - May '25",
-        blurb: "May 2025 marked the first full-scale, wholistic test of PURPL's Hall Thruster, marking the end of the initial " +
+        blurb: "May 2025 marked the first full-scale, wholistic test of our hall thruster, marking the end of the initial " +
             "design process and the beginning of the tuning and researching process. The hotfire attempt saw successful plasma " +
             "generation and measurable emission current from the hotwire neutralizer filament, getting us closer to steady state " +
             "operation.",
@@ -113,7 +122,7 @@ export const turbojetData = {
     wireframe: "/images/projects/turbojet/turbojet_wireframe_8_17_24.png",
     wireframe_alt: "Turbojet technical drawing",
     blurb:
-        "The turbojet team is currently developing Purdue's only undergraduate air breathing propulsion project. " +
+        "The Turbojet team is currently developing Purdue's only undergraduate air breathing propulsion project. " +
         "At 50-lbf of thrust, this engine is sized to eventually be usable as a medium sized UAV power plant. This " +
         "engine will also serve as a testbed for a study on sustainable aviation fuels.",
     specs_table: {
@@ -127,7 +136,6 @@ export const turbojetData = {
         "turbines make it very difficult to create computer models. However, thanks to our sponsor CFTurbo, the " +
         "design process was streamlined and the team completed a design review this past semester!",
     about_team: {
-        title: "About the Team",
         photos: [
             teamPhotos.turbojet.serious_photo,
             teamPhotos.turbojet.fun_photo,
@@ -156,7 +164,7 @@ export const turbojetData = {
     },
     aiaa: {
         title: "2026 AIAA SciTech Conference",
-        blurb: "The turbojet team presented their work at the 2026 AIAA SciTech conference " +
+        blurb: "Recently, the turbojet team presented their work at the 2026 AIAA SciTech conference " +
             "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
             "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
             "entities and academia.",
@@ -188,7 +196,6 @@ export const testbedData = {
 
     },
     about_team: {
-        title: "About the Team",
         blurb:
             "Testbed holds a special place among the PURPL teams, driving advanced chemical propulsion through " +
             "rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team " +
@@ -213,8 +220,7 @@ export const testbedData = {
             " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",
     },
     test_2025: {
-        header: "Testing - June '25",
-        desc: "After months of hard work, the team successfully tested their first piece of hardware." +
+        desc: "In June 2025, after months of hard work, the team successfully tested their first piece of hardware." +
             " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" +
             " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" +
             " chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
@@ -503,7 +509,6 @@ export const ttpData = {
 export const pulsejetData = {
     title: "Pulsejet",
     about_team: {
-        title: "About the Team",
         blurb:"The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
             "The team works on static testing of both valved and valveless engines. " +
             "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.",
@@ -517,7 +522,8 @@ export const pulsejetData = {
 export const airbreathingData = {
     title: "Air Breathing",
     section_1: {
-        title: "Project Description",
-        desc: "The Air Breathing Stand is a 150lbf rated stand for all of our projects that run on normal air/compressed air. It is designed to be modular and is flexible for low thrust engines. We combine the trust structure and fluid panel all into one structure. The plan is for this project to be more portable compared to Biggie-K and Tachyon."
-    },
+        desc: "PURPL's third test stand, Air Breathing, will be a 150lbf rated stand that runs on normal and compressed air, supporting pressure-fed testing of Turbojet and Pulsejet. The stand will combine the thrust structure and fluid panel into one. Compared to Biggie-k and Tachyon, the stand will be more portable, modular and flexible for low thrust engines.",
+        desc_2: "The team completed a preliminary design review in December 2025, but progress has been paused to focus efforts on other projects.",
+        design_photos: air_breathing_design_media,
+        },
 }
