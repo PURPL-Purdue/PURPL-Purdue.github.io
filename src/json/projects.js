@@ -189,20 +189,20 @@ export const testbedData = {
     title: "Testbed",
 
     about:
-        "Testbed develops experimental liquid rocket engine technology at the undergraduate level, building plug-and-play engines that let new ideas reach the test stand quickly. It began with Maelstrom, a 500 lbf RP-1 / LOx engine, and now runs as a modular research-and-development platform through Maelstrom and the MEGATRN system.",
+        "Testbed develops experimental liquid rocket engine technology at the undergraduate level, building plug-and-play engines that let new ideas reach the test stand quickly. It began with Maelstrom, a 500 lbf RP-1 / LOx engine now in end-of-life support, and today centers on MEGATRN, a modular research-and-development platform.",
 
     platforms: {
         maelstrom: {
             key: "maelstrom",
             title: "Maelstrom",
-            subtitle: "Test engine",
+            subtitle: "Legacy test engine",
             blurb:
-                "Maelstrom is Testbed's workhorse engine. Interchangeable chambers and injectors let the team test new hardware without building a new engine each time.",
+                "Maelstrom is the 500 lbf RP-1 / LOx engine Testbed was built around. It is now in end-of-life support: one injector remains to be machined, and once it is finished it will be the last Maelstrom component ever manufactured. Active development has since moved to MEGATRN.",
             facts: [
                 ["Thrust", "500 lbf"],
                 ["Propellants", "RP-1 / LOx"],
                 ["Chambers", "Regen + heat-sink"],
-                ["Current", "Regen testing"],
+                ["Status", "End-of-life support"],
             ],
 
             // Engine Stats table — carried over from the original Testbed page,
@@ -226,7 +226,7 @@ export const testbedData = {
                 {
                     title: "Cooling",
                     body:
-                        "Maelstrom runs with two interchangeable chamber types. A heat-sink chamber has no active cooling and instead relies on the thermal diffusivity of its walls to keep the engine from melting during a burn, which makes it simple to build and well suited to verifying injector performance. A regeneratively cooled chamber takes advantage of the high fuel flow rate, routing propellant through tiny channels that run the length of the chamber walls to carry heat away and enable longer runs.",
+                        "Maelstrom was built with two chamber types. A heat-sink chamber has no active cooling and instead relies on the thermal diffusivity of its walls to keep the engine from melting during a burn, which makes it simple to build and well suited to verifying injector performance. A regeneratively cooled chamber takes advantage of the high fuel flow rate, routing propellant through tiny channels that run the length of the chamber walls to carry heat away and enable longer runs.",
                 },
                 {
                     title: "Torch Igniter",
@@ -241,16 +241,41 @@ export const testbedData = {
             title: "MEGATRN",
             subtitle: "Modular test system",
             blurb:
-                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea.",
-            focus: [
-                ["Pintle", "Variable-area injector targeting deep throttling"],
-                ["CALI", "Water-cooled calorimeter engine for long-duration burns"],
-                ["Acoustic Igniter", "Lights MEGATRN using high-speed gas"],
-            ],
+                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea. Its work is split across three subsystems, the injector, the engine architecture, and the igniter, each carrying its own current and future design teams.",
+
+            // Development-structure chart. `status` drives emphasis in
+            // MegatrnChart: "new" (strongest), "active", "future" (subdued).
+            chart: {
+                root: "MEGATRN",
+                branches: [
+                    {
+                        name: "Injector",
+                        teams: [
+                            { name: "Pintle", role: "Design Team", status: "active" },
+                            { name: "Others", role: "Future Design Teams", status: "future" },
+                        ],
+                    },
+                    {
+                        name: "Architecture",
+                        teams: [
+                            { name: "Ablative", role: "Future Team", status: "future" },
+                            { name: "Calorimeter", role: "Design/Thermal-Analysis Team", status: "active" },
+                            { name: "Others", role: "Future Teams", status: "future" },
+                        ],
+                    },
+                    {
+                        name: "Igniter",
+                        teams: [
+                            { name: "Acoustic", role: "Design Team", status: "new" },
+                            { name: "Torch", role: "Future Research Team", status: "future" },
+                        ],
+                    },
+                ],
+            },
         },
     },
 
-    // Restored from the original Testbed page — text and photos preserved as-is
+    // Restored from the original Testbed page, text and photos preserved as-is
     // (compatible with the Fall 2026 source: R&D focus, plug-and-play, modular).
     team: {
         blurb:
