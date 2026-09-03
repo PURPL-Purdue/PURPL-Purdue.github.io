@@ -127,11 +127,16 @@ const AccessibleCarousel = ({
                                 src={photo.src}
                                 alt={photo.alt}
                                 style={{
-                                    maxWidth: "100%",
-                                    maxHeight: "100%",
-                                    width: "auto",
-                                    height: "auto",
+                                    // Fill a fixed box so every slide occupies the
+                                    // exact same frame; object-fit handles the aspect
+                                    // ratio without affecting the layout box (a
+                                    // shrink-to-fit image drifts horizontally on
+                                    // slides 2+ inside Bootstrap's float/translate
+                                    // carousel).
+                                    width: "100%",
+                                    height: "100%",
                                     objectFit: "contain",
+                                    objectPosition: "center",
                                     display: "block",
                                 }}
                             />
@@ -139,6 +144,19 @@ const AccessibleCarousel = ({
                     </Carousel.Item>
                 ))}
             </Carousel>
+
+            {photos[activeIndex] && photos[activeIndex].caption && (
+                <div className="mt-3 border-t border-white/15 pt-3">
+                    <p className="font-display-bold text-white text-sm uppercase tracking-wide">
+                        {photos[activeIndex].caption.title}
+                    </p>
+                    {photos[activeIndex].caption.subtitle && (
+                        <p className="font-display2 text-stardust text-xs mt-0.5">
+                            {photos[activeIndex].caption.subtitle}
+                        </p>
+                    )}
+                </div>
+            )}
         </div>
     );
 };

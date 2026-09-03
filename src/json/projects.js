@@ -1,4 +1,4 @@
-import { teamPhotos, eprop_202505_selectedMedia, testbed_202428_selectedMedia, tachyon_media, air_breathing_design_media } from './gallery.js';
+import { teamPhotos, eprop_202505_selectedMedia, testbed_202508_selectedMedia, tachyon_media, air_breathing_design_media } from './gallery.js';
 
 export const biggiekData = {
     title: "Biggie-K",
@@ -181,70 +181,112 @@ export const turbojetData = {
     }
 };
 
+// Testbed content. Facts verified against the Fall 2026 Testbed Info Session.
+// Deliberately kept lean: photo + concise text, no architecture diagrams,
+// status matrices, or component trees. Imagery is the April 2025 shoot in
+// /images/projects/testbed/20250428/.
 export const testbedData = {
     title: "Testbed",
-    subtitle: "250lbf bipropellant engine designed to be a reliable platform to test different subsystems.",
-    featured: {
-        photo: {
-            src: "/images/projects/testbed/20250428/DSC0025.JPG",
-            alt: "Testbed",
-        },
-        blurb:
-            "As a propulsion laboratory, our mission is to push the limits of collegiate rocketry by testing new " +
-            "approaches to propulsion. To facilitate this testing, the testbed team was born. Maelstrom, our " +
-            "testbed engine, is being designed to introduce PURPL to swirl injectors.",
 
+    about:
+        "Testbed develops experimental liquid rocket engine technology at the undergraduate level, building plug-and-play engines that let new ideas reach the test stand quickly. It began with Maelstrom, a 500 lbf RP-1 / LOx engine, and now runs as a modular research-and-development platform through Maelstrom and the MEGATRN system.",
+
+    platforms: {
+        maelstrom: {
+            key: "maelstrom",
+            title: "Maelstrom",
+            subtitle: "Test engine",
+            blurb:
+                "Maelstrom is Testbed's workhorse engine. Interchangeable chambers and injectors let the team test new hardware without building a new engine each time.",
+            facts: [
+                ["Thrust", "500 lbf"],
+                ["Propellants", "RP-1 / LOx"],
+                ["Chambers", "Regen + heat-sink"],
+                ["Current", "Regen testing"],
+            ],
+
+            // Engine Stats table — carried over from the original Testbed page,
+            // reconciled with the Fall 2026 source (RP-1 named, injector list
+            // broadened; cycle kept — the deck doesn't address it).
+            specs: {
+                "Thrust": "500 lbf",
+                "Propellants": "kerosene (RP-1) / liquid oxygen",
+                "Cycle": "pressure-fed",
+                "Cooling": "heatsink, regenerative",
+                "Injector type": "coaxial swirl, impinging jet",
+            },
+
+            // Expandable technical sections, restored from the original page.
+            technical: [
+                {
+                    title: "Swirl Injectors",
+                    body:
+                        "The injector in a rocket engine is responsible for mixing the fuel and oxidizer efficiently to enable combustion in the chamber. One of the most efficient designs in the propulsion field is the coaxial swirl injector. In this design, each propellant is spun in separate chambers, producing streams that take the shape of cones. By placing one chamber inside the other, the injector forms two cones with different angles that collide shortly after leaving the injector face, leading to the mixing of the two propellants.",
+                },
+                {
+                    title: "Cooling",
+                    body:
+                        "Maelstrom runs with two interchangeable chamber types. A heat-sink chamber has no active cooling and instead relies on the thermal diffusivity of its walls to keep the engine from melting during a burn, which makes it simple to build and well suited to verifying injector performance. A regeneratively cooled chamber takes advantage of the high fuel flow rate, routing propellant through tiny channels that run the length of the chamber walls to carry heat away and enable longer runs.",
+                },
+                {
+                    title: "Torch Igniter",
+                    body:
+                        "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source. To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. Among other components, the igniter features orifice fittings which ensure precise control over the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints. It has since been tested with both the heat-sink and regenerative Maelstrom chambers.",
+                },
+            ],
+        },
+
+        megatrn: {
+            key: "megatrn",
+            title: "MEGATRN",
+            subtitle: "Modular test system",
+            blurb:
+                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea.",
+            focus: [
+                ["Pintle", "Variable-area injector targeting deep throttling"],
+                ["CALI", "Water-cooled calorimeter engine for long-duration burns"],
+                ["Acoustic Igniter", "Lights MEGATRN using high-speed gas"],
+            ],
+        },
     },
-    about_team: {
+
+    // Restored from the original Testbed page — text and photos preserved as-is
+    // (compatible with the Fall 2026 source: R&D focus, plug-and-play, modular).
+    team: {
         blurb:
-            "Testbed holds a special place among the PURPL teams, driving advanced chemical propulsion through " +
-            "rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team " +
-            "to continuously build on past lessons and push performance forward.",
+            "Testbed holds a special place among the PURPL teams, driving advanced chemical propulsion through rapid prototyping and iterative engine testing. Its modular, plug-and-play approach allows the team to continuously build on past lessons and push performance forward.",
         photos: [
             teamPhotos.testbed.serious_photo,
             teamPhotos.testbed.fun_photo,
-        ]
+        ],
     },
-    specs_table: {
-        "Thrust": "500 lbf",
-        "Propellants": "kerosene and liquid oxygen",
-        "Cycle": "pressure-fed",
-        "Cooling": "heatsink, regenerative",
-        "Injector type": "coaxial swirl",
+
+    // Restored from the original Testbed page — original narrative and the full
+    // June 2025 test-campaign carousel. Numbers are the original site's.
+    testing2025: {
+        blurb:
+            "In June 2025, after months of hard work, the team successfully tested their first piece of hardware. Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine torch ignitor were completed. The system was pushed across a wide range of conditions, varying chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
+        photos: testbed_202508_selectedMedia,
     },
-    augmented_spark_igniter: {
-        header: "Augmented Spark Igniter",
-        desc: "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source." +
-            " To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. " +
-            "Among other components, the igniter features orifice fittings which ensure precise control over" +
-            " the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints.",
-    },
-    test_2025: {
-        desc: "In June 2025, after months of hard work, the team successfully tested their first piece of hardware." +
-            " Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine" +
-            " torch ignitor were completed. The system was pushed across a wide range of conditions, varying" +
-            " chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
-        image: "/images/projects/testbed/1750551261201.jpg",
-        image_alt: "Torch ignitor",
-    },
-    header_1: "Swirl Injectors",
-    desc_1:
-        "The injector in a rocket engine is responsible for mixing the fuel and oxidizer efficiently to enable " +
-        "combustion in the chamber. One of the most efficient designs in the propulsion field is the coaxial " +
-        "swirl injector. In this design, each propellant is spun in separate chambers, producing streams that" +
-        " take the shape of cones. By placing one chamber inside the other, the injector forms two cones with " +
-        "different angles that collide shortly after leaving the injector face, leading to the mixing of the two propellants.",
-    header_2: "Cooling",
-    desc_2:
-        "Maelstrom will initially be run as a heatsink chamber to verify injector performance. A heatsink chamber does " +
-        "not have active cooling and instead relies on the thermal diffusivity of the material that makes up the walls " +
-        "in order to keep the engine from melting. Once the injector has been tuned, a regeneratively cooled chamber " +
-        "will replace the development heatsink chamber. This active cooling method takes advantage of the high flow rates " +
-        "of fuel and uses it to remove heat from the chamber walls through tiny channels that run along the length of the engine.",
-    photo_reel: {
-        title: "More Photos",
-        photos: testbed_202428_selectedMedia,
-    },
+
+    // The Maelstrom profile's main visual — one carousel of every April 2025
+    // hardware photo (13). Team photos and June 2025 testing photos live only
+    // in their own carousels, so no image repeats anywhere on the page.
+    gallery: [
+        { src: "/images/projects/testbed/20250428/DSC9960.JPG", alt: "Maelstrom engine with laser-engraved nameplate in front of the fluid panel" },
+        { src: "/images/projects/testbed/20250428/DSC9987.JPG", alt: "Maelstrom engine assembly on the test bench" },
+        { src: "/images/projects/testbed/20250428/DSC0025.JPG", alt: "Maelstrom injector face, straight-on" },
+        { src: "/images/projects/testbed/20250428/DSC0031.JPG", alt: "Maelstrom injector face, three-quarter view" },
+        { src: "/images/projects/testbed/20250428/DSC0034.JPG", alt: "Maelstrom injector face, close crop" },
+        { src: "/images/projects/testbed/20250428/DSC9965.JPG", alt: "Maelstrom aft end, looking into the nozzle contour" },
+        { src: "/images/projects/testbed/20250428/DSC9975.JPG", alt: "\"MAELSTROM\" laser engraving on the chamber barrel" },
+        { src: "/images/projects/testbed/20250428/DSC9977.JPG", alt: "Maelstrom nozzle exit and aft flange, close view" },
+        { src: "/images/projects/testbed/20250428/DSC9978.JPG", alt: "Torch igniter fittings on the Maelstrom injector bulkhead" },
+        { src: "/images/projects/testbed/20250428/DSC9981.JPG", alt: "Maelstrom injector bulkhead with igniter manifold installed" },
+        { src: "/images/projects/testbed/20250428/DSC9983.JPG", alt: "3D-printed igniter manifold with embossed PURPL logo mounted on Maelstrom" },
+        { src: "/images/projects/testbed/20250428/DSC9986.JPG", alt: "Igniter manifold block and fittings, alternate angle" },
+        { src: "/images/projects/testbed/20250428/DSC9988.JPG", alt: "Testbed fluid panel and pressure instrumentation" },
+    ],
 }
 
 

@@ -25,7 +25,7 @@ import BiggieK from '../../pages/facilities/BiggieK';
 import ElectricPropulsion from '../../pages/projects/ElectricPropulsion';
 import Turbojet from '../../pages/projects/Turbojet';
 import Turbopump from '../../pages/projects/Turbopump';
-import TestBed from '../../pages/projects/TestBed';
+import TestBed from '../../pages/projects/testbed/TestBed';
 import RDE from '../../pages/projects/rde/RDE';
 import TTP from '../../pages/projects/TTP';
 import Sponsors from "../../pages/Sponsors";
