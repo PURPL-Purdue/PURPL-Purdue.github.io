@@ -70,7 +70,7 @@ const TestBed = () => {
 
                     {/* Shared: June 2025 testing story + carousel */}
                     <div>
-                        <SectionHeading>Testing - June &#39;25</SectionHeading>
+                        <SectionHeading>Testing</SectionHeading>
                         <p className="font-display2 text-md md:text-lg text-white text-left mb-6">
                             {data.testing2025.blurb}
                         </p>
