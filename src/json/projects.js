@@ -241,7 +241,7 @@ export const testbedData = {
             title: "MEGATRN",
             subtitle: "Modular test system",
             blurb:
-                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea. Its work is split across three subsystems, the injector, the engine architecture, and the igniter, each carrying its own current and future design teams.",
+                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea. Its work is split across three subsystems, the injector, the engine architecture, and the igniter, each with its own current and future development efforts.",
 
             // Development-structure chart. `status` drives emphasis in
             // MegatrnChart: "new" (strongest), "active", "future" (subdued).
