@@ -51,9 +51,9 @@ const Maelstrom = () => (
             ))}
         </div>
 
-        <SpecsTable table={d.specs} title="Engine Stats" />
+        <SpecsTable table={d.specs} title="Engine Stats" headingGap="space-y-6" rowPad="pb-3 pt-5" />
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-4 mt-3">
             {d.technical.map((section) => (
                 <TechSection key={section.title} title={section.title} body={section.body} />
             ))}
