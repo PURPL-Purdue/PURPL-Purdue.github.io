@@ -91,11 +91,15 @@ const Press = () => {
             </Banner>
             <ContentWrapper>
                 <div className="lg:w-[800px] mx-auto flex flex-col w-full space-y-10 md:space-y-14 pb-10">
-                    {/* Intro */}
-                    <p className="font-display2 text-sm md:text-base text-white/70 leading-7 max-w-[640px]">
-                        PURPL has been featured in various news articles and publications. Read
-                        about our work and achievements below.
-                    </p>
+                    {/* Intro — standard PURPL body copy (matches Contact), in its
+                        own centered wrapper, independent of the left-aligned
+                        editorial sections below */}
+                    <div className="w-full flex justify-center px-4">
+                        <div className="flex flex-col space-y-2 text-white font-display2 text-md md:text-xl text-center max-w-[640px]">
+                            <p>PURPL has been featured in various news articles and publications.</p>
+                            <p>Read about our work and achievements below.</p>
+                        </div>
+                    </div>
 
                     {/* News & Articles */}
                     <section className="flex flex-col space-y-7">
