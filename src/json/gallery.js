@@ -86,9 +86,6 @@ export const testbed_202508_selectedMedia = [
     { src: "/images/projects/testbed/20250831-SelectedMedia/DSC06606-2.jpg", alt: "Testbed hotfire test" },
     { src: "/images/projects/testbed/20250831-SelectedMedia/DSC06624.jpg", alt: "Testbed hotfire test" },
     { src: "/images/projects/testbed/20250831-SelectedMedia/DSC06795-3-5.jpg", alt: "Testbed hotfire test" },
-    { src: "/images/projects/testbed/20250831-SelectedMedia/plume3.png", alt: "Testbed engine plume" },
-    { src: "/images/projects/testbed/20250831-SelectedMedia/plume4.png", alt: "Testbed engine plume" },
-    { src: "/images/projects/testbed/20250831-SelectedMedia/plume5.png", alt: "Testbed engine plume" },
 ];
 
 // Manufacturing photos from March 2026

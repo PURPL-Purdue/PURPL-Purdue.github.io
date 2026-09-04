@@ -197,11 +197,11 @@ export const testbedData = {
             title: "Maelstrom",
             subtitle: "Legacy test engine",
             blurb:
-                "Maelstrom is the 500 lbf RP-1 / LOx engine Testbed was built around. It is now in end-of-life support: one injector remains to be machined, and once it is finished it will be the last Maelstrom component ever manufactured. Active development has since moved to MEGATRN.",
+                "Maelstrom is the 500 lbf RP-1 / LOx engine Testbed was built around. It is currently in end-of-life support, with an impinging jet injector still to be machined as part of its remaining development. Following its test campaign, future work may use test data to improve engine performance through modifications to existing components.",
             facts: [
                 ["Thrust", "500 lbf"],
                 ["Propellants", "RP-1 / LOx"],
-                ["Chambers", "Regen + heat-sink"],
+                ["Chambers", "Regen + heatsink"],
                 ["Status", "End-of-life support"],
             ],
 
@@ -210,10 +210,10 @@ export const testbedData = {
             // broadened; cycle kept — the deck doesn't address it).
             specs: {
                 "Thrust": "500 lbf",
-                "Propellants": "kerosene (RP-1) / liquid oxygen",
-                "Cycle": "pressure-fed",
-                "Cooling": "heatsink, regenerative",
-                "Injector type": "coaxial swirl, impinging jet",
+                "Propellants": "Kerosene (RP-1) / liquid oxygen",
+                "Cycle": "Pressure-fed",
+                "Cooling": "Heatsink, regenerative",
+                "Injector type": "Coaxial swirl, impinging jet",
             },
 
             // Expandable technical sections, restored from the original page.
@@ -226,12 +226,12 @@ export const testbedData = {
                 {
                     title: "Cooling",
                     body:
-                        "Maelstrom was built with two chamber types. A heat-sink chamber has no active cooling and instead relies on the thermal diffusivity of its walls to keep the engine from melting during a burn, which makes it simple to build and well suited to verifying injector performance. A regeneratively cooled chamber takes advantage of the high fuel flow rate, routing propellant through tiny channels that run the length of the chamber walls to carry heat away and enable longer runs.",
+                        "Maelstrom was built with two chamber types. A heatsink chamber has no active cooling and instead relies on the thermal diffusivity of its walls to keep the engine from melting during a burn, which makes it simple to build and well suited to verifying injector performance. A regeneratively cooled chamber takes advantage of the high fuel flow rate, routing propellant through tiny channels that run the length of the chamber walls to carry heat away and enable longer runs.",
                 },
                 {
                     title: "Torch Igniter",
                     body:
-                        "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source. To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. Among other components, the igniter features orifice fittings which ensure precise control over the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints. It has since been tested with both the heat-sink and regenerative Maelstrom chambers.",
+                        "Being a bi-liquid engine, Maelstrom requires a reliable and reusable ignition source. To address both of these requirements, the team developed a GH2/GOx augmented spark igniter. Among other components, the igniter features orifice fittings which ensure precise control over the injection areas and allows testing of the article at a wide range of Oxidizer/Fuel Ratio setpoints. It has undergone stand-alone testing, but has not yet been tested fully integrated with either Maelstrom engine.",
                 },
             ],
         },
@@ -241,10 +241,14 @@ export const testbedData = {
             title: "MEGATRN",
             subtitle: "Modular test system",
             blurb:
-                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea. Its work is split across three subsystems, the injector, the engine architecture, and the igniter, each with its own current and future development efforts.",
+                "MEGATRN is a modular test platform built for rapid component swapping, so the team can develop and test experimental hardware in parallel without a dedicated engine for every idea. Engine development is split across three subsystems, the injector, the engine architecture, and the igniter, each with its own current and future development efforts.",
 
             // Development-structure chart. `status` drives emphasis in
             // MegatrnChart: "new" (strongest), "active", "future" (subdued).
+            // `role` is the team's current phase; `purpose` (optional) is a
+            // short, verified description shown in the clickable detail panel.
+            // Leave `purpose` unset until an accurate description exists — the
+            // panel falls back to a neutral note rather than inventing detail.
             chart: {
                 root: "MEGATRN",
                 branches: [
@@ -267,7 +271,13 @@ export const testbedData = {
                         name: "Igniter",
                         teams: [
                             { name: "Acoustic", role: "Design Team", status: "new" },
-                            { name: "Torch", role: "Future Research Team", status: "future" },
+                            {
+                                name: "Torch",
+                                role: "Future Research Team",
+                                status: "future",
+                                purpose:
+                                    "Testbed's torch igniter is a GH2/GOx augmented spark igniter with orifice fittings for precise control across a wide range of oxidizer/fuel ratio setpoints. It has undergone stand-alone testing and has not yet been tested fully integrated with either Maelstrom engine.",
+                            },
                         ],
                     },
                 ],
@@ -294,23 +304,24 @@ export const testbedData = {
         photos: testbed_202508_selectedMedia,
     },
 
-    // The Maelstrom profile's main visual — one carousel of every April 2025
-    // hardware photo (13). Team photos and June 2025 testing photos live only
-    // in their own carousels, so no image repeats anywhere on the page.
+    // The Maelstrom profile's main visual — one carousel balancing heatsink
+    // hardware, the regeneratively cooled chamber, and injector/igniter detail.
+    // Repetitive heatsink angles from the April 2025 shoot were trimmed and
+    // three studio detail photos of the regen engine were added. Team photos and
+    // the test-campaign photos live only in their own carousels, so no image
+    // repeats anywhere on the page.
     gallery: [
-        { src: "/images/projects/testbed/20250428/DSC9960.JPG", alt: "Maelstrom engine with laser-engraved nameplate in front of the fluid panel" },
-        { src: "/images/projects/testbed/20250428/DSC9987.JPG", alt: "Maelstrom engine assembly on the test bench" },
+        { src: "/images/projects/testbed/20250428/DSC9960.JPG", alt: "Heatsink Maelstrom engine with laser-engraved nameplate in front of the fluid panel" },
         { src: "/images/projects/testbed/20250428/DSC0025.JPG", alt: "Maelstrom injector face, straight-on" },
         { src: "/images/projects/testbed/20250428/DSC0031.JPG", alt: "Maelstrom injector face, three-quarter view" },
-        { src: "/images/projects/testbed/20250428/DSC0034.JPG", alt: "Maelstrom injector face, close crop" },
-        { src: "/images/projects/testbed/20250428/DSC9965.JPG", alt: "Maelstrom aft end, looking into the nozzle contour" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6170.jpg", alt: "Maelstrom coaxial swirl injector element, close detail" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6143.jpg", alt: "Regeneratively cooled Maelstrom chamber and injector assembly, three-quarter view" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6177.jpg", alt: "Maelstrom engine assembly with injector installed and secured with tie bolts" },
         { src: "/images/projects/testbed/20250428/DSC9975.JPG", alt: "\"MAELSTROM\" laser engraving on the chamber barrel" },
+        { src: "/images/projects/testbed/20250428/DSC9965.JPG", alt: "Maelstrom aft end, looking into the nozzle contour" },
         { src: "/images/projects/testbed/20250428/DSC9977.JPG", alt: "Maelstrom nozzle exit and aft flange, close view" },
         { src: "/images/projects/testbed/20250428/DSC9978.JPG", alt: "Torch igniter fittings on the Maelstrom injector bulkhead" },
-        { src: "/images/projects/testbed/20250428/DSC9981.JPG", alt: "Maelstrom injector bulkhead with igniter manifold installed" },
         { src: "/images/projects/testbed/20250428/DSC9983.JPG", alt: "3D-printed igniter manifold with embossed PURPL logo mounted on Maelstrom" },
-        { src: "/images/projects/testbed/20250428/DSC9986.JPG", alt: "Igniter manifold block and fittings, alternate angle" },
-        { src: "/images/projects/testbed/20250428/DSC9988.JPG", alt: "Testbed fluid panel and pressure instrumentation" },
     ],
 }
 

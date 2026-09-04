@@ -126,6 +126,11 @@ const AccessibleCarousel = ({
                             <img
                                 src={photo.src}
                                 alt={photo.alt}
+                                // Prioritise the visible first slide; let the
+                                // browser defer the rest so a multi-image gallery
+                                // doesn't decode every full-res photo up front.
+                                loading={index === 0 ? "eager" : "lazy"}
+                                decoding="async"
                                 style={{
                                     // Fill a fixed box so every slide occupies the
                                     // exact same frame; object-fit handles the aspect
