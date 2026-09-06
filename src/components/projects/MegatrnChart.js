@@ -32,11 +32,13 @@
 //     so it always spans exactly from the header row to the lower row.
 //
 // MOBILE (<md): a vertical hierarchy. MEGATRN, a short branch indicator, then
-// three visually identical subsystem groups (Injector / Architecture / Igniter)
-// separated by generous whitespace so they read as siblings, never a sequence.
-// Each group is self-contained: a centred subsystem card, then its own left
-// branch rail that drops from the card, runs down the left of the indented
-// child cards with a short tick into each, and ends exactly at the last child.
+// three subsystem groups (Injector / Architecture / Igniter) separated by
+// generous whitespace so they read as siblings. Each group is a centred header
+// card over its sibling component cards laid out in TWO equal columns on a
+// shared branch bus. Architecture's three siblings use a 2 + 1 layout — two
+// cards, then the third centred below at the SAME width and height — with a
+// centre spine dropping straight through the gutter so all three read as
+// siblings and none looks like a child of another.
 //
 // `status` drives emphasis: new -> strongest purple highlight; active ->
 // current team, purple; future -> subdued dashed grey.
@@ -242,7 +244,7 @@ const MobileChildCard = ({ team, subsystem, selected, onSelect }) => {
             onClick={() => onSelect(team, subsystem)}
             aria-expanded={isSelected}
             aria-controls="megatrn-component-detail"
-            className={teamCardClass(s.card, isSelected) + ' p-3'}
+            className={teamCardClass(s.card, isSelected) + ' p-3 min-h-[84px] text-center'}
         >
             {team.status === 'new' && (
                 <span className="absolute -top-2 right-2 bg-stardust text-white font-display-bold text-[10px] leading-none uppercase px-1.5 py-0.5">
@@ -255,51 +257,93 @@ const MobileChildCard = ({ team, subsystem, selected, onSelect }) => {
     );
 };
 
-// One subsystem group: centred header card + its own left branch rail. The rail
-// is built from one span per child so it always drops from the card, ticks into
-// every child, and terminates exactly at the last child's centre — never
-// overshooting and never reaching into another group.
-const MobileSubsystem = ({ branch, className = '', selected, onSelect }) => (
-    <div className={'w-full flex flex-col items-center ' + className}>
-        <div className="w-[85%] border-2 border-white/40 bg-moon/50 px-4 py-3 text-center">
-            <p className="font-display-bold text-lg uppercase text-white leading-tight">{branch.name}</p>
-        </div>
-        <div className="w-[85%] relative pl-7">
-            {/* the drop from the subsystem card down onto the rail (~20px); the
-                rail sits in the pl-7 gutter, left of the indented child cards */}
-            <div className="relative h-5" aria-hidden="true">
-                <span className="absolute -left-5 top-0 -bottom-2 w-0.5 bg-stardust/50" />
-            </div>
-            {branch.teams.map((team, i) => {
-                const last = i === branch.teams.length - 1;
-                return (
-                    <div key={team.name} className={'relative ' + (last ? '' : 'mb-4')}>
-                        {/* rail: to the next child (non-last, -bottom-4 reaches across
-                            the mb-4 gap) or to this child's centre (last, ends here) */}
-                        <span
-                            className={
-                                'absolute -left-5 top-0 w-0.5 bg-stardust/50 ' +
-                                (last ? 'h-1/2' : '-bottom-4')
-                            }
-                            aria-hidden="true"
-                        />
-                        {/* tick from the rail into the card's left edge */}
-                        <span
-                            className="absolute -left-5 top-1/2 -translate-y-1/2 w-5 h-0.5 bg-stardust/50"
-                            aria-hidden="true"
-                        />
-                        <MobileChildCard
-                            team={team}
-                            subsystem={branch.name}
-                            selected={selected}
-                            onSelect={onSelect}
-                        />
-                    </div>
-                );
-            })}
-        </div>
+// Per-column horizontal bus piece: anchored to this column's centre and run one
+// gutter-width (gap-x-3) into the gap, so the two pieces overlap into a single
+// unbroken line from the left column's centre to the right column's centre.
+const mobileBusPiece = (i) =>
+    'absolute top-0 h-0.5 bg-stardust/50 ' + (i === 0 ? 'left-1/2 -right-3' : '-left-3 right-1/2');
+
+// One column of the two-up row: the bus piece, a short vertical drop, the card.
+const MobilePairCell = ({ team, subsystem, selected, onSelect, i }) => (
+    <div className="relative flex flex-col">
+        <div className={mobileBusPiece(i)} aria-hidden="true" />
+        <span className="w-0.5 h-5 bg-stardust/50 mx-auto" aria-hidden="true" />
+        <MobileChildCard
+            team={team}
+            subsystem={subsystem}
+            selected={selected}
+            onSelect={onSelect}
+        />
     </div>
 );
+
+// One subsystem group on mobile: a centred header card, a short drop, then the
+// sibling component cards in two equal columns fed by a shared bus. A group of
+// three siblings (Architecture) keeps a 2 + 1 layout — the third card centred on
+// its own row at the same column width and (via auto-rows-fr) the same height —
+// with a centre spine that continues from the bus straight down the gutter to
+// the third card, so all three read as siblings of the subsystem.
+const MobileSubsystem = ({ branch, className = '', selected, onSelect }) => {
+    const teams = branch.teams;
+    const isTriple = teams.length === 3;
+    return (
+        <div className={'w-full flex flex-col items-center ' + className}>
+            <div className="w-[72%] max-w-[240px] border-2 border-white/40 bg-moon/50 px-4 py-3 text-center">
+                <p className="font-display-bold text-lg uppercase text-white leading-tight">
+                    {branch.name}
+                </p>
+            </div>
+
+            {/* drop from the header down onto the sibling bus */}
+            <span className="w-0.5 h-4 bg-stardust/50" aria-hidden="true" />
+
+            <div
+                className={
+                    'w-full relative grid grid-cols-2 gap-x-3 auto-rows-fr ' +
+                    (isTriple ? 'gap-y-4' : '')
+                }
+            >
+                {/* centre spine — bus → gutter between the top two cards → across
+                    the row gap → the third card's top edge; never over a card */}
+                {isTriple && (
+                    <span
+                        aria-hidden="true"
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-[calc(50%_+_0.5rem)] bg-stardust/50"
+                    />
+                )}
+
+                <MobilePairCell
+                    team={teams[0]}
+                    subsystem={branch.name}
+                    selected={selected}
+                    onSelect={onSelect}
+                    i={0}
+                />
+                <MobilePairCell
+                    team={teams[1]}
+                    subsystem={branch.name}
+                    selected={selected}
+                    onSelect={onSelect}
+                    i={1}
+                />
+
+                {isTriple && (
+                    <div className="col-span-2 flex justify-center">
+                        <div className="w-[calc(50%_-_0.375rem)] flex flex-col">
+                            <span className="w-0.5 h-5 bg-stardust/50 mx-auto" aria-hidden="true" />
+                            <MobileChildCard
+                                team={teams[2]}
+                                subsystem={branch.name}
+                                selected={selected}
+                                onSelect={onSelect}
+                            />
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
 
 const MobileTree = ({ chart, selected, onSelect }) => (
     <div className="md:hidden w-full flex flex-col items-center">
