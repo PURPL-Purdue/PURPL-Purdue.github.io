@@ -386,10 +386,23 @@ const ComponentDetail = ({ selected, onClose }) => {
                 <div>
                     <dt className="text-white/50 uppercase text-xs">Purpose</dt>
                     <dd className="text-white/90 leading-6 mt-1">
-                        {selected.purpose ||
-                            'A detailed purpose description for this team has not been published yet.'}
+                        {(selected.detail && selected.detail.purpose) ||
+                            'No additional verified information is available yet.'}
                     </dd>
                 </div>
+                {selected.detail &&
+                    (selected.detail.sections || []).map((section) => (
+                        <div key={section.label}>
+                            <dt className="text-white/50 uppercase text-xs">{section.label}</dt>
+                            <dd className="text-white/90 leading-6 mt-1">
+                                {section.lines.map((line, i) => (
+                                    <span key={i} className="block">
+                                        {line}
+                                    </span>
+                                ))}
+                            </dd>
+                        </div>
+                    ))}
             </dl>
         </div>
     );

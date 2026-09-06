@@ -210,7 +210,7 @@ export const testbedData = {
             // broadened; cycle kept — the deck doesn't address it).
             specs: {
                 "Thrust": "500 lbf",
-                "Propellants": "Kerosene (RP-1) / liquid oxygen",
+                "Propellants": "Kerosene (RP-1) / Liquid oxygen",
                 "Cycle": "Pressure-fed",
                 "Cooling": "Heatsink, regenerative",
                 "Injector type": "Coaxial swirl, impinging jet",
@@ -245,38 +245,104 @@ export const testbedData = {
 
             // Development-structure chart. `status` drives emphasis in
             // MegatrnChart: "new" (strongest), "active", "future" (subdued).
-            // `role` is the team's current phase; `purpose` (optional) is a
-            // short, verified description shown in the clickable detail panel.
-            // Leave `purpose` unset until an accurate description exists — the
-            // panel falls back to a neutral note rather than inventing detail.
+            // `role` is the team's current phase (shown in the panel's PHASE
+            // row with the status badge). `detail` is the concise verified
+            // content for the clickable panel: { purpose, sections?: [{ label,
+            // lines: [] }] } — a 1-2 sentence purpose plus at most one short
+            // extra section. Content is from the Testbed Info Session (9/1/2026),
+            // reconciled with the project-lead corrections already on the page:
+            // the torch is only ever described as stand-alone tested.
             chart: {
                 root: "MEGATRN",
                 branches: [
                     {
                         name: "Injector",
                         teams: [
-                            { name: "Pintle", role: "Design Team", status: "active" },
-                            { name: "Others", role: "Future Design Teams", status: "future" },
+                            {
+                                name: "Pintle",
+                                role: "Design Team",
+                                status: "active",
+                                detail: {
+                                    purpose:
+                                        "Variable-area pintle injector being developed as the first injector for MEGATRN.",
+                                    sections: [
+                                        { label: "Configuration", lines: ["LOx-centered radial spray with an ethanol annular spray."] },
+                                        { label: "Current work", lines: ["CAD and actuation development."] },
+                                    ],
+                                },
+                            },
+                            {
+                                name: "Others",
+                                role: "Future Design Teams",
+                                status: "future",
+                                detail: {
+                                    purpose:
+                                        "Additional injector concepts may be developed for MEGATRN in the future.",
+                                },
+                            },
                         ],
                     },
                     {
                         name: "Architecture",
                         teams: [
-                            { name: "Ablative", role: "Future Team", status: "future" },
-                            { name: "Calorimeter", role: "Design/Thermal-Analysis Team", status: "active" },
-                            { name: "Others", role: "Future Teams", status: "future" },
+                            {
+                                name: "Ablative",
+                                role: "Future Team",
+                                status: "future",
+                                detail: {
+                                    purpose:
+                                        "A future MEGATRN architecture concept based around an ablative chamber or throat.",
+                                },
+                            },
+                            {
+                                name: "Calorimeter",
+                                role: "Design/Thermal-Analysis Team",
+                                status: "active",
+                                detail: {
+                                    purpose:
+                                        "MEGATRN's first architecture, a modular water-cooled calorimeter engine designed for long burns and component testing.",
+                                    sections: [
+                                        { label: "Current work", lines: ["Thermal, structural, and fluids analysis."] },
+                                    ],
+                                },
+                            },
+                            {
+                                name: "Others",
+                                role: "Future Teams",
+                                status: "future",
+                                detail: {
+                                    purpose:
+                                        "Additional MEGATRN engine architectures may be developed in the future.",
+                                },
+                            },
                         ],
                     },
                     {
                         name: "Igniter",
                         teams: [
-                            { name: "Acoustic", role: "Design Team", status: "new" },
+                            {
+                                name: "Acoustic",
+                                role: "Design Team",
+                                status: "new",
+                                detail: {
+                                    purpose:
+                                        "Developing a new MEGATRN igniter concept that produces the flame needed for engine ignition.",
+                                    sections: [
+                                        { label: "Current work", lines: ["Setpoint definition, simulations, and CAD."] },
+                                    ],
+                                },
+                            },
                             {
                                 name: "Torch",
                                 role: "Future Research Team",
                                 status: "future",
-                                purpose:
-                                    "Testbed's torch igniter is a GH2/GOx augmented spark igniter with orifice fittings for precise control across a wide range of oxidizer/fuel ratio setpoints. It has undergone stand-alone testing and has not yet been tested fully integrated with either Maelstrom engine.",
+                                detail: {
+                                    purpose:
+                                        "Future research into torch-igniter development and integration for MEGATRN.",
+                                    sections: [
+                                        { label: "Context", lines: ["Testbed previously stand-alone tested a torch igniter."] },
+                                    ],
+                                },
                             },
                         ],
                     },
@@ -300,7 +366,7 @@ export const testbedData = {
     // June 2025 test-campaign carousel. Numbers are the original site's.
     testing2025: {
         blurb:
-            "In June 2025, after months of hard work, the team successfully tested their first piece of hardware. Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine torch ignitor were completed. The system was pushed across a wide range of conditions, varying chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
+            "In June 2025, after months of hard work, the team successfully tested their first piece of hardware. Kicking off a three-week testing campaign, over 25 hot fire tests of the Maelstrom engine torch igniter were completed. The system was pushed across a wide range of conditions, varying chamber pressure from 100 to 300 psi and O/F ratios from 1.5 to 5, proving its robustness.",
         photos: testbed_202508_selectedMedia,
     },
 
@@ -547,7 +613,7 @@ const deimosData = {
         "mass flow rate": "0.59 kg/s",
         ignition: "pre-detonator",
         material: "C110 / SS316",
-        cooling: "heat sink",
+        cooling: "heatsink",
     },
 };
 
