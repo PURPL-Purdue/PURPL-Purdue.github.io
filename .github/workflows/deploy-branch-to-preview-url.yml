@@ -1,0 +1,37 @@
+on:
+  pull_request:
+    branches-ignore: [master]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+
+      - name: Update Render Service Branch
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+          BRANCH: ${{ github.head_ref }}
+        run: |
+          curl --fail --silent --show-error \
+            -X PATCH "https://api.render.com/v1/services/${RENDER_SERVICE_ID}" \
+            -H "Authorization: Bearer ${RENDER_API_KEY}" \
+            -H "Content-Type: application/json" \
+            --data "$(jq -n --arg branch "$BRANCH" '{branch: $branch}')"
+
+      - name: Deploy Branch to Preview URL
+        env:
+          RENDER_DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          curl "$RENDER_DEPLOY_URL"
+
+      - name: Comment Preview URL
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR_NUMBER" \
+            --repo "${{ github.repository }}" \
+            --body "Preview deployed to: https://purpl-purdue-github-io.onrender.com. NOTE: updating other PRs overwrites this deployment."
