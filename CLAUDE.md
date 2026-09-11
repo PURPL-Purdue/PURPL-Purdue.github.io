@@ -35,7 +35,6 @@ src/
   pages/                 Route-level components (projects/, facilities/, admin/)
   json/                  Static data files described above
   App.js, index.js       Entry points
-llm-context/             Supplementary docs (e.g. accessibility-analysis.md)
 ```
 
 ### Key Files
@@ -86,7 +85,3 @@ All pages follow this structure:
 - Fonts: `font-display`/`font-display-bold`/`font-display-semibold` (Chakra Petch), `font-display2`/`font-display2-bold` (Roboto Mono)
 - Responsive: mobile-first with `md:` (768px) and `lg:` (1024px) breakpoints, e.g. `text-sm md:text-lg lg:text-xl`, `grid-cols-1 md:grid-cols-2`
 - Common UI patterns: Bootstrap carousels for photo galleries/CAD models, two-column specs tables (`SpecsTable` component) for technical specs, semi-transparent overlay boxes (`bg-moon/80`) for captions on images
-
-## Context Documentation
-
-Additional supplementary documentation is available in `llm-context/accessibility-analysis.md` for accessibility audit findings and recommendations.

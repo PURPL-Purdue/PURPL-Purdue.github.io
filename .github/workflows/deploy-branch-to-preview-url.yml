@@ -1,6 +1,6 @@
 on:
   pull_request:
-    branches-ignore: [master]
+    branches: [master]
 
 jobs:
   ci:
@@ -34,4 +34,4 @@ jobs:
         run: |
           gh pr comment "$PR_NUMBER" \
             --repo "${{ github.repository }}" \
-            --body "Preview deployed to: https://purpl-purdue-github-io.onrender.com. NOTE: updating other PRs overwrites this deployment."
+            --body $'Triggered deployment to preview URL: https://purpl-purdue-github-io.onrender.com.\n\nThis deployment usually takes ~1-2 minutes. Note: Updating other PRs overwrites this deployment.'
