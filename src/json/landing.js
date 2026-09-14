@@ -16,7 +16,7 @@ export const landingData = {
         { number: "2024", text: "founded" },
     ],
     calendar: {
-        embed_link: "https://calendar.google.com/calendar/u/1?cid=cHVycGwucHVyZHVlQGdtYWlsLmNvbQ",
+        embed_link: "https://calendar.google.com/calendar/embed?src=purpl.purdue%40gmail.com&ctz=America%2FNew_York",
     },
     carouselPhotos1: [
         teamPhotos.entire_club.fun_photo,
