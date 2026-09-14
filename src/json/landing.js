@@ -16,7 +16,7 @@ export const landingData = {
         { number: "2024", text: "founded" },
     ],
     calendar: {
-        embed_link: "https://calendar.google.com/calendar/embed?src=purpl24%40purdue.edu&ctz=America%2FIndiana%2FIndianapolis",
+        embed_link: "https://calendar.google.com/calendar/u/1?cid=cHVycGwucHVyZHVlQGdtYWlsLmNvbQ",
     },
     carouselPhotos1: [
         teamPhotos.entire_club.fun_photo,
