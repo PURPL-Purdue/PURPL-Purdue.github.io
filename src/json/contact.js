@@ -1,3 +1,3 @@
 export const contactInfo = {
-    email: "purpl24@purdue.edu",
+    email: "purpl.purdue@gmail.com",
 };
