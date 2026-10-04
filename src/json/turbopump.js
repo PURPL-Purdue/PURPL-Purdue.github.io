@@ -310,7 +310,7 @@ export const turbopumpData = {
         [
             'Jun 2025',
             'Power Assembly CDR',
-            'Critical Design Review for the turbine power assembly: the turbine and its rotating hardware that converts hot-gas energy into shaft power for the pumps.',
+            'Critical Design Review for the power assembly.',
         ],
         [
             'Nov 2025',

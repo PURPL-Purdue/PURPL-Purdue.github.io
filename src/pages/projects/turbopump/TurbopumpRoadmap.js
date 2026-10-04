@@ -99,14 +99,21 @@ const TurbopumpRoadmap = () => {
                     </div>
                 </div>
 
-                {/* selected milestone, using RDE's detail-panel treatment */}
-                <div className="mt-6 border-l-2 border-stardust pl-6">
-                    <p className="font-display2 text-stardust text-sm mb-3">{date}</p>
-                    <h3 className="font-display-bold text-2xl md:text-4xl text-white uppercase mb-4">{title}</h3>
-                    <p className="font-display2 text-white/75 text-md md:text-lg leading-8 max-w-xl">{description}</p>
-                    <p className="font-display2 text-white/30 text-xs mt-6">
-                        Milestone {selected + 1} / {ROADMAP.length}
-                    </p>
+                {/* selected milestone, using RDE's detail-panel treatment. The
+                    accent line is purely decorative (absolutely positioned at
+                    the left edge) so it never shifts the text block off center;
+                    this one block re-renders per selection, so every milestone
+                    automatically gets the same centered treatment. */}
+                <div className="mt-6 relative">
+                    <div className="absolute left-0 top-1 bottom-1 w-0.5 bg-stardust" aria-hidden="true" />
+                    <div className="text-center">
+                        <p className="font-display2 text-stardust text-sm mb-3">{date}</p>
+                        <h3 className="font-display-bold text-2xl md:text-4xl text-white uppercase mb-4">{title}</h3>
+                        <p className="font-display2 text-white/75 text-md md:text-lg leading-8 max-w-xl mx-auto">{description}</p>
+                        <p className="font-display2 text-white/30 text-xs mt-6">
+                            Milestone {selected + 1} / {ROADMAP.length}
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
