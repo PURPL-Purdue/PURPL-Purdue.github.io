@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// 03 — How the system works. An intentionally simplified gas-generator flow:
+// 03: How the system works. An intentionally simplified gas-generator flow:
 // pumps raise propellant pressure, a shaft ties the rotating machinery
 // together, a turbine drives that shaft, and a gas generator feeds the turbine.
 // Click / tap a component to highlight its links and read its role.
@@ -57,7 +57,7 @@ const TurbopumpSystemFlow = () => {
             </h2>
 
             <p className="font-display2 text-md md:text-lg text-white text-left">
-                {d.system.blurb} {d.system.architecture}
+                {d.system.blurb}
             </p>
 
             <div className="mt-6 md:mt-8 border-2 border-white/40 p-5 md:p-6">

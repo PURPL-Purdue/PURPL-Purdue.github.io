@@ -7,12 +7,20 @@ const AccessibleCarousel = ({
     ariaLabel = "Image carousel",
     interval = 5000,
     className = "",
+    // Optional fixed aspect ratio (e.g. "4 / 3"). When two carousels need to
+    // sit side by side as a matched pair (CAD vs. hardware, campaign A vs. B),
+    // auto-detecting each one's ratio from its own first photo makes the two
+    // frames different sizes. Passing this skips auto-detection so both share
+    // one frame. Omitted, behavior is unchanged (auto-detected from the first
+    // photo, falling back to 16 / 9).
+    aspectRatio: aspectRatioProp,
     ...props
 }) => {
     const [isPaused, setIsPaused] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-    const [aspectRatio, setAspectRatio] = useState(null);
+    const [detectedAspectRatio, setDetectedAspectRatio] = useState(null);
+    const aspectRatio = aspectRatioProp || detectedAspectRatio;
 
     const carouselRef = useRef(null);
     const liveRegionRef = useRef(null);
@@ -22,15 +30,16 @@ const AccessibleCarousel = ({
     }, [photos]);
 
     useEffect(() => {
+        if (aspectRatioProp) return;
         if (!photos || photos.length === 0) return;
 
         const firstImage = new Image();
         firstImage.src = photos[0].src;
 
         firstImage.onload = () => {
-            setAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
+            setDetectedAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
         };
-    }, [photos]);
+    }, [photos, aspectRatioProp]);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');

@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { rdeData } from '../../../json/projects';
 
-// Interactive HADES roadmap. Click a milestone to preview its details.
-// Rendered only inside the HADES profile.
-const Roadmap = ({ roadmap = rdeData.sharedRoadmap }) => {
+// Shared interactive roadmap (originally RDE-only, promoted for reuse).
+// Click a milestone to preview its details. `roadmap` is an array of
+// [date, title, description] tuples; `caption` is the intro line above it.
+const Roadmap = ({ roadmap, caption }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const selected = roadmap[selectedIndex];
 
     return (
         <div className="w-full flex flex-col items-center">
             <p className="font-display2 text-sm md:text-md text-gray-300 text-center mb-8 max-w-2xl px-4">
-                Click a milestone to preview the details for each stage of the RDE project.
+                {caption}
             </p>
 
             <div className="w-full border-2 border-white/40 p-5 md:p-6">

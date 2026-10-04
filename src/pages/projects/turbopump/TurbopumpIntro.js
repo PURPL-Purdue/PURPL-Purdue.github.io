@@ -1,11 +1,11 @@
-import AccessibleCarousel from '../../../components/carousel/AccessibleCarousel';
+import Gallery from '../../../components/carousel/Gallery';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Project introduction — one clean editorial section, no heading. A comfortably
+// Project introduction: one clean editorial section, no heading. A comfortably
 // wide copy column (primary statement, secondary explanation, then the
 // current-year line on a single stardust accent) beside the team carousel.
 // Intentionally not 50/50: the copy runs wider so it reads as prose, the
-// carousel stays large enough to matter. Normal flow — nothing overlaps the
+// carousel stays large enough to matter. Normal flow, so nothing overlaps the
 // hero.
 const TurbopumpIntro = () => (
     <section>
@@ -25,7 +25,7 @@ const TurbopumpIntro = () => (
             </div>
 
             <div className="w-full mt-2 md:mt-0">
-                <AccessibleCarousel photos={d.introPhotos} ariaLabel="Turbopump team" />
+                <Gallery photos={d.introPhotos} ariaLabel="Turbopump team" />
             </div>
         </div>
     </section>
