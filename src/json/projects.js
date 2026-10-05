@@ -34,56 +34,8 @@ export const tachyonData = {
     },
 };
 
-export const turbopumpData = {
-    title: "Turbopump",
-    subtitle: "LOX-Kerosene turbopump to feed a ~5000 lbf regeneratively cooled engine.",
-    wireframe: "/images/projects/turbopump/turbopump_wireframe_8_17_24.png",
-    wireframe_alt: "Turbopump technical drawing",
-    blurb:
-        "PURPL’s turbopump project is our first pump fed engine. This project will be the first undergraduate designed, " +
-        "built, and tested turbopump-fed engine in the world.",
-    specs_table: {
-        "thrust": "5,000-lbf",
-        "propellants": "kerosene and liquid oxygen",
-        "cycle": "gas generator, open cycle",
-        "shaft speed": "50,000 RPM",
-        "cooling": "regenerative",
-    },
-    desc_1:
-        "When rockets get larger and larger, using pressurized tanks to move propellants into the combustion " +
-        "chamber becomes less practical as the tank walls have to be extremely thick to contain the high pressures. " +
-        "However, this happens at the same size as pumps start to become much more viable.",
-    image_1: "/images/projects/turbopump/TURBOPUMP_-_Pump_impeller_transparent.png",
-    image_1_alt: "Turbopump pump impeller",
-    desc_2:
-        "In order to spin the pumps, we can use a separate, smaller rocket engine that burns a small fraction of our " +
-        "propellants and spins a turbine. A shaft then transfers this power to the pump impellers that raise the " +
-        "pressure of the propellants before entering the combustion chamber.",
-    image_2: "/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png",
-    image_2_alt: "Turbopump shaft assembly",
-    photo_reel: {
-        photos: [
-            teamPhotos.turbopump.smiling_photo,
-            teamPhotos.turbopump.fun_photo,
-        ]
-    },
-    aiaa: {
-        blurb: "Recently, the turbopump team presented their work at the 2026 AIAA SciTech conference " +
-            "in Orlando, FL. The team's presentation earned a recognition from AIAA, publication of their research paper " +
-            "and widespread exposure to world-renowned commercial and governmental aerospace & defense " +
-            "entities and academia.",
-        photos: [
-            {
-                src: "/images/projects/turbopump/IMG_0322.jpg",
-                alt: "Turbopump team at AIAA SciTech 2026",
-            },
-            {
-                src: "/images/projects/turbopump/IMG_2917.jpg",
-                alt: "Turbopump team at AIAA SciTech 2026",
-            },
-        ]
-    }
-};
+// Turbopump data moved to src/json/turbopump.js as part of the Turbopump page
+// rebuild (values rebased on the 08/30/2026 info session).
 
 export const epropData = {
     title: "Electric Propulsion",

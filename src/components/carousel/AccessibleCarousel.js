@@ -7,12 +7,17 @@ const AccessibleCarousel = ({
     ariaLabel = "Image carousel",
     interval = 5000,
     className = "",
+    // Optional. Skips auto-detecting the ratio from the first photo, so two
+    // carousels can share one frame size (e.g. a CAD/hardware pair). Omitted,
+    // behavior is unchanged.
+    aspectRatio: aspectRatioProp,
     ...props
 }) => {
     const [isPaused, setIsPaused] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-    const [aspectRatio, setAspectRatio] = useState(null);
+    const [detectedAspectRatio, setDetectedAspectRatio] = useState(null);
+    const aspectRatio = aspectRatioProp || detectedAspectRatio;
 
     const carouselRef = useRef(null);
     const liveRegionRef = useRef(null);
@@ -22,15 +27,16 @@ const AccessibleCarousel = ({
     }, [photos]);
 
     useEffect(() => {
+        if (aspectRatioProp) return;
         if (!photos || photos.length === 0) return;
 
         const firstImage = new Image();
         firstImage.src = photos[0].src;
 
         firstImage.onload = () => {
-            setAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
+            setDetectedAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
         };
-    }, [photos]);
+    }, [photos, aspectRatioProp]);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
