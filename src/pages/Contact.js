@@ -2,8 +2,6 @@
 import PageWrapper from '../components/layout/PageWrapper';
 import Banner from '../components/banner/Banner';
 import ContentWrapper from '../components/layout/ContentWrapper';
-import ContactForm from '../components/ContactForm';
-import { contactInfo } from '../json/contact';
 
 const Contact = () => {
     return (
@@ -23,17 +21,24 @@ const Contact = () => {
             <ContentWrapper>
                 <div className="lg:w-[950px] flex flex-col w-full space-y-8 md:space-y-10">
                     <div className="flex flex-col items-center space-y-8 md:space-y-14 my-4 lg:my-8 ">
-                        <div className="flex flex-col space-y-2 text-white font-display2 text-md md:text-xl text-center">
-                            <p>Interested in joining or supporting our club? We'd love to hear from you!</p>
-                            <p>Contact us via the form below or by email at <a href={`mailto:${contactInfo.email}`} className="hover:text-boilermaker-gold underline text-stardust">{contactInfo.email}</a>.</p>
+                        <div className="p-1 w-full max-w-[700px] mx-auto bg-gradient-to-tl from-stardust to-boilermaker-gold to-80%">
+                            <div className="bg-dusk px-6 py-10 md:py-14 flex flex-col items-center text-center space-y-6">
+                                <div className="flex flex-col space-y-2 text-white font-display2 text-md md:text-xl">
+                                    <p className="font-display-bold text-2xl md:text-3xl text-white uppercase">Interested in PURPL?</p>
+                                    <p>Join our Discord to get involved, ask questions, and connect with the team.</p>
+                                </div>
+                                <a
+                                    href="https://discord.gg/cC6FYAu93W"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="border-2 border-stardust px-8 py-3 font-display2 text-sm md:text-lg text-white uppercase tracking-wide hover:bg-stardust transition-colors focus:outline-2 focus:outline-stardust focus:outline-offset-2"
+                                >
+                                    Join Our Discord
+                                </a>
+                            </div>
                         </div>
-                        <ContactForm />
                         <div className="flex flex-row w-full justify-center items-center space-x-4">
                             <div className="flex flex-col h-full text-white font-display2 text-md md:text-xl text-center space-y-2">
-                                <p className="text-balance">
-                                    <span className="">Email: </span>
-                                    <a href={`mailto:${contactInfo.email}`} className="hover:text-boilermaker-gold underline text-stardust">{contactInfo.email}</a>
-                                </p>
                                 <p className="text-balance">
                                     <span>Linkedin: </span>
                                     <a href="https://www.linkedin.com/company/purpl-purdue/mycompany"
