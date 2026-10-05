@@ -1,15 +1,12 @@
 import AccessibleCarousel from './AccessibleCarousel';
 
-// A single-photo AccessibleCarousel still renders pause/play controls, arrows,
-// an indicator dot, and a "1 / 1" badge: broken-looking UI for one image.
-// Gallery renders a plain static image at its natural aspect ratio (no forced
-// box, so portrait CAD screenshots aren't stretched into a landscape frame)
-// when there's only one photo, and the full carousel for two or more.
+// AccessibleCarousel with one photo still shows pause/play, arrows, and a
+// "1 / 1" badge, which looks broken. Gallery renders a plain image instead
+// when there's only one photo.
 //
-// `aspectRatio` (e.g. "4 / 3") is optional and only needed when this Gallery
-// must match another Gallery's frame size exactly (a CAD/hardware pair, a
-// campaign switcher), it boxes a single image the same way the carousel
-// would, contained and centered, instead of letting it size itself.
+// `aspectRatio` is only needed when two Galleries must match frame sizes
+// exactly (a CAD/hardware pair); it boxes the image like the carousel would
+// instead of using its natural size.
 const Gallery = ({ photos, ariaLabel, className = '', aspectRatio }) => {
     if (!photos || photos.length === 0) return null;
 

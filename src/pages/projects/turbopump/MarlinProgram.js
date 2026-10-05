@@ -2,8 +2,7 @@ import { useState } from 'react';
 import Gallery from '../../../components/carousel/Gallery';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Generation selector: the RDE EngineSelector pattern (square border, thin
-// rule, restrained purple active state), adapted for two MARLIN generations.
+// Modeled on RDE's EngineSelector.
 const GenerationSelector = ({ gen, active, onSelect }) => (
     <button
         onClick={() => onSelect(gen.key)}
@@ -18,8 +17,7 @@ const GenerationSelector = ({ gen, active, onSelect }) => (
     </button>
 );
 
-// Generation detail: description beside an optional static image (no
-// single-photo carousel), then the Maelstrom-style 4-up stat card row.
+// Gallery avoids a single-photo carousel. Stat row matches Maelstrom's 4-up cards.
 const GenerationProfile = ({ gen }) => (
     <div className="flex flex-col gap-6">
         <div className={'grid grid-cols-1 gap-6 lg:gap-10 items-center ' + (gen.photo ? 'md:grid-cols-[3fr_2fr]' : '')}>
@@ -45,10 +43,7 @@ const GenerationProfile = ({ gen }) => (
     </div>
 );
 
-// MARLIN Program compares the two confirmed turbopump generations. Selecting
-// a generation swaps the profile below (RDE's HADES/DEIMOS interaction). The
-// primary home for generation-specific specs and media; the numeric values
-// here are not repeated elsewhere.
+// These stats aren't repeated anywhere else on the page.
 const MarlinProgram = () => {
     const [active, setActive] = useState('v1');
     const gen = d.marlinProgram[active];

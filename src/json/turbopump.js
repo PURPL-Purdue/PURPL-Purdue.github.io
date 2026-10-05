@@ -1,20 +1,20 @@
 // Turbopump (MARLIN) project data.
 //
-// SOURCE OF TRUTH: the 08/30/2026 Turbopump Info Session for `system`,
-// `subsystems`, and `profile`. MARLIN V1 / V2 generation data, roadmap
-// milestones, testing-campaign media, and publications come from the project
-// leadership brief supplied for the redesign. Values neither source supports
-// were left out rather than guessed. See the implementation report for one
-// open reconciliation question (the V1/V2 numbers below don't cleanly match
-// `profile`'s numbers, and it's unclear which generation `profile` describes).
+// `system`, `subsystems`, and `profile` trace to the 08/30/2026 Turbopump Info
+// Session. MARLIN V1/V2 data, roadmap milestones, testing media, and
+// publications come from the later redesign brief. Unverified values were
+// left out rather than guessed.
+//
+// Open question: profile's numbers (1,500 lbf, IPA/LOx, 50,000 RPM, 1,000 psi,
+// 180 HP) don't cleanly match either V1 (kerosene/LOx) or V2 (40,000 RPM)
+// below, so it's unclear which generation profile actually describes.
 
 import { teamPhotos } from './gallery.js';
 
 export const turbopumpData = {
     title: 'Turbopump',
 
-    // Project introduction: what Turbopump/MARLIN is, why PURPL is building a
-    // turbopump, and the current-year focus only, no subsystem-level detail.
+    // Intro stays high-level; no subsystem detail here.
     intro: {
         lead:
             'Developing MARLIN, a gas-generator turbopump program for a 1,500 lbf IPA / LOx liquid rocket engine.',
@@ -29,9 +29,8 @@ export const turbopumpData = {
         teamPhotos.turbopump.fun_photo,
     ],
 
-    // MARLIN generation selector: the primary home for generation-specific
-    // specs/media. `photo` is a single image (rendered statically, not in a
-    // carousel) or null when nothing is confirmed for that generation.
+    // `photo` is a single static image (not a carousel), or null when nothing
+    // is confirmed for that generation.
     marlinProgram: {
         v1: {
             key: 'v1',
@@ -69,7 +68,6 @@ export const turbopumpData = {
         },
     },
 
-    // ---- Engineering / System (the interactive flow diagram) --------------
     system: {
         blurb:
             'A turbopump raises propellant pressure so an engine no longer depends on heavy high-pressure tanks. Pumps add kinetic energy to the LOx and fuel; a turbine extracts energy from hot gas to spin them; and a gas generator burns a small fraction of the propellant to feed that turbine. All of the rotating machinery shares one shaft.',
@@ -102,13 +100,9 @@ export const turbopumpData = {
         ],
     },
 
-    // ---- Hardware + Subsystems ----------------------------------------------
-    // One compact explorer: the 7 subsystems plus "Full Assembly" as an 8th
-    // entry (whole-machine CAD + manufactured hardware + the numbers), so the
-    // old Subsystems / Full Assembly / System Profile sections become one
-    // section instead of three. `photo` on a subsystem is only set where a
-    // specific, already-labeled image exists (the pump impeller CAD render);
-    // every other subsystem is left without one rather than guessing.
+    // `photo` is only set where a specific, already-labeled image exists (the
+    // pump impeller CAD render); every other entry intentionally has none
+    // rather than guessing one.
     subsystems: [
         {
             n: '01',
@@ -264,9 +258,8 @@ export const turbopumpData = {
         ],
     },
 
-    // Compact numbers panel shown with Full Assembly (not a standalone
-    // section). Generation attribution is unconfirmed, so these are presented
-    // as the system's numbers, not tagged to V1 or V2.
+    // Shown inside Full Assembly, not as its own section. Generation
+    // attribution is unconfirmed, so these aren't tagged V1 or V2.
     profile: {
         hero: { label: 'Engine application', value: '1,500 lbf' },
         rows: [
@@ -279,13 +272,9 @@ export const turbopumpData = {
         note: '1,500 lbf is the engine the turbopump is built to feed, not the turbopump’s own thrust.',
     },
 
-    // ---- Roadmap --------------------------------------------------------------
-    // [date, title, description] tuples, oldest first (left to right / top to
-    // bottom on the snaking timeline). Descriptions are enriched with
-    // cross-references to other verified Turbopump data (marlinProgram,
-    // subsystems, testing, assembly) wherever that connection genuinely
-    // exists; where it doesn't, the description stays concise rather than
-    // inventing engineering history.
+    // [date, title, description] tuples, oldest first. Descriptions that
+    // reference other sections (marlinProgram, subsystems, testing, assembly)
+    // are drawing on facts already verified there, not adding new claims.
     roadmap: [
         [
             'Aug 2024',
@@ -364,7 +353,6 @@ export const turbopumpData = {
         ],
     ],
 
-    // ---- Testing --------------------------------------------------------------
     testing: {
         campaigns: [
             {
@@ -393,7 +381,6 @@ export const turbopumpData = {
         ],
     },
 
-    // ---- Research ---------------------------------------------------------
     research: {
         context: {
             text:

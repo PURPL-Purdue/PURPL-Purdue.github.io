@@ -7,23 +7,9 @@ const yearOf = (date) => date.split(' ')[1];
 const YEARS = [...new Set(ROADMAP.map(([date]) => yearOf(date)))];
 const indicesForYear = (year) => ROADMAP.map((_, i) => i).filter((i) => yearOf(ROADMAP[i][0]) === year);
 
-// Roadmap: Turbopump's year-based navigation (select a year, see only that
-// year's milestones, pick one), rebuilt in the current RDE roadmap's visual
-// language: the same outer bordered frame holding navigation + detail as one
-// component, the same milestone-card treatment (border-2, active
-// border-stardust/bg-moon-40, stardust date, uppercase title), and the same
-// detail-panel shape (a left accent border, large uppercase title, counter).
-// Note: RDE's own detail accent and dot use `border-purple`/`bg-purple`,
-// which this Tailwind config has no color for (only the dot's inline glow
-// color is real), so those two classes compile to nothing. This file uses
-// `stardust`, the token that's actually defined and used everywhere else on
-// this page, so the accent is actually purple.
-//
-// RDE's milestones run in a single vertical list with a rail + round dot down
-// the left; Turbopump's run in a single horizontal row per year with thin
-// connecting lines, since the "which milestone is this" job RDE's dot does is
-// already carried by the active card border in a row this short, and the row
-// scrolls internally instead of growing a second axis.
+// Uses `stardust` for the accent, not RDE's `border-purple`/`bg-purple`:
+// those classes have no matching color in this Tailwind config and silently
+// compile to nothing.
 const TurbopumpRoadmap = () => {
     const [selected, setSelected] = useState(ROADMAP.length - 1);
     const [selectedYear, setSelectedYear] = useState(yearOf(ROADMAP[ROADMAP.length - 1][0]));
@@ -50,7 +36,6 @@ const TurbopumpRoadmap = () => {
             </p>
 
             <div className="w-full border-2 border-white/40 p-5 md:p-6">
-                {/* year tabs: small secondary navigation, not buttons */}
                 <div className="flex items-center gap-6 md:gap-8 border-b border-white/15 pb-3 mb-5">
                     {YEARS.map((year) => (
                         <button
@@ -69,7 +54,6 @@ const TurbopumpRoadmap = () => {
                     ))}
                 </div>
 
-                {/* that year's milestones, in RDE's card language, in a row */}
                 <style>{`
                     .tp-roadmap-scroll { scrollbar-width: none; -ms-overflow-style: none; }
                     .tp-roadmap-scroll::-webkit-scrollbar { display: none; }
@@ -99,11 +83,8 @@ const TurbopumpRoadmap = () => {
                     </div>
                 </div>
 
-                {/* selected milestone, using RDE's detail-panel treatment. The
-                    accent line is purely decorative (absolutely positioned at
-                    the left edge) so it never shifts the text block off center;
-                    this one block re-renders per selection, so every milestone
-                    automatically gets the same centered treatment. */}
+                {/* Accent line is absolutely positioned so it doesn't shift the
+                    centered text off center. */}
                 <div className="mt-6 relative">
                     <div className="absolute left-0 top-1 bottom-1 w-0.5 bg-stardust" aria-hidden="true" />
                     <div className="text-center">

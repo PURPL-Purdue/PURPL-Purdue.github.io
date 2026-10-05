@@ -1,12 +1,8 @@
 import Gallery from '../../../components/carousel/Gallery';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Project introduction: one clean editorial section, no heading. A comfortably
-// wide copy column (primary statement, secondary explanation, then the
-// current-year line on a single stardust accent) beside the team carousel.
-// Intentionally not 50/50: the copy runs wider so it reads as prose, the
-// carousel stays large enough to matter. Normal flow, so nothing overlaps the
-// hero.
+// No section heading, unlike the others. Columns are 7fr/5fr, not 50/50, so
+// the copy reads as prose and the carousel still has presence.
 const TurbopumpIntro = () => (
     <section>
         <div className="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-6 lg:gap-10 md:items-start">

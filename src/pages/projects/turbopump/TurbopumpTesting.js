@@ -2,10 +2,6 @@ import { useState } from 'react';
 import Gallery from '../../../components/carousel/Gallery';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Campaign tab: navigation for the content directly beneath it, not a
-// floating card: purple text + underline when selected, no full rectangular
-// border. Shares the content row's width so it reads as attached, not dropped
-// in above an empty gap.
 const CampaignTab = ({ campaign, active, onSelect }) => (
     <button
         type="button"
@@ -26,9 +22,6 @@ const CampaignTab = ({ campaign, active, onSelect }) => (
     </button>
 );
 
-// Testing: the campaign switcher is now a tab bar sitting directly on top of
-// the media/info row it controls, at the same width, instead of two boxes
-// floating between the heading and the content.
 const TurbopumpTesting = () => {
     const [active, setActive] = useState(d.testing.campaigns[0].key);
     const campaign = d.testing.campaigns.find((c) => c.key === active);

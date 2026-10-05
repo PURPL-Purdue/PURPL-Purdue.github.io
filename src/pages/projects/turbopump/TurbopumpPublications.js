@@ -1,10 +1,7 @@
 import Gallery from '../../../components/carousel/Gallery';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Research: the RDE "AIAA Region III Recognition" + Publications layout,
-// adapted: the AIAA SciTech recognition context (text + photos, RDE's
-// grid-cols-2 format) explains why the two papers below exist, then both
-// confirmed AIAA papers as RDE-format publication rows.
+// Mirrors RDE's AIAA Recognition + Publications layout.
 const TurbopumpPublications = () => (
     <section>
         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase md:mt-4">

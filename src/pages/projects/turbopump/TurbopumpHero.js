@@ -1,10 +1,7 @@
 import Banner from '../../../components/banner/Banner';
 import { turbopumpData as d } from '../../../json/turbopump';
 
-// Hero: the standard PURPL project-page hero, identical in structure to
-// Turbojet / RDE / Electric Propulsion: the shared atmospheric banner with the
-// large centred white project title and nothing else. The project introduction
-// starts in the first content section below.
+// Matches the RDE / Testbed / Turbojet hero exactly: title only.
 const TurbopumpHero = () => (
     <Banner>
         <div className="bg-gradient-background bg-cover bg-center h-full">

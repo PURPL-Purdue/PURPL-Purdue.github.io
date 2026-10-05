@@ -10,16 +10,8 @@ import TurbopumpSubsystems from './turbopump/TurbopumpSubsystems';
 import TurbopumpRoadmap from './turbopump/TurbopumpRoadmap';
 import TurbopumpTesting from './turbopump/TurbopumpTesting';
 
-// Turbopump project page. Same shell as RDE / Testbed: the shared banner hero,
-// then one ContentWrapper with an 800px left-aligned column, sections
-// separated by whitespace (no background bands).
-//
-// Order follows RDE's actual current pattern: intro, then the shared
-// credibility content (AIAA recognition + publications on RDE) right after
-// it, not buried beneath the deep technical material, then the project
-// overview/selector (Marlin Program), then System -> Subsystems -> Roadmap
-// -> Testing, same as RDE's HADES/DEIMOS technical content (incl. its own
-// Roadmap) comes after the selector.
+// Section order mirrors RDE: research/credibility content sits right after
+// the intro, before the deep technical sections, not at the bottom.
 const Turbopump = () => (
     <PageWrapper>
         <TurbopumpHero />

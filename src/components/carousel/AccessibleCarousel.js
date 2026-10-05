@@ -7,12 +7,9 @@ const AccessibleCarousel = ({
     ariaLabel = "Image carousel",
     interval = 5000,
     className = "",
-    // Optional fixed aspect ratio (e.g. "4 / 3"). When two carousels need to
-    // sit side by side as a matched pair (CAD vs. hardware, campaign A vs. B),
-    // auto-detecting each one's ratio from its own first photo makes the two
-    // frames different sizes. Passing this skips auto-detection so both share
-    // one frame. Omitted, behavior is unchanged (auto-detected from the first
-    // photo, falling back to 16 / 9).
+    // Optional. Skips auto-detecting the ratio from the first photo, so two
+    // carousels can share one frame size (e.g. a CAD/hardware pair). Omitted,
+    // behavior is unchanged.
     aspectRatio: aspectRatioProp,
     ...props
 }) => {

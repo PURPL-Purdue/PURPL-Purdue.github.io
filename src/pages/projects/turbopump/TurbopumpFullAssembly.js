@@ -8,10 +8,8 @@ const profileTable = d.profile.rows.reduce(
     { [d.profile.hero.label]: d.profile.hero.value },
 );
 
-// Full Assembly: a purpose-built template, not the generic subsystem layout.
-// The culmination of the explorer: intro, CAD beside manufactured hardware
-// (both large), the three-part strip, then the full specification table.
-// Thin rules separate the blocks instead of boxing each one individually.
+// Separate from SubsystemFeature because this layout (CAD, hardware, specs)
+// doesn't fit the generic subsystem template.
 const TurbopumpFullAssembly = () => (
     <div className="min-w-0">
         <h3 className="font-display-bold text-3xl md:text-5xl text-white uppercase leading-tight">

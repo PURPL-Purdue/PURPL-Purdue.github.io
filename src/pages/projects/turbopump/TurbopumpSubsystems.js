@@ -6,10 +6,8 @@ import { turbopumpData as d } from '../../../json/turbopump';
 // All 8 explorer entries: the 7 subsystems, then Full Assembly.
 const ITEMS = [...d.subsystems, d.assembly];
 
-// `centered` text-aligns the purpose paragraph, the "Requirements" label, and
-// the note; the requirements list itself stays left-aligned (readable bullets)
-// inside its own centered block, matching how a centered page section
-// normally handles a left-reading list.
+// `centered` aligns everything except the requirements list, which stays
+// left-aligned for readability.
 const SubsystemText = ({ s, centered }) => (
     <div>
         <p className={'font-display2 text-white text-md md:text-lg leading-7 ' + (centered ? 'text-center' : '')}>
@@ -37,11 +35,8 @@ const SubsystemText = ({ s, centered }) => (
     </div>
 );
 
-// A subsystem's purpose + requirements at full content width. Where a photo is
-// confirmed (only Pumps, today), it sits beside the text in a balanced
-// two-column composition. Where there's no photo (every other subsystem),
-// the whole block (title, purpose, requirements) is centered as one
-// composition instead of leaving a left-aligned block beside an empty column.
+// Photo subsystems get a two-column layout; text-only ones are centered as
+// one block instead of leaving an empty column beside left-aligned text.
 const SubsystemFeature = ({ s }) =>
     s.photo ? (
         <div className="min-w-0">
@@ -72,10 +67,6 @@ const SubsystemFeature = ({ s }) =>
         </div>
     );
 
-// Subsystems: a compact top navigation (SubsystemNavigation) instead of a
-// sidebar, then the selected content at full content width. Full Assembly
-// gets its own purpose-built template; every other entry shares the simple
-// purpose/requirements layout above.
 const TurbopumpSubsystems = () => {
     const [selected, setSelected] = useState(ITEMS[0].key);
     const item = ITEMS.find((it) => it.key === selected);

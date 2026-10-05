@@ -1,10 +1,5 @@
 import { Fragment } from 'react';
 
-// Compact subsystem navigation. Desktop: a two-row "snake" flow (row 1 left to
-// right, row 2 right to left) with thin connecting lines, so all 8 items show
-// without a sidebar eating 25-30% of the page width. Mobile: a horizontally
-// scrollable chip row; no attempt to preserve the snake shape.
-
 const NavButton = ({ item, selected, onSelect }) => (
     <button
         type="button"
@@ -41,11 +36,11 @@ const Row = ({ items, selected, onSelect }) => (
 
 const SubsystemNavigation = ({ items, selected, onSelect }) => {
     const row1 = items.slice(0, 4);
+    // Reversed so row 2 reads right to left, connecting the two rows as one path.
     const row2 = [...items.slice(4, 8)].reverse();
 
     return (
         <>
-            {/* mobile: horizontally scrollable, no snake */}
             <div className="md:hidden flex gap-2 overflow-x-auto pb-2" aria-label="Subsystem index">
                 {items.map((item) => (
                     <button
@@ -65,7 +60,6 @@ const SubsystemNavigation = ({ items, selected, onSelect }) => {
                 ))}
             </div>
 
-            {/* desktop: two-row snake */}
             <div className="hidden md:flex md:flex-col" aria-label="Subsystem index">
                 <Row items={row1} selected={selected} onSelect={onSelect} />
                 <div className="flex justify-end mr-[12.5%]" aria-hidden="true">
