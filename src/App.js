@@ -1,9 +1,13 @@
 import './App.css';
 
+import { Suspense } from 'react';
 import Header from './components/navbar/Header';
 import Footer from './components/navbar/Footer';
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from './components/layout/ScrollToTop';
+
+// Matches the dark page background so a lazy route chunk loading in doesn't flash white.
+const RouteFallback = () => <div className="min-h-screen bg-dusk" />;
 
 function App() {
 
@@ -28,7 +32,9 @@ function App() {
       <ScrollToTop />
       <Header/>
       <main id="main-content" tabIndex="-1">
-        <Outlet/>
+        <Suspense fallback={<RouteFallback />}>
+          <Outlet/>
+        </Suspense>
       </main>
       <Footer/>
     </div>

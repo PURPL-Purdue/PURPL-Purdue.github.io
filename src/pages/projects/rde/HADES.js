@@ -57,7 +57,6 @@ const HADES = () => {
                 </div>
             </div>
 
-            {/* Status / project media */}
             <div className="w-[100%] md:w-[75%] mx-auto">
                 <AccessibleCarousel
                     photos={data.dashboard_photos}
@@ -67,7 +66,6 @@ const HADES = () => {
 
             <SpecsTable table={data.specs_table} title={`${data.title} Engine Stats`} />
 
-            {/* Roadmap — HADES only */}
             <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">
                 HADES Roadmap
             </h2>

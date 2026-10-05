@@ -8,7 +8,7 @@ const SmallerProfile = (props) => {
         <div className="flex flex-col items-center h-fit">
             {/*<div className="bg-gradient-to-b from-stardust to-old-gold w-full h-full">*/}
                 <div className="m-1 bg-dusk">
-                    <img className={`w-36 lg:w-48 mx-auto`} src={imagePath} alt="Headshot" />
+                    <img className={`w-36 lg:w-48 mx-auto`} src={imagePath} alt="Headshot" loading="lazy" decoding="async" />
                 </div>
             {/*</div>*/}
             <div className="flex flex-col items-center bg-dusk w-full ">

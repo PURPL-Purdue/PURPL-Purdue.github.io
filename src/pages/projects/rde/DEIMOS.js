@@ -56,7 +56,6 @@ const DEIMOS = () => {
                 </div>
             </div>
 
-            {/* Status / project media */}
             <div className="w-[100%] md:w-[75%] mx-auto">
                 <AccessibleCarousel
                     photos={data.dashboard_photos}

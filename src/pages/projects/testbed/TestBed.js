@@ -51,7 +51,6 @@ const TestBed = () => {
 
             <ContentWrapper>
                 <div className="lg:w-[800px] mx-auto flex flex-col w-full space-y-8 md:space-y-12">
-                    {/* Shared: About the Team */}
                     <div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 items-start w-full">
                             <div className="col-span-1 flex flex-col space-y-4">
@@ -68,7 +67,6 @@ const TestBed = () => {
                             </p>
                     </div>
 
-                    {/* Shared: June 2025 testing story + carousel */}
                     <div>
                         <SectionHeading>Testing</SectionHeading>
                         <p className="font-display2 text-md md:text-lg text-white text-left mb-6">
@@ -82,7 +80,6 @@ const TestBed = () => {
                         </div>
                     </div>
 
-                    {/* Platform selector */}
                     <div className="border-l-2 border-stardust pl-4">
                         <p className="font-display2 text-white/70 text-sm uppercase">Select platform</p>
                     </div>
@@ -100,7 +97,6 @@ const TestBed = () => {
                         />
                     </div>
 
-                    {/* Selected platform content */}
                     {platform === 'maelstrom' ? <Maelstrom /> : <MEGATRN />}
                 </div>
             </ContentWrapper>

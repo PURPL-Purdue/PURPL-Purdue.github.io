@@ -48,7 +48,6 @@ const RDE = () => {
 
             <ContentWrapper>
                 <div className="lg:w-[800px] flex flex-col space-y-8 md:space-y-12">
-                    {/* Shared: About the Team */}
                     <div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
                             <h2 className="col-span-1 font-display2 text-md md:text-lg text-white text-left">
@@ -64,7 +63,6 @@ const RDE = () => {
                         </div>
                     </div>
 
-                    {/* Shared: AIAA Region III Recognition */}
                     <div>
                         <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-3 uppercase md:mt-4">
                             AIAA Region III Recognition
@@ -84,10 +82,8 @@ const RDE = () => {
                         </div>
                     </div>
 
-                    {/* Shared: Publications */}
                     <Publications />
 
-                    {/* Project Profiles selector */}
                     <div className="border-l-2 border-stardust pl-4">
                         <p className="font-display2 text-white/70 text-sm uppercase">Select project profile</p>
                     </div>
@@ -97,7 +93,6 @@ const RDE = () => {
                         <EngineSelector engine={rdeData.deimosData} activeEngine={activeEngine} setActiveEngine={setActiveEngine} />
                     </div>
 
-                    {/* Selected engine content */}
                     {activeEngine === "hades" ? <HADES /> : <DEIMOS />}
                 </div>
             </ContentWrapper>

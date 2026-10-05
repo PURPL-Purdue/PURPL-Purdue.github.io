@@ -1,5 +1,6 @@
 // Define the router wrapping around the application
 
+import { lazy, Suspense } from "react";
 import {
     createHashRouter,
     RouterProvider,
@@ -8,39 +9,44 @@ import {
 // General pages
 import App from '../../App'
 import ErrorPage from '../../pages/ErrorPage';
-
-// Admin pages
-import AdminLogin from '../../pages/admin/AdminLogin';
-import AdminDashboard from '../../pages/admin/AdminDashboard';
-import Team from '../../pages/Team';
 import Landing from '../../pages/Landing';
-import Contact from '../../pages/Contact';
-import Press from '../../pages/Press';
 
-// Facilities pages components
-import Tachyon from '../../pages/facilities/Tachyon';
-import BiggieK from '../../pages/facilities/BiggieK';
-
-// Project pages
-import ElectricPropulsion from '../../pages/projects/ElectricPropulsion';
-import Turbojet from '../../pages/projects/Turbojet';
+// Turbopump is kept as a static (non-lazy) import: its redesign is under
+// separate review and this route is intentionally left untouched.
 import Turbopump from '../../pages/projects/Turbopump';
-import TestBed from '../../pages/projects/testbed/TestBed';
-import RDE from '../../pages/projects/rde/RDE';
-import TTP from '../../pages/projects/TTP';
-import Sponsors from "../../pages/Sponsors";
-import Donate from "../../pages/Donate";
-import Pulsejet from "../../pages/projects/Pulsejet";
-import AirBreathing from "../../pages/projects/AirBreathing";
+
+// Every other route is lazy-loaded so visitors only download the page
+// they're actually viewing instead of the whole site in one bundle.
+const AdminLogin = lazy(() => import('../../pages/admin/AdminLogin'));
+const AdminDashboard = lazy(() => import('../../pages/admin/AdminDashboard'));
+const Team = lazy(() => import('../../pages/Team'));
+const Contact = lazy(() => import('../../pages/Contact'));
+const Press = lazy(() => import('../../pages/Press'));
+
+const Tachyon = lazy(() => import('../../pages/facilities/Tachyon'));
+const BiggieK = lazy(() => import('../../pages/facilities/BiggieK'));
+
+const ElectricPropulsion = lazy(() => import('../../pages/projects/ElectricPropulsion'));
+const Turbojet = lazy(() => import('../../pages/projects/Turbojet'));
+const TestBed = lazy(() => import('../../pages/projects/testbed/TestBed'));
+const RDE = lazy(() => import('../../pages/projects/rde/RDE'));
+const TTP = lazy(() => import('../../pages/projects/TTP'));
+const Sponsors = lazy(() => import('../../pages/Sponsors'));
+const Donate = lazy(() => import('../../pages/Donate'));
+const Pulsejet = lazy(() => import('../../pages/projects/Pulsejet'));
+const AirBreathing = lazy(() => import('../../pages/projects/AirBreathing'));
+
+// Matches the dark page background so a lazy chunk loading in doesn't flash white.
+const RouteFallback = () => <div className="min-h-screen bg-dusk" />;
 
 const router = createHashRouter([
   {
     path: "/admin",
-    element: <AdminLogin />,
+    element: <Suspense fallback={<RouteFallback />}><AdminLogin /></Suspense>,
   },
   {
     path: "/admin/dashboard",
-    element: <AdminDashboard />,
+    element: <Suspense fallback={<RouteFallback />}><AdminDashboard /></Suspense>,
   },
   {
     path: "/",

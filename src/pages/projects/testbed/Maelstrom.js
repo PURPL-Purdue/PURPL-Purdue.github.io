@@ -24,7 +24,6 @@ const TechSection = ({ title, body }) => (
 // Normal flow only — no absolute positioning, so nothing overlaps.
 const Maelstrom = () => (
     <div className="flex flex-col gap-8">
-        {/* Profile row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 items-start w-full">
             <div className="w-full">
                 <AccessibleCarousel photos={hardware} ariaLabel="Maelstrom hardware photos" />

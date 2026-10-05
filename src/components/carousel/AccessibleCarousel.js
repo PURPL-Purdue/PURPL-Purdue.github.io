@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { FaPause, FaPlay } from 'react-icons/fa6';
+import '../../contained-bootstrap.css';
 
 const AccessibleCarousel = ({
     photos,
