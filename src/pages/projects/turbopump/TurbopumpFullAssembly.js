@@ -12,20 +12,22 @@ const profileTable = d.profile.rows.reduce(
 // doesn't fit the generic subsystem template.
 const TurbopumpFullAssembly = () => (
     <div className="min-w-0">
-        <h3 className="font-display-bold text-3xl md:text-5xl text-white uppercase leading-tight">
-            {a.title}
-        </h3>
-        <p className="font-display2 text-white text-md md:text-lg leading-7 mt-4 max-w-[640px]">
-            {a.desc}
-        </p>
+        <div className="max-w-md mx-auto text-center">
+            <h3 className="font-display-bold text-3xl md:text-5xl text-white uppercase leading-tight">
+                {a.title}
+            </h3>
+            <p className="font-display2 text-white text-md md:text-lg leading-7 mt-4">
+                {a.desc}
+            </p>
+        </div>
 
         <div className="border-t border-white/15 mt-8 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-                <p className="font-display2 text-stardust text-sm uppercase mb-3">CAD / Design</p>
+                <p className="font-display2 text-stardust text-sm uppercase mb-3 text-center">CAD / Design</p>
                 <Gallery photos={a.cadPhotos} ariaLabel="Turbopump assembly CAD" aspectRatio="4 / 3" />
             </div>
             <div>
-                <p className="font-display2 text-stardust text-sm uppercase mb-3">Manufactured Hardware</p>
+                <p className="font-display2 text-stardust text-sm uppercase mb-3 text-center">Manufactured Hardware</p>
                 <Gallery photos={a.hardwarePhotos} ariaLabel="MARLIN V1 manufactured hardware" aspectRatio="4 / 3" />
             </div>
         </div>
