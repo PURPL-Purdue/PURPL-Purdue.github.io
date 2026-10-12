@@ -5,11 +5,8 @@
 // publications come from the later redesign brief. Unverified values were
 // left out rather than guessed.
 //
-// Open question: profile's numbers (1,500 lbf, IPA/LOx, 50,000 RPM, 1,000 psi,
-// 180 HP) don't cleanly match either V1 (kerosene/LOx) or V2 (40,000 RPM)
-// below, so it's unclear which generation profile actually describes.
-
-import { teamPhotos } from './gallery.js';
+// V1 is a 5,000 lbf conceptual engine, Kerosene/LOx. V2 is 1,400 lbf,
+// IPA/LOx — never 1,500 lbf, which was an earlier, incorrect figure.
 
 export const turbopumpData = {
     title: 'Turbopump',
@@ -23,10 +20,13 @@ export const turbopumpData = {
         currentWork:
             'This year the team is working toward testing at least one iteration of the integrated pump and turbine assembly.',
     },
+    // Full team replacement set, in the order the team specified.
     introPhotos: [
-        teamPhotos.turbopump.smiling_photo,
-        teamPhotos.turbopump.serious_photo,
-        teamPhotos.turbopump.fun_photo,
+        { src: '/images/projects/turbopump/marlin-team-fall-2025-formal.png', alt: 'MARLIN team, Fall 2025' },
+        { src: '/images/projects/turbopump/marlin-team-fall-2025-fun.png', alt: 'MARLIN team, Fall 2025' },
+        { src: '/images/projects/turbopump/marlin-team-aiaa-student-conference.png', alt: 'MARLIN team at the AIAA Student Conference' },
+        { src: '/images/projects/turbopump/marlin-team-v1-pdr.png', alt: 'MARLIN team at the V1 Preliminary Design Review' },
+        { src: '/images/projects/turbopump/marlin-team-spring-2025.png', alt: 'MARLIN team, Spring 2025' },
     ],
 
     // `photo` is a single static image (not a carousel), or null when nothing
@@ -100,9 +100,7 @@ export const turbopumpData = {
         ],
     },
 
-    // `photo` is only set where a specific, already-labeled image exists (the
-    // pump impeller CAD render); every other entry intentionally has none
-    // rather than guessing one.
+    // Photos are only set where confirmed by the team; nothing here is guessed.
     subsystems: [
         {
             n: '01',
@@ -111,19 +109,27 @@ export const turbopumpData = {
             short: 'Pumps',
             purpose: 'Raise the pressure of both propellants on the way to the engine.',
             requirements: [
-                'Deliver LOx and fuel at a 1,000 psi head rise',
+                'Deliver LOx and fuel at a required pressure rise',
                 'Mitigate LOx ignition risks',
                 'Minimize cavitation',
             ],
-            photo: {
-                src: '/images/projects/turbopump/TURBOPUMP_-_Pump_impeller_transparent.png',
-                alt: 'Turbopump pump impeller CAD',
-            },
+            // The original impeller render was dropped: the team flagged it as
+            // out of date (also removed from the repo as a confirmed duplicate).
+            photos: [
+                {
+                    src: '/images/projects/turbopump/marlin-cad-pump-housing.png',
+                    alt: 'Turbopump pump housing CAD',
+                },
+                {
+                    src: '/images/projects/turbopump/marlin-cad-pump-impeller-alt.png',
+                    alt: 'Turbopump pump impeller CAD',
+                },
+            ],
         },
         {
             n: '02',
             key: 'seal',
-            title: 'Interpropellant Seal',
+            title: 'Seals',
             short: 'Seal',
             purpose: 'Keep fuel and oxidizer completely separated across the shaft.',
             requirements: [
@@ -131,6 +137,10 @@ export const turbopumpData = {
                 'Allow enough controlled leakage to cool the bearings',
                 'Minimize secondary flow losses',
             ],
+            photo: {
+                src: '/images/projects/turbopump/marlin-cad-interpropellant-seal.png',
+                alt: 'Turbopump interpropellant seal cross-section, showing Kero/LOx dump and recycle paths',
+            },
         },
         {
             n: '03',
@@ -140,9 +150,13 @@ export const turbopumpData = {
             purpose: 'Keep the rotating assembly stable from startup through full speed.',
             requirements: [
                 'Integrate with every shaft-mounted component',
-                'Minimize instability at the 50,000 RPM operating point and through the startup transient',
+                'Minimize instability at required operating point during steady state and startup transient',
                 'Remain compatible with cryogenic and mechanical loads',
             ],
+            photo: {
+                src: '/images/projects/turbopump/marlin-cad-rotordynamics.png',
+                alt: 'Turbopump rotordynamics mode shape analysis, LOx pump, Mode 2F',
+            },
         },
         {
             n: '04',
@@ -155,6 +169,10 @@ export const turbopumpData = {
                 'Hold seal and structural integrity at elevated temperature and pressure',
                 'Maintain stable combustion',
             ],
+            photo: {
+                src: '/images/projects/turbopump/marlin-cad-valve-manifold.png',
+                alt: 'Turbopump gas generator CAD',
+            },
         },
         {
             n: '05',
@@ -164,22 +182,24 @@ export const turbopumpData = {
             purpose: 'Convert hot-gas energy into shaft power for the pumps.',
             requirements: [
                 'Deliver enough power and speed to spin the LOx and fuel pumps',
-                'Meet the current 180 HP power target',
                 'Survive steady-state operation',
             ],
+            photo: {
+                src: '/images/projects/turbopump/marlin-cad-turbine.png',
+                alt: 'Turbopump turbine wheel CAD',
+            },
         },
         {
             n: '06',
             key: 'components',
             title: 'Components',
             short: 'Components',
-            purpose: 'Build the small pneumatic hardware the system runs on.',
+            purpose: 'Design, build, test the miscellaneous hardware the system requires.',
             requirements: [
-                'Pilot solenoid valve and fittings',
-                'Qualification planning and testing',
-                'Process control',
+                'ECU (Engine Control Unit)',
+                'Throttle valve actuators',
+                'Small component test stand',
             ],
-            note: 'Goal: simple, reliable pneumatic solenoids and fittings.',
         },
         {
             n: '07',
@@ -188,7 +208,7 @@ export const turbopumpData = {
             short: 'TCA',
             purpose: 'A minimum-viable engine used to characterize the pump.',
             requirements: [
-                '1,500 lbf engine',
+                '1,400 lbf engine',
                 'Heatsink cooled',
                 'As simple and inexpensive as practical',
             ],
@@ -196,13 +216,11 @@ export const turbopumpData = {
         },
     ],
 
-    // The 8th explorer entry: the whole machine, in CAD and as manufactured
-    // hardware, plus the compact numbers.
+    // Rendered as a permanent section under MARLIN V1, not as one of the
+    // Subsystems selector states: the whole machine, in CAD and as
+    // manufactured hardware, plus the compact numbers.
     assembly: {
-        n: '08',
-        key: 'assembly',
         title: 'Full Assembly',
-        short: 'Assembly',
         desc:
             'One shaft carries both propellant pumps and the drive turbine as a single rotating assembly. This year the team is manufacturing and integrating that hardware to test at least one pump-turbine iteration.',
         strip: [
@@ -212,7 +230,7 @@ export const turbopumpData = {
         ],
         cadPhotos: [
             {
-                src: '/images/projects/turbopump/TURBOPUMP_-_Full_Shaft_assembly_screenshot_transparent.png',
+                src: '/images/projects/turbopump/marlin-cad-full-shaft-assembly.png',
                 alt: 'Turbopump full shaft assembly CAD',
             },
             {
@@ -258,18 +276,19 @@ export const turbopumpData = {
         ],
     },
 
-    // Shown inside Full Assembly, not as its own section. Generation
-    // attribution is unconfirmed, so these aren't tagged V1 or V2.
+    // Shown inside Full Assembly, under MARLIN V1. Confirmed as V1's numbers
+    // (5,000 lbf conceptual engine, Kerosene/LOx) by the team directly, not
+    // the 1,500 lbf / IPA-LOx figures this was previously (incorrectly) shown with.
     profile: {
-        hero: { label: 'Engine application', value: '1,500 lbf' },
+        hero: { label: 'Engine application', value: '5,000 lbf' },
         rows: [
-            { label: 'Propellants', value: 'IPA / LOx' },
+            { label: 'Propellants', value: 'Kerosene / LOx' },
             { label: 'Cycle', value: 'Gas generator' },
             { label: 'Shaft speed', value: '50,000 RPM' },
             { label: 'Pump head rise', value: '1,000 psi' },
             { label: 'Turbine power', value: '180 HP' },
         ],
-        note: '1,500 lbf is the engine the turbopump is built to feed, not the turbopump’s own thrust.',
+        note: '5,000 lbf is the conceptual engine the turbopump is built to feed, not the turbopump’s own thrust.',
     },
 
     // [date, title, description] tuples, oldest first. Descriptions that
@@ -292,6 +311,11 @@ export const turbopumpData = {
             'Test Readiness Review for the V1 gas generator, the subsystem that burns propellant to produce the hot gas driving the turbine.',
         ],
         [
+            'Apr 2025',
+            'AIAA Region III Student Conference',
+            'The team presents a paper at the AIAA Student Conference Region III.',
+        ],
+        [
             'May 2025',
             'V1 Gas Generator Test Campaign',
             'The V1 gas generator test campaign. Documented in Testing below.',
@@ -310,6 +334,11 @@ export const turbopumpData = {
             'Dec 2025',
             'Rotordynamics CDR',
             'Critical Design Review for rotordynamics, which keeps the rotating assembly stable from startup through the 50,000 RPM operating point.',
+        ],
+        [
+            'Jan 2026',
+            'AIAA SciTech 2026',
+            'The team presents a second paper at the 2026 AIAA SciTech conference.',
         ],
         [
             'Feb 2026',
@@ -334,12 +363,12 @@ export const turbopumpData = {
         [
             'May 2026',
             'MARLIN V1 Fully Manufactured',
-            'MARLIN V1 hardware is fully manufactured: the complete shaft, pumps, and turbine assembly. See Subsystems → Full Assembly.',
+            'MARLIN V1 hardware is fully manufactured: the complete shaft, pumps, and turbine assembly. See Marlin Program → V1 → Full Assembly.',
         ],
         [
             'Jul 2026',
             'ECU Software ConDR',
-            'Concept Design Review for the ECU software.',
+            'Concept Design Review for the ECU (Engine Control Unit) software.',
         ],
         [
             'Sep 2026',
@@ -349,7 +378,7 @@ export const turbopumpData = {
         [
             'Sep 2026',
             'ECU Hardware ConDR',
-            'Concept Design Review for the ECU hardware.',
+            'Concept Design Review for the ECU (Engine Control Unit) hardware.',
         ],
     ],
 
@@ -363,6 +392,7 @@ export const turbopumpData = {
                     'The V1 gas generator test campaign, May 2025. The team tested the hot-gas generator that drives the turbine before integrating it with the rest of the turbopump.',
                 photos: [
                     { src: '/images/projects/turbopump/marlin-v1-gas-generator-test-2025-01.png', alt: 'MARLIN V1 gas generator test, Spring 2025' },
+                    { src: '/images/projects/turbopump/marlin-test-firing-dusk.png', alt: 'MARLIN V1 gas generator test firing at dusk' },
                 ],
             },
             {
@@ -382,12 +412,18 @@ export const turbopumpData = {
     },
 
     research: {
+        // Verified directly against the AIAA listings linked below: the first
+        // paper published through the AIAA Regional Student Conferences
+        // (Region III), the second through the 2026 AIAA SciTech Forum in
+        // Orlando. None of the three photos name their specific event, so
+        // captions stay generic rather than guess which trip each is from.
         context: {
             text:
-                'The team presented its turbopump work at the 2026 AIAA SciTech conference in Orlando, Florida, earning a recognition from AIAA, and the associated research paper was published.',
+                'The team presented its turbopump work at the AIAA Student Conference Region III and the 2026 AIAA SciTech conference in Orlando, Florida. Both papers were published.',
             photos: [
-                { src: '/images/projects/turbopump/IMG_0322.jpg', alt: 'Turbopump team at AIAA SciTech 2026' },
-                { src: '/images/projects/turbopump/IMG_2917.jpg', alt: 'Turbopump team at AIAA SciTech 2026' },
+                { src: '/images/projects/turbopump/IMG_0322.jpg', alt: 'Turbopump team at an AIAA conference' },
+                { src: '/images/projects/turbopump/IMG_2917.jpg', alt: 'Turbopump team presenting at an AIAA conference' },
+                { src: '/images/projects/turbopump/marlin-research-aiaa-team.png', alt: 'Turbopump team in formal attire at an AIAA conference' },
             ],
         },
         publications: [

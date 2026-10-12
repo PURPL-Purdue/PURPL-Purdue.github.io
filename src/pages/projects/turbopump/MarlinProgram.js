@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Gallery from '../../../components/carousel/Gallery';
+import TurbopumpFullAssembly from './TurbopumpFullAssembly';
 import { turbopumpData as d } from '../../../json/turbopump';
 
 // Modeled on RDE's EngineSelector.
@@ -60,6 +61,13 @@ const MarlinProgram = () => {
             </div>
 
             <GenerationProfile gen={gen} />
+
+            {/* Full Assembly isn't its own subsystem; it's V1's hardware specifically. */}
+            {active === 'v1' && (
+                <div className="border-t border-white/15 pt-8 mt-3">
+                    <TurbopumpFullAssembly />
+                </div>
+            )}
         </section>
     );
 };

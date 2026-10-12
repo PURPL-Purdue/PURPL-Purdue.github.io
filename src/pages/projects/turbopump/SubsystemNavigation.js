@@ -41,7 +41,7 @@ const SubsystemNavigation = ({ items, selected, onSelect }) => {
 
     return (
         <>
-            <div className="md:hidden flex gap-2 overflow-x-auto pb-2" aria-label="Subsystem index">
+            <div className="md:hidden flex gap-2 overflow-x-auto pb-2" role="group" aria-label="Subsystem index">
                 {items.map((item) => (
                     <button
                         key={item.key}
@@ -60,7 +60,7 @@ const SubsystemNavigation = ({ items, selected, onSelect }) => {
                 ))}
             </div>
 
-            <div className="hidden md:flex md:flex-col" aria-label="Subsystem index">
+            <div className="hidden md:flex md:flex-col" role="group" aria-label="Subsystem index">
                 <Row items={row1} selected={selected} onSelect={onSelect} />
                 <div className="flex justify-end mr-[12.5%]" aria-hidden="true">
                     <div className="w-px h-4 bg-white/20" />

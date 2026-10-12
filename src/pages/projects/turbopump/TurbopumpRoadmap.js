@@ -16,7 +16,7 @@ const TurbopumpRoadmap = () => {
 
     const selectMilestone = (idx) => {
         setSelected(idx);
-        setSelectedYear(yearOf(ROADMAP[idx][0])); // keeps the year tab in sync
+        setSelectedYear(yearOf(ROADMAP[idx][0]));
     };
     const selectYear = (year) => {
         setSelectedYear(year);
