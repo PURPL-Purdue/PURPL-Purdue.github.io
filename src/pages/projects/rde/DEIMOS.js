@@ -1,6 +1,6 @@
 import AccessibleCarousel from '../../../components/carousel/AccessibleCarousel';
 import SpecsTable from '../../../components/projects/SpecsTable';
-import Roadmap from './Roadmap';
+import ProjectRoadmap from '../../../components/projects/ProjectRoadmap';
 import { rdeData } from '../../../json/projects';
 
 // DEIMOS-specific content for the RDE page, shown when DEIMOS is the selected
@@ -68,10 +68,11 @@ const DEIMOS = () => {
             <SpecsTable table={data.specs_table} title={`${data.title} Engine Stats`} />
 
             {/* Roadmap, DEIMOS only */}
-            <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">
-                DEIMOS Roadmap
-            </h2>
-            <Roadmap roadmap={rdeData.deimosRoadmap} />
+            <ProjectRoadmap
+                heading="DEIMOS Roadmap"
+                description="Click a milestone to preview the details for each stage of the RDE project."
+                roadmap={rdeData.deimosRoadmap}
+            />
         </>
     );
 };

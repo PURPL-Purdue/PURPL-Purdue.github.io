@@ -114,3 +114,13 @@ nav a:focus-visible {
   outline: 2px solid #9100FF;
   outline-offset: 2px;
 }
+
+/* ProjectRoadmap's horizontally-scrolling milestone strip: hide the
+   scrollbar, keep the scroll. */
+.roadmap-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.roadmap-scroll::-webkit-scrollbar {
+  display: none;
+}
