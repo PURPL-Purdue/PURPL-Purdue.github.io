@@ -16,7 +16,7 @@ const LINKS = {
     shaft: ['shaft'],
     turbine: ['shaft', 'gt'],
     gasGen: ['in', 'pe1', 'pg', 'gt', 'shaft'],
-    engine: ['pe', 'pe1', 'pe2'],
+    engine: ['in', 'pe', 'pe1', 'pe2'],
 };
 
 // Matches the RDE / Testbed selector styling.

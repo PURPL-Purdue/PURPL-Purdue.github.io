@@ -7,7 +7,7 @@ import AccessibleCarousel from './AccessibleCarousel';
 // `aspectRatio` is only needed when two Galleries must match frame sizes
 // exactly (a CAD/hardware pair); it boxes the image like the carousel would
 // instead of using its natural size.
-const Gallery = ({ photos, ariaLabel, className = '', aspectRatio }) => {
+const Gallery = ({ photos, ariaLabel, className = '', aspectRatio, captionDivider }) => {
     if (!photos || photos.length === 0) return null;
 
     if (photos.length === 1) {
@@ -40,7 +40,13 @@ const Gallery = ({ photos, ariaLabel, className = '', aspectRatio }) => {
     }
 
     return (
-        <AccessibleCarousel photos={photos} ariaLabel={ariaLabel} className={className} aspectRatio={aspectRatio} />
+        <AccessibleCarousel
+            photos={photos}
+            ariaLabel={ariaLabel}
+            className={className}
+            aspectRatio={aspectRatio}
+            captionDivider={captionDivider}
+        />
     );
 };
 

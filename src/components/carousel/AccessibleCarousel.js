@@ -11,6 +11,10 @@ const AccessibleCarousel = ({
     // carousels can share one frame size (e.g. a CAD/hardware pair). Omitted,
     // behavior is unchanged.
     aspectRatio: aspectRatioProp,
+    // Optional. Hides the divider line above the caption, for callers that
+    // want the caption to sit directly under the image instead. Omitted,
+    // behavior is unchanged.
+    captionDivider = true,
     ...props
 }) => {
     const [isPaused, setIsPaused] = useState(false);
@@ -157,7 +161,7 @@ const AccessibleCarousel = ({
             </Carousel>
 
             {photos[activeIndex] && photos[activeIndex].caption && (
-                <div className="mt-3 border-t border-white/15 pt-3">
+                <div className={'mt-3 pt-3' + (captionDivider ? ' border-t border-white/15' : '')}>
                     {/* `text-[#ffffff]`, not `text-white`: Bootstrap also defines a
                         `.text-white` utility, `!important`, scoped to this same
                         `.contained-bootstrap` wrapper. Its color variable is only

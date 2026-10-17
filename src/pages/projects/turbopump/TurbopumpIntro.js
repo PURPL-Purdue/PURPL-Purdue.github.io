@@ -24,7 +24,7 @@ const TurbopumpIntro = () => (
                 {/* Fixed 3:2 box so the carousel doesn't resize slide to slide.
                     The two 4:3 photos letterbox inside it (object-fit: contain
                     in AccessibleCarousel) rather than get cropped. */}
-                <Gallery photos={d.introPhotos} ariaLabel="Turbopump team" aspectRatio="3 / 2" />
+                <Gallery photos={d.introPhotos} ariaLabel="Turbopump team" aspectRatio="3 / 2" captionDivider={false} />
             </div>
         </div>
     </section>
