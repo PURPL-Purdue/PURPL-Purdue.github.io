@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { rdeData } from '../../../json/projects';
 
-// Interactive HADES roadmap. Click a milestone to preview its details.
-// Rendered only inside the HADES profile.
-const Roadmap = ({ roadmap = rdeData.sharedRoadmap }) => {
+// Interactive roadmap. Click a milestone to preview its details. Rendered
+// inside both the HADES and DEIMOS profiles, each with its own roadmap data.
+const Roadmap = ({ roadmap }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const selected = roadmap[selectedIndex];
 

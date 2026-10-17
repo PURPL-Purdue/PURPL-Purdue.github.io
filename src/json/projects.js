@@ -438,14 +438,14 @@ const sharedAIAAPhotos = [
     },
 ];
 
-const sharedRoadmap = [
+const hadesRoadmap = [
     [
-        "Jan 2027",
+        "Oct 2027",
         "Turbine Integration",
         "Begin turbine integration for HADES.",
     ],
     [
-        "Sep 2026",
+        "Feb 2027",
         "Hotfire Campaign",
         "Planned hotfire campaign.",
     ],
@@ -460,19 +460,62 @@ const sharedRoadmap = [
         "HADES CDR completed.",
     ],
     [
+        "Dec 2025",
+        "Preliminary Design Review",
+        "Preliminary Design Review for HADES.",
+    ],
+    [
         "Oct 2025",
         "Renamed to HADES",
         "RDC project renamed to HADES.",
     ],
     [
         "Apr 2025",
-        "Conceptual Design Review Complete",
+        "Conceptual Design Review",
         "Initial concept and direction reviewed.",
     ],
     [
         "Jan 2025",
         "Project Founded",
         "RDE project begins as LOKI.",
+    ],
+];
+
+const deimosRoadmap = [
+    [
+        "Jan 2027",
+        "Results Presented",
+        "DEIMOS Hotfire Results are Presented and Published at AIAA SciTech 2027.",
+    ],
+    [
+        "Nov 2026",
+        "Hotfire Campaign",
+        "DEIMOS hotfire campaign.",
+    ],
+    [
+        "Apr 2026",
+        "AIAA Region III",
+        "DEIMOS Presents Design and Analysis of Engine.",
+    ],
+    [
+        "Apr 2026",
+        "Critical Design Review",
+        "Critical Design Review for DEIMOS.",
+    ],
+    [
+        "Mar 2026",
+        "Preliminary Design Review",
+        "Preliminary Design Review for DEIMOS.",
+    ],
+    [
+        "Oct 2025",
+        "Conceptual Design Review",
+        "Conceptual Design Review for DEIMOS.",
+    ],
+    [
+        "Aug 2025",
+        "Project Founded",
+        "RDRE Project Begins.",
     ],
 ];
 
@@ -515,12 +558,12 @@ const hadesData = {
 
     // Current work only. What HADES *is* lives in `featured.blurb`.
     dashboard_blurb:
-        "The HADES team recently passed its Critical Design Review in March 2026 and is currently manufacturing in preparation for the hotfire campaign in Fall 2026. Turbine integration will follow the hotfire campaign.",
+        "The HADES team recently passed its Critical Design Review in March 2026 and is currently manufacturing in preparation for the hotfire campaign in Spring 2027. V2 design and turbine integration will follow the hotfire campaign.",
 
     dashboard_cards: [
         ["STATUS", "Manufacturing"],
-        ["NEXT", "Fall 2026 hotfire"],
-        ["THEN", "Turbine integration"],
+        ["NEXT", "Spring 2027 Hotfire"],
+        ["THEN", "V2 design and turbine integration"],
         ["MEDIA", "Status & project photos"],
     ],
 
@@ -583,7 +626,7 @@ const deimosData = {
     dashboard_cards: [
         ["STATUS", "Manufacturing"],
         ["NEXT", "Hotfire testing"],
-        ["ENGINE", "Methane / GOx"],
+        ["THEN", "Present Results at AIAA SciTech 2027"],
         ["MEDIA", "CAD render & poster"],
     ],
 
@@ -627,7 +670,8 @@ export const rdeData = {
     sharedAboutPhotos,
     sharedAIAA,
     publications,
-    sharedRoadmap,
+    hadesRoadmap,
+    deimosRoadmap,
     hadesData,
     deimosData,
     engines,

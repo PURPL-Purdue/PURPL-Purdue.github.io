@@ -71,7 +71,7 @@ const HADES = () => {
             <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">
                 HADES Roadmap
             </h2>
-            <Roadmap roadmap={rdeData.sharedRoadmap} />
+            <Roadmap roadmap={rdeData.hadesRoadmap} />
         </>
     );
 };
