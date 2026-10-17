@@ -1,6 +1,6 @@
 import AccessibleCarousel from '../../../components/carousel/AccessibleCarousel';
 import SpecsTable from '../../../components/projects/SpecsTable';
-import Roadmap from './Roadmap';
+import ProjectRoadmap from '../../../components/projects/ProjectRoadmap';
 import { rdeData } from '../../../json/projects';
 
 // HADES-specific content for the RDE page, shown when HADES is the selected
@@ -67,11 +67,12 @@ const HADES = () => {
 
             <SpecsTable table={data.specs_table} title={`${data.title} Engine Stats`} />
 
-            {/* Roadmap — HADES only */}
-            <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left uppercase mb-3">
-                HADES Roadmap
-            </h2>
-            <Roadmap roadmap={rdeData.sharedRoadmap} />
+            {/* Roadmap, HADES only */}
+            <ProjectRoadmap
+                heading="HADES Roadmap"
+                description="Click a milestone to preview the details for each stage of the RDE project."
+                roadmap={rdeData.hadesRoadmap}
+            />
         </>
     );
 };

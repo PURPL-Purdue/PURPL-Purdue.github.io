@@ -1,10 +1,11 @@
 import AccessibleCarousel from '../../../components/carousel/AccessibleCarousel';
 import SpecsTable from '../../../components/projects/SpecsTable';
+import ProjectRoadmap from '../../../components/projects/ProjectRoadmap';
 import { rdeData } from '../../../json/projects';
 
 // DEIMOS-specific content for the RDE page, shown when DEIMOS is the selected
-// profile. Answers: what is DEIMOS (intro) and what is the team doing now
-// (status). DEIMOS has no roadmap-equivalent content, so it ends after specs.
+// profile. Answers: what is DEIMOS (intro), what is the team doing now
+// (status), and where is DEIMOS going next (roadmap).
 const DEIMOS = () => {
     const data = rdeData.deimosData;
 
@@ -65,6 +66,13 @@ const DEIMOS = () => {
             </div>
 
             <SpecsTable table={data.specs_table} title={`${data.title} Engine Stats`} />
+
+            {/* Roadmap, DEIMOS only */}
+            <ProjectRoadmap
+                heading="DEIMOS Roadmap"
+                description="Click a milestone to preview the details for each stage of the RDE project."
+                roadmap={rdeData.deimosRoadmap}
+            />
         </>
     );
 };
