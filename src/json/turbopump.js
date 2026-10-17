@@ -14,7 +14,7 @@ export const turbopumpData = {
     // Intro stays high-level; no subsystem detail here.
     intro: {
         lead:
-            'Developing MARLIN, a gas-generator turbopump program for a 1,500 lbf IPA / LOx liquid rocket engine.',
+            'Developing MARLIN, a gas-generator turbopump program for a 1,400 lbf IPA / LOx liquid rocket engine.',
         body:
             'It replaces heavy high-pressure propellant tanks with pumps that raise propellant pressure on the way to the chamber.',
         currentWork:
@@ -74,7 +74,7 @@ export const turbopumpData = {
             key: 'v2',
             title: 'Marlin V2',
             selectorSubtitle: 'IPA / LOx',
-            selectorPurpose: "PURPL's first open cycle development effort.",
+            selectorPurpose: "PURPL's first open-cycle development effort.",
             desc:
                 "MARLIN V2 is a second-generation turbopump and PURPL's first open-cycle development effort, incorporating thrust chamber assembly (TCA) development around a 1,400 lbf heatsink main combustion chamber.",
             stats: [
@@ -302,7 +302,7 @@ export const turbopumpData = {
             { label: 'Pump head rise', value: '1,000 psi' },
             { label: 'Turbine power', value: '180 HP' },
         ],
-        note: '5,000 lbf is the conceptual engine the turbopump is built to feed, not the turbopump’s own thrust.',
+        note: "5,000 lbf is the conceptual engine the turbopump is built to feed, not the turbopump's own thrust.",
     },
 
     // [date, title, description] tuples, oldest first. Descriptions that
@@ -327,7 +327,7 @@ export const turbopumpData = {
         [
             'Apr 2025',
             'AIAA Region III Student Conference',
-            'The team presents a paper at the AIAA Student Conference Region III.',
+            'The team presents a paper at the AIAA Region III Student Conference.',
         ],
         [
             'May 2025',
@@ -443,7 +443,7 @@ export const turbopumpData = {
         // captions stay generic rather than guess which trip each is from.
         context: {
             text:
-                'The team presented its turbopump work at the AIAA Student Conference Region III and the 2026 AIAA SciTech conference in Orlando, Florida. Both papers were published.',
+                'The team presented its turbopump work at the AIAA Region III Student Conference and the 2026 AIAA SciTech conference in Orlando, Florida. Both papers were published.',
             photos: [
                 { src: '/images/projects/turbopump/IMG_0322.jpg', alt: 'Turbopump team at an AIAA conference' },
                 { src: '/images/projects/turbopump/IMG_2917.jpg', alt: 'Turbopump team presenting at an AIAA conference' },
