@@ -158,7 +158,15 @@ const AccessibleCarousel = ({
 
             {photos[activeIndex] && photos[activeIndex].caption && (
                 <div className="mt-3 border-t border-white/15 pt-3">
-                    <p className="font-display-bold text-white text-sm uppercase tracking-wide">
+                    {/* `text-[#ffffff]`, not `text-white`: Bootstrap also defines a
+                        `.text-white` utility, `!important`, scoped to this same
+                        `.contained-bootstrap` wrapper. Its color variable is only
+                        defined on the Carousel element itself (data-bs-theme=light)
+                        and its descendants, not on this sibling caption, so it was
+                        winning the cascade and resolving to an unrelated Bootstrap
+                        fallback color instead of white. The arbitrary-value class
+                        can't collide with any Bootstrap utility name. */}
+                    <p className="font-display-bold text-[#ffffff] text-sm uppercase tracking-wide">
                         {photos[activeIndex].caption.title}
                     </p>
                     {photos[activeIndex].caption.subtitle && (
