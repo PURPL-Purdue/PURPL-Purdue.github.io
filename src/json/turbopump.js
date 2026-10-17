@@ -22,11 +22,31 @@ export const turbopumpData = {
     },
     // Full team replacement set, in the order the team specified.
     introPhotos: [
-        { src: '/images/projects/turbopump/marlin-team-fall-2025-formal.png', alt: 'MARLIN team, Fall 2025' },
-        { src: '/images/projects/turbopump/marlin-team-fall-2025-fun.png', alt: 'MARLIN team, Fall 2025' },
-        { src: '/images/projects/turbopump/marlin-team-aiaa-student-conference.png', alt: 'MARLIN team at the AIAA Student Conference' },
-        { src: '/images/projects/turbopump/marlin-team-v1-pdr.png', alt: 'MARLIN team at the V1 Preliminary Design Review' },
-        { src: '/images/projects/turbopump/marlin-team-spring-2025.png', alt: 'MARLIN team, Spring 2025' },
+        {
+            src: '/images/projects/turbopump/marlin-team-fall-2025-formal.png',
+            alt: 'MARLIN team, Fall 2025',
+            caption: { title: 'Fall 2025 Team' },
+        },
+        {
+            src: '/images/projects/turbopump/marlin-team-fall-2025-fun.png',
+            alt: 'MARLIN team, Fall 2025',
+            caption: { title: 'Fall 2025 Team' },
+        },
+        {
+            src: '/images/projects/turbopump/marlin-team-aiaa-student-conference.png',
+            alt: 'MARLIN team at the AIAA Student Conference',
+            caption: { title: 'AIAA Region III Student Conference' },
+        },
+        {
+            src: '/images/projects/turbopump/marlin-team-v1-pdr.png',
+            alt: 'MARLIN team at the V1 Preliminary Design Review',
+            caption: { title: 'MARLIN V1 Preliminary Design Review' },
+        },
+        {
+            src: '/images/projects/turbopump/marlin-team-spring-2025.png',
+            alt: 'MARLIN team, Spring 2025',
+            caption: { title: 'Spring 2025 Team' },
+        },
     ],
 
     // `photo` is a single static image (not a carousel), or null when nothing
@@ -54,9 +74,9 @@ export const turbopumpData = {
             key: 'v2',
             title: 'Marlin V2',
             selectorSubtitle: 'IPA / LOx',
-            selectorPurpose: "PURPL's first TCA development effort.",
+            selectorPurpose: "PURPL's first open cycle development effort.",
             desc:
-                "MARLIN V2 is the second-generation turbopump and PURPL's first thrust chamber assembly (TCA) development effort, designed around a 1,400 lbf heatsink main combustion chamber.",
+                "MARLIN V2 is a second-generation turbopump and PURPL's first open-cycle development effort, incorporating thrust chamber assembly (TCA) development around a 1,400 lbf heatsink main combustion chamber.",
             stats: [
                 ['Propellants', 'IPA / LOx'],
                 ['Design speed', '40,000 RPM'],
@@ -137,10 +157,9 @@ export const turbopumpData = {
                 'Allow enough controlled leakage to cool the bearings',
                 'Minimize secondary flow losses',
             ],
-            photo: {
-                src: '/images/projects/turbopump/marlin-cad-interpropellant-seal.png',
-                alt: 'Turbopump interpropellant seal cross-section, showing Kero/LOx dump and recycle paths',
-            },
+            // Interpropellant seal cross-section pulled pending engineering
+            // review (labeled internal flow paths). Falls back to the same
+            // text-only layout Components and TCA already use below.
         },
         {
             n: '03',
@@ -228,6 +247,9 @@ export const turbopumpData = {
             { n: '02', label: 'Propellant pumps', value: 'Two: LOx and IPA' },
             { n: '03', label: 'Drive turbine', value: 'Gas-generator driven' },
         ],
+        // The two internal cross-section renders (assembly-section-2025-12-21,
+        // assembly-section-2026-02-01) are pulled pending engineering review;
+        // these two exterior-only views stay.
         cadPhotos: [
             {
                 src: '/images/projects/turbopump/marlin-cad-full-shaft-assembly.png',
@@ -236,14 +258,6 @@ export const turbopumpData = {
             {
                 src: '/images/projects/turbopump/marlin-cad-assembly-overview-2025-12-21.png',
                 alt: 'MARLIN turbopump assembly CAD overview',
-            },
-            {
-                src: '/images/projects/turbopump/marlin-cad-assembly-section-2025-12-21.png',
-                alt: 'MARLIN turbopump assembly CAD section view',
-            },
-            {
-                src: '/images/projects/turbopump/marlin-cad-assembly-section-2026-02-01.png',
-                alt: 'MARLIN turbopump assembly CAD section view',
             },
         ],
         // marlin-v1-hardware-assembly.jpg is deliberately not repeated here:
@@ -373,12 +387,22 @@ export const turbopumpData = {
         [
             'Sep 2026',
             'MARLIN V2 DCR',
-            "Design review for MARLIN V2, the second-generation turbopump and PURPL's first thrust chamber assembly development effort, designed around a 1,400 lbf heatsink combustion chamber.",
+            "Design review for MARLIN V2, the second-generation turbopump and PURPL's first open-cycle development effort, designed around a 1,400 lbf heatsink combustion chamber.",
         ],
         [
             'Sep 2026',
             'ECU Hardware ConDR',
             'Concept Design Review for the ECU (Engine Control Unit) hardware.',
+        ],
+        [
+            'Oct 2026',
+            'TCA Critical Design Review',
+            'Critical Design Review for the Thrust Chamber Assembly, the minimum-viable engine used to characterize the turbopump.',
+        ],
+        [
+            'Oct 2026',
+            'Gas Generator Preliminary Design Review',
+            'Preliminary Design Review for the gas generator, the subsystem that burns propellant to produce the hot gas driving the turbine.',
         ],
     ],
 

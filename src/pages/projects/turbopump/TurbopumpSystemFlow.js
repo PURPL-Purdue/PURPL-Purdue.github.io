@@ -7,12 +7,16 @@ import { turbopumpData as d } from '../../../json/turbopump';
 const NODES = d.system.nodes;
 const roleOf = (id) => (NODES.find((n) => n.id === id) || {}).role;
 
+// The Pumps->Engine line is two segments on desktop (`pe1` up to the branch
+// junction, `pe2` from there to Engine) so Gas Generator's path can light
+// only as far as the junction, leaving the Engine half dim. Mobile has no
+// branch and shows one plain bar, keyed by the combined `pe`.
 const LINKS = {
-    pumps: ['in', 'pe', 'pg', 'shaft'],
+    pumps: ['in', 'pe', 'pe1', 'pe2', 'pg', 'shaft'],
     shaft: ['shaft'],
     turbine: ['shaft', 'gt'],
-    gasGen: ['gt', 'pg'],
-    engine: ['pe'],
+    gasGen: ['in', 'pe1', 'pg', 'gt', 'shaft'],
+    engine: ['pe', 'pe1', 'pe2'],
 };
 
 // Matches the RDE / Testbed selector styling.
@@ -215,13 +219,32 @@ const TurbopumpSystemFlow = () => {
                     </div>
                     {/* Positioned from Pumps' own right edge (see useSystemConnectors),
                         not the col4 grid boundary — col3 is sized to fit TURBINE, so
-                        the boundary sits to the right of Pumps' actual edge. */}
+                        the boundary sits to the right of Pumps' actual edge. Split in
+                        two at the branch junction (dims.branch.x1) so Gas Generator's
+                        path can highlight pe1 only, leaving pe2 (into Engine) dim;
+                        same x1 the branch's own vertical segment starts from, so the
+                        two meet with no gap. */}
                     {dims && (
-                        <div
-                            className={'absolute h-px ' + bar(lit('pe'))}
-                            style={{ left: dims.pe.left, top: dims.pe.top, width: dims.pe.width }}
-                            aria-hidden="true"
-                        />
+                        <>
+                            <div
+                                className={'absolute h-px ' + bar(lit('pe1'))}
+                                style={{
+                                    left: dims.pe.left,
+                                    top: dims.pe.top,
+                                    width: dims.branch.x1 - dims.pe.left,
+                                }}
+                                aria-hidden="true"
+                            />
+                            <div
+                                className={'absolute h-px ' + bar(lit('pe2'))}
+                                style={{
+                                    left: dims.branch.x1,
+                                    top: dims.pe.top,
+                                    width: dims.pe.left + dims.pe.width - dims.branch.x1,
+                                }}
+                                aria-hidden="true"
+                            />
+                        </>
                     )}
                     <div ref={engineRef} className="col-start-5 row-start-1 justify-self-center">
                         <Node id="engine" active={active} onSelect={setActive} />
