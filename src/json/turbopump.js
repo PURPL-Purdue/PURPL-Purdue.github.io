@@ -404,6 +404,16 @@ export const turbopumpData = {
             'Gas Generator Preliminary Design Review',
             'Preliminary Design Review for the gas generator, the subsystem that burns propellant to produce the hot gas driving the turbine.',
         ],
+        [
+            'Oct 2026',
+            'ECU PDR',
+            'Preliminary Design Review for the ECU (Engine Control Unit).',
+        ],
+        [
+            'Oct 2026',
+            'Component Test Stand PDR',
+            'Preliminary Design Review for the component test stand.',
+        ],
     ],
 
     testing: {
