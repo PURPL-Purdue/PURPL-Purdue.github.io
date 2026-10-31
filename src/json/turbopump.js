@@ -23,27 +23,27 @@ export const turbopumpData = {
     // Full team replacement set, in the order the team specified.
     introPhotos: [
         {
-            src: '/images/projects/turbopump/marlin-team-fall-2025-formal.png',
+            src: '/images/projects/turbopump/marlin-team-fall-2025-formal.webp',
             alt: 'MARLIN team, Fall 2025',
             caption: { title: 'Fall 2025 Team' },
         },
         {
-            src: '/images/projects/turbopump/marlin-team-fall-2025-fun.png',
+            src: '/images/projects/turbopump/marlin-team-fall-2025-fun.webp',
             alt: 'MARLIN team, Fall 2025',
             caption: { title: 'Fall 2025 Team' },
         },
         {
-            src: '/images/projects/turbopump/marlin-team-aiaa-student-conference.png',
+            src: '/images/projects/turbopump/marlin-team-aiaa-student-conference.webp',
             alt: 'MARLIN team at the AIAA Student Conference',
             caption: { title: 'AIAA Region III Student Conference' },
         },
         {
-            src: '/images/projects/turbopump/marlin-team-v1-pdr.png',
+            src: '/images/projects/turbopump/marlin-team-v1-pdr.webp',
             alt: 'MARLIN team at the V1 Preliminary Design Review',
             caption: { title: 'MARLIN V1 Preliminary Design Review' },
         },
         {
-            src: '/images/projects/turbopump/marlin-team-spring-2025.png',
+            src: '/images/projects/turbopump/marlin-team-spring-2025.webp',
             alt: 'MARLIN team, Spring 2025',
             caption: { title: 'Spring 2025 Team' },
         },
@@ -66,7 +66,7 @@ export const turbopumpData = {
                 ['Generation', 'V1'],
             ],
             photo: {
-                src: '/images/projects/turbopump/marlin-v1-hardware-assembly.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-assembly.webp',
                 alt: 'MARLIN V1 turbopump hardware assembly',
             },
         },
@@ -260,31 +260,31 @@ export const turbopumpData = {
                 alt: 'MARLIN turbopump assembly CAD overview',
             },
         ],
-        // marlin-v1-hardware-assembly.jpg is deliberately not repeated here:
+        // marlin-v1-hardware-assembly.webp is deliberately not repeated here:
         // it's already the Marlin Program V1 photo above.
         hardwarePhotos: [
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-components.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-components.webp',
                 alt: 'MARLIN V1 turbopump hardware components',
             },
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-detail.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-detail.webp',
                 alt: 'MARLIN V1 turbopump rotor detail',
             },
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-housing-detail.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-housing-detail.webp',
                 alt: 'MARLIN V1 turbopump housing detail',
             },
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-full-layout.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-full-layout.webp',
                 alt: 'MARLIN V1 turbopump hardware, full parts layout',
             },
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-handheld-01.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-handheld-01.webp',
                 alt: 'MARLIN V1 turbopump rotor, handheld',
             },
             {
-                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-handheld-02.jpg',
+                src: '/images/projects/turbopump/marlin-v1-hardware-rotor-handheld-02.webp',
                 alt: 'MARLIN V1 turbopump rotor, handheld',
             },
         ],
@@ -425,8 +425,8 @@ export const turbopumpData = {
                 blurb:
                     'The V1 gas generator test campaign, May 2025. The team tested the hot-gas generator that drives the turbine before integrating it with the rest of the turbopump.',
                 photos: [
-                    { src: '/images/projects/turbopump/marlin-v1-gas-generator-test-2025-01.png', alt: 'MARLIN V1 gas generator test, Spring 2025' },
-                    { src: '/images/projects/turbopump/marlin-test-firing-dusk.png', alt: 'MARLIN V1 gas generator test firing at dusk' },
+                    { src: '/images/projects/turbopump/marlin-v1-gas-generator-test-2025-01.webp', alt: 'MARLIN V1 gas generator test, Spring 2025' },
+                    { src: '/images/projects/turbopump/marlin-test-firing-dusk.webp', alt: 'MARLIN V1 gas generator test firing at dusk' },
                 ],
             },
             {
@@ -457,7 +457,7 @@ export const turbopumpData = {
             photos: [
                 { src: '/images/projects/turbopump/IMG_0322.webp', alt: 'Turbopump team at an AIAA conference' },
                 { src: '/images/projects/turbopump/IMG_2917.webp', alt: 'Turbopump team presenting at an AIAA conference' },
-                { src: '/images/projects/turbopump/marlin-research-aiaa-team.png', alt: 'Turbopump team in formal attire at an AIAA conference' },
+                { src: '/images/projects/turbopump/marlin-research-aiaa-team.webp', alt: 'Turbopump team in formal attire at an AIAA conference' },
             ],
         },
         publications: [
