@@ -32,11 +32,6 @@ export const teamPhotos = {
         serious_photo: { src: "/images/team/group_photos/2025_fall/IMG_8411_cropped.webp", alt: "Turbojet team" },
         fun_photo: { src: "/images/team/group_photos/2025_fall/IMG_8416_cropped.webp", alt: "Turbojet team having fun" },
     },
-    turbopump: {
-        smiling_photo: { src: "/images/team/group_photos/2025_fall/IMG_8394_cropped.webp", alt: "Turbopump team smiling" },
-        serious_photo: { src: "/images/team/group_photos/2025_fall/IMG_8396.webp", alt: "Turbopump team" },
-        fun_photo: { src: "/images/team/group_photos/2025_fall/IMG_8403_cropped.webp", alt: "Turbopump team having fun" },
-    },
     biggiek: {
         smiling_photo: { src: "/images/team/group_photos/2025_fall/IMG_8384_cropped.webp", alt: "Biggie-K team smiling" },
         serious_photo: { src: "/images/team/group_photos/2025_fall/IMG_8386_cropped.webp", alt: "Biggie-K team" },

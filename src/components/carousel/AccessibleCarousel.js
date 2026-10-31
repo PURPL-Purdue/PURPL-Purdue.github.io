@@ -7,12 +7,21 @@ const AccessibleCarousel = ({
     ariaLabel = "Image carousel",
     interval = 5000,
     className = "",
+    // Optional. Skips auto-detecting the ratio from the first photo, so two
+    // carousels can share one frame size (e.g. a CAD/hardware pair). Omitted,
+    // behavior is unchanged.
+    aspectRatio: aspectRatioProp,
+    // Optional. Hides the divider line above the caption, for callers that
+    // want the caption to sit directly under the image instead. Omitted,
+    // behavior is unchanged.
+    captionDivider = true,
     ...props
 }) => {
     const [isPaused, setIsPaused] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-    const [aspectRatio, setAspectRatio] = useState(null);
+    const [detectedAspectRatio, setDetectedAspectRatio] = useState(null);
+    const aspectRatio = aspectRatioProp || detectedAspectRatio;
 
     const carouselRef = useRef(null);
     const liveRegionRef = useRef(null);
@@ -22,15 +31,16 @@ const AccessibleCarousel = ({
     }, [photos]);
 
     useEffect(() => {
+        if (aspectRatioProp) return;
         if (!photos || photos.length === 0) return;
 
         const firstImage = new Image();
         firstImage.src = photos[0].src;
 
         firstImage.onload = () => {
-            setAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
+            setDetectedAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
         };
-    }, [photos]);
+    }, [photos, aspectRatioProp]);
 
     useEffect(() => {
         // Warm the browser cache for the next slide only, so advancing (via
@@ -162,8 +172,16 @@ const AccessibleCarousel = ({
             </Carousel>
 
             {photos[activeIndex] && photos[activeIndex].caption && (
-                <div className="mt-3 border-t border-white/15 pt-3">
-                    <p className="font-display-bold text-white text-sm uppercase tracking-wide">
+                <div className={'mt-3 pt-3' + (captionDivider ? ' border-t border-white/15' : '')}>
+                    {/* `text-[#ffffff]`, not `text-white`: Bootstrap also defines a
+                        `.text-white` utility, `!important`, scoped to this same
+                        `.contained-bootstrap` wrapper. Its color variable is only
+                        defined on the Carousel element itself (data-bs-theme=light)
+                        and its descendants, not on this sibling caption, so it was
+                        winning the cascade and resolving to an unrelated Bootstrap
+                        fallback color instead of white. The arbitrary-value class
+                        can't collide with any Bootstrap utility name. */}
+                    <p className="font-display-bold text-[#ffffff] text-sm uppercase tracking-wide">
                         {photos[activeIndex].caption.title}
                     </p>
                     {photos[activeIndex].caption.subtitle && (
