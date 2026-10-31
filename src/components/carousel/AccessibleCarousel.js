@@ -2,6 +2,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { FaPause, FaPlay } from 'react-icons/fa6';
 
+// Module-level cache, not component state: these are static site images, so
+// once a src's natural aspect ratio is known it's known for the rest of the
+// page session. Without this, every remount (e.g. switching between HADES
+// and DEIMOS, which are different component types and so fully unmount /
+// remount their carousels) re-detects from scratch, which means the frame
+// briefly renders at the generic 16:9 fallback before snapping to the real
+// ratio — a visible resize on every single switch. Exported so callers can
+// pre-warm it (see RDE.js) and so a switch is flash-free even the first time.
+export const aspectRatioCache = new Map();
+export const warmAspectRatio = (src) => {
+    if (!src || aspectRatioCache.has(src)) return;
+    const probe = new Image();
+    probe.src = src;
+    probe.onload = () => {
+        aspectRatioCache.set(src, `${probe.naturalWidth} / ${probe.naturalHeight}`);
+    };
+};
+
 const AccessibleCarousel = ({
     photos,
     ariaLabel = "Image carousel",
@@ -20,7 +38,13 @@ const AccessibleCarousel = ({
     const [isPaused, setIsPaused] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-    const [detectedAspectRatio, setDetectedAspectRatio] = useState(null);
+    // Lazy initializer: if this src's ratio is already cached (seen before
+    // this session, or pre-warmed by a caller), start with it immediately
+    // instead of `null` — the frame is correctly sized on its very first
+    // render, with no fallback-then-snap flash.
+    const [detectedAspectRatio, setDetectedAspectRatio] = useState(
+        () => (photos && photos[0] && aspectRatioCache.get(photos[0].src)) || null
+    );
     const aspectRatio = aspectRatioProp || detectedAspectRatio;
 
     const carouselRef = useRef(null);
@@ -34,11 +58,27 @@ const AccessibleCarousel = ({
         if (aspectRatioProp) return;
         if (!photos || photos.length === 0) return;
 
+        const cached = aspectRatioCache.get(photos[0].src);
+        if (cached) {
+            setDetectedAspectRatio(cached);
+            return;
+        }
+
+        // Guards against setting state after this instance has unmounted —
+        // matters when an engine/page is switched away from before its
+        // first image finishes loading (e.g. rapid HADES/DEIMOS switching).
+        let cancelled = false;
         const firstImage = new Image();
         firstImage.src = photos[0].src;
 
         firstImage.onload = () => {
-            setDetectedAspectRatio(`${firstImage.naturalWidth} / ${firstImage.naturalHeight}`);
+            const ratio = `${firstImage.naturalWidth} / ${firstImage.naturalHeight}`;
+            aspectRatioCache.set(photos[0].src, ratio);
+            if (!cancelled) setDetectedAspectRatio(ratio);
+        };
+
+        return () => {
+            cancelled = true;
         };
     }, [photos, aspectRatioProp]);
 

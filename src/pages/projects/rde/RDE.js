@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ContentWrapper from '../../../components/layout/ContentWrapper';
 import PageWrapper from '../../../components/layout/PageWrapper';
 import Banner from '../../../components/banner/Banner';
-import AccessibleCarousel from '../../../components/carousel/AccessibleCarousel';
+import AccessibleCarousel, { warmAspectRatio } from '../../../components/carousel/AccessibleCarousel';
 import HADES from './HADES';
 import DEIMOS from './DEIMOS';
 import Publications from './Publications';
@@ -32,6 +32,17 @@ const EngineSelector = ({ engine, activeEngine, setActiveEngine }) => {
 // content; everything below is specific to the selected engine.
 const RDE = () => {
     const [activeEngine, setActiveEngine] = useState("hades");
+
+    // Warm the *other* engine's first featured photo (only the first — not
+    // every slide) so that switching, even on the first click, never shows
+    // the generic fallback frame shape before snapping to the real one. See
+    // AccessibleCarousel's aspectRatioCache for why this eliminates the
+    // switch glitch.
+    useEffect(() => {
+        const inactive = activeEngine === "hades" ? rdeData.deimosData : rdeData.hadesData;
+        const firstPhoto = inactive.featured.photos[0];
+        if (firstPhoto) warmAspectRatio(firstPhoto.src);
+    }, [activeEngine]);
 
     return (
         <PageWrapper>
