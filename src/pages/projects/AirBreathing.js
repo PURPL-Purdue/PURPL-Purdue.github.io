@@ -30,7 +30,7 @@ const AirBreathing = () => {
                     <div className="grid grid-cols-2 gap-4 lg:gap-6">
                         <div>
                             <img
-                                className="w-full object-cover"
+                                className="w-full object-cover" loading="lazy" decoding="async"
                                 src={airbreathingData.section_1.design_photos.ts_design.src}
                                 alt={airbreathingData.section_1.design_photos.ts_design.alt}
                             />
@@ -41,7 +41,7 @@ const AirBreathing = () => {
                         <div className="flex flex-col gap-4 lg:gap-6">
                             <div>
                                 <img
-                                    className="w-full object-cover"
+                                    className="w-full object-cover" loading="lazy" decoding="async"
                                     src={airbreathingData.section_1.design_photos.fs_design.src}
                                     alt={airbreathingData.section_1.design_photos.fs_design.alt}
                                 />
@@ -51,7 +51,7 @@ const AirBreathing = () => {
                             </div>
                             <div>
                                 <img
-                                    className="w-full object-cover"
+                                    className="w-full object-cover" loading="lazy" decoding="async"
                                     src={airbreathingData.section_1.design_photos.pnid_fluid_panel.src}
                                     alt={airbreathingData.section_1.design_photos.pnid_fluid_panel.alt}
                                 />

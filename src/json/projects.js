@@ -74,11 +74,11 @@ export const turbopumpData = {
             "entities and academia.",
         photos: [
             {
-                src: "/images/projects/turbopump/IMG_0322.jpg",
+                src: "/images/projects/turbopump/IMG_0322.webp",
                 alt: "Turbopump team at AIAA SciTech 2026",
             },
             {
-                src: "/images/projects/turbopump/IMG_2917.jpg",
+                src: "/images/projects/turbopump/IMG_2917.webp",
                 alt: "Turbopump team at AIAA SciTech 2026",
             },
         ]
@@ -90,7 +90,7 @@ export const epropData = {
     subtitle: "Hall thruster commonly used on in-space propulsion systems for satellites.",
     featured: {
         photo: {
-            src: "/images/projects/eprop/2025-05-SelectedMedia/eprop_07.png",
+            src: "/images/projects/eprop/2025-05-SelectedMedia/eprop_07.webp",
             alt: "Electric propulsion physical object",
         },
         blurb: "The Electric Propulsion team combines the minimum-viable project approach with rapid prototyping to bring" +
@@ -153,7 +153,7 @@ export const turbojetData = {
                 alt: "Full Engine Cross Section",
             },
             {
-                src: "/images/projects/turbojet/Machining_Inprogress.jpg",
+                src: "/images/projects/turbojet/Machining_Inprogress.webp",
                 alt: "In progress turbine manufacturing",
             },
             {
@@ -170,11 +170,11 @@ export const turbojetData = {
             "entities and academia.",
         photos: [
             {
-                src: "/images/projects/turbojet/IMG_0322.jpg",
+                src: "/images/projects/turbojet/IMG_0322.webp",
                 alt: "Turbojet team at AIAA SciTech 2026",
             },
             {
-                src: "/images/projects/turbojet/IMG_2980.jpg",
+                src: "/images/projects/turbojet/IMG_2980.webp",
                 alt: "Turbojet team at AIAA SciTech 2026",
             },
         ]
@@ -377,63 +377,63 @@ export const testbedData = {
     // the test-campaign photos live only in their own carousels, so no image
     // repeats anywhere on the page.
     gallery: [
-        { src: "/images/projects/testbed/20250428/DSC9960.JPG", alt: "Heatsink Maelstrom engine with laser-engraved nameplate in front of the fluid panel" },
-        { src: "/images/projects/testbed/20250428/DSC0025.JPG", alt: "Maelstrom injector face, straight-on" },
-        { src: "/images/projects/testbed/20250428/DSC0031.JPG", alt: "Maelstrom injector face, three-quarter view" },
-        { src: "/images/projects/testbed/maelstrom-detail/_DSC6170.jpg", alt: "Maelstrom coaxial swirl injector element, close detail" },
-        { src: "/images/projects/testbed/maelstrom-detail/_DSC6143.jpg", alt: "Regeneratively cooled Maelstrom chamber and injector assembly, three-quarter view" },
-        { src: "/images/projects/testbed/maelstrom-detail/_DSC6177.jpg", alt: "Maelstrom engine assembly with injector installed and secured with tie bolts" },
-        { src: "/images/projects/testbed/20250428/DSC9975.JPG", alt: "\"MAELSTROM\" laser engraving on the chamber barrel" },
-        { src: "/images/projects/testbed/20250428/DSC9965.JPG", alt: "Maelstrom aft end, looking into the nozzle contour" },
-        { src: "/images/projects/testbed/20250428/DSC9977.JPG", alt: "Maelstrom nozzle exit and aft flange, close view" },
-        { src: "/images/projects/testbed/20250428/DSC9978.JPG", alt: "Torch igniter fittings on the Maelstrom injector bulkhead" },
-        { src: "/images/projects/testbed/20250428/DSC9983.JPG", alt: "3D-printed igniter manifold with embossed PURPL logo mounted on Maelstrom" },
+        { src: "/images/projects/testbed/20250428/DSC9960.webp", alt: "Heatsink Maelstrom engine with laser-engraved nameplate in front of the fluid panel" },
+        { src: "/images/projects/testbed/20250428/DSC0025.webp", alt: "Maelstrom injector face, straight-on" },
+        { src: "/images/projects/testbed/20250428/DSC0031.webp", alt: "Maelstrom injector face, three-quarter view" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6170.webp", alt: "Maelstrom coaxial swirl injector element, close detail" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6143.webp", alt: "Regeneratively cooled Maelstrom chamber and injector assembly, three-quarter view" },
+        { src: "/images/projects/testbed/maelstrom-detail/_DSC6177.webp", alt: "Maelstrom engine assembly with injector installed and secured with tie bolts" },
+        { src: "/images/projects/testbed/20250428/DSC9975.webp", alt: "\"MAELSTROM\" laser engraving on the chamber barrel" },
+        { src: "/images/projects/testbed/20250428/DSC9965.webp", alt: "Maelstrom aft end, looking into the nozzle contour" },
+        { src: "/images/projects/testbed/20250428/DSC9977.webp", alt: "Maelstrom nozzle exit and aft flange, close view" },
+        { src: "/images/projects/testbed/20250428/DSC9978.webp", alt: "Torch igniter fittings on the Maelstrom injector bulkhead" },
+        { src: "/images/projects/testbed/20250428/DSC9983.webp", alt: "3D-printed igniter manifold with embossed PURPL logo mounted on Maelstrom" },
     ],
 }
 
 
 const sharedAboutPhotos = [
     {
-        src: "/images/team/group_photos/2025_fall/IMG_8459_cropped.jpg",
+        src: "/images/team/group_photos/2025_fall/IMG_8459_cropped.webp",
         alt: "PURPL fall 2025 team photo",
     },
     {
-        src: "/images/projects/rde/2025-media/DazzleShotImages_011.jpg",
+        src: "/images/projects/rde/2025-media/DazzleShotImages_011.webp",
         alt: "RDE team project meeting",
     },
     {
-        src: "/images/team/group_photos/2025_fall/IMG_8462_cropped.jpg",
+        src: "/images/team/group_photos/2025_fall/IMG_8462_cropped.webp",
         alt: "PURPL fall 2025 team group photo",
     },
     {
-        src: "/images/projects/rde/2025-media/IMG_7460.jpg",
+        src: "/images/projects/rde/2025-media/IMG_7460.webp",
         alt: "RDE student presenting hardware",
     },
     {
-        src: "/images/projects/rde/2025-media/DazzleShotImages_006.jpg",
+        src: "/images/projects/rde/2025-media/DazzleShotImages_006.webp",
         alt: "RDE team working during a project meeting",
     },
 ];
 
 const sharedAIAAPhotos = [
     {
-        src: "/images/projects/rde/2026-aiaa/IMG_0321.jpg",
+        src: "/images/projects/rde/2026-aiaa/IMG_0321.webp",
         alt: "PURPL presenting RDE research at AIAA Region III",
     },
     {
-        src: "/images/projects/rde/2026-aiaa/IMG_0521.jpg",
+        src: "/images/projects/rde/2026-aiaa/IMG_0521.webp",
         alt: "PURPL RDE presentation at AIAA Region III",
     },
     {
-        src: "/images/projects/rde/2026-aiaa/IMG_0485.jpg",
+        src: "/images/projects/rde/2026-aiaa/IMG_0485.webp",
         alt: "PURPL poster discussion at AIAA Region III",
     },
     {
-        src: "/images/projects/rde/2026-aiaa/8DFCB7A6-FEF2-422E-AE39-C8209BDE6634.jpg",
+        src: "/images/projects/rde/2026-aiaa/8DFCB7A6-FEF2-422E-AE39-C8209BDE6634.webp",
         alt: "PURPL team at AIAA Region III",
     },
     {
-        src: "/images/projects/rde/2026-aiaa/IMG_7202.jpg",
+        src: "/images/projects/rde/2026-aiaa/IMG_7202.webp",
         alt: "PURPL RDE project display at AIAA Region III",
     },
 ];
@@ -640,7 +640,7 @@ const deimosData = {
     featured: {
         photos: [
             {
-                src: "/images/projects/rde/shared/status-photo-1.png",
+                src: "/images/projects/rde/shared/status-photo-1.webp",
                 alt: "DEIMOS rotating detonation rocket engine poster",
             },
         ],

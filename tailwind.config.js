@@ -31,7 +31,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-background': "url('../public/images/backgrounds/background_1.jpg')",
-        'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.png')"
+        'plume-background': "url('../public/images/projects/testbed/20250831-SelectedMedia/plume3.webp')"
       },
       animation: {
         'scroll-left': 'scroll-left 110s linear infinite',        'scroll-left': 'scroll-left 110s linear infinite',

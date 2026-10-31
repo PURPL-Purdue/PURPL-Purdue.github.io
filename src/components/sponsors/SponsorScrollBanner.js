@@ -28,6 +28,8 @@ const SponsorScrollBanner = () => {
                             <img
                                 src={sponsor.image}
                                 alt={sponsor.img_alt}
+                                loading="lazy"
+                                decoding="async"
                                 className="object-contain"
                                 style={{ height: `${sponsor.banner_height ?? 100}%` }}
                             />

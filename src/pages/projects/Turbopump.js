@@ -52,7 +52,7 @@ const Turbopump = () => {
 
                     <SpecsTable table={turbopumpData.specs_table} title="Engine Stats" />
                     <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
-                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} />
+                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_1} alt={turbopumpData.image_1_alt} loading="lazy" decoding="async" />
                         <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
                             <h2 className="font-display2 text-md md:text-lg text-white text-balance">
                                 {turbopumpData.desc_1}
@@ -62,7 +62,7 @@ const Turbopump = () => {
 
                     </div>
                     <div className="flex flex-col space-y-8 lg:flex-row lg:items-center w-full">
-                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} />
+                        <img className="max-w-[100px] md:max-w-[200px]" src={turbopumpData.image_2} alt={turbopumpData.image_2_alt} loading="lazy" decoding="async" />
                         <div className="flex flex-col w-auto justify-start text-left lg:pl-12 my-auto">
                             <h2 className="font-display2 text-md md:text-lg text-white text-balance">
                                 {turbopumpData.desc_2}
