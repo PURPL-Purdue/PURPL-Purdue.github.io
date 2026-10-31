@@ -649,13 +649,73 @@ export const ttpData = {
 export const pulsejetData = {
     title: "Pulsejet",
     about_team: {
-        blurb:"The pulsejet project champions PURPL's ideals of rapid design, manufacture and hotfire! " +
-            "The team works on static testing of both valved and valveless engines. " +
-            "Pulsejet is PURPL's first collaboration with an external club. The team works with Purdue National Defense Society on a jet-powered RC plane.",
+        blurb: "The Pulsejet team is developing two propane-fueled engines: Buzz Aldrin, a valveless test engine, and Angus, a larger valved design. Testing Buzz Aldrin will provide data to guide Angus's development, with the long-term goal of integrating a pulsejet into an RC aircraft in collaboration with the Purdue National Defense Society.",
         photos: [
             teamPhotos.pulsejet.smiling_photo,
             teamPhotos.pulsejet.fun_photo,
         ]
+    },
+    buzzAldrinData: {
+        key: "buzzAldrin",
+        title: "Buzz Aldrin",
+        selector_subtitle: "Valveless Pulsejet",
+        selector_purpose: "Valveless test engine",
+        photo: {
+            src: "/images/projects/pulsejet/buzz-aldrin-photo.webp",
+            alt: "Buzz Aldrin, PURPL's valveless propane pulsejet engine, shown mounted on its test stand",
+        },
+        overview: "Buzz Aldrin is PURPL's valveless propane pulsejet, built to demonstrate stable, self-sustaining combustion with no moving parts. Testing the simpler valveless design first isolates core thrust and frequency data before Angus adds a valve train.",
+        design_fabrication_lead: "Every choice in Buzz Aldrin's construction serves the same goal: a simple, weldable testbed the team can build, test, and iterate on quickly.",
+        design_fabrication: [
+            {
+                heading: "Valveless Design",
+                text: "Built as an FWE-variant valveless pulsejet: no moving valves, with tuned geometry producing resonant, self-sustaining pulsing from a continuous propane feed instead of mechanical timing. Like all valveless pulsejets, it's extremely loud.",
+            },
+            {
+                heading: "Materials",
+                text: "Built from stainless steel, chosen for its weldability and its ability to withstand the heat of repeated combustion cycles.",
+            },
+            {
+                heading: "Fuel and Ignition",
+                text: "Runs on propane with atmospheric air, started with a spark-based ignition system before the engine's own pulsing becomes self-sustaining.",
+            },
+            {
+                heading: "Manufacturing",
+                text: "Fabricated with standard shop tools: tube stock is cut and bent to the tuned geometry, then welded into one pressure-tight assembly on its test stand.",
+            },
+        ],
+        testing: {
+            intro: "Buzz Aldrin exists as both a test platform and a public hotfire demonstration. Its campaign is organized around three objectives:",
+            categories: [
+                {
+                    label: "Operation",
+                    text: "Confirm stable, self-sustaining pulsing once the engine is started, and study its starting characteristics.",
+                },
+                {
+                    label: "Thrust",
+                    text: "Measure thrust output on a dedicated test stand, including how baffles and thrust augmentors affect it.",
+                },
+                {
+                    label: "Frequency",
+                    text: "Characterize operating frequency across runs, including how intake and exhaust length affect it.",
+                },
+            ],
+            closing: "These are the team's objectives for the test campaign, not results already in hand. The data they produce, not assumptions, will guide Angus's valve and combustion design.",
+        },
+    },
+    angusData: {
+        key: "angus",
+        title: "Angus",
+        selector_subtitle: "Valved Pulsejet",
+        selector_purpose: "Valved engine design",
+        wireframe_image: {
+            src: "/images/projects/pulsejet/wireframe.png",
+            alt: "Wireframe engineering render of Angus, PURPL's valved pulsejet engine",
+        },
+        intro: "Angus takes its name as a play on the Argus pulsejet, a large valved pulsejet developed for use in World War II. It's PURPL's full valved pulsejet, designed from first principles using data from Buzz Aldrin's test campaign. Where Buzz Aldrin relies on tuned geometry alone, Angus uses a valve in place of the intake pipe to control each combustion cycle.",
+        target_thrust: "75 lbf",
+        target_mass: "< 35 lbm",
+        team_structure: "The Angus team is organized into three subteams, designing the engine's structures, valve, and combustion systems together.",
     },
 }
 
