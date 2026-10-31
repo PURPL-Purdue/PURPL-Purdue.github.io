@@ -471,4 +471,79 @@ export const turbopumpData = {
             },
         ],
     },
+
+    // Leadership Archive, oldest first. `subsystemLeads` is omitted (not an
+    // empty array) for years none were provided, so the component can tell
+    // "not provided" apart from "provided but empty" without guessing.
+    // Headshots keyed by name, shared across years so a person who served
+    // multiple terms (e.g. Sean Wheeler) only needs one entry. A name with
+    // no entry here falls back to the neutral placeholder.
+    leadershipPhotos: {
+        'Kamon Blong': '/images/projects/turbopump/leadership/kamon-blong.webp',
+        'Alejandro Diaz Contreras': '/images/projects/turbopump/leadership/alejandro-diaz-contreras.webp',
+        'Andrew Fontanetta': '/images/projects/turbopump/leadership/andrew-fontanetta.webp',
+        'Sean Wheeler': '/images/projects/turbopump/leadership/sean-wheeler.webp',
+        'Charlie Zhu': '/images/projects/turbopump/leadership/charlie-zhu.webp',
+        'Soonbi Choi': '/images/projects/turbopump/leadership/soonbi-choi.webp',
+        'Daniel Lysenko Dudnyk': '/images/projects/turbopump/leadership/daniel-lysenko-dudnyk.webp',
+        'Daniel Bennet': '/images/projects/turbopump/leadership/daniel-bennet.webp',
+        'Forrest Lim': '/images/projects/turbopump/leadership/forrest-lim.webp',
+        'Miles Cohen': '/images/projects/turbopump/leadership/miles-cohen.webp',
+        'Arvin Peng': '/images/projects/turbopump/leadership/arvin-peng.webp',
+        'Louis DeSano': '/images/projects/turbopump/leadership/louis-desano.webp',
+        'Amanjyoti Mridha': '/images/projects/turbopump/leadership/amanjyoti-mridha.webp',
+        'Luke Tipton': '/images/projects/turbopump/leadership/luke-tipton.webp',
+    },
+
+    // LinkedIn URLs keyed by name, shared across years like leadershipPhotos.
+    // Kamon Blong has no entry: no URL was provided, so their button stays
+    // hidden rather than linking to a guess.
+    leadershipLinkedIn: {
+        'Forrest Lim': 'https://www.linkedin.com/in/forrestlim/',
+        'Alejandro Diaz Contreras': 'https://www.linkedin.com/in/alejandrodico/',
+        'Andrew Fontanetta': 'https://www.linkedin.com/in/andrew-fontanetta/',
+        'Daniel Lysenko Dudnyk': 'https://www.linkedin.com/in/dlyse/',
+        'Sean Wheeler': 'https://www.linkedin.com/in/seanwheeler1/',
+        'Luke Tipton': 'https://www.linkedin.com/in/luketipton/',
+        'Daniel Bennet': 'https://www.linkedin.com/in/daniel-jie-bennett/',
+        'Miles Cohen': 'https://www.linkedin.com/in/miles-cohen-674650325/',
+        'Amanjyoti Mridha': 'https://www.linkedin.com/in/amridha/',
+        'Louis DeSano': 'https://www.linkedin.com/in/louis-desano/',
+        'Charlie Zhu': 'https://www.linkedin.com/in/charliezhufr/',
+        'Soonbi Choi': 'https://www.linkedin.com/in/soonbichoi/',
+        'Arvin Peng': 'https://www.linkedin.com/in/arvinpeng/',
+    },
+
+    leadershipArchive: [
+        {
+            year: '2024–2025',
+            projectLeads: ['Kamon Blong', 'Forrest Lim'],
+        },
+        {
+            year: '2025–2026',
+            projectLeads: ['Alejandro Diaz Contreras', 'Andrew Fontanetta'],
+            subsystemLeads: [
+                { subsystem: 'TCA', name: 'Daniel Lysenko Dudnyk' },
+                { subsystem: 'Pumps', name: 'Sean Wheeler' },
+                { subsystem: 'Seals', name: 'Luke Tipton' },
+                { subsystem: 'Rotordynamics', name: 'Daniel Bennet' },
+                { subsystem: 'Gas Generator', name: 'Miles Cohen' },
+                { subsystem: 'Turbine', name: 'Amanjyoti Mridha' },
+            ],
+        },
+        {
+            year: '2026–2027',
+            projectLeads: ['Alejandro Diaz Contreras', 'Andrew Fontanetta'],
+            subsystemLeads: [
+                { subsystem: 'TCA', name: 'Louis DeSano' },
+                { subsystem: 'Pumps', name: 'Sean Wheeler' },
+                { subsystem: 'Pumps', name: 'Charlie Zhu' },
+                { subsystem: 'Seals', name: 'Luke Tipton' },
+                { subsystem: 'Rotordynamics', name: 'Soonbi Choi' },
+                { subsystem: 'Gas Generator', name: 'Miles Cohen' },
+                { subsystem: 'Gas Generator', name: 'Arvin Peng' },
+                { subsystem: 'Turbine', name: 'Amanjyoti Mridha' },
+            ],
+        },
+    ],
 };

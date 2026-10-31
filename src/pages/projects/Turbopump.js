@@ -9,6 +9,7 @@ import TurbopumpSystemFlow from './turbopump/TurbopumpSystemFlow';
 import TurbopumpSubsystems from './turbopump/TurbopumpSubsystems';
 import TurbopumpRoadmap from './turbopump/TurbopumpRoadmap';
 import TurbopumpTesting from './turbopump/TurbopumpTesting';
+import TurbopumpLeadership from './turbopump/TurbopumpLeadership';
 
 const Turbopump = () => (
     <PageWrapper>
@@ -22,6 +23,7 @@ const Turbopump = () => (
                 <TurbopumpRoadmap />
                 <TurbopumpTesting />
                 <TurbopumpPublications />
+                <TurbopumpLeadership />
             </div>
         </ContentWrapper>
     </PageWrapper>
