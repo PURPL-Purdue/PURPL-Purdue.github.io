@@ -59,7 +59,7 @@ const LandingQuoteGallery = () => {
 
     return (
         <div className="py-8 lg:py-12">
-            <blockquote className="mb-8 lg:mb-12 max-w-3xl mx-auto text-center">
+            <blockquote className="mb-8 lg:mb-12 border-l-4 border-stardust pl-6 max-w-3xl">
                 <p className="font-display2 text-lg md:text-xl lg:text-2xl text-white italic leading-relaxed mb-3">
                     "{landingData.quote.text}"
                 </p>
