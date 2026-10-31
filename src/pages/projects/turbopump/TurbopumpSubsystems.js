@@ -1,0 +1,99 @@
+import { useState } from 'react';
+import SubsystemNavigation from './SubsystemNavigation';
+import Gallery from '../../../components/carousel/Gallery';
+import { turbopumpData as d } from '../../../json/turbopump';
+
+// Full Assembly lives under MARLIN V1, not here: it isn't its own subsystem.
+const ITEMS = d.subsystems;
+
+// `centered` aligns everything except the requirements list, which stays
+// left-aligned for readability.
+const SubsystemText = ({ s, centered }) => (
+    <div>
+        <p className={'font-display2 text-white text-md md:text-lg leading-7 ' + (centered ? 'text-center' : '')}>
+            {s.purpose}
+        </p>
+
+        <div className="mt-6">
+            <p className={'font-display2 text-stardust text-sm uppercase mb-3 ' + (centered ? 'text-center' : '')}>
+                Requirements
+            </p>
+            <ul className="flex flex-col gap-2 text-left">
+                {s.requirements.map((r) => (
+                    <li key={r} className="flex gap-3 font-display2 text-white/80 text-sm md:text-md leading-7">
+                        <span aria-hidden="true" className="text-stardust">-</span>
+                        <span>{r}</span>
+                    </li>
+                ))}
+            </ul>
+            {s.note && (
+                <p className={'font-display2 text-white/60 text-sm md:text-md leading-7 mt-4 ' + (centered ? 'text-center' : '')}>
+                    {s.note}
+                </p>
+            )}
+        </div>
+    </div>
+);
+
+// Photo subsystems get a two-column layout; text-only ones are centered as
+// one block instead of leaving an empty column beside left-aligned text.
+// `photos` (plural) is for subsystems with more than one image — rendered
+// through the same Gallery/carousel pattern used elsewhere on this page,
+// inside the same fixed-height box a single `photo` would use.
+const SubsystemFeature = ({ s }) => {
+    const photos = s.photos || (s.photo ? [s.photo] : null);
+
+    return photos ? (
+        <div className="min-w-0">
+            <h3 className="font-display-bold text-3xl md:text-5xl text-white uppercase leading-tight">
+                {s.title}
+            </h3>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 lg:gap-10 items-center">
+                <SubsystemText s={s} />
+                {photos.length > 1 ? (
+                    <Gallery photos={photos} ariaLabel={`${s.title} CAD`} aspectRatio="4 / 3" />
+                ) : (
+                    <div className="flex items-center justify-center h-[240px] md:h-[300px] bg-dusk">
+                        <img
+                            src={photos[0].src}
+                            alt={photos[0].alt}
+                            loading="lazy"
+                            decoding="async"
+                            className="max-w-full max-h-full w-auto h-auto object-contain"
+                        />
+                    </div>
+                )}
+            </div>
+        </div>
+    ) : (
+        <div className="max-w-md mx-auto text-center">
+            <h3 className="font-display-bold text-3xl md:text-5xl text-white uppercase leading-tight">
+                {s.title}
+            </h3>
+            <div className="mt-4">
+                <SubsystemText s={s} centered />
+            </div>
+        </div>
+    );
+};
+
+const TurbopumpSubsystems = () => {
+    const [selected, setSelected] = useState(ITEMS[0].key);
+    const item = ITEMS.find((it) => it.key === selected);
+
+    return (
+        <section>
+            <h2 className="font-display-bold text-3xl lg:text-5xl text-white text-left mb-5 uppercase md:mt-4">
+                Subsystems
+            </h2>
+
+            <SubsystemNavigation items={ITEMS} selected={selected} onSelect={setSelected} />
+
+            <div className="mt-8 md:mt-10">
+                <SubsystemFeature key={item.key} s={item} />
+            </div>
+        </section>
+    );
+};
+
+export default TurbopumpSubsystems;
