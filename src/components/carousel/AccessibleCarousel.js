@@ -43,6 +43,17 @@ const AccessibleCarousel = ({
     }, [photos, aspectRatioProp]);
 
     useEffect(() => {
+        // Warm the browser cache for the next slide only, so advancing (via
+        // autoplay or a click) doesn't wait on a fresh fetch. Native
+        // loading="lazy" on the <img> itself still governs the initial,
+        // unvisited state of every other slide.
+        if (!photos || photos.length <= 1) return;
+        const next = photos[(activeIndex + 1) % photos.length];
+        const preload = new Image();
+        preload.src = next.src;
+    }, [activeIndex, photos]);
+
+    useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
         setPrefersReducedMotion(mediaQuery.matches);
 

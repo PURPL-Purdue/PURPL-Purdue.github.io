@@ -445,8 +445,8 @@ export const turbopumpData = {
             text:
                 'The team presented its turbopump work at the AIAA Region III Student Conference and the 2026 AIAA SciTech conference in Orlando, Florida. Both papers were published.',
             photos: [
-                { src: '/images/projects/turbopump/IMG_0322.jpg', alt: 'Turbopump team at an AIAA conference' },
-                { src: '/images/projects/turbopump/IMG_2917.jpg', alt: 'Turbopump team presenting at an AIAA conference' },
+                { src: '/images/projects/turbopump/IMG_0322.webp', alt: 'Turbopump team at an AIAA conference' },
+                { src: '/images/projects/turbopump/IMG_2917.webp', alt: 'Turbopump team presenting at an AIAA conference' },
                 { src: '/images/projects/turbopump/marlin-research-aiaa-team.png', alt: 'Turbopump team in formal attire at an AIAA conference' },
             ],
         },
