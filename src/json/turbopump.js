@@ -337,7 +337,7 @@ export const turbopumpData = {
         [
             'Jun 2025',
             'Power Assembly CDR',
-            'Critical Design Review for the power assembly.',
+            'Design Criteria Review. Critical Design Review for the power assembly (gas generator and turbine).',
         ],
         [
             'Nov 2025',
@@ -396,12 +396,12 @@ export const turbopumpData = {
         ],
         [
             'Oct 2026',
-            'TCA Critical Design Review',
+            'TCA CDR',
             'Critical Design Review for the Thrust Chamber Assembly, the minimum-viable engine used to characterize the turbopump.',
         ],
         [
             'Oct 2026',
-            'Gas Generator Preliminary Design Review',
+            'Gas Generator PDR',
             'Preliminary Design Review for the gas generator, the subsystem that burns propellant to produce the hot gas driving the turbine.',
         ],
         [
