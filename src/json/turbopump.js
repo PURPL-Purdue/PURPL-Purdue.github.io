@@ -337,7 +337,7 @@ export const turbopumpData = {
         [
             'Jun 2025',
             'Power Assembly CDR',
-            'Design Criteria Review. Critical Design Review for the power assembly (gas generator and turbine).',
+            'Critical Design Review for the power assembly (gas generator and turbine).',
         ],
         [
             'Nov 2025',
@@ -387,7 +387,7 @@ export const turbopumpData = {
         [
             'Sep 2026',
             'MARLIN V2 DCR',
-            "Design review for MARLIN V2, the second-generation turbopump and PURPL's first open-cycle development effort, designed around a 1,400 lbf heatsink combustion chamber.",
+            "Design criteria review for MARLIN V2, the second-generation turbopump and PURPL's first open-cycle development effort, designed around a 1,400 lbf heatsink combustion chamber.",
         ],
         [
             'Sep 2026',
