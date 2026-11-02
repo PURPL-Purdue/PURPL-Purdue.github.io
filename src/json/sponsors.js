@@ -22,6 +22,13 @@ export const sponsors = {
         tier: "platinum",
         display_height: 112,
     },
+    asrec: {
+        image: "/images/sponsors/purdue_asrec.png",
+        img_alt: "Purdue ASREC sponsor logo",
+        link: "https://ag.purdue.edu/department/ansc/asrec/index.html",
+        tier: "platinum",
+        display_height: 96,
+    },
     notion: {
         image: "/images/sponsors/notion-logo-white.png",
         img_alt: "Notion sponsor logo",
@@ -56,7 +63,7 @@ export const sponsors = {
     msm: {
         image: "/images/sponsors/msmlogo-1764661165.jpg",
         img_alt: "MSM sponsor logo",
-        link: "https://https://www.metalsupermarkets.com",
+        link: "https://www.metalsupermarkets.com/",
         tier: "gold",
         display_height: 64,
     },
@@ -97,6 +104,13 @@ export const sponsors = {
         link: "https://imaginarium.io",
         tier: "gold",
         display_height: 80,
+    },
+    phantom: {
+        image: "/images/sponsors/phantom_high_speed.webp",
+        img_alt: "Phantom High Speed sponsor logo",
+        link: "https://www.phantomhighspeed.com/",
+        tier: "gold",
+        display_height: 96,
     },
     // Silver Tier
     polymaker: {
